@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import { Helmet } from 'react-helmet'
 // import { useStaticQuery, graphql } from "gatsby"
 
-import Logo from '../../images/logo_white.svg'
+import Logo from '../../images/logo_claro.svg'
 import Navbar from '../../components/navbar/navbar'
 // import MouseIcon from '../../components/mouseIcon/mouseIcon'
 

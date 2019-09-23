@@ -55,10 +55,6 @@ export default class SomosLeoes extends React.Component {
                     <div className="col-xs-12">
                     </div>
                 </div>
-                {/* <video id="video" className="video" controls autoplay="autoplay">
-                    <source src="https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2FDUEE_COMPLETO.mp4?alt=media&token=551c33ba-9d03-495b-b040-90c15394e7d7" type="video/mp4" />
-                    Your browser does not support HTML5 video.
-</video> */}
                 <div className="row video" id="videoapresentacao">
                     <iframe src="https://player.vimeo.com/video/355173390" title="Duee Brasil" className="video col-xs-12" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>

@@ -7,7 +7,6 @@ import './faxe2.scss'
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import Logofaxe from '../../images/home/FAXE-LOGO.svg'
 import HeaderBG from '../../images/faxe/header.jpg'
-import { window } from 'browser-monads';
 
 import Story1 from '../../images/faxe/stories/STORIE_FINAL.mp4'
 import Story2 from '../../images/faxe/stories/Storie_ 1.png'
@@ -49,37 +48,19 @@ import Img32 from '../../images/faxe/img/post1.png'
 import Img34 from '../../images/faxe/img/post2.png'
 import Img36 from '../../images/faxe/img/post3 3.png'
 
-// import P0 from '../../images/faxe/parallax/p0-2.png'
-// import P1 from '../../images/faxe/parallax/p1.png'
-// import P2 from '../../images/faxe/parallax/p2.png'
-// import P3 from '../../images/faxe/parallax/p3.png'
-// import P4 from '../../images/faxe/parallax/p4.png'
-// import P5 from '../../images/faxe/parallax/p6-2.png'
-
-
 export default class Faxe extends Component {
 
     render() {
         return (
             <Layout>
                 <SEO title="Faxe" />
-                {/* <!-- First --> */}
-                {/* <div className={`faxepage2 ${window.screen.height > window.screen.width ? 'portrait' : null}`} > */}
                 <div className='faxepage3 middle-xs center-xs' >
-                    {/* <img className="scene sky" src={P0} alt="landscape" />
-                        <img className="scene" src={P1} alt="landscape" />
-                        <img className="scene" src={P2} alt="landscape" />
-                        <img className="scene logo" src={Logofaxe} alt="faxe" />
-                        <img className="scene" src={P3} alt="landscape" />
-                        <img className="scene" src={P4} alt="landscape" />
-                        <img className="scene" src={P5} alt="landscape" /> */}
 
                     <header>
                         <img src={HeaderBG} alt="background" />
                         <img className="logo" src={Logofaxe} alt="faxe" />
                     </header>
 
-                    {/* <div className='scene conteudo row'> */}
                     <div className='row conteudo'>
                         <div className="row col-xs-12 col-sm-8 col-md-6 col-lg-5 description">
                             <p>A cerveja dinamarquesa Faxe Beer é inspirada no universo Viking, conquistando os mais exigentes paladares de guerreiros do happy hour ao redor do mundo.</p>
