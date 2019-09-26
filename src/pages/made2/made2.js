@@ -41,6 +41,17 @@ import Img33 from '../../images/made/imgs/Post8.png'
 import Img34 from '../../images/made/imgs/caixas.png'
 import Img35 from '../../images/made/imgs/encordoamentoretro.png'
 
+import Vd1 from '../../images/made/videos/Aproximacao_Guitarra (online-video-cutter.com).mp4'
+import Vd2 from '../../images/made/videos/Case_Violao (online-video-cutter.com).mp4'
+import Vd3 from '../../images/made/videos/Microfones (online-video-cutter.com).mp4'
+import Vd4 from '../../images/made/videos/Pads (online-video-cutter.com).mp4'
+import Vd5 from '../../images/made/videos/Pedais (online-video-cutter.com).mp4'
+import Vd6 from '../../images/made/videos/Review Baixo Squier Precision 50.mp4'
+import Vd7 from '../../images/made/videos/Set_Gaitas (online-video-cutter.com).mp4'
+import Vd8 from '../../images/made/videos/Zoom_loja_V2 (online-video-cutter.com).mp4'
+import Vd9 from '../../images/made/videos/Zoom_violao_V2 (online-video-cutter.com).mp4'
+
+
 export default class Made extends Component {
     render() {
         return (
@@ -71,37 +82,45 @@ export default class Made extends Component {
                     <div className="row col-xs-12">
                         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4, 1700: 5 }}>
                             <Masonry>
-                                {/* <video src={Post1} autoPlay={true} mute={true} controls={true} className="material" /> */}
+                                <video src={Vd1} autoPlay={true} mute={true} controls={true} loop className="material" />
                                 <img src={Img12} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img1} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img29} alt="conteudo madeinbrazil" className="material" />
+                                <video src={Vd3} autoPlay={true} mute={true} controls={true} loop className="material" />
                                 <img src={Img3} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img35} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img5} alt="conteudo madeinbrazil" className="material" />
+                                <video src={Vd7} autoPlay={true} mute={true} controls={true} loop className="material" />
                                 <img src={Img6} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img7} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img8} alt="conteudo madeinbrazil" className="material" />
+                                <video src={Vd2} autoPlay={true} mute={true} controls={true} loop className="material" />
                                 <img src={Img10} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img11} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img19} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img13} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img14} alt="conteudo madeinbrazil" className="material" />
+                                <video src={Vd5} autoPlay={true} mute={true} controls={true} loop className="material" />
                                 <img src={Img33} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img18} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img26} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img20} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img21} alt="conteudo madeinbrazil" className="material" />
+                                <video src={Vd9} autoPlay={true} mute={true} controls={true} loop className="material" />
                                 <img src={Img2} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img23} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img25} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img15} alt="conteudo madeinbrazil" className="material" />
+                                <video src={Vd8} autoPlay={true} mute={true} controls={true} loop className="material" />
                                 <img src={Img31} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img32} alt="conteudo madeinbrazil" className="material" />
+                                <video src={Vd6} autoPlay={true} mute={true} controls={true} loop className="material" />
                                 <img src={Img22} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img16} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img27} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img17} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img34} alt="conteudo madeinbrazil" className="material" />
+                                <video src={Vd4} autoPlay={true} mute={true} controls={true} loop className="material" />
                                 <img src={Img24} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img28} alt="conteudo madeinbrazil" className="material" />
                             </Masonry>
