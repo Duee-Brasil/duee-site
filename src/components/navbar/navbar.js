@@ -63,6 +63,9 @@ export default class Navbar extends React.Component {
             <li>
               <Link to="/contato">Contato</Link>
             </li>
+            <li>
+              <a target="_blank" rel="noopener noreferrer" href="https://dueedrive.duee.com.br">Área do cliente</a>
+            </li>
           </ul>
         </div>
       </div> : null}

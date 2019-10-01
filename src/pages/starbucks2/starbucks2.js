@@ -61,7 +61,7 @@ const Starbucks = () => (
                         <img src={Rappi1} alt="anuncio Rappi" className="material" />
                         <img src={Post5} alt="post instagram" className="material" />
                         <img src={Mail4} alt="email marketing" className="material" />
-                        <video src={Story3} autoplay={true} controls={true} loop={true} className="material" />
+                        <video src={Story3} autoplay={true} controls={true} loop={true} muted className="material" />
                         <img src={Post4} alt="post instagram" className="material" />
                         <img src={Rappi4} alt="anuncio Rappi" className="material" />
                         <img src={Post6} alt="post instagram" className="material" />
@@ -69,13 +69,13 @@ const Starbucks = () => (
                         <img src={Story4} autoplay={true} alt="story instagram" className="material" />
                         <img src={Post2} alt="post instagram" className="material" />
                         <img src={Rappi5} alt="anuncio Rappi" className="material" />
-                        <video src={Story2} autoplay={true} controls={true} loop={true} className="material" />
+                        <video src={Story2} autoplay={true} controls={true} loop={true} muted className="material" />
                         <img src={Mail1} alt="email marketing" className="material" />
                         <img src={Mail5} alt="email marketing" className="material" />
                         <img src={Story5} autoplay={true} alt="story instagram" className="material" />
                         <img src={Post1} alt="post instagram" className="material" />
                         <img src={Rappi2} alt="anuncio Rappi" className="material" />
-                        <video src={Story1} autoplay={true} controls={true} loop={true} className="material" />
+                        <video src={Story1} autoplay={true} controls={true} loop={true} muted className="material" />
                         <img src={Pdv1} alt="pdv" className="material" />
                         <img src={Post3} alt="post instagram" className="material" />
                         <img src={Mail2} alt="email marketing" className="material" />
