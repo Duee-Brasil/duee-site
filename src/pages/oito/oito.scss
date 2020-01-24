@@ -1,0 +1,60 @@
+#oitoapp {
+    background-color: #65529d;
+    color           : black;
+
+    img {
+        width: 100vw;
+    }
+
+    h2 {
+        width     : 100%;
+        text-align: center;
+    }
+
+    .content {
+        margin   : auto;
+        max-width: 1280px;
+        background-color: white;
+        top: -50%;
+    }
+
+    .card8 {
+        display: flex;
+        flex: 0 0 35%;
+        justify-content: center;
+        background-color: white;
+        box-shadow      : 0 0 5px darkgray;
+        border-radius   : 5px;
+        max-width: 80vw;
+        // height       : 300px;
+        margin          : 20px;
+        padding         : 3%;
+        
+    }
+
+    .footer8 {
+        width: 100vw;
+        background-image: url("../../images/oito/site-04.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        justify-content: center;
+        padding: 10%;
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            background-color: #ee821d;
+            text-decoration: none;
+            color: white;
+            padding: 2% 5%;
+            border: none;
+            border-radius: 1.5em;
+            font-size: 2em;
+            font-weight: 500;
+            margin: auto;
+        }
+    }
+}

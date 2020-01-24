@@ -27,5 +27,9 @@ module.exports = [
   {
     path: '/madeinbrazil',
     component: path.resolve(`src/pages/made2/made2.js`)
+  },
+  {
+    path: '/oito',
+    component: path.resolve(`src/pages/oito/oito.js`)
   }
 ]
