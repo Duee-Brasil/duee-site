@@ -18,6 +18,12 @@
         top: -50%;
     }
 
+    .dev {
+        position: relative;
+        top: -150;
+        background-color: red;
+    }
+
     .card8 {
         display: flex;
         flex: 0 0 35%;
@@ -36,10 +42,11 @@
         width: 100vw;
         background-image: url("../../images/oito/site-04.png");
         background-repeat: no-repeat;
-        background-position: center bottom;
+        background-position: left bottom;
         background-size: cover;
         justify-content: center;
         padding: 10%;
+        height: 60vh;
 
         a {
             text-decoration: none;
@@ -55,6 +62,7 @@
             font-size: 2em;
             font-weight: 500;
             margin: auto;
+            cursor: pointer;
         }
     }
 }
