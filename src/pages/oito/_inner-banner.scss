@@ -1,5 +1,5 @@
 .inner-banner {
-	// background: $thm_base_color url(../images/inner-banner-bg-1-1.jpg) center center no-repeat;
+	background: $thm_base_color url(../../images/oito/inner-banner-bg-1-1.jpg) center center no-repeat;
 	background-size: cover;
 	padding-top: 220px;
 	padding-bottom: 120px;
@@ -11,7 +11,7 @@
 	&__title {
 		margin: 0;
 		color: #fff;
-		font-family: $thm_font_extrabold;
+		// font-family: $thm_font_extrabold;
 		font-size: 50px;
 		letter-spacing: -0.04em;
 	}

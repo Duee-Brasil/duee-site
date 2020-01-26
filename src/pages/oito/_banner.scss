@@ -1,5 +1,5 @@
 .banner-one {
-    // background: transparent url(../images/banner-1-1.png) top right no-repeat;
+    background: transparent url(../../images/oito/banner-1-1.png) top right no-repeat;
     background-size: cover;
     position: relative;
     padding-top: 274px;
@@ -53,7 +53,7 @@
         letter-spacing: .2em;
         overflow: hidden;
         color: #FFFFFF;
-        font-family: $thm_font_bold;
+        // font-family: $thm_font_bold;
         line-height: 32px;
         padding-left: 20px;
 
@@ -80,7 +80,7 @@
         color: #fff;
         font-size: 70px;
         line-height: 80px;
-        font-family: $thm_font_extrabold;
+        // font-family: $thm_font_extrabold;
         letter-spacing: -0.04em;
     }
 }

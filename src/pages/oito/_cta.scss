@@ -1,5 +1,5 @@
 .cta-one {
-    // background: $thm_base_color url(../images/cta-bg-1-1.jpg) center center no-repeat;
+    background: $thm_base_color url(../../images/oito/cta-bg-1-1.jpg) center center no-repeat;
     background-size: cover;
     position: relative;
     padding-top: 123.5px;
@@ -51,7 +51,7 @@
         margin: 0;
         color: $thm_black;
         font-size: 18px;
-        font-family: $thm_font_bold;
+        // font-family: $thm_font_bold;
         letter-spacing: -0.02em;
         margin-bottom: 30px;
 
@@ -102,7 +102,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            // background: transparent url(../images/cta-shape-1-1.png) center center no-repeat;
+            background: transparent url(../../images/oito/cta-shape-1-1.png) center center no-repeat;
             background-size: 100%;
         }
 

@@ -1,6 +1,12 @@
 .service-one {
     position: relative;
-    margin-bottom: -360px;
+    margin-bottom: -30px;
+    z-index: 10;
+    background: transparent url(../../images/oito/testi-bg-1-1.png) bottom left no-repeat;
+    background-size: cover;
+    padding-top: 400px;
+    padding-bottom: 110px;
+    position: relative;
     z-index: 10;
 
     &:before {
@@ -79,7 +85,7 @@
         line-height: 34px;
         letter-spacing: -0.02em;
         text-align: center;
-        font-family: $thm_font_bold;
+        // font-family: $thm_font_bold;
         margin-bottom: 17px;
         margin-top: 30px;
 
@@ -103,7 +109,7 @@
     &__btn {
         border-top: 1px solid #EFF0F7;
         font-size: 12px;
-        font-family: $thm_font_bold;
+        // font-family: $thm_font_bold;
         color: $thm_black;
         width: 100%;
         position: relative;
