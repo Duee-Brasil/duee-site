@@ -6,11 +6,16 @@
     padding-bottom: 515px;
     z-index: 11;
 
+    img {
+        width: auto !important;
+    }
+
 
     &__globe {
     	position: absolute;
     	top: 15%;
-    	left: 15%;
+        left: 15%;
+        
     	animation-fill-mode: both;
         animation-name: globeRotate;
         animation-timing-function: linear;
@@ -56,6 +61,7 @@
         // font-family: $thm_font_bold;
         line-height: 32px;
         padding-left: 20px;
+        padding-right: 20px;
 
         a {
             display: inline-block;

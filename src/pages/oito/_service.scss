@@ -29,8 +29,9 @@
     &__single {
         position: relative;
         margin-bottom: 60px;
-        padding-top: 60px;
+        padding: 20px;
         display: flex;
+        height: 100%;
         justify-content: center;
         flex-direction: column;
         align-items: center;

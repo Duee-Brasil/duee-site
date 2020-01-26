@@ -1,51 +1,52 @@
 import React from "react"
 // import { Link } from "gatsby"
+import Helmet from 'react-helmet'
 
 import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import './style.scss'
 import './oito.scss'
 
-import divider1 from '../../images/oito/site_ 1.png'
-import divider2 from '../../images/oito/site-02.png'
-import divider3 from '../../images/oito/site-03.png'
+import globo from '../../images/oito/globe-1-1.png'
+import rocket from '../../images/oito/rocket-1-1.png'
+import imghead from '../../images/oito/banner-1-1-moc.png'
+import cta from '../../images/oito/cta-1-1.jpg'
 
 const Starbucks = () => (
     <Layout>
         <SEO title="Oito" />
+        <Helmet>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css" rel="stylesheet" />
+        </Helmet>
         {/* <!-- First --> */}
         <div classNameName="row" id="oitoapp">
             <section className="banner-one" id="home">
 
-                {/* <span className="banner-one__shape-1"></span>
-                <span className="banner-one__shape-2"></span>
-                <span className="banner-one__shape-3"></span>
-                <span className="banner-one__shape-4"></span>
-                <span className="banner-one__shape-5"></span>
-                <span className="banner-one__shape-6"></span> */}
-
-                {/* <img src="images/globe-1-1.png" className="banner-one__globe" alt="Awesome Image" />
-                <img src="images/rocket-1-1.png" className="banner-one__rocket" alt="Awesome Image" />
-                <img src="images/banner-1-1-moc.png" className="banner-one__moc" alt="Awesome Image" /> */}
+                <img src={globo} className="banner-one__globe" alt="Awesome Image" />
+                <img src={rocket} className="banner-one__rocket" alt="Awesome Image" />
+                {/* <img src={imghead} className="banner-one__moc" alt="Awesome Image" /> */}
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6">
                             <div className="banner-one__content">
                                 <p className="banner-one__tag-line">Desenvolvimento de Web App</p>
                                 <h3 className="banner-one__title">Oito App</h3>
-                                <a href="#" className="banner-one__btn thm-btn">Saiba mais</a>
+                                <a href="#about" className="banner-one__btn thm-btn">Saiba mais</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="cta-three">
+            {/* o que é oito */}
+
+            <section className="cta-three" id="about">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="cta-three__image">
-                                <img src="images/cta-1-1.jpg" alt="Awesome Image" />
+                                <img src={cta} alt="Awesome Image" />
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -62,7 +63,8 @@ const Starbucks = () => (
                 </div>
             </section>
 
-{/* etapas */}
+            {/* etapas */}
+
             <section className="cta-two">
                 <img src="images/cta-moc-1-1.png" className="cta-two__moc" alt="Awesome Image" />
                 <div className="container">
@@ -74,7 +76,7 @@ const Starbucks = () => (
                                 </div>
                                 <div className="cta-two__single">
                                     <div className="cta-two__icon">
-                                        <i className="lums-icon-strategy"></i>
+                                    <i class="far fa-sticky-note"></i>
                                     </div>
                                     <div className="cta-two__content">
                                         <h3 className="cta-two__title">Briefing</h3>
@@ -83,7 +85,7 @@ const Starbucks = () => (
                                 </div>
                                 <div className="cta-two__single">
                                     <div className="cta-two__icon">
-                                        <i className="lums-icon-training"></i>
+                                    <i class="far fa-calendar-alt"></i>
                                     </div>
                                     <div className="cta-two__content">
                                         <h3 className="cta-two__title">Planejamento</h3>
@@ -92,7 +94,7 @@ const Starbucks = () => (
                                 </div>
                                 <div className="cta-two__single">
                                     <div className="cta-two__icon">
-                                        <i className="lums-icon-training"></i>
+                                    <i class="fas fa-hashtag"></i>
                                     </div>
                                     <div className="cta-two__content">
                                         <h3 className="cta-two__title">Desenvolvimento</h3>
@@ -103,7 +105,7 @@ Então foram realizadas as melhorias UI e UX.</p>
                                 </div>
                                 <div className="cta-two__single">
                                     <div className="cta-two__icon">
-                                        <i className="lums-icon-training"></i>
+                                    <i class="fas fa-universal-access"></i>
                                     </div>
                                     <div className="cta-two__content">
                                         <h3 className="cta-two__title">Melhorias</h3>
@@ -113,13 +115,13 @@ O layout foi refeito, foi realizada uma atualização de regras de negócio do s
                                     </div>
                                 </div>
 
-                                
+
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            
+
             {/* tecnologias */}
 
             <section className="service-one" id="services">
@@ -127,27 +129,27 @@ O layout foi refeito, foi realizada uma atualização de regras de negócio do s
                     <div className="block-title text-center">
                         <h2 className="block-title__title black-text-color">Tecnologias que usamos</h2>
                     </div>
-                    <div className="row">
-                        <div className="col-lg-6">
+                    <div className="row" style={{ justifyContent: "space-around" }}>
+                        <div className="col-lg-4">
                             <div className="service-one__single">
                                 <span className="service-one__dot-1"></span>
                                 <span className="service-one__dot-2"></span>
                                 <span className="service-one__dot-3"></span>
                                 <div className="service-one__icon">
-                                    <i className="lums-icon-laptop"></i>
+                                    <i class="fab fa-react"></i>
                                 </div>
                                 <h3 className="service-one__title"><a href="#">React - Gatsby - GraphQL - JS</a></h3>
                                 <p className="service-one__text">Desenvolvimento do site e aplicação dos melhores frameworks do mercado, que foram desenvolvidos pelo Facebook e inovam o mercado de desenvolvimento.
                         Além disso são simples e têm capacidade de expansão que acompanha a evolução das tecnologias web.</p>
                             </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-4">
                             <div className="service-one__single">
                                 <span className="service-one__dot-1"></span>
                                 <span className="service-one__dot-2"></span>
                                 <span className="service-one__dot-3"></span>
                                 <div className="service-one__icon">
-                                    <i className="lums-icon-presentation"></i>
+                                    <i class="fab fa-wordpress-simple"></i>
                                 </div>
                                 <h3 className="service-one__title"><a href="#">Wordpress</a></h3>
                                 <p className="service-one__text">Ferramenta de fácil manutenção, indicada para sites estáticos e blogs.
@@ -157,29 +159,21 @@ O layout foi refeito, foi realizada uma atualização de regras de negócio do s
                     </div>
                 </div>
             </section>
-            
+
             <footer className="site-footer">
                 <div className="site-footer__upper">
-                <div className="container text-center">
-                    <div className="block-title">
-                        <h2 className="block-title__title">Quer saber mais <br /> sobre a Oito?</h2>
+                    <div className="container text-center">
+                        <div className="block-title">
+                            <h2 className="block-title__title">Quer saber mais <br /> sobre a Oito?</h2>
+                        </div>
+                        <a href="https://oito.app" rel="noopener noreferrer" target="_blank" className="thm-btn cta-one__btn light-text-color">Visite o site</a>
                     </div>
-                    <a href="https://oito.app" rel="noopener noreferrer" target="_blank" className="thm-btn cta-one__btn">Visite o site</a>
                 </div>
-                </div>
-                
+
             </footer>
         </div>
         <a href="#" data-target="html" className="scroll-to-target scroll-to-top"><i className="fa fa-angle-up"></i></a>
         {/* <!-- /.scroll-to-top --> */}
-        {/* <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/testimonials-owl.carousel.config.js"></script>
-    <script src="js/theme.js"></script> */}
 
     </Layout >
 )
