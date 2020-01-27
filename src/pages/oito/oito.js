@@ -10,7 +10,8 @@ import './oito.scss'
 import globo from '../../images/oito/globe-1-1.png'
 import rocket from '../../images/oito/rocket-1-1.png'
 import imghead from '../../images/oito/banner-1-1-moc.png'
-import cta from '../../images/oito/cta-1-1.jpg'
+import cta from '../../images/oito/cta-1-1.png'
+import etap from '../../images/oito/cta-moc-1-1.png'
 
 const Starbucks = () => (
     <Layout>
@@ -25,10 +26,10 @@ const Starbucks = () => (
 
                 <img src={globo} className="banner-one__globe" alt="Awesome Image" />
                 <img src={rocket} className="banner-one__rocket" alt="Awesome Image" />
-                {/* <img src={imghead} className="banner-one__moc" alt="Awesome Image" /> */}
+                <img src={imghead} className="banner-one__moc" alt="Awesome Image" />
                 <div className="container">
                     <div className="row">
-                        <div className="col-xl-6">
+                        <div className="col-xs-12 col-md-6">
                             <div className="banner-one__content">
                                 <p className="banner-one__tag-line">Desenvolvimento de Web App</p>
                                 <h3 className="banner-one__title">Oito App</h3>
@@ -57,6 +58,7 @@ const Starbucks = () => (
                                 <p className="cta-three__text">A Oito é uma plataforma para que profissionais autônomos e clientes se encontrem e se conectem.</p>
                                 <p className="cta-three__text">Através do site, o usuário se cadastra gratuitamente e pode, então, adicionar habilidades dentro de diferentes categorias e anunciar seus serviços dentro de cada uma delas.</p>
                                 <p className="cta-three__text">O usuário pode, ainda, solicitar serviços a diferentes profissionais.</p>
+                                <p className="cta-three__text"><b>A Duee Brasil é responsável pelo desenvolvimento da plataforma, branding, comunicação e campanhas de mídia.</b></p>
                             </div>
                         </div>
                     </div>
@@ -66,7 +68,7 @@ const Starbucks = () => (
             {/* etapas */}
 
             <section className="cta-two">
-                <img src="images/cta-moc-1-1.png" className="cta-two__moc" alt="Awesome Image" />
+                <img src={etap} className="cta-two__moc" alt="Awesome Image" />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
@@ -127,7 +129,7 @@ O layout foi refeito, foi realizada uma atualização de regras de negócio do s
             <section className="service-one" id="services">
                 <div className="container">
                     <div className="block-title text-center">
-                        <h2 className="block-title__title black-text-color">Tecnologias que usamos</h2>
+                        <h2 className="block-title__title light-text-color">Tecnologias que usamos</h2>
                     </div>
                     <div className="row" style={{ justifyContent: "space-around" }}>
                         <div className="col-lg-4">
@@ -141,6 +143,8 @@ O layout foi refeito, foi realizada uma atualização de regras de negócio do s
                                 <h3 className="service-one__title"><a href="#">React - Gatsby - GraphQL - JS</a></h3>
                                 <p className="service-one__text">Desenvolvimento do site e aplicação dos melhores frameworks do mercado, que foram desenvolvidos pelo Facebook e inovam o mercado de desenvolvimento.
                         Além disso são simples e têm capacidade de expansão que acompanha a evolução das tecnologias web.</p>
+                        
+                        
                             </div>
                         </div>
                         <div className="col-lg-4">

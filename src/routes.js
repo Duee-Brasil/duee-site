@@ -31,5 +31,10 @@ module.exports = [
   {
     path: '/oito',
     component: path.resolve(`src/pages/oito/oito.js`)
+  },
+  {
+    path: '/portfolio',
+    component: path.resolve(`src/pages/portfolio/portfolio.js`)
   }
+
 ]

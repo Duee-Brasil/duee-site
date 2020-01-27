@@ -24,8 +24,9 @@
 
     &__moc {
         position: absolute;
-        top: 290px;
-        right: 0;
+        top: 590px;
+        right: -50px;
+        max-width: 55vw;
     }
 
     &__single+&__single {
@@ -104,7 +105,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: transparent url(../../images/oito/cta-shape-1-1.png) center center no-repeat;
+            // background: transparent url(../../images/oito/cta-shape-1-1.png) center center no-repeat;
             background-size: 100%;
         }
 

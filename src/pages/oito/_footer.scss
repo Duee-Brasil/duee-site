@@ -3,22 +3,22 @@
 	position: relative;
     overflow: hidden;
 
-	&:before {
-		content: '';
-		width: 755px;
-		height: 755px;
-		border: 130px solid $thm_primary_color;
-		position: absolute;
-		top: -40%;
-		left: 75%;
-		border-radius: 50%;
-		transform-origin: center bottom;
-		animation-fill-mode: both;
-        animation-name: bounce;
-        animation-timing-function: ease-out;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-	}
+	// &:before {
+	// 	content: '';
+	// 	width: 755px;
+	// 	height: 755px;
+	// 	border: 130px solid $thm_primary_color;
+	// 	position: absolute;
+	// 	top: -40%;
+	// 	left: 75%;
+	// 	border-radius: 50%;
+	// 	transform-origin: center bottom;
+	// 	animation-fill-mode: both;
+    //     animation-name: bounce;
+    //     animation-timing-function: ease-out;
+    //     animation-duration: 5s;
+    //     animation-iteration-count: infinite;
+	// }
 
 	@keyframes CircleBounce {
 
