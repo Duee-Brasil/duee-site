@@ -1,9 +1,10 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import './portfolio.scss'
+import Case from '../../components/cases/cases'
 
 import banner from '../../images/portfolio/Banner Portfolio site.mp4'
 
@@ -53,7 +54,7 @@ const Portfolio = () => (
         {/* <!-- First --> */}
         <div className="row" id="portfolio">
             <div className="col-xs-12" id="banner">
-            <video src={banner} autoplay="true" muted="true" loop />
+                <video src={banner} autoplay="true" muted="true" loop />
             </div>
             <div className="row col-xs-12 clients">
                 <h2 className="col-xs-12 title">Clientes</h2>
@@ -97,13 +98,76 @@ const Portfolio = () => (
 
             </div>
             <div className="content row col-xs-12">
-                
-                <h2 className="title col-xs-12">Cases</h2>
-                        <div className="proj col-xs-12 col-sm-6 col-md-4 col-lg-3" style={{ backgroundImage: `url(${Rappi1})` }}><div>bal blabalb alba l</div></div>
-                        <div className="proj col-xs-12 col-sm-6 col-md-4 col-lg-3" style={{ backgroundImage: `url(${Rappi1})` }}><div>bal blabalb alba l</div></div>
-                        <div className="proj col-xs-12 col-sm-6 col-md-4 col-lg-3" style={{ backgroundImage: `url(${Rappi1})` }}><div>bal blabalb alba l</div></div>
-                        <div className="proj col-xs-12 col-sm-6 col-md-4 col-lg-3" style={{ backgroundImage: `url(${Rappi1})` }}><div>bal blabalb alba l</div></div>
 
+                <h2 className="title col-xs-12">Cases</h2>
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/capa_img_site_starbucks.jpg" link="https://portfolio.duee.com.br/project/panetone-starbucks/" title="Panetone Starbucks" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/capinha-casal.png" link="https://portfolio.duee.com.br/project/geladeiras-casal-garcia/" title="Geladeiras Casal Garcia" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/oito-capinha.png" link="https://portfolio.duee.com.br/project/desenvolvimento-site-oito/" title="Desenvolvimento Site Oito" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-4.png" link="https://portfolio.duee.com.br/project/vitrine-trapiche/" title="Vitrine Trapiche" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-3.png" link="https://portfolio.duee.com.br/project/vai-de-vedett/" title="vai de vedett" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-1.jpg" link="https://portfolio.duee.com.br/project/starbucks-dia-dos-namorados/" title="Starbucks dia dos namorados" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-1.png" link="https://portfolio.duee.com.br/project/made-no-lolla/" title="Made no lolla" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/1-banner.png" link="https://portfolio.duee.com.br/project/lancamento-blue-moon/" title="Lançamento Blue moon" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner.png" link="https://portfolio.duee.com.br/project/faxe-dinner-in-the-sky/" title="Faxe + Dinner in the sky" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner.jpg" link="https://portfolio.duee.com.br/project/ubus-digital/" title="Ubus Digital" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/Screen-Shot-2019-03-01-at-19.01.04.png" link="https://portfolio.duee.com.br/project/casal-garcia-campanha-de-midia/" title="Casal Garcia - campanha de mídia" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/Untitled-1.png" link="https://portfolio.duee.com.br/project/made-in-brazil-social-media/" title="MAde in brazil - social mídia" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/QUADRO-FAXE-pack-art-1.png" link="https://portfolio.duee.com.br/project/faxe-beer-kit-pdv/" title="Faxe - kit pdv" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/KV-CHANDON-MOOD_V2.png" link="https://portfolio.duee.com.br/project/chandon-realidade-aumentada/" title="Chandon - realidade aumentada" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/post-starbucks-butter-800x800-x2_02.png" link="https://portfolio.duee.com.br/project/starbucks-butter-frappuccino/" title="Starbucks - butter frappuccino" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Final_FAXE_MO.png" link="https://portfolio.duee.com.br/project/faxemakingof/" title="FAxe - making of happy hour viking" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/POST-CASALGARCIA-allpacks-800x800_V2.png" link="https://portfolio.duee.com.br/project/casal-garcia/" title="Casal Garcia - Social midia" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/Faxe_capa.png" link="https://portfolio.duee.com.br/project/faxe/" title="Faxe - social midia" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/3_1080x1350_Vedett_V1.png" link="https://portfolio.duee.com.br/project/vedett/" title="Vedett - social midia" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/Banner_via_news1080x675.png" link="https://portfolio.duee.com.br/project/starbucks-draft/" title="Starbucks draft" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/01/cover_suite.jpg" link="https://portfolio.duee.com.br/project/suite-49-travels-social-media-2/" title="suite 49 travels - social midia" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/01/trova01.jpg" link="https://portfolio.duee.com.br/project/website-trova-travertino/" title="Trova brasil - site" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/07/KV_ESTAGIO.jpg" link="https://portfolio.duee.com.br/project/respeita-o-estagiario-instituto-via-de-acesso-2/" title="REspeira o estágiario - instituto via de acesso" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
+                <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
             </div>
         </div>
     </Layout >
