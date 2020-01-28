@@ -50,11 +50,25 @@ a:visited {
 .block-title {
     margin-bottom: 60px;
     &__title {
-        margin: 0;
         margin-top: -10px;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 5px;
         font-size: 60px;
         // font-family: $thm_font_extrabold;
         letter-spacing: -0.04em;
+
+        @media (max-width: 1200px) {
+            font-size: 55px;
+        }
+    
+        @media (max-width: 768px) {
+            font-size: 50px;
+        }
+    
+        @media (max-width: 576px) {
+            font-size: 45px;
+        }
     }
 }
 

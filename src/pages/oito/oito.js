@@ -24,9 +24,9 @@ const Starbucks = () => (
         <div classNameName="row" id="oitoapp">
             <section className="banner-one" id="home">
 
-                <img src={globo} className="banner-one__globe" alt="Awesome Image" />
-                <img src={rocket} className="banner-one__rocket" alt="Awesome Image" />
-                <img src={imghead} className="banner-one__moc" alt="Awesome Image" />
+                <img src={globo} className="banner-one__globe" alt="globo" />
+                <img src={rocket} className="banner-one__rocket" alt="rocket" />
+                <img src={imghead} className="banner-one__moc" alt="app" />
                 <div className="container">
                     <div className="row">
                         <div className="col-xs-12 col-md-6">
@@ -45,12 +45,10 @@ const Starbucks = () => (
             <section className="cta-three" id="about">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6">
-                            <div className="cta-three__image">
-                                <img src={cta} alt="Awesome Image" />
-                            </div>
+                        <div className="col-xs-6 col-sm-6 col-md-4 col-lg-6 col-xl-6">
+                            <img src={cta} alt="vector" className="cta-three__image" />
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                             <div className="cta-three__content">
                                 <div className="block-title text-left">
                                     <h2 className="block-title__title black-text-color">O que é a OITO?</h2>
@@ -68,17 +66,17 @@ const Starbucks = () => (
             {/* etapas */}
 
             <section className="cta-two">
-                <img src={etap} className="cta-two__moc" alt="Awesome Image" />
+                <img src={etap} className="cta-two__moc" alt="moc" />
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6">
+                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                             <div className="cta-two__block">
                                 <div className="block-title text-left">
                                     <h2 className="block-title__title black-text-color">Etapas do <br /> projeto</h2>
                                 </div>
                                 <div className="cta-two__single">
                                     <div className="cta-two__icon">
-                                    <i class="far fa-sticky-note"></i>
+                                        <i class="far fa-sticky-note"></i>
                                     </div>
                                     <div className="cta-two__content">
                                         <h3 className="cta-two__title">Briefing</h3>
@@ -87,7 +85,7 @@ const Starbucks = () => (
                                 </div>
                                 <div className="cta-two__single">
                                     <div className="cta-two__icon">
-                                    <i class="far fa-calendar-alt"></i>
+                                        <i class="far fa-calendar-alt"></i>
                                     </div>
                                     <div className="cta-two__content">
                                         <h3 className="cta-two__title">Planejamento</h3>
@@ -96,7 +94,7 @@ const Starbucks = () => (
                                 </div>
                                 <div className="cta-two__single">
                                     <div className="cta-two__icon">
-                                    <i class="fas fa-hashtag"></i>
+                                        <i class="fas fa-hashtag"></i>
                                     </div>
                                     <div className="cta-two__content">
                                         <h3 className="cta-two__title">Desenvolvimento</h3>
@@ -107,7 +105,7 @@ Então foram realizadas as melhorias UI e UX.</p>
                                 </div>
                                 <div className="cta-two__single">
                                     <div className="cta-two__icon">
-                                    <i class="fas fa-universal-access"></i>
+                                        <i class="fas fa-universal-access"></i>
                                     </div>
                                     <div className="cta-two__content">
                                         <h3 className="cta-two__title">Melhorias</h3>
@@ -127,35 +125,33 @@ O layout foi refeito, foi realizada uma atualização de regras de negócio do s
             {/* tecnologias */}
 
             <section className="service-one" id="services">
-                <div className="container">
+                <div className="container"  style={{ maxWidth: "90vw" }}>
                     <div className="block-title text-center">
                         <h2 className="block-title__title light-text-color">Tecnologias que usamos</h2>
                     </div>
-                    <div className="row" style={{ justifyContent: "space-around" }}>
-                        <div className="col-lg-4">
+                    <div className="row" style={{ justifyContent: "space-around", maxWidth: "100vw", padding: 'auto' }}>
+                        <div className="col-xs-12 col-sm-8 col-md-5 col-lg-4 col-xl-4" style={{ marginBottom: "30px" }}>
                             <div className="service-one__single">
-                                <span className="service-one__dot-1"></span>
-                                <span className="service-one__dot-2"></span>
-                                <span className="service-one__dot-3"></span>
+                                <span className="service-one__dot-1" />
+                                <span className="service-one__dot-2" />
+                                <span className="service-one__dot-3" />
                                 <div className="service-one__icon">
-                                    <i class="fab fa-react"></i>
+                                    <i class="fab fa-react" />
                                 </div>
-                                <h3 className="service-one__title"><a href="#">React - Gatsby - GraphQL - JS</a></h3>
+                                <h3 className="service-one__title">React - Gatsby - GraphQL - JS</h3>
                                 <p className="service-one__text">Desenvolvimento do site e aplicação dos melhores frameworks do mercado, que foram desenvolvidos pelo Facebook e inovam o mercado de desenvolvimento.
                         Além disso são simples e têm capacidade de expansão que acompanha a evolução das tecnologias web.</p>
-                        
-                        
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-xs-12 col-sm-8 col-md-5 col-lg-4 col-xl-4" style={{ marginBottom: "30px" }}>
                             <div className="service-one__single">
-                                <span className="service-one__dot-1"></span>
-                                <span className="service-one__dot-2"></span>
-                                <span className="service-one__dot-3"></span>
+                                <span className="service-one__dot-1" />
+                                <span className="service-one__dot-2" />
+                                <span className="service-one__dot-3" />
                                 <div className="service-one__icon">
-                                    <i class="fab fa-wordpress-simple"></i>
+                                    <i class="fab fa-wordpress-simple" />
                                 </div>
-                                <h3 className="service-one__title"><a href="#">Wordpress</a></h3>
+                                <h3 className="service-one__title">Wordpress</h3>
                                 <p className="service-one__text">Ferramenta de fácil manutenção, indicada para sites estáticos e blogs.
                         Uma alternativa rápida e barata para quem não necessita de complexidade em seu site.</p>
                             </div>
@@ -170,13 +166,13 @@ O layout foi refeito, foi realizada uma atualização de regras de negócio do s
                         <div className="block-title">
                             <h2 className="block-title__title">Quer saber mais <br /> sobre a Oito?</h2>
                         </div>
-                        <a href="https://oito.app" rel="noopener noreferrer" target="_blank" className="thm-btn cta-one__btn light-text-color">Visite o site</a>
+                        <a href="https://oito.app" rel="noopener noreferrer" target="_blank" className="thm-btn cta-one__btn light-text-color" style={{ fontSize: "2em" }}>Visite o site</a>
                     </div>
                 </div>
 
             </footer>
         </div>
-        <a href="#" data-target="html" className="scroll-to-target scroll-to-top"><i className="fa fa-angle-up"></i></a>
+        <a href="#home" className="scroll-to-target scroll-to-top"><i className="fa fa-angle-up"></i></a>
         {/* <!-- /.scroll-to-top --> */}
 
     </Layout >

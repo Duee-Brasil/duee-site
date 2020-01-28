@@ -47,7 +47,7 @@ import clt36 from '../../images/portfolio/clients/Prancheta 1 cópia 35.png'
 
 import Rappi1 from '../../images/starbucks/Posts/26_03.png'
 
-const Starbucks = () => (
+const Portfolio = () => (
     <Layout>
         <SEO title="Starbucks" />
         {/* <!-- First --> */}
@@ -109,4 +109,4 @@ const Starbucks = () => (
     </Layout >
 )
 
-export default Starbucks
+export default Portfolio
