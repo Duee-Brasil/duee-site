@@ -19,11 +19,11 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Duee Brasil`,
-        short_name: `live agency`,
+        short_name: `Duee Brasil`,
         start_url: `/`,
-        background_color: `#424242`,
+        background_color: `#ffffff`,
         theme_color: `#424242`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/Logo_Claro-leao.png`, // This path is relative to the root of the site.
       },
     },
@@ -36,6 +36,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

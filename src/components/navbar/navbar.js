@@ -53,7 +53,8 @@ export default class Navbar extends React.Component {
               <Link to="/fazemos">Nosso Trabalho</Link>
             </li> */}
             <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://portfolio.duee.com.br">Portfólio</a>
+            <Link to="/portfolio">Portfólio</Link>
+              {/* <a target="_blank" rel="noopener noreferrer" href="https://portfolio.duee.com.br">Portfólio</a> */}
             </li>
             <li>
               <a href="https://dueetando.com.br" target="_blank" rel="noopener noreferrer">Dueetando</a>
