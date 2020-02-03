@@ -16,46 +16,6 @@
 
     }
 
-
-
-    // div {
-
-    //     -webkit-transition: 1000ms ease-in-out;
-    //     -moz-transition   : 1000ms ease-in-out;
-    //     -ms-transition    : 1000ms ease-in-out;
-    //     -o-transition     : 1000ms ease-in-out;
-    //     transition        : 1000ms ease-in-out;
-
-    //     @for $i from 1 through 85 {
-    //         &:nth-child(#{$i}) {
-    //             -moz-animation-delay    : $i * 300ms;
-    //             -webkit-animation-delay : $i * 300ms;
-    //             animation-delay         : $i * 300ms;
-    //             transition-delay        : $i * 300ms;
-    //             -moz-transition-delay   : $i * 300ms;
-    //             -webkit-transition-delay: $i * 300ms;
-    //         }
-    //     }
-
-
-    //     // &:last-child {
-    //     //     max-width: 1200px;
-    //     // }
-    // }
-
-    // .title {
-    //     width     : 100%;
-    //     text-align: center;
-    //     color     : black;
-    //     margin    : 50px;
-    // }
-
-    // .content {
-    //     z-index   : 100;
-    //     // width  : 100%;
-
-
-    // }
 }
 
 
@@ -73,7 +33,7 @@
     width   : 100vw;
 }
 
-.ib-main a {
+.ib-main .ib-content {
     float             : left;
     width             : 240px;
     height            : 210px;
@@ -111,7 +71,7 @@
 //     opacity: 0.3;
 // }
 
-.ib-main a .image {
+.ib-main .ib-content .image {
     // opacity         : 0.95;
     -webkit-transition : all 0.2s ease-in-out;
     -moz-transition    : all 0.2s ease-in-out;
@@ -126,7 +86,7 @@
     background-position: center;
 }
 
-.ib-main a .ovrlyT {
+.ib-main .ib-content .ovrlyT {
     background        : rgba(0, 0, 0, 0.45);
     height            : 100%;
     left              : -100%;
@@ -139,7 +99,7 @@
     transition        : all 0.3s;
 }
 
-.ib-main a .ovrlyB {
+.ib-main .ib-content .ovrlyB {
     background        : rgba(0, 0, 0, 0.45);
     height            : 100%;
     left              : 100%;
@@ -156,17 +116,17 @@
 //     opacity: 0.3;
 // }
 
-.ib-main a:hover .ovrlyT {
+.ib-main .ib-content:hover .ovrlyT {
     left: 0;
     top : 0;
 }
 
-.ib-main a:hover .ovrlyB {
+.ib-main .ib-content:hover .ovrlyB {
     left: 0;
     top : 0;
 }
 
-.ib-main>a>span {
+.ib-main>.ib-content>span {
     display           : block;
     position          : absolute;
     width             : 100%;
@@ -187,15 +147,96 @@
     transition        : all 0.2s ease-in-out;
 }
 
-.ib-main a:hover>span {
+.ib-main .ib-content:hover>span {
     bottom: 0px;
 }
 
-.ib-content-full{
-    text-transform: none;
-    line-height: 26px;
-    margin: 0px 40px;
-    border-top: 1px solid #333;
-    padding: 20px 0px;
-	font-size: 16px;
+.ib-content-full {
+    position        : absolute;
+    left            : 50%;
+    top             : 50%;
+    text-transform  : none;
+    line-height     : 26px;
+    // margin       : 0px 40px;
+    border-top      : 1px solid #333;
+    // padding      : 20px 0px;
+    font-size       : 16px;
+    z-index         : 10000;
+    visibility      : hidden;
+    width           : 0;
+    height          : 0;
+    transition      : all ease 1s;
+    background-color: black;
+
+    // &[show=true] {
+    //     width: 100vw;
+    // }
+
+    .closebar {
+        text-align: right;
+        width     : 100%;
+
+        padding  : 0.4% 2%;
+        font-size: 1.5em;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        z-index: 10100;
+        border: none;
+
+    }
+
+}
+
+@mixin position-center($text-align: center) {
+    position  : absolute;
+    top       : 0;
+    bottom    : 0;
+    left      : 0;
+    right     : 0;
+    margin    : auto;
+    text-align: $text-align;
+}
+
+.loading {
+    // position  : fixed;
+    // top       : 0;
+    // left      : 0;
+    width        : 100%;
+    height       : 100%;
+    // background: #000;
+    z-index   : 10001;
+}
+
+.loading-text {
+    @include position-center;
+    width      : 100%;
+    height     : 100px;
+    line-height: 100px;
+    z-index   : 10010;
+
+    span {
+        display: inline-block;
+        margin : 0 5px;
+        color  : #fff;
+
+        @for $i from 0 through 6 {
+            &:nth-child(#{$i + 1}) {
+                // filter   : blur(0px);
+                animation: blur-text 1.5s (#{$i/5}s) infinite linear alternate;
+            }
+        }
+    }
+}
+
+@keyframes blur-text {
+    0% {
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(4px);
+    }
 }

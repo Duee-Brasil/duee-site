@@ -6,104 +6,158 @@ import './portfolio.scss'
 import Case from '../../components/cases/cases'
 
 export default class Portfolio extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            show: false,
+            link: ''
+        }
+
+        this.showModal = this.showModal.bind(this)
 
 
-render() {
-    return (
-        <Layout>
-            <SEO title="Portfólio" />
-            {/* <!-- First --> */}
-            <div className="row ib-main-wrapper" id="portfolio">
-                {/* <div className="col-xs-12" id="banner">
+    }
+
+    showModal = (link, e) => {
+
+        this.setState({ link })
+        document.querySelector(".loading").style.visibility = 'visible'
+        if (document.querySelector(".ib-content-full")) {
+            if (document.querySelector(".ib-content-full").clientWidth === 0) {
+                document.querySelector(".ib-content-full").style.visibility = 'visible'
+                document.querySelector(".ib-content-full").style.width = '100vw'
+                document.querySelector(".ib-content-full").style.height = '100vh'
+                document.querySelector(".ib-content-full").style.top = '0'
+                document.querySelector(".ib-content-full").style.left = '0'
+            }
+            if (document.querySelector(".ib-content-full").clientWidth > 0) {
+                document.querySelector(".ib-content-full").style.visibility = 'hidden'
+                document.querySelector(".ib-content-full").style.width = '0'
+                document.querySelector(".ib-content-full").style.height = '0'
+                document.querySelector(".ib-content-full").style.top = '50%'
+                document.querySelector(".ib-content-full").style.left = '50%'
+            }
+        }
+
+    }
+
+    loadPage = () => {
+        document.querySelector(".loading").style.visibility = 'hidden'
+    }
+
+
+
+    render() {
+        return (
+            <Layout>
+                <SEO title="Portfólio" />
+                {/* <!-- First --> */}
+                <div className="row ib-main-wrapper" id="portfolio">
+                    {/* <div className="col-xs-12" id="banner">
                 <video src={banner} autoplay="true" muted="true" loop />
             </div> */}
-                <div className="content row col-xs-12 ib-main">
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/capa_img_site_starbucks.jpg" link="https://portfolio.duee.com.br/project/panetone-starbucks/" title="Panetone Starbucks" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" link="https://portfolio.duee.com.br/project/black-friday-made/" title="Black Friday Made" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/capinha-casal.png" link="https://portfolio.duee.com.br/project/geladeiras-casal-garcia/" title="Geladeiras Casal Garcia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/oito-capinha.png" link="https://portfolio.duee.com.br/project/desenvolvimento-site-oito/" title="Desenvolvimento Site Oito" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-4.png" link="https://portfolio.duee.com.br/project/vitrine-trapiche/" title="Vitrine Trapiche" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-3.png" link="https://portfolio.duee.com.br/project/vai-de-vedett/" title="vai de vedett" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-1.jpg" link="https://portfolio.duee.com.br/project/starbucks-dia-dos-namorados/" title="Starbucks dia dos namorados" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-1.png" link="https://portfolio.duee.com.br/project/made-no-lolla/" title="Made no lolla" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/1-banner.png" link="https://portfolio.duee.com.br/project/lancamento-blue-moon/" title="Lançamento Blue moon" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner.png" link="https://portfolio.duee.com.br/project/faxe-dinner-in-the-sky/" title="Faxe + Dinner in the sky" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner.jpg" link="https://portfolio.duee.com.br/project/ubus-digital/" title="Ubus Digital" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/Screen-Shot-2019-03-01-at-19.01.04.png" link="https://portfolio.duee.com.br/project/casal-garcia-campanha-de-midia/" title="Casal Garcia - campanha de mídia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/Untitled-1.png" link="https://portfolio.duee.com.br/project/made-in-brazil-social-media/" title="MAde in brazil - social mídia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/QUADRO-FAXE-pack-art-1.png" link="https://portfolio.duee.com.br/project/faxe-beer-kit-pdv/" title="Faxe - kit pdv" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/KV-CHANDON-MOOD_V2.png" link="https://portfolio.duee.com.br/project/chandon-realidade-aumentada/" title="Chandon - realidade aumentada" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/post-starbucks-butter-800x800-x2_02.png" link="https://portfolio.duee.com.br/project/starbucks-butter-frappuccino/" title="Starbucks - butter frappuccino" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Final_FAXE_MO.png" link="https://portfolio.duee.com.br/project/faxemakingof/" title="FAxe - making of happy hour viking" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/POST-CASALGARCIA-allpacks-800x800_V2.png" link="https://portfolio.duee.com.br/project/casal-garcia/" title="Casal Garcia - Social midia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/Faxe_capa.png" link="https://portfolio.duee.com.br/project/faxe/" title="Faxe - social midia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/3_1080x1350_Vedett_V1.png" link="https://portfolio.duee.com.br/project/vedett/" title="Vedett - social midia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/Banner_via_news1080x675.png" link="https://portfolio.duee.com.br/project/starbucks-draft/" title="Starbucks draft" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/01/cover_suite.jpg" link="https://portfolio.duee.com.br/project/suite-49-travels-social-media-2/" title="suite 49 travels - social midia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/01/trova01.jpg" link="https://portfolio.duee.com.br/project/website-trova-travertino/" title="Trova brasil - site" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/07/KV_ESTAGIO.jpg" link="https://portfolio.duee.com.br/project/respeita-o-estagiario-instituto-via-de-acesso-2/" title="REspeira o estágiario - instituto via de acesso" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/07/4c128dec-7acb-445e-b279-ffacbfb5d663.jpeg" link="https://portfolio.duee.com.br/project/starbucks-roadshow-winter/" title="Starbucks roadshow winter" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/07/site_via01.jpg" link="https://portfolio.duee.com.br/project/plataforma-digital-instituto-via-de-acesso/" title="Plataforma digital - instituto via de acesso" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/05/Captura-de-Tela-2017-05-26-às-16.08.52.jpg" link="https://portfolio.duee.com.br/project/website-codorniu/" title="Site Codorníu" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/05/cover_Sene.jpg" link="https://portfolio.duee.com.br/project/website-sene/" title="Site Sene" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/03/logo_Starbucks.jpg" link="https://portfolio.duee.com.br/project/starbucks-jogo-das-estrelas-2017/" title="Starbucks - Jogo das estrelas 2017" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/03/IMG_4273.jpg" link="https://portfolio.duee.com.br/project/1007/" title="Vedett - vedett on the road" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/03/31ab6449958441.58c2f4e5c9e0e.jpg" link="https://portfolio.duee.com.br/project/codorniu-web-serie-drinks-anatomy/" title="codorníu - web serie drink`s anatomy" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/11/Petz_Img_Cover.jpg" link="https://portfolio.duee.com.br/project/petz-tv-petz-2/" title="Petz - tv petz" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/11/img_3921.jpg" link="https://portfolio.duee.com.br/project/digital-day-fca/" title="FCA - digital day" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/11/KV_TNT_V2.jpg" link="https://portfolio.duee.com.br/project/sua-cara-sua-luta-tnt-no-spfw/" title="TNT no SPFW - sua cara sua luta" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/07/cover_pg_adv-copy.jpg" link="https://portfolio.duee.com.br/project/pg-advogados-social-media/" title="PG advogados - social midia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/06/IMG_1495.jpg" link="https://portfolio.duee.com.br/project/codorniu-web-serie-somos-codorniu/" title="codorníu - web serie somos codorníu" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/06/03-1.jpg" link="https://portfolio.duee.com.br/project/hersheys-acao-de-sampling/" title="hershey`s - ação de sampling" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/06/01.jpg" link="https://portfolio.duee.com.br/project/bbc-espacos-cbeebieslivraria-cultura/" title="BBc - espaços cbeebies/livraria cultura" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/06/IMG_2097.jpg" link="https://portfolio.duee.com.br/project/lancamento-do-mobile-view-abril/" title="Abril - lançamento do mobile view abril" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/bauducco1_avatar.jpg" link="https://portfolio.duee.com.br/project/bauducco-teatro-infantil-e-oficina-roll/" title="Bauducco - teatro infantil e oficina roll" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-26-at-19.31.11.png" link="https://portfolio.duee.com.br/project/revista-veja-rio-450-anos/" title="Revista veja - rio 450 anos" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Consul1.jpg" link="https://portfolio.duee.com.br/project/showroom-consul/" title="Consul - Showroom" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/cover_bombardier.jpg" link="https://portfolio.duee.com.br/project/bombardier-social-media/" title="Bombardier - social midia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/codorniu_avatar.jpg" link="https://portfolio.duee.com.br/project/cointreau-social-media/" title="Cointreau - social midia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/vedett01-1.jpg" link="https://portfolio.duee.com.br/project/vedett-social-media/" title="Vedett - social midia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-19-at-16.19.23.png" link="https://portfolio.duee.com.br/project/grupo-fit-social-media/" title="Grupo fit - social midia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/fox1-1.jpg" link="https://portfolio.duee.com.br/project/fox-ccxp-2014/" title="fox - ccxp 2014" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/norpal1-1.jpg" link="https://portfolio.duee.com.br/project/norpal-web/" title="Norpal - site" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/intel5.jpg" link="https://portfolio.duee.com.br/project/intel-racing-campanha-de-incentivo/" title="Intel racing - campanha de incentivo" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-19-at-15.24.40.png" link="https://portfolio.duee.com.br/project/clight-movimento-3x1/" title="Clight - movimento 3x1" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/DSC06251.jpg" link="https://portfolio.duee.com.br/project/ativacoes-walmart-jimmy-click-garfo-e-faca/" title="Ativações Walmart - Jimmy click, garfo e faca" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2014-03-25-at-19.39.52.png" link="https://portfolio.duee.com.br/project/crowshow-website/" title="Crowshow - site" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/mark-gatiss-bbc.jpg" link="https://portfolio.duee.com.br/project/evento-wild-brazil-mark-gatiss-bbc/" title="bbc - evento wild brazil/mark gatiss" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/CorridaWalmart2.jpg" link="https://portfolio.duee.com.br/project/corrida-walmart-2013/" title="Corrida Walmart 2013" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/bauducco01-2.jpg" link="https://portfolio.duee.com.br/project/ativacao-de-sao-joao-bauducco/" title="bauducco - ativação são joão" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Habro-Playskool-Banner-Poppin-Park-1.jpg" link="https://portfolio.duee.com.br/project/hotsite-playskool-hasbro/" title="Hasbro - Hotsite playskool" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/siteFinalV2.jpg" link="https://portfolio.duee.com.br/project/hotsite-littlelest-pet-shop-hasbro/" title="hasbro - hotsite littlelest pet shop" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/CASCOLA.jpg" link="https://portfolio.duee.com.br/project/cascola-digital/" title="Cascola digital" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/bauducco01-1.jpg" link="https://portfolio.duee.com.br/project/bauducco-social-media/" title="bauducco - social midia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/PILAO.jpg" link="https://portfolio.duee.com.br/project/acao-de-checkout-walmart-cafe-pilao/" title="café pilão - ação de checkout walmart" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/calminex01.jpg" link="https://portfolio.duee.com.br/project/estande-calminex/" title="estande calminex" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/HALLS.jpg" link="https://portfolio.duee.com.br/project/acoes-de-sampling-mondelez/" title="mondelez - ações de sampling" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/NET-BBC.jpg" link="https://portfolio.duee.com.br/project/convencao-net-bbc-hd/" title="bbc hd - convenção net" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/sentirbem.jpg" link="https://portfolio.duee.com.br/project/acoes-de-sampling-sentir-bem/" title="Sentir bem - ações de sampling" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/work_gde.jpg" link="https://portfolio.duee.com.br/project/farmacias-walmart-acoes-de-sampling/" title="farmacias walmart - ações de sampling" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/kimberly-job241.png" link="https://portfolio.duee.com.br/project/flashmob-intimus/" title="Flashmob intimus" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/huggies_gde-1.jpg" link="https://portfolio.duee.com.br/project/huggies-turma-da-monica/" title="huggies turma da monica" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/sauza01.jpg" link="https://portfolio.duee.com.br/project/sauza-tequila-social-media/" title="sauza tequila - social midia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/bauducco02.jpg" link="https://portfolio.duee.com.br/project/acoes-de-sampling-bauducco/" title="Bauducco - ações de sampling" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/aes01.jpg" link="https://portfolio.duee.com.br/project/smart-house-aes-eletropaulo/" title="AES eletropaulo - smart house" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Layout_Hotsite_Conceito_02.jpg" link="https://portfolio.duee.com.br/project/condominio-club-life-exto/" title="exto" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-18-at-16.57.22.png" link="https://portfolio.duee.com.br/project/intimus-evolution-sampling/" title="intimus evolution sampling" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/serasa.jpg" link="https://portfolio.duee.com.br/project/serasa-experian/" title="serasa experian" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/skpf-1.jpg" link="https://portfolio.duee.com.br/project/schwarzkopf-social-media/" title="schwarzkopf - social midia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/bbc01.jpg" link="https://portfolio.duee.com.br/project/bbc-hd-social-media/" title="bbc hd - social midia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-18-at-16.28.51.png" link="https://portfolio.duee.com.br/project/nickelodeon/" title="Nickelodeon - social midia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/veja01.jpg" link="https://portfolio.duee.com.br/project/veja-acao-em-pdv/" title="Veja - ação em pdv" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/VH1-FACEBOOK.jpg" link="https://portfolio.duee.com.br/project/vh1-social-media/" title="vh1 - social midia" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/wm02.jpg" link="https://portfolio.duee.com.br/project/walmart-acoes-de-degustacao-e-sampling/" title="walmart - ações de degustação e sampling" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-18-at-16.14.55.png" link="https://portfolio.duee.com.br/project/divulgacao-do-site-walmart-com/" title="Walmart.com - divulgação do site" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-18-at-16.03.03.png" link="https://portfolio.duee.com.br/project/acoes-de-verao-da-farmacia-walmart/" title="farmacia walmart - ações de verão" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-18-at-15.30.17.png" link="https://portfolio.duee.com.br/project/inauguracoes-de-postos-walmart-em-todo-brasil/" title="walmart - inaugiração dos postos walmart em todo brasil" />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/dest-festa.jpg" link="https://portfolio.duee.com.br/project/festa-de-fim-de-ano-walmart-brasil/" title="Walmart - festa de fim de ano" />
+                    <div className="ib-content-full">
+                        <div className="closebar" onClick={() => this.showModal()}><i className="fas fa-times" /></div>
+                        <iframe src={this.state.link} onLoad={() => this.loadPage()} />
+                        <div className="loading">
+                            <div className="loading-text">
+                                <span className="loading-text-words">L</span>
+                                <span className="loading-text-words">O</span>
+                                <span className="loading-text-words">A</span>
+                                <span className="loading-text-words">D</span>
+                                <span className="loading-text-words">I</span>
+                                <span className="loading-text-words">N</span>
+                                <span className="loading-text-words">G</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="content row col-xs-12 ib-main">
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/capa_img_site_starbucks.jpg" title="Panetone Starbucks" open={() => this.showModal("https://portfolio.duee.com.br/project/panetone-starbucks/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" title="Black Friday Made" open={() => this.showModal("https://portfolio.duee.com.br/project/black-friday-made/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/capinha-casal.png" title="Geladeiras Casal Garcia" open={() => this.showModal("https://portfolio.duee.com.br/project/geladeiras-casal-garcia/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/oito-capinha.png" title="Desenvolvimento Site Oito" open={() => this.showModal("https://portfolio.duee.com.br/project/desenvolvimento-site-oito/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-4.png" title="Vitrine Trapiche" open={() => this.showModal("https://portfolio.duee.com.br/project/vitrine-trapiche/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-3.png" title="vai de vedett" open={() => this.showModal("https://portfolio.duee.com.br/project/vai-de-vedett/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-1.jpg" title="Starbucks dia dos namorados" open={() => this.showModal("https://portfolio.duee.com.br/project/starbucks-dia-dos-namorados/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-1.png" title="Made no lolla" open={() => this.showModal("https://portfolio.duee.com.br/project/made-no-lolla/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/1-banner.png" title="Lançamento Blue moon" open={() => this.showModal("https://portfolio.duee.com.br/project/lancamento-blue-moon/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner.png" title="Faxe + Dinner in the sky" open={() => this.showModal("https://portfolio.duee.com.br/project/faxe-dinner-in-the-sky/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner.jpg" title="Ubus Digital" open={() => this.showModal("https://portfolio.duee.com.br/project/ubus-digital/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/Screen-Shot-2019-03-01-at-19.01.04.png" title="Casal Garcia - campanha de mídia" open={() => this.showModal("https://portfolio.duee.com.br/project/casal-garcia-campanha-de-midia/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/Untitled-1.png" title="MAde in brazil - social mídia" open={() => this.showModal("https://portfolio.duee.com.br/project/made-in-brazil-social-media/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/QUADRO-FAXE-pack-art-1.png" title="Faxe - kit pdv" open={() => this.showModal("https://portfolio.duee.com.br/project/faxe-beer-kit-pdv/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/KV-CHANDON-MOOD_V2.png" title="Chandon - realidade aumentada" open={() => this.showModal("https://portfolio.duee.com.br/project/chandon-realidade-aumentada/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/post-starbucks-butter-800x800-x2_02.png" title="Starbucks - butter frappuccino" open={() => this.showModal("https://portfolio.duee.com.br/project/starbucks-butter-frappuccino/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Final_FAXE_MO.png" title="FAxe - making of happy hour viking" open={() => this.showModal("https://portfolio.duee.com.br/project/faxemakingof/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/POST-CASALGARCIA-allpacks-800x800_V2.png" title="Casal Garcia - Social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/casal-garcia/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/Faxe_capa.png" title="Faxe - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/faxe/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/3_1080x1350_Vedett_V1.png" title="Vedett - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/vedett/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/Banner_via_news1080x675.png" title="Starbucks draft" open={() => this.showModal("https://portfolio.duee.com.br/project/starbucks-draft/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/01/cover_suite.jpg" title="suite 49 travels - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/suite-49-travels-social-media-2/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/01/trova01.jpg" title="Trova brasil - site" open={() => this.showModal("https://portfolio.duee.com.br/project/website-trova-travertino/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/07/KV_ESTAGIO.jpg" title="REspeira o estágiario - instituto via de acesso" open={() => this.showModal("https://portfolio.duee.com.br/project/respeita-o-estagiario-instituto-via-de-acesso-2/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/07/4c128dec-7acb-445e-b279-ffacbfb5d663.jpeg" title="Starbucks roadshow winter" open={() => this.showModal("https://portfolio.duee.com.br/project/starbucks-roadshow-winter/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/07/site_via01.jpg" title="Plataforma digital - instituto via de acesso" open={() => this.showModal("https://portfolio.duee.com.br/project/plataforma-digital-instituto-via-de-acesso/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/05/Captura-de-Tela-2017-05-26-às-16.08.52.jpg" title="Site Codorníu" open={() => this.showModal("https://portfolio.duee.com.br/project/website-codorniu/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/05/cover_Sene.jpg" title="Site Sene" open={() => this.showModal("https://portfolio.duee.com.br/project/website-sene/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/03/logo_Starbucks.jpg" title="Starbucks - Jogo das estrelas 2017" open={() => this.showModal("https://portfolio.duee.com.br/project/starbucks-jogo-das-estrelas-2017/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/03/IMG_4273.jpg" title="Vedett - vedett on the road" open={() => this.showModal("https://portfolio.duee.com.br/project/1007/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/03/31ab6449958441.58c2f4e5c9e0e.jpg" title="codorníu - web serie drink`s anatomy" open={() => this.showModal("https://portfolio.duee.com.br/project/codorniu-web-serie-drinks-anatomy/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/11/Petz_Img_Cover.jpg" title="Petz - tv petz" open={() => this.showModal("https://portfolio.duee.com.br/project/petz-tv-petz-2/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/11/img_3921.jpg" title="FCA - digital day" open={() => this.showModal("https://portfolio.duee.com.br/project/digital-day-fca/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/11/KV_TNT_V2.jpg" title="TNT no SPFW - sua cara sua luta" open={() => this.showModal("https://portfolio.duee.com.br/project/sua-cara-sua-luta-tnt-no-spfw/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/07/cover_pg_adv-copy.jpg" title="PG advogados - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/pg-advogados-social-media/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/06/IMG_1495.jpg" title="codorníu - web serie somos codorníu" open={() => this.showModal("https://portfolio.duee.com.br/project/codorniu-web-serie-somos-codorniu/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/06/03-1.jpg" title="hershey`s - ação de sampling" open={() => this.showModal("https://portfolio.duee.com.br/project/hersheys-acao-de-sampling/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/06/01.jpg" title="BBc - espaços cbeebies/livraria cultura" open={() => this.showModal("https://portfolio.duee.com.br/project/bbc-espacos-cbeebieslivraria-cultura/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/06/IMG_2097.jpg" title="Abril - lançamento do mobile view abril" open={() => this.showModal("https://portfolio.duee.com.br/project/lancamento-do-mobile-view-abril/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/bauducco1_avatar.jpg" title="Bauducco - teatro infantil e oficina roll" open={() => this.showModal("https://portfolio.duee.com.br/project/bauducco-teatro-infantil-e-oficina-roll/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-26-at-19.31.11.png" title="Revista veja - rio 450 anos" open={() => this.showModal("https://portfolio.duee.com.br/project/revista-veja-rio-450-anos/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Consul1.jpg" title="Consul - Showroom" open={() => this.showModal("https://portfolio.duee.com.br/project/showroom-consul/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/cover_bombardier.jpg" title="Bombardier - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/bombardier-social-media/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/codorniu_avatar.jpg" title="Cointreau - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/cointreau-social-media/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/vedett01-1.jpg" title="Vedett - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/vedett-social-media/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-19-at-16.19.23.png" title="Grupo fit - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/grupo-fit-social-media/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/fox1-1.jpg" title="fox - ccxp 2014" open={() => this.showModal("https://portfolio.duee.com.br/project/fox-ccxp-2014/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/norpal1-1.jpg" title="Norpal - site" open={() => this.showModal("https://portfolio.duee.com.br/project/norpal-web/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/intel5.jpg" title="Intel racing - campanha de incentivo" open={() => this.showModal("https://portfolio.duee.com.br/project/intel-racing-campanha-de-incentivo/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-19-at-15.24.40.png" title="Clight - movimento 3x1" open={() => this.showModal("https://portfolio.duee.com.br/project/clight-movimento-3x1/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/DSC06251.jpg" title="Ativações Walmart - Jimmy click, garfo e faca" open={() => this.showModal("https://portfolio.duee.com.br/project/ativacoes-walmart-jimmy-click-garfo-e-faca/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2014-03-25-at-19.39.52.png" title="Crowshow - site" open={() => this.showModal("https://portfolio.duee.com.br/project/crowshow-website/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/mark-gatiss-bbc.jpg" title="bbc - evento wild brazil/mark gatiss" open={() => this.showModal("https://portfolio.duee.com.br/project/evento-wild-brazil-mark-gatiss-bbc/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/CorridaWalmart2.jpg" title="Corrida Walmart 2013" open={() => this.showModal("https://portfolio.duee.com.br/project/corrida-walmart-2013/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/bauducco01-2.jpg" title="bauducco - ativação são joão" open={() => this.showModal("https://portfolio.duee.com.br/project/ativacao-de-sao-joao-bauducco/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Habro-Playskool-Banner-Poppin-Park-1.jpg" title="Hasbro - Hotsite playskool" open={() => this.showModal("https://portfolio.duee.com.br/project/hotsite-playskool-hasbro/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/siteFinalV2.jpg" title="hasbro - hotsite littlelest pet shop" open={() => this.showModal("https://portfolio.duee.com.br/project/hotsite-littlelest-pet-shop-hasbro/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/CASCOLA.jpg" title="Cascola digital" open={() => this.showModal("https://portfolio.duee.com.br/project/cascola-digital/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/bauducco01-1.jpg" title="bauducco - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/bauducco-social-media/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/PILAO.jpg" title="café pilão - ação de checkout walmart" open={() => this.showModal("https://portfolio.duee.com.br/project/acao-de-checkout-walmart-cafe-pilao/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/calminex01.jpg" title="estande calminex" open={() => this.showModal("https://portfolio.duee.com.br/project/estande-calminex/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/HALLS.jpg" title="mondelez - ações de sampling" open={() => this.showModal("https://portfolio.duee.com.br/project/acoes-de-sampling-mondelez/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/NET-BBC.jpg" title="bbc hd - convenção net" open={() => this.showModal("https://portfolio.duee.com.br/project/convencao-net-bbc-hd/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/sentirbem.jpg" title="Sentir bem - ações de sampling" open={() => this.showModal("https://portfolio.duee.com.br/project/acoes-de-sampling-sentir-bem/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/work_gde.jpg" title="farmacias walmart - ações de sampling" open={() => this.showModal("https://portfolio.duee.com.br/project/farmacias-walmart-acoes-de-sampling/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/kimberly-job241.png" title="Flashmob intimus" open={() => this.showModal("https://portfolio.duee.com.br/project/flashmob-intimus/ ")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/huggies_gde-1.jpg" title="huggies turma da monica" open={() => this.showModal("https://portfolio.duee.com.br/project/huggies-turma-da-monica/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/sauza01.jpg" title="sauza tequila - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/sauza-tequila-social-media/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/bauducco02.jpg" title="Bauducco - ações de sampling" open={() => this.showModal("https://portfolio.duee.com.br/project/acoes-de-sampling-bauducco/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/aes01.jpg" title="AES eletropaulo - smart house" open={() => this.showModal("https://portfolio.duee.com.br/project/smart-house-aes-eletropaulo/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Layout_Hotsite_Conceito_02.jpg" title="exto" open={() => this.showModal("https://portfolio.duee.com.br/project/condominio-club-life-exto/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-18-at-16.57.22.png" title="intimus evolution sampling" open={() => this.showModal("https://portfolio.duee.com.br/project/intimus-evolution-sampling/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/serasa.jpg" title="serasa experian" open={() => this.showModal("https://portfolio.duee.com.br/project/serasa-experian/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/skpf-1.jpg" title="schwarzkopf - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/schwarzkopf-social-media/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/bbc01.jpg" title="bbc hd - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/bbc-hd-social-media/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-18-at-16.28.51.png" title="Nickelodeon - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/nickelodeon/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/veja01.jpg" title="Veja - ação em pdv" open={() => this.showModal("https://portfolio.duee.com.br/project/veja-acao-em-pdv/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/VH1-FACEBOOK.jpg" title="vh1 - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/vh1-social-media/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/wm02.jpg" title="walmart - ações de degustação e sampling" open={() => this.showModal("https://portfolio.duee.com.br/project/walmart-acoes-de-degustacao-e-sampling/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-18-at-16.14.55.png" title="Walmart.com - divulgação do site" open={() => this.showModal("https://portfolio.duee.com.br/project/divulgacao-do-site-walmart-com/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-18-at-16.03.03.png" title="farmacia walmart - ações de verão" open={() => this.showModal("https://portfolio.duee.com.br/project/acoes-de-verao-da-farmacia-walmart/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-18-at-15.30.17.png" title="walmart - inaugiração dos postos walmart em todo brasil" open={() => this.showModal("https://portfolio.duee.com.br/project/inauguracoes-de-postos-walmart-em-todo-brasil/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/dest-festa.jpg" title="Walmart - festa de fim de ano" open={() => this.showModal("https://portfolio.duee.com.br/project/festa-de-fim-de-ano-walmart-brasil/")} />
+                    </div>
                 </div>
-            </div>
-        </Layout >
-    )
-}
+            </Layout >
+        )
+    }
 }

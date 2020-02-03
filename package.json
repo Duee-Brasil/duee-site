@@ -1,9 +1,9 @@
 {
   "name": "duee_brasil",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Branding, Live MKT, Promoções, Digital e Desenvolvimento. A Gente Faz.",
   "version": "0.1.0",
-  "author": "letgodoy.com feat. joao vidal",
+  "author": "letgodoy.com",
   "dependencies": {
     "basicscroll": "^3.0.2",
     "browser-monads": "^1.0.0",
@@ -39,6 +39,8 @@
     "typescript": "^3.7.5"
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3",
     "prettier": "^1.19.1"
   },
   "keywords": [

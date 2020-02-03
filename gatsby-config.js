@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Duee Brasil`,
     description: `Branding, Live MKT, Promoções, Digital e Desenvolvimento. A Gente Faz.`,
-    author: `letgodoy.com feat. joao vidal`,
+    author: `letgodoy.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,6 +21,7 @@ module.exports = {
         name: `Duee Brasil`,
         short_name: `Duee Brasil`,
         start_url: `/`,
+        description: "Branding, Live MKT, Promoções, Digital e Desenvolvimento. A Gente Faz.",
         background_color: `#ffffff`,
         theme_color: `#424242`,
         display: `standalone`,
