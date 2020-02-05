@@ -5,6 +5,30 @@ import SEO from "../../components/seo"
 import './portfolio.scss'
 import Case from '../../components/cases/cases'
 
+import Panetone from './pages/sbks-panetone'
+import BFMade from './pages/bf-made'
+import Geladeiras from './pages/geladeiras'
+import DevOito from './pages/dev-oito'
+import Trapiche from './pages/trapiche'
+import VaiVedett from './pages/vai-vedett'
+import Namorados from './pages/sbks-namorados'
+import MadeLolla from './pages/made-lolla'
+import BMLanc from './pages/bm-lanc'
+import Dinner from './pages/dinner'
+import Ubus from './pages/ubus'
+import CasalMidia from './pages/casal-midia'
+import FaxePdv from './pages/faxe-pdv'
+import Chandon from './pages/chandon'
+import Butter from './pages/sbks-butter'
+import HappyHour from './pages/makingof'
+import Casal from './pages/casal'
+import VedettMidia from './pages/vedett-midia'
+import Draft from './pages/sbks-draft'
+import Suite from './pages/suite49'
+import Trova from './pages/trova'
+import Estagiario from './pages/estagiario'
+import Roadshow from './pages/sbks-roadshow'
+
 export default class Portfolio extends Component {
     constructor(props) {
         super(props)
@@ -14,14 +38,16 @@ export default class Portfolio extends Component {
         }
 
         this.showModal = this.showModal.bind(this)
-
+        this.loadPage = this.loadPage.bind(this)
 
     }
 
-    showModal = (link, e) => {
+    showModal = (link) => {
 
         this.setState({ link })
+
         document.querySelector(".loading").style.visibility = 'visible'
+
         if (document.querySelector(".ib-content-full")) {
             if (document.querySelector(".ib-content-full").clientWidth === 0) {
                 document.querySelector(".ib-content-full").style.visibility = 'visible'
@@ -36,6 +62,7 @@ export default class Portfolio extends Component {
                 document.querySelector(".ib-content-full").style.height = '0'
                 document.querySelector(".ib-content-full").style.top = '50%'
                 document.querySelector(".ib-content-full").style.left = '50%'
+                document.querySelector(".loading").style.visibility = 'hidden'
             }
         }
 
@@ -45,20 +72,20 @@ export default class Portfolio extends Component {
         document.querySelector(".loading").style.visibility = 'hidden'
     }
 
-
-
     render() {
         return (
             <Layout>
                 <SEO title="Portfólio" />
                 {/* <!-- First --> */}
                 <div className="row ib-main-wrapper" id="portfolio">
-                    {/* <div className="col-xs-12" id="banner">
-                <video src={banner} autoplay="true" muted="true" loop />
-            </div> */}
+                    
                     <div className="ib-content-full">
                         <div className="closebar" onClick={() => this.showModal()}><i className="fas fa-times" /></div>
-                        <iframe src={this.state.link} onLoad={() => this.loadPage()} />
+                        
+                        {typeof this.state.link === "string" ?
+                            <iframe src={this.state.link} onLoad={() => this.loadPage()} id="htmlcontent"/>
+                             : this.state.link }
+
                         <div className="loading">
                             <div className="loading-text">
                                 <span className="loading-text-words">L</span>
@@ -71,32 +98,33 @@ export default class Portfolio extends Component {
                             </div>
                         </div>
                     </div>
+
                     <div className="content row col-xs-12 ib-main">
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/capa_img_site_starbucks.jpg" title="Panetone Starbucks" open={() => this.showModal("https://portfolio.duee.com.br/project/panetone-starbucks/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" title="Black Friday Made" open={() => this.showModal("https://portfolio.duee.com.br/project/black-friday-made/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/capinha-casal.png" title="Geladeiras Casal Garcia" open={() => this.showModal("https://portfolio.duee.com.br/project/geladeiras-casal-garcia/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/oito-capinha.png" title="Desenvolvimento Site Oito" open={() => this.showModal("https://portfolio.duee.com.br/project/desenvolvimento-site-oito/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-4.png" title="Vitrine Trapiche" open={() => this.showModal("https://portfolio.duee.com.br/project/vitrine-trapiche/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-3.png" title="vai de vedett" open={() => this.showModal("https://portfolio.duee.com.br/project/vai-de-vedett/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-1.jpg" title="Starbucks dia dos namorados" open={() => this.showModal("https://portfolio.duee.com.br/project/starbucks-dia-dos-namorados/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-1.png" title="Made no lolla" open={() => this.showModal("https://portfolio.duee.com.br/project/made-no-lolla/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/1-banner.png" title="Lançamento Blue moon" open={() => this.showModal("https://portfolio.duee.com.br/project/lancamento-blue-moon/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner.png" title="Faxe + Dinner in the sky" open={() => this.showModal("https://portfolio.duee.com.br/project/faxe-dinner-in-the-sky/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner.jpg" title="Ubus Digital" open={() => this.showModal("https://portfolio.duee.com.br/project/ubus-digital/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/Screen-Shot-2019-03-01-at-19.01.04.png" title="Casal Garcia - campanha de mídia" open={() => this.showModal("https://portfolio.duee.com.br/project/casal-garcia-campanha-de-midia/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/capa_img_site_starbucks.jpg" title="Panetone Starbucks" open={() => this.showModal(<Panetone />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" title="Black Friday Made" open={() => this.showModal(<BFMade />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/capinha-casal.png" title="Geladeiras Casal Garcia" open={() => this.showModal(<Geladeiras />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/oito-capinha.png" title="Desenvolvimento Site Oito" open={() => this.showModal(<DevOito />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-4.png" title="Vitrine Trapiche" open={() => this.showModal(<Trapiche />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-3.png" title="vai de vedett" open={() => this.showModal(<VaiVedett />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-1.jpg" title="Starbucks dia dos namorados" open={() => this.showModal(<Namorados />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner-1.png" title="Made no lolla" open={() => this.showModal(<MadeLolla />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/1-banner.png" title="Lançamento Blue moon" open={() => this.showModal(<BMLanc />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner.png" title="Faxe + Dinner in the sky" open={() => this.showModal(<Dinner />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner.jpg" title="Ubus Digital" open={() => this.showModal(<Ubus />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/Screen-Shot-2019-03-01-at-19.01.04.png" title="Casal Garcia - campanha de mídia" open={() => this.showModal(<CasalMidia />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/Untitled-1.png" title="MAde in brazil - social mídia" open={() => this.showModal("https://portfolio.duee.com.br/project/made-in-brazil-social-media/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/QUADRO-FAXE-pack-art-1.png" title="Faxe - kit pdv" open={() => this.showModal("https://portfolio.duee.com.br/project/faxe-beer-kit-pdv/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/KV-CHANDON-MOOD_V2.png" title="Chandon - realidade aumentada" open={() => this.showModal("https://portfolio.duee.com.br/project/chandon-realidade-aumentada/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/post-starbucks-butter-800x800-x2_02.png" title="Starbucks - butter frappuccino" open={() => this.showModal("https://portfolio.duee.com.br/project/starbucks-butter-frappuccino/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Final_FAXE_MO.png" title="FAxe - making of happy hour viking" open={() => this.showModal("https://portfolio.duee.com.br/project/faxemakingof/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/POST-CASALGARCIA-allpacks-800x800_V2.png" title="Casal Garcia - Social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/casal-garcia/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/QUADRO-FAXE-pack-art-1.png" title="Faxe - kit pdv" open={() => this.showModal(<FaxePdv />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/KV-CHANDON-MOOD_V2.png" title="Chandon - realidade aumentada" open={() => this.showModal(<Chandon />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/post-starbucks-butter-800x800-x2_02.png" title="Starbucks - butter frappuccino" open={() => this.showModal(<Butter />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2016/02/Final_FAXE_MO.png" title="FAxe - making of happy hour viking" open={() => this.showModal(<HappyHour />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/POST-CASALGARCIA-allpacks-800x800_V2.png" title="Casal Garcia - Social midia" open={() => this.showModal(<Casal />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/Faxe_capa.png" title="Faxe - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/faxe/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/3_1080x1350_Vedett_V1.png" title="Vedett - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/vedett/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/Banner_via_news1080x675.png" title="Starbucks draft" open={() => this.showModal("https://portfolio.duee.com.br/project/starbucks-draft/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/01/cover_suite.jpg" title="suite 49 travels - social midia" open={() => this.showModal("https://portfolio.duee.com.br/project/suite-49-travels-social-media-2/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/01/trova01.jpg" title="Trova brasil - site" open={() => this.showModal("https://portfolio.duee.com.br/project/website-trova-travertino/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/07/KV_ESTAGIO.jpg" title="REspeira o estágiario - instituto via de acesso" open={() => this.showModal("https://portfolio.duee.com.br/project/respeita-o-estagiario-instituto-via-de-acesso-2/")} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/07/4c128dec-7acb-445e-b279-ffacbfb5d663.jpeg" title="Starbucks roadshow winter" open={() => this.showModal("https://portfolio.duee.com.br/project/starbucks-roadshow-winter/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/3_1080x1350_Vedett_V1.png" title="Vedett - social midia" open={() => this.showModal(<VedettMidia />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/09/Banner_via_news1080x675.png" title="Starbucks draft" open={() => this.showModal(<Draft />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/01/cover_suite.jpg" title="suite 49 travels - social midia" open={() => this.showModal(<Suite />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2018/01/trova01.jpg" title="Trova brasil - site" open={() => this.showModal(<Trova />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/07/KV_ESTAGIO.jpg" title="REspeira o estágiario - instituto via de acesso" open={() => this.showModal(<Estagiario />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/07/4c128dec-7acb-445e-b279-ffacbfb5d663.jpeg" title="Starbucks roadshow winter" open={() => this.showModal(<Roadshow />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/07/site_via01.jpg" title="Plataforma digital - instituto via de acesso" open={() => this.showModal("https://portfolio.duee.com.br/project/plataforma-digital-instituto-via-de-acesso/")} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/05/Captura-de-Tela-2017-05-26-às-16.08.52.jpg" title="Site Codorníu" open={() => this.showModal("https://portfolio.duee.com.br/project/website-codorniu/")} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/05/cover_Sene.jpg" title="Site Sene" open={() => this.showModal("https://portfolio.duee.com.br/project/website-sene/")} />

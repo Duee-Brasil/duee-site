@@ -17,6 +17,8 @@ import LollaBg from '../../images/home/HOME_MADE.mp4'
 import LollaLogo from '../../images/home/MadeNoLolla.svg'
 import LogoVideoPc from '../../images/home/LETRAS_FINALIZADOS.mp4'
 import LogoVideoMobile from '../../images/home/MOBILE_LETRAS.mp4'
+import Oito from '../../images/home/Oito_videoportifolio.mp4'
+import OitoLogo from  '../../images/home/LOGO_Branco.svg'
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -39,7 +41,7 @@ export default class HomePage extends React.Component {
 
   componentDidMount() {
     this.pageOnChange(1)
-    this.setState({width: window.screen.width})
+    this.setState({ width: window.screen.width })
   }
 
   render() {
@@ -59,72 +61,90 @@ export default class HomePage extends React.Component {
         <div id="home" className="page-content">
           <Link to="/leoes">
             {/* <img src={Logoanimado} alt="#somosleoes" /> */}
-            { this.state.width > 768 ?
-              <video src={LogoVideoPc}  autoplay="true" muted="true" loop id="videologo" /> :
-              <video src={LogoVideoMobile} autoPlay="true" muted="true" loop id="videologo"/>}
+            {this.state.width > 768 ?
+              <video src={LogoVideoPc} autoplay="true" muted="true" loop id="videologo" /> :
+              <video src={LogoVideoMobile} autoPlay="true" muted="true" loop id="videologo" />}
           </Link>
         </div>
 
         <div id="portifolio1" className="page-content">
-        <Link to="/starbucks">
-        <video src={Starbucks}  autoplay="true" muted="true" loop id="videoport">
-            Your browser does not support the video tag.
+          <Link to="/starbucks">
+            <video src={Starbucks} autoplay="true" muted="true" loop id="videoport">
+              Your browser does not support the video tag.
 </video>
-          {/* <img src= alt=" BackgroStarbucksund" /> */}
-          <div className="BgOpacity"></div>
-          <div className="LogoContainer">
-            <img className="starbucks" src={StarbucksLogo} style={{ maxWidth: "300px" }} alt="Starbucks Logo" />
-          </div>
-          {/*<div className="content">*/}
-          {/*  <div className="title col-12 col-md-4">*/}
-          {/*    <h1>Portifólio</h1>*/}
-          {/*    <a>Saiba mais sobre o projeto</a>*/}
-          {/*  </div>*/}
-          {/*  <div className="col-md-4"></div>*/}
-          {/*  <div className="col-md-4"></div>*/}
-          {/*</div>*/}
+            {/* <img src= alt=" BackgroStarbucksund" /> */}
+            <div className="BgOpacity"></div>
+            <div className="LogoContainer">
+              <img className="starbucks" src={StarbucksLogo} style={{ maxWidth: "300px" }} alt="Starbucks Logo" />
+            </div>
+            {/*<div className="content">*/}
+            {/*  <div className="title col-12 col-md-4">*/}
+            {/*    <h1>Portifólio</h1>*/}
+            {/*    <a>Saiba mais sobre o projeto</a>*/}
+            {/*  </div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*</div>*/}
           </Link>
         </div>
 
         <div id="portifolio2" className="page-content">
-        <Link to="/faxe">
-          {/* <img src={FaxeBg} alt="Faxe Background" /> */}
-          <video src={FaxeBg} autoplay="true" muted="true" loop id="videoport"/>
-          <div className="BgOpacity"></div>
-          <div className="LogoContainer">
-            <img src={FaxeLogo} alt="Faxe Logo" />
-          </div>
-          {/*<div className="content">*/}
-          {/*  <div className="title col-12 col-md-4">*/}
-          {/*    <h1>Portifólio</h1>*/}
-          {/*    <a>Saiba mais sobre o projeto</a>*/}
-          {/*  </div>*/}
-          {/*  <div className="col-md-4"></div>*/}
-          {/*  <div className="col-md-4"></div>*/}
-          {/*</div>*/}
+          <Link to="/faxe">
+            {/* <img src={FaxeBg} alt="Faxe Background" /> */}
+            <video src={FaxeBg} autoplay="true" muted="true" loop id="videoport" />
+            <div className="BgOpacity"></div>
+            <div className="LogoContainer">
+              <img src={FaxeLogo} alt="Faxe Logo" />
+            </div>
+            {/*<div className="content">*/}
+            {/*  <div className="title col-12 col-md-4">*/}
+            {/*    <h1>Portifólio</h1>*/}
+            {/*    <a>Saiba mais sobre o projeto</a>*/}
+            {/*  </div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*</div>*/}
           </Link>
         </div>
 
         <div id="portifolio2" className="page-content">
-        <Link to="/madeinbrazil">
-          {/* <img src={LollaBg} alt="Lolla Background"/> */}
-          <video src={LollaBg}  autoplay="true" muted="true" loop id="videoport">
-            Your browser does not support the video tag.
-</video>
-          <div className="BgOpacity"></div>
-          <div className="LogoContainer">
-            <img src={LollaLogo} alt="Lolla Logo" />
-          </div>
-          {/*<div className="content">*/}
-          {/*  <div className="title col-12 col-md-4">*/}
-          {/*    <h1>Portifólio</h1>*/}
-          {/*    <a>Saiba mais sobre o projeto</a>*/}
-          {/*  </div>*/}
-          {/*  <div className="col-md-4"></div>*/}
-          {/*  <div className="col-md-4"></div>*/}
-          {/*</div>*/}
+          <Link to="/madeinbrazil">
+            {/* <img src={LollaBg} alt="Lolla Background"/> */}
+            <video src={LollaBg} autoplay="true" muted="true" loop id="videoport" />
+            <div className="BgOpacity"></div>
+            <div className="LogoContainer">
+              <img src={LollaLogo} alt="Lolla Logo" />
+            </div>
+            {/*<div className="content">*/}
+            {/*  <div className="title col-12 col-md-4">*/}
+            {/*    <h1>Portifólio</h1>*/}
+            {/*    <a>Saiba mais sobre o projeto</a>*/}
+            {/*  </div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*</div>*/}
           </Link>
         </div>
+
+        <div id="portifolio2" className="page-content">
+          <Link to="/oito">
+            {/* <img src={LollaBg} alt="Lolla Background"/> */}
+            <video src={Oito} autoplay="true" muted="true" loop id="videoport" />
+            <div className="BgOpacity"></div>
+            <div className="LogoContainer">
+              <img src={OitoLogo} alt="Lolla Logo" />
+            </div>
+            {/*<div className="content">*/}
+            {/*  <div className="title col-12 col-md-4">*/}
+            {/*    <h1>Portifólio</h1>*/}
+            {/*    <a>Saiba mais sobre o projeto</a>*/}
+            {/*  </div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*</div>*/}
+          </Link>
+        </div>
+
       </ReactPageScroller>
     </Layout>
   }
