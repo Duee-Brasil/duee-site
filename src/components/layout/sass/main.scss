@@ -22,7 +22,7 @@ body {
 	background     : black;
 	font-family: 'Raleway', sans-serif;
 	min-height: 100%;
-	overflow-scrolling: touch;
+	// overflow-scrolling: touch;
 	-webkit-overflow-scrolling: touch;
 }
 
@@ -51,4 +51,22 @@ main {
 	height: 100vmin;
 	overflow-y:  auto;
 	overflow-x:  hidden;
+}
+
+.wppbutton {
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	font-size: 3em;
+	color: #25d366;
+	width: fit-content;
+	height: fit-content;
+	text-decoration: none;
+	text-shadow: 0 0 5px gray;
+	z-index: 100000;
+	
+
+	img {
+		width: 60px;
+	}
 }

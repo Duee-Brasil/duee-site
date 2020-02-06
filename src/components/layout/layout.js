@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet'
 
 import Logo from '../../images/logo_claro.svg'
 import Navbar from '../../components/navbar/navbar'
+import Wpp from '../../images/whatsapp.svg'
 // import MouseIcon from '../../components/mouseIcon/mouseIcon'
 
 // import Header from "./header"
@@ -42,6 +43,8 @@ export default class Layout extends React.Component {
             {/*  <a href="https://www.gatsbyjs.org">Gatsby</a>*/}
             {/*</footer>*/}
           </div>
+          {/* <i className="fab fa-whatsapp-square"/> */}
+          <a href="https://api.whatsapp.com/send?phone=5511951322976" target="_blank" className="wppbutton"><img src={Wpp} /></a>
         </>
       )
     }

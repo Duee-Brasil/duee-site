@@ -88,6 +88,7 @@ import Confraternizacao from "./pages/walmart-confraternizacao"
 import Farmacia from './pages/walmart-farmacia'
 import Posto from './pages/walmart-posto'
 import BauduccoM from "./pages/bauducco-midia"
+import MadeM from './pages/made-midia'
 
 export default class Portfolio extends Component {
     constructor(props) {
@@ -172,7 +173,7 @@ export default class Portfolio extends Component {
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner.png" title="Faxe + Dinner in the sky" open={() => this.showModal(<Dinner />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Banner.jpg" title="Ubus Digital" open={() => this.showModal(<Ubus />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/Screen-Shot-2019-03-01-at-19.01.04.png" title="Casal Garcia - campanha de mídia" open={() => this.showModal(<CasalMidia />)} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/Untitled-1.png" title="MAde in brazil - social mídia" open={() => this.showModal("https://portfolio.duee.com.br/project/made-in-brazil-social-media/")} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/Untitled-1.png" title="MAde in brazil - social mídia" open={() => this.showModal(<MadeM />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/QUADRO-FAXE-pack-art-1.png" title="Faxe - kit pdv" open={() => this.showModal(<FaxePdv />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/KV-CHANDON-MOOD_V2.png" title="Chandon - realidade aumentada" open={() => this.showModal(<Chandon />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2019/03/post-starbucks-butter-800x800-x2_02.png" title="Starbucks - butter frappuccino" open={() => this.showModal(<Butter />)} />

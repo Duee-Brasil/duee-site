@@ -20,7 +20,7 @@ export default class DevOito extends React.Component {
                 {/* <div className="col-xs-12 col-md-4 col-sm-6"> </div> */}
                 {/* <div className="col-xs-12 col-md-4 col-sm-6"><video controls autoPlay={true} muted={true} loop type="col-xs-12 video/mp4" src="https://portfolio.duee.com.br/wp-content/uploads/2020/01/video_site_starbucks.mp4" /></div> */}
                 <div className="col-xs-12 col-md-4 col-sm-6">
-                    <img src="https://portfolio.duee.com.br/wp-content/uploads/2020/01/yagakbd.png" alt="" />
+                    <img src="https://portfolio.duee.com.br/wp-content/uploads/2020/01/Oito_post_7.png" alt="" />
                     <video controls autoPlay={true} muted={true} loop type="video/mp4" src="https://portfolio.duee.com.br/wp-content/uploads/2020/01/Oito_post_3.mp4" />
                     <img src="https://portfolio.duee.com.br/wp-content/uploads/2020/01/Oito_post_3.png" alt="" />
                     <img src="https://portfolio.duee.com.br/wp-content/uploads/2020/01/Oito_post_2.png" alt="" />
@@ -29,12 +29,15 @@ export default class DevOito extends React.Component {
                     <img src="https://portfolio.duee.com.br/wp-content/uploads/2020/01/Oito_stories_2.png" alt="" />
                     <img src="https://portfolio.duee.com.br/wp-content/uploads/2020/01/Oito_post_4.png" alt="" />
                     <img src="https://portfolio.duee.com.br/wp-content/uploads/2020/01/Oito_post_1.png" alt="" />
-                    </div>
+                </div>
                 <div className="col-xs-12 col-md-4 col-sm-6">
                     <img src="https://portfolio.duee.com.br/wp-content/uploads/2020/01/POST_OITO_S3_8.png" alt="" />
                     <video controls autoPlay={true} muted={true} loop type="video/mp4" src="https://portfolio.duee.com.br/wp-content/uploads/2020/01/Oito_stories_1.mp4" />
                     <img src="https://portfolio.duee.com.br/wp-content/uploads/2020/01/Oito_post_4-2.png" alt="" />
-                    </div>
+                </div>
+                <div className="col-xs-12">
+                <iframe id="vimeo" src="https://www.youtube.com/embed/XTUJJF9g1i4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
 
             <div className="row content describes">

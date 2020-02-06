@@ -75,9 +75,13 @@ export default class SomosLeoes extends React.Component {
     }
 
     handleChangeIndex ( index ) {
-        this.setState({
+
+        if (index) {
+            this.setState({
             index
         });
+        }
+        
     };
 
 
