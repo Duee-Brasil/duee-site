@@ -1,7 +1,7 @@
 import React from 'react'
 import './default.scss'
 
-export default class Casal extends React.Component {
+export default class VedettMidia extends React.Component {
 
     constructor(props) {
         super(props)
