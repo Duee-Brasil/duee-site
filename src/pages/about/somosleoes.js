@@ -74,14 +74,14 @@ export default class SomosLeoes extends React.Component {
         }
     }
 
-    handleChangeIndex ( index ) {
+    handleChangeIndex(index) {
 
         if (index) {
             this.setState({
-            index
-        });
+                index
+            });
         }
-        
+
     };
 
 
@@ -143,46 +143,46 @@ export default class SomosLeoes extends React.Component {
                 <Trabalho />
 
                 <div className="row col-xs-12 clients">
-                <h2 className="col-xs-12 title">Clientes</h2>
-                <img src={clt1} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt2} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt3} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt4} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt5} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt6} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt7} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt8} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt9} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt10} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt11} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt12} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt12} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt13} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt14} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt15} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt16} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt17} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt18} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt19} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt20} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt21} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt22} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt23} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt24} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt25} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt26} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt27} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt28} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt29} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt30} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt31} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt32} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt33} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt34} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt35} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
-                <img src={clt36} alt="clientes" className="col-xs-6 col-sm-4 col-md-3 col-lg-2" />
+                    <h2 className="col-xs-12 title">Clientes</h2>
+                    <News img={clt1} />
+                    <News img={clt2} />
+                    <News img={clt3} />
+                    <News img={clt4} />
+                    <News img={clt5} />
+                    <News img={clt6} />
+                    <News img={clt7} />
+                    <News img={clt8} />
+                    <News img={clt9} />
+                    <News img={clt10} />
+                    <News img={clt11} />
+                    <News img={clt12} />
+                    <News img={clt12} />
+                    <News img={clt13} />
+                    <News img={clt14} />
+                    <News img={clt15} />
+                    <News img={clt16} />
+                    <News img={clt17} />
+                    <News img={clt18} />
+                    <News img={clt19} />
+                    <News img={clt20} />
+                    <News img={clt21} />
+                    <News img={clt22} />
+                    <News img={clt23} />
+                    <News img={clt24} />
+                    <News img={clt25} />
+                    <News img={clt26} />
+                    <News img={clt27} />
+                    <News img={clt28} />
+                    <News img={clt29} />
+                    <News img={clt30} />
+                    <News img={clt31} />
+                    <News img={clt32} />
+                    <News img={clt33} />
+                    <News img={clt34} />
+                    <News img={clt35} />
+                    <News img={clt36} />
 
-            </div>
+                </div>
 
                 <div id='news' className="row" >
                     <div className="col-xs-12 center-xs">
@@ -201,7 +201,7 @@ export default class SomosLeoes extends React.Component {
 
                                         <div className="col-xs-12 around-xs">
                                             <div className="row">
-                                                <AutoPlaySwipeableViews index={this.state.index} onChangeIndex={this.handleChangeIndex}>
+                                                <AutoPlaySwipeableViews index={this.state.index} onChangeIndex={() => this.handleChangeIndex}>
                                                     <div className="depo"><h5>“Os maiores diferenciais da Duee são principalmente a confiança, transparência e qualidade. A Duee é uma agência que preza pelo respeito com o cliente.”</h5>
                                                         <p><strong>Sandra Collier</strong></p>
                                                         <p>Gerente de Marketing, Walmart Brasil</p></div>
