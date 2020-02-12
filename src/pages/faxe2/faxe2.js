@@ -66,6 +66,20 @@ import Img40 from '../../images/faxe/img/040.png'
 import Img42 from '../../images/faxe/img/042.png'
 import Img41 from '../../images/faxe/img/041.png'
 
+import Story1W from '../../images/faxe/STORIE_FINAL.webm'
+import Story3W from '../../images/faxe/1_DINNER_V1.webm'
+import Story4W from '../../images/faxe/2_DINNER_V1.webm'
+
+import Post1W from '../../images/faxe/3_POST_FAXE_V1 2.webm'
+import Post2W from '../../images/faxe/3_POST_FAXE_V1.webm'
+import Post3W from '../../images/faxe/POST-2.webm'
+import Post4W from '../../images/faxe/Post 02.webm'
+import Post5W from '../../images/faxe/Post 07_V2.webm'
+import Post6W from '../../images/faxe/Post1.webm'
+import Post7W from '../../images/faxe/Post2.webm'
+import Post8W from '../../images/faxe/post2 2.webm'
+import Post9W from '../../images/faxe/post7-vid.webm'
+
 export default class Faxe extends Component {
 
     render() {
@@ -93,65 +107,98 @@ export default class Faxe extends Component {
                         <div className="row col-xs-12">
                             <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4, 1700: 5 }}>
                                 <Masonry>
-                                <img src={Img2} alt="conteudo faxe" className="material" />
+                                    <img src={Img2} alt="conteudo faxe" className="material" />
                                     <img src={Img40} alt="conteudo faxe" className="material" />
                                     <img src={Img4} alt="conteudo faxe" className="material" />
-                                    <video src={Post1} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                    <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                        <source src={Post1W} type="video/webm" />
+                                        <source src={Post1} type="video/mp4" />
+                                    </video>
                                     <img src={Img19} alt="conteudo faxe" className="material" />
                                     <img src={Img14} alt="conteudo faxe" className="material" />
                                     <img src={Img29} alt="conteudo faxe" className="material" />
                                     <img src={Img10} alt="conteudo faxe" className="material" />
-                                    <video src={Story3} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                    <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline >
+                                        <source src={Story3W} type="video/webm" />
+                                        <source src={Story3} type="video/mp4" />
+                                    </video>
                                     <img src={Img1} alt="conteudo faxe" className="material" />
                                     <img src={Img39} alt="conteudo faxe" className="material" />
-                                    <video src={Post2} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                    <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                        <source src={Post2W} type="video/webm" />
+                                        <source src={Post2} type="video/mp4" />
+                                    </video>
                                     <img src={Img17} alt="conteudo faxe" className="material" />
                                     <img src={Img18} alt="conteudo faxe" className="material" />
-                                    
                                     <img src={Img20} alt="conteudo faxe" className="material" />
-                                    <video src={Post3} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                    <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                        <source src={Post3W} type="video/webm" />
+                                        <source src={Post3} type="video/mp4" />
+                                    </video>
                                     <img src={Img28} alt="conteudo faxe" className="material" />
                                     <img src={Img8} alt="conteudo faxe" className="material" />
-                                    
                                     <img src={Img3} alt="conteudo faxe" className="material" />
-                                    <video src={Story1} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                    <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                        <source src={Story1W} type="video/webm" />
+                                        <source src={Story1} type="video/mp4" />
+                                    </video>
                                     <img src={Img25} alt="conteudo faxe" className="material" />
                                     <img src={Img26} alt="conteudo faxe" className="material" />
                                     <img src={Img22} alt="conteudo faxe" className="material" />
-                                    
-                                    <video src={Post4} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                    <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                        <source src={Post4W} type="video/webm" />
+                                        <source src={Post4} type="video/mp4" />
+                                    </video>
                                     <img src={Img31} alt="conteudo faxe" className="material" />
                                     <img src={Img32} alt="conteudo faxe" className="material" />
                                     <img src={Img41} alt="conteudo faxe" className="material" />
-                                    <video src={Story4} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                    <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                        <source src={Story4W} type="video/webm" />
+                                        <source src={Story4} type="video/mp4" />
+                                    </video>
                                     <img src={Img23} alt="conteudo faxe" className="material" />
                                     <img src={Img33} alt="conteudo faxe" className="material" />
-                                    <video src={Post5} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                    <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                        <source src={Post5W} type="video/webm" />
+                                        <source src={Post5} type="video/mp4" />
+                                    </video>
                                     <img src={Img12} alt="conteudo faxe" className="material" />
                                     <img src={Img27} alt="conteudo faxe" className="material" />
                                     <img src={Img42} alt="conteudo faxe" className="material" />
                                     <img src={Img13} alt="conteudo faxe" className="material" />
-                                    <video src={Post9} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                    <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                        <source src={Post9W} type="video/webm" />
+                                        <source src={Post9} type="video/mp4" />
+                                    </video>
                                     <img src={Img30} alt="conteudo faxe" className="material" />
                                     <img src={Img6} alt="conteudo faxe" className="material" />
                                     <img src={Img38} alt="conteudo faxe" className="material" />
                                     <img src={Img9} alt="conteudo faxe" className="material" />
-                                    <video src={Post6} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                    <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                        <source src={Post6W} type="video/webm" />
+                                        <source src={Post6} type="video/mp4" />
+                                    </video>
                                     <img src={Img34} alt="conteudo faxe" className="material" />
                                     <img src={Img7} alt="conteudo faxe" className="material" />
                                     <img src={Img35} alt="conteudo faxe" className="material" />
                                     <img src={Img5} alt="conteudo faxe" className="material" />
-                                    <video src={Post7} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                    <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                        <source src={Post7W} type="video/webm" />
+                                        <source src={Post7} type="video/mp4" />
+                                    </video>
                                     <img src={Img15} alt="conteudo faxe" className="material" />
                                     <img src={Img36} alt="conteudo faxe" className="material" />
                                     <img src={Img24} alt="conteudo faxe" className="material" />
-                                    <video src={Post8} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                    <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                        <source src={Post8W} type="video/webm" />
+                                        <source src={Post8} type="video/mp4" />
+                                    </video>
                                     <img src={Img11} alt="conteudo faxe" className="material" />
                                     <img src={Img21} alt="conteudo faxe" className="material" />
                                     <img src={Story2} alt="conteudo faxe" className="material" />
                                     <img src={Img16} alt="conteudo faxe" className="material" />
                                     <img src={Img37} alt="conteudo faxe" className="material" />
-                                    
+
                                 </Masonry>
                             </ResponsiveMasonry>
                         </div>

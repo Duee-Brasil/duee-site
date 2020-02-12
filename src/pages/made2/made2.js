@@ -51,6 +51,16 @@ import Vd7 from '../../images/made/videos/Set_Gaitas (online-video-cutter.com).m
 import Vd8 from '../../images/made/videos/Zoom_loja_V2 (online-video-cutter.com).mp4'
 import Vd9 from '../../images/made/videos/Zoom_violao_V2 (online-video-cutter.com).mp4'
 
+import Vd1W from '../../images/made/videos/Aproximacao_Guitarra (online-video-cutter.com).webm'
+import Vd2W from '../../images/made/videos/Case_Violao (online-video-cutter.com).webm'
+import Vd3W from '../../images/made/videos/Microfones (online-video-cutter.com).webm'
+import Vd4W from '../../images/made/videos/Pads (online-video-cutter.com).webm'
+import Vd5W from '../../images/made/videos/Pedais (online-video-cutter.com).webm'
+import Vd6W from '../../images/made/videos/Review Baixo Squier Precision 50.webm'
+import Vd7W from '../../images/made/videos/Set_Gaitas (online-video-cutter.com).webm'
+import Vd8W from '../../images/made/videos/Zoom_loja_V2 (online-video-cutter.com).webm'
+import Vd9W from '../../images/made/videos/Zoom_violao_V2 (online-video-cutter.com).webm'
+
 
 export default class Made extends Component {
     render() {
@@ -82,45 +92,72 @@ export default class Made extends Component {
                     <div className="row col-xs-12">
                         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4, 1700: 5 }}>
                             <Masonry>
-                                <video src={Vd1} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                    <source src={Vd1W} type="video/webm" />
+                                    <source src={Vd1} type="video/mp4" />
+                                </video>
                                 <img src={Img12} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img1} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img29} alt="conteudo madeinbrazil" className="material" />
-                                <video src={Vd3} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                    <source src={Vd3W} type="video/webm" />
+                                    <source src={Vd3} type="video/mp4" />
+                                </video>
                                 <img src={Img3} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img35} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img5} alt="conteudo madeinbrazil" className="material" />
-                                <video src={Vd7} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                    <source src={Vd7W} type="video/webm" />
+                                    <source src={Vd7} type="video/mp4" />
+                                </video>
                                 <img src={Img6} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img7} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img8} alt="conteudo madeinbrazil" className="material" />
-                                <video src={Vd2} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                    <source src={Vd2W} type="video/webm" />
+                                    <source src={Vd2} type="video/mp4" />
+                                </video>
                                 <img src={Img10} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img11} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img19} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img13} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img14} alt="conteudo madeinbrazil" className="material" />
-                                <video src={Vd5} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                    <source src={Vd5W} type="video/webm" />
+                                    <source src={Vd5} type="video/mp4" />
+                                </video>
                                 <img src={Img33} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img18} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img26} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img20} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img21} alt="conteudo madeinbrazil" className="material" />
-                                <video src={Vd9} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                    <source src={Vd9W} type="video/webm" />
+                                    <source src={Vd9} type="video/mp4" />
+                                </video>
                                 <img src={Img2} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img23} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img25} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img15} alt="conteudo madeinbrazil" className="material" />
-                                <video src={Vd8} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                    <source src={Vd8W} type="video/webm" />
+                                    <source src={Vd8} type="video/mp4" />
+                                </video>
                                 <img src={Img31} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img32} alt="conteudo madeinbrazil" className="material" />
-                                <video src={Vd6} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                    <source src={Vd6W} type="video/webm" />
+                                    <source src={Vd6} type="video/mp4" />
+                                </video>
                                 <img src={Img22} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img16} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img27} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img17} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img34} alt="conteudo madeinbrazil" className="material" />
-                                <video src={Vd4} autoPlay={true} muted={true} loop controls={true} className="material" />
+                                <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
+                                    <source src={Vd4W} type="video/webm" />
+                                    <source src={Vd4} type="video/mp4" />
+                                </video>
                                 <img src={Img24} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img28} alt="conteudo madeinbrazil" className="material" />
                             </Masonry>

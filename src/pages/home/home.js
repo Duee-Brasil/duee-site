@@ -17,8 +17,13 @@ import LollaBg from '../../images/home/HOME_MADE.mp4'
 import LollaLogo from '../../images/home/MadeNoLolla.svg'
 import LogoVideoPc from '../../images/home/LETRAS_FINALIZADOS.mp4'
 import LogoVideoMobile from '../../images/home/MOBILE_LETRAS.mp4'
+import LogoVideoMobileWEB from '../../images/home/MOBILE_LETRAS.webm'
+import StarbucksWEB from '../../images/home/HOME_STARBUCKS.webm'
+import FaxeBgWEB from '../../images/home/HOME_FAXE.webm'
+import LollaBgWEB from '../../images/home/HOME_MADE.webm'
+import LogoVideoPcWEB from '../../images/home/LETRAS_FINALIZADOS.webm'
 import Oito from '../../images/home/Oito_videoportifolio.mp4'
-import OitoLogo from  '../../images/home/LOGO_Branco.svg'
+import OitoLogo from '../../images/home/LOGO_Branco.svg'
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -62,16 +67,24 @@ export default class HomePage extends React.Component {
           <Link to="/leoes">
             {/* <img src={Logoanimado} alt="#somosleoes" /> */}
             {this.state.width > 768 ?
-              <video src={LogoVideoPc} autoplay="true" muted="true" loop id="videologo" /> :
-              <video src={LogoVideoMobile} autoPlay="true" muted="true" loop id="videologo" />}
+              <video autoPlay={true} muted={true} loop id="videologo" preload="metadata" playsInline>
+                <source src={LogoVideoPcWEB} type="video/webm" />
+                <source src={LogoVideoPc} type="video/mp4" />
+              </video> :
+              <video autoPlay={true} muted={true} loop id="videologo" preload="metadata" playsInline>
+                <source src={LogoVideoMobileWEB} type="video/webm" />
+                <source src={LogoVideoMobile} type="video/mp4" />
+              </video>}
           </Link>
         </div>
 
         <div id="portifolio1" className="page-content">
           <Link to="/starbucks">
-            <video src={Starbucks} autoplay="true" muted="true" loop id="videoport">
-              Your browser does not support the video tag.
-</video>
+            <video autoPlay={true} muted={true} loop id="videoport" preload="metadata" playsInline >
+              <source src={StarbucksWEB} type="video/webm" />
+              <source src={Starbucks} type="video/mp4" />
+
+            </video>
             {/* <img src= alt=" BackgroStarbucksund" /> */}
             <div className="BgOpacity"></div>
             <div className="LogoContainer">
@@ -91,7 +104,10 @@ export default class HomePage extends React.Component {
         <div id="portifolio2" className="page-content">
           <Link to="/faxe">
             {/* <img src={FaxeBg} alt="Faxe Background" /> */}
-            <video src={FaxeBg} autoplay="true" muted="true" loop id="videoport" />
+            <video autoPlay={true} muted={true} loop id="videoport" preload="metadata" playsInline>
+              <source src={FaxeBgWEB} type="video/webm" />
+              <source src={FaxeBg} type="video/mp4" />
+            </video>
             <div className="BgOpacity"></div>
             <div className="LogoContainer">
               <img src={FaxeLogo} alt="Faxe Logo" />
@@ -110,7 +126,10 @@ export default class HomePage extends React.Component {
         <div id="portifolio2" className="page-content">
           <Link to="/madeinbrazil">
             {/* <img src={LollaBg} alt="Lolla Background"/> */}
-            <video src={LollaBg} autoplay="true" muted="true" loop id="videoport" />
+            <video autoPlay={true} muted={true} loop id="videoport" preload="metadata" playsInline>
+              <source src={LollaBgWEB} type="video/webm" />
+              <source src={LollaBg} type="video/mp4" />
+            </video>
             <div className="BgOpacity"></div>
             <div className="LogoContainer">
               <img src={LollaLogo} alt="Lolla Logo" />
@@ -129,7 +148,7 @@ export default class HomePage extends React.Component {
         <div id="portifolio2" className="page-content">
           <Link to="/oito">
             {/* <img src={LollaBg} alt="Lolla Background"/> */}
-            <video src={Oito} autoplay="true" muted="true" loop id="videoport" />
+            <video src={Oito} autoPlay={true} muted={true} loop id="videoport" preload="metadata" playsInline />
             <div className="BgOpacity"></div>
             <div className="LogoContainer">
               <img src={OitoLogo} alt="Lolla Logo" />
