@@ -19,7 +19,7 @@
 body {
 	color: $claro;
 	// background     : linear-gradient(139deg, #000000, #303030);
-	background     : black;
+	background: black;
 	font-family: 'Raleway', sans-serif;
 	min-height: 100%;
 	// overflow-scrolling: touch;
@@ -33,15 +33,22 @@ a {
 
 [data-scroll] {
 	transition: opacity 1s;
-  }
-  [data-scroll="in"] {
-	opacity: 1;
-  }
-  [data-scroll="out"] {
-	opacity: 0;
-  }
+}
 
-h1, h2, h3, h4, h5, h6 {
+[data-scroll="in"] {
+	opacity: 1;
+}
+
+[data-scroll="out"] {
+	opacity: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Julius Sans One', sans-serif;
 	letter-spacing: 3px;
 }
@@ -49,8 +56,8 @@ h1, h2, h3, h4, h5, h6 {
 main {
 	min-height: 100vh;
 	height: 100vmin;
-	overflow-y:  auto;
-	overflow-x:  hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 .wppbutton {
@@ -64,9 +71,11 @@ main {
 	text-decoration: none;
 	text-shadow: 0 0 5px gray;
 	z-index: 100000;
-	
+
 
 	img {
 		width: 60px;
+		height: 60px;
+
 	}
 }

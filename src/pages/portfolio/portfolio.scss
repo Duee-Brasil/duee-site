@@ -193,6 +193,17 @@
         width : 100%;
     }
 
+    .backButton {
+        position: fixed;
+        bottom: 0;
+        right: 100px;
+        padding: 0.5% 1%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 0.5em 0.5em 0 0;
+        cursor: pointer;
+    }
+
 }
 
 @mixin position-center($text-align: center) {

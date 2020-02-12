@@ -142,6 +142,7 @@ export default class Portfolio extends Component {
                     
                     <div className="ib-content-full">
                         <div className="closebar" onClick={() => this.showModal()}><i className="fas fa-times" /></div>
+                        <div className="backButton" onClick={() => this.showModal()}>Voltar</div>
                         
                         {typeof this.state.link === "string" ?
                             <iframe src={this.state.link} onLoad={() => this.loadPage()} id="htmlcontent"/>
