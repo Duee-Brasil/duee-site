@@ -9,14 +9,9 @@ import MouseIcon from '../../components/mouseIcon/mouseIcon'
 import SlideCounter from '../../components/slideCounter/slideCounter'
 import SEO from "../../components/seo"
 
-import Starbucks from '../../images/home/HOME_STARBUCKS~1.mp4'
 import StarbucksLogo from '../../images/home/starbucks_logo.svg'
-import FaxeBg from '../../images/home/HOME_FAXE~1.mp4'
 import FaxeLogo from '../../images/home/FAXE-LOGO.svg'
-import LollaBg from '../../images/home/HOME_MADE~1.mp4'
 import LollaLogo from '../../images/home/MadeNoLolla.svg'
-import LogoVideoPc from '../../images/home/LETRAS_FINALIZADOS~1.mp4'
-import LogoVideoMobile from '../../images/home/MOBILE_LETRAS~1.mp4'
 import LogoVideoMobileWEB from '../../images/home/MOBILE_LETRAS.webm'
 import StarbucksWEB from '../../images/home/HOME_STARBUCKS.webm'
 import FaxeBgWEB from '../../images/home/HOME_FAXE.webm'
@@ -87,7 +82,7 @@ export default class HomePage extends React.Component {
               // <source srcset={LogoVideoMobile} type="video/mp4" className="videologo" />
               <video autoPlay={true} muted={true} loop className="videologo" preload="metadata" playsInline  onError={(e) => console.log(e)}>
                 <source src={LogoVideoMobileWEB} type="video/webm" />
-                <source src={LogoVideoMobile} type="video/mp4" />
+                <source src="https://portfolio.duee.com.br/wp-content/uploads/2020/02/MOBILE_LETRAS.mp4" type="video/mp4" />
               </video>
             // </picture>
             }
@@ -105,7 +100,7 @@ export default class HomePage extends React.Component {
               <source srcset={Starbucks} type="video/mp4" id="videoport" /> */}
               <video autoPlay={true} muted={true} loop id="videoport" preload="metadata" playsInline  onError={(e) => console.log(e)}>
                 <source src={StarbucksWEB} type="video/webm" />
-                <source src={Starbucks} type="video/mp4" />
+                <source src="https://portfolio.duee.com.br/wp-content/uploads/2020/02/HOME_STARBUCKS.mp4" type="video/mp4" />
               </video>
             {/* </picture> */}
             {/* <img src= alt=" BackgroStarbucksund" /> */}
@@ -135,7 +130,7 @@ export default class HomePage extends React.Component {
               <source srcset={FaxeBg} type="video/mp4" id="videoport" /> */}
               <video autoPlay={true} muted={true} loop id="videoport" preload="metadata" playsInline  onError={(e) => console.log(e)}>
                 <source src={FaxeBgWEB} type="video/webm" />
-                <source src={FaxeBg} type="video/mp4" />
+                <source src="https://portfolio.duee.com.br/wp-content/uploads/2020/02/HOME_FAXE.mp4" type="video/mp4" />
               </video>
             {/* </picture> */}
             <div className="BgOpacity"></div>
@@ -164,7 +159,7 @@ export default class HomePage extends React.Component {
               <source srcset={LollaBg} type="video/mp4" id="videoport" /> */}
               <video autoPlay={true} muted={true} loop id="videoport" preload="metadata" playsInline  onError={(e) => console.log(e)}>
                 <source src={LollaBgWEB} type="video/webm" />
-                <source src={LollaBg} type="video/mp4" />
+                <source src="https://portfolio.duee.com.br/wp-content/uploads/2020/02/HOME_MADE.mp4" type="video/mp4" />
               </video>
             {/* </picture> */}
             <div className="BgOpacity"></div>
