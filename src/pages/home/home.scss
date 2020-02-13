@@ -210,26 +210,34 @@ a {
   }
 }
 
+picture {
+  min-width: 100vw;
+
+  source {
+    width: 100vw;
+  }
+}
+
 #videoport {
   // position : fixed;
   top         : 50%;
   left        : 50%;
   min-width   : 100%;
   min-height  : 100%;
-  width       : auto;
+  width       : 100vw;
   height      : auto;
   // z-index  : -100;
   // transform: translateX(-50%) translateY(-50%);
   object-fit  : cover;
 }
 
-#videologo {
+.videologo {
   // position : fixed;
   // top      : 50%;
   // left     : 50%;
   min-width   : 100%;
   min-height  : 100%;
-  width       : auto;
+  width       : 100vw;
   height      : auto;
   // z-index  : -100;
   // transform: translateX(-50%) translateY(-50%);
