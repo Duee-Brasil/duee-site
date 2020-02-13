@@ -75,7 +75,7 @@ export default class HomePage extends React.Component {
               // <source srcset={LogoVideoPc} type="video/mp4" className="videologo" />
               <video autoPlay muted loop className="videologo" playsInline onError={(e) => console.log(e)} >
                 <source src={LogoVideoPcWEB} type="video/webm" />
-                <source src={LogoVideoPc} type="video/mp4" />
+                <source src="https://portfolio.duee.com.br/wp-content/uploads/2020/02/LETRAS_FINALIZADOS.mp4" type="video/mp4" />
               </video>
             // </picture> 
             :
