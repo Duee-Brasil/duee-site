@@ -19,19 +19,28 @@ export default class SlideCounter extends React.Component {
     console.log(pages)
     switch (pages) {
       case 1:
-        this.state.widthBar = 0;
+        // this.state.widthBar = 0;
+        if (this.state.widthBar !== 0) this.setState({ widthBar: 0 })
         break;
       case 2:
-        this.state.widthBar = "33.33%";
+        // this.state.widthBar = "33.33%";
+        if (this.state.widthBar !== "25%") this.setState({ widthBar: "25%" })
         break;
       case 3:
-        this.state.widthBar = "66.66%";
+        // this.state.widthBar = "66.66%";
+        if (this.state.widthBar !== "50%") this.setState({ widthBar: "50%" })
         break;
       case 4:
-        this.state.widthBar = "100%";
+        // this.state.widthBar = "100%";
+        if (this.state.widthBar !== "75%") this.setState({ widthBar: "75%" })
+        break;
+      case 5:
+        // this.state.widthBar = "100%";
+        if (this.state.widthBar !== "100%") this.setState({ widthBar: "100%" })
         break;
       default:
-        this.state.widthBar = 0;
+        // this.state.widthBar = 0;
+        if (this.state.widthBar !== 0) this.setState({ widthBar: 0 })
     }
   }
 

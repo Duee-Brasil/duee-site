@@ -29,15 +29,12 @@ module.exports = [
     component: path.resolve(`src/pages/made2/made2.js`)
   },
   {
-    path: '/conceptstarbucks',
-    component: path.resolve(`src/pages/starbucks/starbucks.js`)
+    path: '/oito',
+    component: path.resolve(`src/pages/oito/oito.js`)
   },
   {
-    path: '/conceptfaxe',
-    component: path.resolve(`src/pages/faxe/faxe.js`)
-  },
-  {
-    path: '/conceptmadeinbrazil',
-    component: path.resolve(`src/pages/made/made.js`)
-  },
+    path: '/portfolio',
+    component: path.resolve(`src/pages/portfolio/portfolio.js`)
+  }
+
 ]

@@ -9,7 +9,7 @@ export default class Navbar extends React.Component {
     super(props);
     this.state = {
       currentPage: 1,
-      dropdownActive: false
+      dropdownActive: true
     };
     this._pageScroller = null;
   }
@@ -33,12 +33,10 @@ export default class Navbar extends React.Component {
       {/*{this.state.dropdownActive ? null : <i className="fas fa-bars icon-menu" onClick={this.activeDropdown}></i>}*/}
       <div id="topbar">
         <div className="logo">
-          <Link to={"/"}><img src={this.props.urlImg} alt=""/></Link>
+          <Link to={"/"}><img src={this.props.urlImg} alt="Duee Brasil"/></Link>
         </div>
         <div className="menuButton">
-          {this.state.dropdownActive ?
-          <i className="fas fa-times" onClick={this.activeDropdown}></i> :
-          <i className="fas fa-bars " onClick={this.activeDropdown}></i>}
+          <i className={this.state.dropdownActive ? "fas fa-times" : "fas fa-bars" } role="button" onClick={() => this.setState({ dropdownActive: !this.state.dropdownActive })} onKeyDown={this.activeDropdown} />
         </div>
       </div>
       {this.state.dropdownActive ?
@@ -55,13 +53,17 @@ export default class Navbar extends React.Component {
               <Link to="/fazemos">Nosso Trabalho</Link>
             </li> */}
             <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://portfolio.duee.com.br">Portfólio</a>
+            <Link to="/portfolio">Portfólio</Link>
+              {/* <a target="_blank" rel="noopener noreferrer" href="https://portfolio.duee.com.br">Portfólio</a> */}
             </li>
             <li>
               <a href="https://dueetando.com.br" target="_blank" rel="noopener noreferrer">Dueetando</a>
             </li>
             <li>
               <Link to="/contato">Contato</Link>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener noreferrer" href="https://dueedrive.duee.com.br">Área do cliente</a>
             </li>
           </ul>
         </div>

@@ -9,24 +9,16 @@ import MouseIcon from '../../components/mouseIcon/mouseIcon'
 import SlideCounter from '../../components/slideCounter/slideCounter'
 import SEO from "../../components/seo"
 
-// import Logo from '../../images/duee.svg'
-import Starbucks from '../../images/home/HOME_STARBUCKS.mp4'
 import StarbucksLogo from '../../images/home/starbucks_logo.svg'
-import FaxeBg from '../../images/home/HOME_FAXE.mp4'
 import FaxeLogo from '../../images/home/FAXE-LOGO.svg'
-import LollaBg from '../../images/home/HOME_MADE.mp4'
 import LollaLogo from '../../images/home/MadeNoLolla.svg'
-import LogoVideoPc from '../../images/home/LETRAS_FINALIZADOS.mp4'
-import LogoVideoMobile from '../../images/home/MOBILE_LETRAS.mp4'
-
-// const Starbucks = 'https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/HOME_STARBUCKS.mp4?alt=media&token=5e861bc4-1b1f-439d-a6cf-48160aa38691'
-// const StarbucksLogo = 'https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/starbucks_logo.svg?alt=media&token=49566697-4c4c-41b1-8d7c-62b766510950'
-// const FaxeBg = 'https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/HOME_FAXE.mp4?alt=media&token=96a0d3ab-4cf9-4f6e-b229-442142c4931b'
-// const FaxeLogo = 'https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/FAXE-LOGO.svg?alt=media&token=103e0665-dc78-4640-9842-6b83f16c6e40'
-// const LollaBg = 'https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/HOME_MADE.mp4?alt=media&token=88db5752-a9a5-4822-b6c0-c1b54e283473'
-// const LollaLogo = 'https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/MadeNoLolla.svg?alt=media&token=e6c0992e-96d3-4f9b-8702-6a633df76733'
-// const LogoVideoPc = 'https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/LETRAS_FINALIZADOS.mp4?alt=media&token=db8e960f-3a7a-478e-9f74-a1a422d0cc47'
-// const LogoVideoMobile = 'https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/MOBILE_LETRAS.mp4?alt=media&token=85478d2c-ce14-4e6e-b862-5299e71c7a4a'
+import LogoVideoMobileWEB from '../../images/home/MOBILE_LETRAS.webm'
+import StarbucksWEB from '../../images/home/HOME_STARBUCKS.webm'
+import FaxeBgWEB from '../../images/home/HOME_FAXE.webm'
+import LollaBgWEB from '../../images/home/HOME_MADE.webm'
+import LogoVideoPcWEB from '../../images/home/LETRAS_FINALIZADOS.webm'
+import Oito from '../../images/home/Oito_videoportifolio.mp4'
+import OitoLogo from '../../images/home/LOGO_Branco.svg'
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -49,7 +41,7 @@ export default class HomePage extends React.Component {
 
   componentDidMount() {
     this.pageOnChange(1)
-    this.setState({width: window.screen.width})
+    this.setState({ width: window.screen.width })
   }
 
   render() {
@@ -69,75 +61,144 @@ export default class HomePage extends React.Component {
         <div id="home" className="page-content">
           <Link to="/leoes">
             {/* <img src={Logoanimado} alt="#somosleoes" /> */}
-            { this.state.width > 768 ?
-              <video src={LogoVideoPc}  autoplay="true" muted="true" loop id="videologo" /> :
-              <video src={LogoVideoMobile} autoPlay="true" muted="true" loop id="videologo"/>}
+            {this.state.width > 768 ?
+              // <video autoPlay={true} muted={true} loop id="videologo" preload="metadata" playsInline>
+              //   <source src={LogoVideoPcWEB} type="video/webm" />
+              //   <source src={LogoVideoPc} type="video/mp4" />
+              // </video>
+              // <picture className="videologo">
+              // <source srcset={LogoVideoPc} type="video/mp4" className="videologo" />
+              <video autoPlay muted loop className="videologo" playsInline onError={(e) => console.log(e)} >
+                <source src={LogoVideoPcWEB} type="video/webm" />
+                <source src="https://portfolio.duee.com.br/wp-content/uploads/2020/02/LETRAS_FINALIZADOS.mp4" type="video/mp4" />
+              </video>
+            // </picture> 
+            :
+              // <video autoPlay={true} muted={true} loop id="videologo" preload="metadata" playsInline>
+              //   <source src={LogoVideoMobileWEB} type="video/webm" />
+              //   <source src={LogoVideoMobile} type="video/mp4" />
+              // </video>
+              // <picture className="videologo">
+              // <source srcset={LogoVideoMobile} type="video/mp4" className="videologo" />
+              <video autoPlay={true} muted={true} loop className="videologo" preload="metadata" playsInline  onError={(e) => console.log(e)}>
+                <source src={LogoVideoMobileWEB} type="video/webm" />
+                <source src="https://portfolio.duee.com.br/wp-content/uploads/2020/02/MOBILE_LETRAS.mp4" type="video/mp4" />
+              </video>
+            // </picture>
+            }
           </Link>
         </div>
 
         <div id="portifolio1" className="page-content">
-        <Link to="/starbucks">
-        <video src={Starbucks}  autoplay="true" muted="true" loop id="videoport">
-            Your browser does not support the video tag.
-</video>
-          {/* <img src= alt=" BackgroStarbucksund" /> */}
-          <div className="BgOpacity"></div>
-          <div className="LogoContainer">
-            <img className="starbucks" src={StarbucksLogo} style={{ maxWidth: "300px" }} alt="Starbucks Logo" />
-          </div>
-          {/*<div className="content">*/}
-          {/*  <div className="title col-12 col-md-4">*/}
-          {/*    <h1>Portifólio</h1>*/}
-          {/*    <a>Saiba mais sobre o projeto</a>*/}
-          {/*  </div>*/}
-          {/*  <div className="col-md-4"></div>*/}
-          {/*  <div className="col-md-4"></div>*/}
-          {/*</div>*/}
+          <Link to="/starbucks">
+            {/* <video autoPlay={true} muted={true} loop id="videoport" preload="metadata" playsInline >
+              <source src={StarbucksWEB} type="video/webm" />
+              <source src={Starbucks} type="video/mp4" />
+
+            </video> */}
+            {/* <picture id="videoport">
+              <source srcset={Starbucks} type="video/mp4" id="videoport" /> */}
+              <video autoPlay={true} muted={true} loop id="videoport" preload="metadata" playsInline  onError={(e) => console.log(e)}>
+                <source src={StarbucksWEB} type="video/webm" />
+                <source src="https://portfolio.duee.com.br/wp-content/uploads/2020/02/HOME_STARBUCKS.mp4" type="video/mp4" />
+              </video>
+            {/* </picture> */}
+            {/* <img src= alt=" BackgroStarbucksund" /> */}
+            <div className="BgOpacity"></div>
+            <div className="LogoContainer">
+              <img className="starbucks" src={StarbucksLogo} style={{ maxWidth: "300px" }} alt="Starbucks Logo" />
+            </div>
+            {/*<div className="content">*/}
+            {/*  <div className="title col-12 col-md-4">*/}
+            {/*    <h1>Portifólio</h1>*/}
+            {/*    <a>Saiba mais sobre o projeto</a>*/}
+            {/*  </div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*</div>*/}
           </Link>
         </div>
 
         <div id="portifolio2" className="page-content">
-        <Link to="/faxe">
-          {/* <img src={FaxeBg} alt="Faxe Background" /> */}
-          <video src={FaxeBg} autoplay="true" muted="true" loop id="videoport"/>
-          <div className="BgOpacity"></div>
-          <div className="LogoContainer">
-            <img src={FaxeLogo} alt="Faxe Logo" />
-          </div>
-          {/*<div className="content">*/}
-          {/*  <div className="title col-12 col-md-4">*/}
-          {/*    <h1>Portifólio</h1>*/}
-          {/*    <a>Saiba mais sobre o projeto</a>*/}
-          {/*  </div>*/}
-          {/*  <div className="col-md-4"></div>*/}
-          {/*  <div className="col-md-4"></div>*/}
-          {/*</div>*/}
+          <Link to="/faxe">
+            {/* <img src={FaxeBg} alt="Faxe Background" /> */}
+            {/* <video autoPlay={true} muted={true} loop id="videoport" preload="metadata" playsInline>
+              <source src={FaxeBgWEB} type="video/webm" />
+              <source src={FaxeBg} type="video/mp4" />
+            </video> */}
+            {/* <picture id="videoport">
+              <source srcset={FaxeBg} type="video/mp4" id="videoport" /> */}
+              <video autoPlay={true} muted={true} loop id="videoport" preload="metadata" playsInline  onError={(e) => console.log(e)}>
+                <source src={FaxeBgWEB} type="video/webm" />
+                <source src="https://portfolio.duee.com.br/wp-content/uploads/2020/02/HOME_FAXE.mp4" type="video/mp4" />
+              </video>
+            {/* </picture> */}
+            <div className="BgOpacity"></div>
+            <div className="LogoContainer">
+              <img src={FaxeLogo} alt="Faxe Logo" />
+            </div>
+            {/*<div className="content">*/}
+            {/*  <div className="title col-12 col-md-4">*/}
+            {/*    <h1>Portifólio</h1>*/}
+            {/*    <a>Saiba mais sobre o projeto</a>*/}
+            {/*  </div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*</div>*/}
           </Link>
         </div>
 
         <div id="portifolio2" className="page-content">
-        <Link to="/madeinbrazil">
-          {/* <img src={LollaBg} alt="Lolla Background"/> */}
-          <video src={LollaBg}  autoplay="true" muted="true" loop id="videoport">
-            Your browser does not support the video tag.
-</video>
-          <div className="BgOpacity"></div>
-          <div className="LogoContainer">
-            <img src={LollaLogo} alt="Lolla Logo" />
-          </div>
-          {/*<div className="content">*/}
-          {/*  <div className="title col-12 col-md-4">*/}
-          {/*    <h1>Portifólio</h1>*/}
-          {/*    <a>Saiba mais sobre o projeto</a>*/}
-          {/*  </div>*/}
-          {/*  <div className="col-md-4"></div>*/}
-          {/*  <div className="col-md-4"></div>*/}
-          {/*</div>*/}
+          <Link to="/madeinbrazil">
+            {/* <img src={LollaBg} alt="Lolla Background"/> */}
+            {/* <video autoPlay={true} muted={true} loop id="videoport" preload="metadata" playsInline>
+              <source src={LollaBgWEB} type="video/webm" />
+              <source src={LollaBg} type="video/mp4" />
+            </video> */}
+            {/* <picture id="videoport">
+              <source srcset={LollaBg} type="video/mp4" id="videoport" /> */}
+              <video autoPlay={true} muted={true} loop id="videoport" preload="metadata" playsInline  onError={(e) => console.log(e)}>
+                <source src={LollaBgWEB} type="video/webm" />
+                <source src="https://portfolio.duee.com.br/wp-content/uploads/2020/02/HOME_MADE.mp4" type="video/mp4" />
+              </video>
+            {/* </picture> */}
+            <div className="BgOpacity"></div>
+            <div className="LogoContainer">
+              <img src={LollaLogo} alt="Lolla Logo" />
+            </div>
+            {/*<div className="content">*/}
+            {/*  <div className="title col-12 col-md-4">*/}
+            {/*    <h1>Portifólio</h1>*/}
+            {/*    <a>Saiba mais sobre o projeto</a>*/}
+            {/*  </div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*</div>*/}
           </Link>
         </div>
+
+        <div id="portifolio2" className="page-content">
+          <Link to="/oito">
+            {/* <img src={LollaBg} alt="Lolla Background"/> */}
+            <video src={Oito} autoPlay={true} muted={true} loop id="videoport" preload="metadata" playsInline onError={(e) => console.log(e)} />
+            <div className="BgOpacity"></div>
+            <div className="LogoContainer">
+              <img src={OitoLogo} alt="Lolla Logo" />
+            </div>
+            {/*<div className="content">*/}
+            {/*  <div className="title col-12 col-md-4">*/}
+            {/*    <h1>Portifólio</h1>*/}
+            {/*    <a>Saiba mais sobre o projeto</a>*/}
+            {/*  </div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*</div>*/}
+          </Link>
+        </div>
+
       </ReactPageScroller>
     </Layout>
   }
 }
 
-      //export default HomePage
+          //export default HomePage

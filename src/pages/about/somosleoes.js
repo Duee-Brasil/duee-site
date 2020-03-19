@@ -23,6 +23,43 @@ import Hashtag from '../../images/SOMOSLEOES.png'
 
 import Trabalho from '../nosso-trabalho/nossotrabalho'
 
+import clt1 from '../../images/portfolio/clients/Prancheta 1.png'
+import clt2 from '../../images/portfolio/clients/Prancheta 1 cópia.png'
+import clt3 from '../../images/portfolio/clients/Prancheta 1 cópia 2.png'
+import clt4 from '../../images/portfolio/clients/Prancheta 1 cópia 3.png'
+import clt5 from '../../images/portfolio/clients/Prancheta 1 cópia 4.png'
+import clt6 from '../../images/portfolio/clients/Prancheta 1 cópia 5.png'
+import clt7 from '../../images/portfolio/clients/Prancheta 1 cópia 6.png'
+import clt8 from '../../images/portfolio/clients/Prancheta 1 cópia 7.png'
+import clt9 from '../../images/portfolio/clients/Prancheta 1 cópia 8.png'
+import clt10 from '../../images/portfolio/clients/Prancheta 1 cópia 9.png'
+import clt11 from '../../images/portfolio/clients/Prancheta 1 cópia 10.png'
+import clt12 from '../../images/portfolio/clients/Prancheta 1 cópia 11.png'
+import clt13 from '../../images/portfolio/clients/Prancheta 1 cópia 12.png'
+import clt14 from '../../images/portfolio/clients/Prancheta 1 cópia 13.png'
+import clt15 from '../../images/portfolio/clients/Prancheta 1 cópia 14.png'
+import clt16 from '../../images/portfolio/clients/Prancheta 1 cópia 15.png'
+import clt17 from '../../images/portfolio/clients/Prancheta 1 cópia 16.png'
+import clt18 from '../../images/portfolio/clients/Prancheta 1 cópia 17.png'
+import clt19 from '../../images/portfolio/clients/Prancheta 1 cópia 18.png'
+import clt20 from '../../images/portfolio/clients/Prancheta 1 cópia 19.png'
+import clt21 from '../../images/portfolio/clients/Prancheta 1 cópia 20.png'
+import clt22 from '../../images/portfolio/clients/Prancheta 1 cópia 21.png'
+import clt23 from '../../images/portfolio/clients/Prancheta 1 cópia 22.png'
+import clt24 from '../../images/portfolio/clients/Prancheta 1 cópia 23.png'
+import clt25 from '../../images/portfolio/clients/Prancheta 1 cópia 24.png'
+import clt26 from '../../images/portfolio/clients/Prancheta 1 cópia 25.png'
+import clt27 from '../../images/portfolio/clients/Prancheta 1 cópia 26.png'
+import clt28 from '../../images/portfolio/clients/Prancheta 1 cópia 27.png'
+import clt29 from '../../images/portfolio/clients/Prancheta 1 cópia 28.png'
+import clt30 from '../../images/portfolio/clients/Prancheta 1 cópia 29.png'
+import clt31 from '../../images/portfolio/clients/Prancheta 1 cópia 30.png'
+import clt32 from '../../images/portfolio/clients/Prancheta 1 cópia 31.png'
+import clt33 from '../../images/portfolio/clients/Prancheta 1 cópia 32.png'
+import clt34 from '../../images/portfolio/clients/Prancheta 1 cópia 33.png'
+import clt35 from '../../images/portfolio/clients/Prancheta 1 cópia 34.png'
+import clt36 from '../../images/portfolio/clients/Prancheta 1 cópia 35.png'
+
 
 import { Collapse } from 'react-collapse';
 
@@ -37,10 +74,14 @@ export default class SomosLeoes extends React.Component {
         }
     }
 
-    handleChangeIndex = index => {
-        this.setState({
-            index,
-        });
+    handleChangeIndex(index) {
+
+        if (index) {
+            this.setState({
+                index
+            });
+        }
+
     };
 
 
@@ -55,10 +96,6 @@ export default class SomosLeoes extends React.Component {
                     <div className="col-xs-12">
                     </div>
                 </div>
-                {/* <video id="video" className="video" controls autoplay="autoplay">
-                    <source src="https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2FDUEE_COMPLETO.mp4?alt=media&token=551c33ba-9d03-495b-b040-90c15394e7d7" type="video/mp4" />
-                    Your browser does not support HTML5 video.
-</video> */}
                 <div className="row video" id="videoapresentacao">
                     <iframe src="https://player.vimeo.com/video/355173390" title="Duee Brasil" className="video col-xs-12" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
@@ -77,13 +114,11 @@ export default class SomosLeoes extends React.Component {
                             <h1 className="glitchhover" value="A GENTE FAZ">A GENTE FAZ</h1>
                         </div>
                         <div className="col-md-7 col-xs-12" id="manifesto">
-                            <p>A Duee é uma agência full service, que preza pela comunicação integrada, porque sabe que o mundo não se divide em on e off. Não criamos apenas conteúdos e campanhas,
-                                        nós geramos ideias e conexões.</p>
-                            <p>Nós somos uma agência que acredita que o trabalho está em constante movimento. Por isso, estamos sempre atentos às novidades, ao público,
-                                        às revoluções e novas ideias.</p>
-                            <p>É por meio de nossa paixão, criatividade e estratégias que ajudamos marcas a terem retornos eficientes, se tornarem relevantes e atingirem grandes resultados.</p>
-                            <p>O conceito A Gente Faz traduz  a nossa experiência de 11 anos, nosso espírito de equipe e de proatividade. É o reflexo do nosso posicionamento como agência 360 graus.
-                                            A gente faz criativo. A gente faz diferente. A gente faz inteligente.</p>
+                            <p>A Duee é uma agência full service, que preza pela comunicação integrada, porque sabe que o mundo não se divide em on e off.</p>
+                            <p>Não criamos apenas conteúdos e campanhas, nós geramos ideias e conexões.</p>
+                            <p>Nós somos uma agência que acredita que o trabalho está em constante movimento e, por isso, estamos sempre atentos às novidades, ao público, às revoluções e novas ideias.</p>
+                            <p>É por meio de nossa paixão, criatividade e de estratégias que ajudamos marcas a terem retornos eficientes, se tornarem relevantes e atingirem grandes resultados.</p>
+                            <p>O conceito "A Gente Faz" traduz a nossa experiência de 11 anos, o nosso espírito de equipe e de proatividade. É o reflexo do nosso posicionamento como agência 360 graus. A gente faz criativo. A gente faz diferente. A gente faz inteligente.</p>
                             <p>Eventos? A gente faz.</p>
                             <p>Digital? A gente faz.</p>
                             <p>Branding? A gente faz.</p>
@@ -107,6 +142,48 @@ export default class SomosLeoes extends React.Component {
 
                 <Trabalho />
 
+                <div className="row col-xs-12 clients">
+                    <h2 className="col-xs-12 title">Clientes</h2>
+                    <News img={clt1} />
+                    <News img={clt2} />
+                    <News img={clt3} />
+                    <News img={clt4} />
+                    <News img={clt5} />
+                    <News img={clt6} />
+                    <News img={clt7} />
+                    <News img={clt8} />
+                    <News img={clt9} />
+                    <News img={clt10} />
+                    <News img={clt11} />
+                    <News img={clt12} />
+                    <News img={clt12} />
+                    <News img={clt13} />
+                    <News img={clt14} />
+                    <News img={clt15} />
+                    <News img={clt16} />
+                    <News img={clt17} />
+                    <News img={clt18} />
+                    <News img={clt19} />
+                    <News img={clt20} />
+                    <News img={clt21} />
+                    <News img={clt22} />
+                    <News img={clt23} />
+                    <News img={clt24} />
+                    <News img={clt25} />
+                    <News img={clt26} />
+                    <News img={clt27} />
+                    <News img={clt28} />
+                    <News img={clt29} />
+                    <News img={clt30} />
+                    <News img={clt31} />
+                    <News img={clt32} />
+                    <News img={clt33} />
+                    <News img={clt34} />
+                    <News img={clt35} />
+                    <News img={clt36} />
+
+                </div>
+
                 <div id='news' className="row" >
                     <div className="col-xs-12 center-xs">
                         <button type='button' onClick={() => this.setState({ openNews: !this.state.openNews })}>Ver Mais</button>
@@ -124,7 +201,7 @@ export default class SomosLeoes extends React.Component {
 
                                         <div className="col-xs-12 around-xs">
                                             <div className="row">
-                                                <AutoPlaySwipeableViews index={this.state.index} onChangeIndex={this.handleChangeIndex}>
+                                                <AutoPlaySwipeableViews index={this.state.index} onChangeIndex={() => this.handleChangeIndex}>
                                                     <div className="depo"><h5>“Os maiores diferenciais da Duee são principalmente a confiança, transparência e qualidade. A Duee é uma agência que preza pelo respeito com o cliente.”</h5>
                                                         <p><strong>Sandra Collier</strong></p>
                                                         <p>Gerente de Marketing, Walmart Brasil</p></div>

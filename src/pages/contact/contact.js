@@ -33,13 +33,13 @@ const Contato = () => (
                         <h4>Telefone</h4>
                         <p>11 2532.7152</p>
                     </div>
-                    <div className="col-md-3 col-xs-12 col-sm-6 mail middle-xs">
+                    <div className="col-md-3 col-xs-12 col-sm-6 mail middle-xs center-xs">
                         <i className="fas fa-mail-bulk hatch"></i>
                         <h4>Novos negócios</h4>
                         <p>Monalisa</p>
                         <p><a href="mailto:monalisa@dueebrasil.com.br">monalisa@dueebrasil.com.br</a></p>
                     </div>
-                    <div className="col-md-3 col-xs-12 col-sm-6 social middle-xs">
+                    <div className="col-md-3 col-xs-12 col-sm-6 social middle-xs center-xs">
                         <h4><a href="https://www.facebook.com/agenciadueebrasil" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></h4>
                         <h4><a href="https://www.instagram.com/dueebrasil" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></h4>
                         <h4><a href="https://www.linkedin.com/company/duee-brasil" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></h4>
@@ -50,10 +50,6 @@ const Contato = () => (
                     </div>
                 </div>
             </div>
-            {/* <Link to="/fazemos">O que fazemos</Link><br/>
-                <Link to="/leoes">#somosleos</Link><br/>
-                <Link to="/contato">Clientes</Link><br/>
-                <Link to="/">Home</Link> */}
     </Layout>
 )
 

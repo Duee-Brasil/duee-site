@@ -1,0 +1,121 @@
+.banner-one {
+    background: transparent url(../../images/oito/banner-1-1.png) top right no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 274px;
+    padding-bottom: 515px;
+    z-index: 11;
+
+    img {
+        width: auto !important;
+    }
+
+
+    &__globe {
+    	position: absolute;
+    	top: 15%;
+        left: 15%;
+        
+    	animation-fill-mode: both;
+        animation-name: globeRotate;
+        animation-timing-function: linear;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    &__content {
+    	padding: 20px;
+    }
+
+    a {
+        width: fit-content;
+    }
+
+    &__rocket {
+    	position: absolute;
+    	bottom: 40%;
+    	left: 40%;
+
+    	animation-fill-mode: both;
+        animation-name: rocketMove;
+        animation-timing-function: linear;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+    }
+
+    &__moc {
+        position: absolute;
+        top: 140px;
+        right: 0;
+        max-width: 60vw;
+
+        animation-fill-mode: both;
+        animation-name: shapeRotate;
+        animation-timing-function: linear;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        transform-origin: center center;
+    }
+
+    &__tag-line {
+        margin: 0;
+        display: inline-block;
+        border-radius: 16px;
+        background-color: rgba(#fff, .1);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        overflow: hidden;
+        color: #FFFFFF;
+        // font-family: $thm_font_bold;
+        line-height: 32px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        a {
+            display: inline-block;
+            background-color: $thm_primary_color;
+            color: $thm_black;
+            line-height: 32px;
+            padding: 0 20px;
+            margin-left: 10px;
+            transition: all .4s ease;
+
+            &:hover {
+                background-color: $thm_black;
+                color: #fff;
+            }
+        }
+    }
+
+    &__title {
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        color: #fff;
+        font-size: 70px;
+        line-height: 80px;
+        // font-family: $thm_font_extrabold;
+        letter-spacing: -0.04em;
+    }
+}
+
+@keyframes globeRotate  {
+	8% {
+		transform: perspective(200px) rotateX(0deg);
+	}
+	100% {
+		transform: perspective(200px) rotateX(360deg);
+	}
+}
+
+@keyframes rocketMove  {
+	8% {
+		transform: perspective(600px) translateY(0) translateX(0) rotate(0);
+		opacity: 1;
+	}
+	100% {
+		transform: perspective(600px) translateY(-400px) translateX(-300px) rotate(0);
+		opacity: 0;
+	}
+}
