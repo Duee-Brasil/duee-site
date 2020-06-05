@@ -90,6 +90,7 @@ import Posto from './pages/walmart-posto'
 import BauduccoM from "./pages/bauducco-midia"
 import MadeM from './pages/made-midia'
 import Inovini from './pages/inovini'
+import Maille from "./pages/maille"
 
 export default class Portfolio extends Component {
     constructor(props) {
@@ -163,6 +164,7 @@ export default class Portfolio extends Component {
                     </div>
 
                     <div className="content row col-xs-12 ib-main">
+                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/06/capa.jpg" title="Maille" open={() => this.showModal(<Maille />)} />
                     <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/03/Untitled-2.png" title="Inovini" open={() => this.showModal(<Inovini />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/capa_img_site_starbucks.jpg" title="Panetone Starbucks" open={() => this.showModal(<Panetone />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" title="Black Friday Made" open={() => this.showModal(<BFMade />)} />
