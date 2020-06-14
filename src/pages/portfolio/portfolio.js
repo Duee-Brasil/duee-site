@@ -30,7 +30,7 @@ import Estagiario from './pages/estagiario'
 import Roadshow from './pages/sbks-roadshow'
 import Plataforma from './pages/plataforma-via'
 import CodorniuSite from './pages/cordorniu-site'
-import Sene from './pages/sene'
+// import Sene from './pages/sene'
 import Jogo from './pages/sbkd-jogo'
 import Urso from './pages/vedett-urso'
 import Anatomy from './pages/codorniu-anatomy'
@@ -91,6 +91,8 @@ import BauduccoM from "./pages/bauducco-midia"
 import MadeM from './pages/made-midia'
 import Inovini from './pages/inovini'
 import Maille from "./pages/maille"
+import BML2020 from "./pages/bm-lanc2020"
+import Giglio from "./pages/giglio"
 
 export default class Portfolio extends Component {
     constructor(props) {
@@ -165,7 +167,9 @@ export default class Portfolio extends Component {
 
                     <div className="content row col-xs-12 ib-main">
                     <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/06/capa.jpg" title="Maille" open={() => this.showModal(<Maille />)} />
+                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-blue-moon-1_04.png" title="Blue Moon" open={() => this.showModal(<BML2020 />)} />
                     <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/03/Untitled-2.png" title="Inovini" open={() => this.showModal(<Inovini />)} />
+                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/06/Giglio_linkdln_PT.png" title="Giglio Neto" open={() => this.showModal(<Giglio />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/capa_img_site_starbucks.jpg" title="Panetone Starbucks" open={() => this.showModal(<Panetone />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" title="Black Friday Made" open={() => this.showModal(<BFMade />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/capinha-casal.png" title="Geladeiras Casal Garcia" open={() => this.showModal(<Geladeiras />)} />
@@ -193,7 +197,7 @@ export default class Portfolio extends Component {
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/07/4c128dec-7acb-445e-b279-ffacbfb5d663.jpeg" title="Starbucks roadshow winter" open={() => this.showModal(<Roadshow />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/07/site_via01.jpg" title="Plataforma digital - instituto via de acesso" open={() => this.showModal(<Plataforma />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/05/Captura-de-Tela-2017-05-26-às-16.08.52.jpg" title="Site Codorníu" open={() => this.showModal(<CodorniuSite />)} />
-                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/05/cover_Sene.jpg" title="Site Sene" open={() => this.showModal(<Sene />)} />
+                        {/* <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/05/cover_Sene.jpg" title="Site Sene" open={() => this.showModal(<Sene />)} /> */}
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/03/logo_Starbucks.jpg" title="Starbucks - Jogo das estrelas 2017" open={() => this.showModal(<Jogo />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/03/IMG_4273.jpg" title="Vedett - vedett on the road" open={() => this.showModal(<Urso />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2017/03/31ab6449958441.58c2f4e5c9e0e.jpg" title="codorníu - web serie drink`s anatomy" open={() => this.showModal(<Anatomy />)} />

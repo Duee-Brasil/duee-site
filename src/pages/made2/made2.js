@@ -92,34 +92,55 @@ export default class Made extends Component {
                     <div className="row col-xs-12">
                         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4, 1700: 5 }}>
                             <Masonry>
+                            <video controls autoPlay={true} muted={true} loop type="col-xs-12 video/mp4" playsInline className="material" src="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-1.mp4" />
                                 <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
                                     <source src={Vd1W} type="video/webm" />
                                     <source src={Vd1} type="video/mp4" />
                                 </video>
+                                <video controls autoPlay={true} muted={true} loop type="col-xs-12 video/mp4" playsInline className="material" src="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-1-1.mp4" />
+                                <img src='https://portfolio.duee.com.br/wp-content/uploads/2020/06/3-made.png' alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img12} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img1} alt="conteudo madeinbrazil" className="material" />
+                                <video controls autoPlay={true} muted={true} loop type="col-xs-12 video/mp4" playsInline className="material" src="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-2.mp4" />
+                                <img src='https://portfolio.duee.com.br/wp-content/uploads/2020/06/banner-made-institucional.gif' alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img29} alt="conteudo madeinbrazil" className="material" />
+                                <video controls autoPlay={true} muted={true} loop type="col-xs-12 video/mp4" playsInline className="material" src="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-3.mp4" />
                                 <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
                                     <source src={Vd3W} type="video/webm" />
                                     <source src={Vd3} type="video/mp4" />
                                 </video>
+                                <img src='https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-3-junho-2.png' alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img3} alt="conteudo madeinbrazil" className="material" />
+                                <video controls autoPlay={true} muted={true} loop type="col-xs-12 video/mp4" playsInline className="material" src="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-2-1.mp4" />
                                 <img src={Img35} alt="conteudo madeinbrazil" className="material" />
+                                <video controls autoPlay={true} muted={true} loop type="col-xs-12 video/mp4" playsInline className="material" src="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-3-1.mp4" />
+                                <img src='https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-5.png' alt="conteudo madeinbrazil" className="material" />
+                                <img src='https://portfolio.duee.com.br/wp-content/uploads/2020/06/banner-made-dia-dos-namorados.gif' alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img5} alt="conteudo madeinbrazil" className="material" />
+                                <img src='https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-2-junho-3.png' alt="conteudo madeinbrazil" className="material" />
                                 <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
                                     <source src={Vd7W} type="video/webm" />
                                     <source src={Vd7} type="video/mp4" />
                                 </video>
+                                <img src='https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-2-junho-2.png' alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img6} alt="conteudo madeinbrazil" className="material" />
+                                <video controls autoPlay={true} muted={true} loop type="col-xs-12 video/mp4" playsInline className="material" src="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-1-junho-3.mp4" />
+                                <img src='https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-4.png' alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img7} alt="conteudo madeinbrazil" className="material" />
+                                <video controls autoPlay={true} muted={true} loop type="col-xs-12 video/mp4" playsInline className="material" src="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-4-junho-2.mp4" />
+                                <img src='https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-2.png' alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img8} alt="conteudo madeinbrazil" className="material" />
                                 <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
                                     <source src={Vd2W} type="video/webm" />
                                     <source src={Vd2} type="video/mp4" />
                                 </video>
+                                <video controls autoPlay={true} muted={true} loop type="col-xs-12 video/mp4" playsInline className="material" src="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-5-junho-2.mp4" />
                                 <img src={Img10} alt="conteudo madeinbrazil" className="material" />
+                                <video controls autoPlay={true} muted={true} loop type="col-xs-12 video/mp4" playsInline className="material" src="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-5-junho-3.mp4" />
                                 <img src={Img11} alt="conteudo madeinbrazil" className="material" />
+
                                 <img src={Img19} alt="conteudo madeinbrazil" className="material" />
+                                <video controls autoPlay={true} muted={true} loop type="col-xs-12 video/mp4" playsInline className="material" src="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-6-junho-3.mp4" />
                                 <img src={Img13} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img14} alt="conteudo madeinbrazil" className="material" />
                                 <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>

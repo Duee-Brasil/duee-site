@@ -43,9 +43,7 @@ export default class Maille extends React.Component {
             <div className="row content describes">
                 <div className="col-xs-12 col-md-8 col-sm-6">
                     <p><b>SOBRE O PROJETO</b></p>
-                    <p>A Maille une mais de 260 anos de tradição com a modernidade de pertencer a uma empresa global como a Unilever.
-A excelência em mostarda Dijon se deve aos Maître Moutardiers, que elaboram e escolhem os ingredientes de cada produto, e ao uso de sementes de mostarda de melhor qualidade, a Brassica Juncea.
-Lançando sabores e edições limitadas, Maille inova e moderniza uma marca tradicional na França.</p>
+                    <p>A Maille uma marca tradicional na França, que une mais de 260 anos de tradição com a modernidade de pertencer a uma empresa global como a Unilever. A excelência em mostarda Dijon se deve aos Maître Moutardiers, que elaboram e escolhem os ingredientes de cada produto, e ao uso de sementes de mostarda de melhor qualidade, a Brassica Juncea. A DUEE Brasil é responsável por toda a comunicação da marca no Brasil. </p>
                 </div>
                 <div className="col-xs-12 col-md-4 col-sm-6">
                     <p><b>DETALHES DO PROJETO</b></p>
