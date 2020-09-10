@@ -33,19 +33,14 @@ export default class Layout extends React.Component {
             {/* <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script> */}
             {/* <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script> */}
           </Helmet>
-          {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+          
           <Navbar urlImg={Logo}/>
 
           <div>
             <main>{this.props.children}</main>
-            {/*<footer>*/}
-            {/*  © {new Date().getFullYear()}, Built with*/}
-            {/*  {` `}*/}
-            {/*  <a href="https://www.gatsbyjs.org">Gatsby</a>*/}
-            {/*</footer>*/}
           </div>
           {/* <i className="fab fa-whatsapp-square"/> */}
-          <a href="https://api.whatsapp.com/send?phone=5511951322976" target="_blank" className="wppbutton"><img src={Wpp} /></a>
+          {/* <a href="https://api.whatsapp.com/send?phone=5511951322976" target="_blank" className="wppbutton"><img src={Wpp} /></a> */}
         </>
       )
     }
