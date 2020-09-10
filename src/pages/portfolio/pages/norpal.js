@@ -19,7 +19,7 @@ export default class Norpal extends React.Component {
             </div>
             <div className="row conteudo content">
                 <div className="col-xs-12">
-                    <img src="https://portfolio.duee.com.br/wp-content/uploads/2017/05/Captura-de-Tela-2017-05-26-a%CC%80s-16.26.46.png" alt="" />
+                    <img src="https://portfolio.duee.com.br/wp-content/uploads/2016/02/norpal1-1.jpg" alt="" />
                 </div>
             </div>
 
