@@ -18,7 +18,7 @@ import Mundomkt from '../../images/noticias/logos_AI-1.jpg'
 import Mkgpro from '../../images/noticias/logos_AI-2.jpg'
 import Clientesa from '../../images/noticias/logo_clientesa.jpg'
 import Proxxima from '../../images/noticias/logo_proxxima.jpg'
-import Leaocolor from '../../images/Leão-Duee-color.png'
+import Leaocolor from '../../images/Leão-Duee-color.png'
 import Hashtag from '../../images/SOMOSLEOES.png'
 
 import Trabalho from '../nosso-trabalho/nossotrabalho'
