@@ -93,6 +93,8 @@ import Inovini from './pages/inovini'
 import Maille from "./pages/maille"
 import BML2020 from "./pages/bm-lanc2020"
 import Giglio from "./pages/giglio"
+import Kalassi from "./pages/kalassi"
+import StarbucksTapume from "./pages/starbucks-tapume"
 
 export default class Portfolio extends Component {
     constructor(props) {
@@ -143,14 +145,14 @@ export default class Portfolio extends Component {
                 <SEO title="Portfólio" />
                 {/* <!-- First --> */}
                 <div className="row ib-main-wrapper" id="portfolio">
-                    
+
                     <div className="ib-content-full">
                         <div className="closebar" onClick={() => this.showModal()}><i className="fas fa-times" /></div>
                         <div className="backButton" onClick={() => this.showModal()}>Voltar</div>
-                        
+
                         {typeof this.state.link === "string" ?
-                            <iframe src={this.state.link} onLoad={() => this.loadPage()} id="htmlcontent"/>
-                             : this.state.link }
+                            <iframe src={this.state.link} onLoad={() => this.loadPage()} id="htmlcontent" />
+                            : this.state.link}
 
                         <div className="loading">
                             <div className="loading-text">
@@ -166,10 +168,12 @@ export default class Portfolio extends Component {
                     </div>
 
                     <div className="content row col-xs-12 ib-main">
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/06/capa.jpg" title="Maille" open={() => this.showModal(<Maille />)} />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-blue-moon-1_04.png" title="Blue Moon" open={() => this.showModal(<BML2020 />)} />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/03/Untitled-2.png" title="Inovini" open={() => this.showModal(<Inovini />)} />
-                    <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/06/Giglio_linkdln_PT.png" title="Giglio Neto" open={() => this.showModal(<Giglio />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/10/kalassi.png" title="Kalassi" open={() => this.showModal(<Kalassi />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/10/capastarbucks.png" title="Tapume Starbucks" open={() => this.showModal(<StarbucksTapume />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/06/capa.jpg" title="Maille" open={() => this.showModal(<Maille />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-blue-moon-1_04.png" title="Blue Moon" open={() => this.showModal(<BML2020 />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/03/Untitled-2.png" title="Inovini" open={() => this.showModal(<Inovini />)} />
+                        <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/06/Giglio_linkdln_PT.png" title="Giglio Neto" open={() => this.showModal(<Giglio />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/capa_img_site_starbucks.jpg" title="Panetone Starbucks" open={() => this.showModal(<Panetone />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/saisdsjd.png" title="Black Friday Made" open={() => this.showModal(<BFMade />)} />
                         <Case img="https://portfolio.duee.com.br/wp-content/uploads/2020/01/capinha-casal.png" title="Geladeiras Casal Garcia" open={() => this.showModal(<Geladeiras />)} />

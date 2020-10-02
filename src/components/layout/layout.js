@@ -40,7 +40,7 @@ export default class Layout extends React.Component {
             <main>{this.props.children}</main>
           </div>
           {/* <i className="fab fa-whatsapp-square"/> */}
-          {/* <a href="https://api.whatsapp.com/send?phone=5511951322976" target="_blank" className="wppbutton"><img src={Wpp} /></a> */}
+          <a href="https://api.whatsapp.com/send?phone=5511951322976" target="_blank" className="wppbutton"><img src={Wpp} /></a>
         </>
       )
     }
