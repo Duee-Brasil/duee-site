@@ -18,47 +18,50 @@ import Mundomkt from '../../images/noticias/logos_AI-1.jpg'
 import Mkgpro from '../../images/noticias/logos_AI-2.jpg'
 import Clientesa from '../../images/noticias/logo_clientesa.jpg'
 import Proxxima from '../../images/noticias/logo_proxxima.jpg'
-import Leaocolor from '../../images/Leão-Duee-color.png'
+import Leaocolor from '../../images/Leao-Duee-color.png'
 import Hashtag from '../../images/SOMOSLEOES.png'
 
 import Trabalho from '../nosso-trabalho/nossotrabalho'
 
 import clt1 from '../../images/portfolio/clients/Prancheta 1.png'
-import clt2 from '../../images/portfolio/clients/Prancheta 1 cópia.png'
-import clt3 from '../../images/portfolio/clients/Prancheta 1 cópia 2.png'
-import clt4 from '../../images/portfolio/clients/Prancheta 1 cópia 3.png'
-import clt5 from '../../images/portfolio/clients/Prancheta 1 cópia 4.png'
-import clt6 from '../../images/portfolio/clients/Prancheta 1 cópia 5.png'
-import clt7 from '../../images/portfolio/clients/Prancheta 1 cópia 6.png'
-import clt8 from '../../images/portfolio/clients/Prancheta 1 cópia 7.png'
-import clt9 from '../../images/portfolio/clients/Prancheta 1 cópia 8.png'
-import clt10 from '../../images/portfolio/clients/Prancheta 1 cópia 9.png'
-import clt11 from '../../images/portfolio/clients/Prancheta 1 cópia 10.png'
-import clt12 from '../../images/portfolio/clients/Prancheta 1 cópia 11.png'
-import clt13 from '../../images/portfolio/clients/Prancheta 1 cópia 12.png'
-import clt14 from '../../images/portfolio/clients/Prancheta 1 cópia 13.png'
-import clt15 from '../../images/portfolio/clients/Prancheta 1 cópia 14.png'
-import clt16 from '../../images/portfolio/clients/Prancheta 1 cópia 15.png'
-import clt17 from '../../images/portfolio/clients/Prancheta 1 cópia 16.png'
-import clt18 from '../../images/portfolio/clients/Prancheta 1 cópia 17.png'
-import clt19 from '../../images/portfolio/clients/Prancheta 1 cópia 18.png'
-import clt20 from '../../images/portfolio/clients/Prancheta 1 cópia 19.png'
-import clt21 from '../../images/portfolio/clients/Prancheta 1 cópia 20.png'
-import clt22 from '../../images/portfolio/clients/Prancheta 1 cópia 21.png'
-import clt23 from '../../images/portfolio/clients/Prancheta 1 cópia 22.png'
-import clt24 from '../../images/portfolio/clients/Prancheta 1 cópia 23.png'
-import clt25 from '../../images/portfolio/clients/Prancheta 1 cópia 24.png'
-import clt26 from '../../images/portfolio/clients/Prancheta 1 cópia 25.png'
-import clt27 from '../../images/portfolio/clients/Prancheta 1 cópia 26.png'
-import clt28 from '../../images/portfolio/clients/Prancheta 1 cópia 27.png'
-import clt29 from '../../images/portfolio/clients/Prancheta 1 cópia 28.png'
-import clt30 from '../../images/portfolio/clients/Prancheta 1 cópia 29.png'
-import clt31 from '../../images/portfolio/clients/Prancheta 1 cópia 30.png'
-import clt32 from '../../images/portfolio/clients/Prancheta 1 cópia 31.png'
-import clt33 from '../../images/portfolio/clients/Prancheta 1 cópia 32.png'
-import clt34 from '../../images/portfolio/clients/Prancheta 1 cópia 33.png'
-import clt35 from '../../images/portfolio/clients/Prancheta 1 cópia 34.png'
-import clt36 from '../../images/portfolio/clients/Prancheta 1 cópia 35.png'
+import clt2 from '../../images/portfolio/clients/Prancheta 1aa.png'
+import clt3 from '../../images/portfolio/clients/Prancheta 1a.png'
+import clt4 from '../../images/portfolio/clients/Prancheta 1b.png'
+import clt5 from '../../images/portfolio/clients/Prancheta 1c.png'
+import clt6 from '../../images/portfolio/clients/Prancheta 1d.png'
+import clt7 from '../../images/portfolio/clients/Prancheta 1e.png'
+import clt8 from '../../images/portfolio/clients/Prancheta 1 f.png'
+import clt9 from '../../images/portfolio/clients/Prancheta 1g.png'
+import clt10 from '../../images/portfolio/clients/Prancheta 1h.png'
+import clt11 from '../../images/portfolio/clients/Prancheta 1i.png'
+import clt12 from '../../images/portfolio/clients/Prancheta 1j.png'
+import clt13 from '../../images/portfolio/clients/Prancheta 1k.png'
+import clt14 from '../../images/portfolio/clients/Prancheta 1l.png'
+import clt15 from '../../images/portfolio/clients/Prancheta 1m.png'
+import clt16 from '../../images/portfolio/clients/Prancheta 1n.png'
+import clt17 from '../../images/portfolio/clients/Prancheta 1o.png'
+import clt18 from '../../images/portfolio/clients/Prancheta 1p.png'
+import clt19 from '../../images/portfolio/clients/Prancheta 1q.png'
+import clt20 from '../../images/portfolio/clients/Prancheta 1r.png'
+import clt21 from '../../images/portfolio/clients/Prancheta 1s.png'
+import clt22 from '../../images/portfolio/clients/Prancheta 1t.png'
+import clt23 from '../../images/portfolio/clients/Prancheta 1u.png'
+import clt24 from '../../images/portfolio/clients/Prancheta 1v.png'
+import clt25 from '../../images/portfolio/clients/Prancheta 1x.png'
+import clt26 from '../../images/portfolio/clients/Prancheta 1y.png'
+import clt27 from '../../images/portfolio/clients/Prancheta 1z.png'
+import clt28 from '../../images/portfolio/clients/Prancheta 1ab.png'
+import clt29 from '../../images/portfolio/clients/Prancheta 1ac.png'
+import clt30 from '../../images/portfolio/clients/Prancheta 1ad.png'
+import clt31 from '../../images/portfolio/clients/Prancheta 1ae.png'
+import clt32 from '../../images/portfolio/clients/Prancheta 1af.png'
+import clt33 from '../../images/portfolio/clients/Prancheta 1ag.png'
+import clt34 from '../../images/portfolio/clients/Prancheta 1ah.png'
+import clt35 from '../../images/portfolio/clients/Prancheta 1ai.png'
+import clt36 from '../../images/portfolio/clients/Prancheta 1aj.png'
+import inovini from '../../images/portfolio/clients/inovini.png'
+import kalassi from '../../images/portfolio/clients/kalassi.png'
+import maille from '../../images/portfolio/clients/maille.png'
 
 
 import { Collapse } from 'react-collapse';
@@ -156,14 +159,16 @@ export default class SomosLeoes extends React.Component {
                     <News img={clt10} />
                     <News img={clt11} />
                     <News img={clt12} />
-                    <News img={clt12} />
                     <News img={clt13} />
                     <News img={clt14} />
                     <News img={clt15} />
                     <News img={clt16} />
+                    <News img={inovini} />
                     <News img={clt17} />
+                    <News img={kalassi} />
                     <News img={clt18} />
                     <News img={clt19} />
+                    <News img={maille} />
                     <News img={clt20} />
                     <News img={clt21} />
                     <News img={clt22} />
