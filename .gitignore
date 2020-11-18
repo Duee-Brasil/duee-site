@@ -75,3 +75,4 @@ yarn-error.log
 .cache
 duee-site-firebase-adminsdk-8ug9a-2b265d768d.json
 firebase_conection.js
+package-lock.json
