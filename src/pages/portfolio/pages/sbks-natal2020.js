@@ -37,9 +37,8 @@ export default class Natal2020 extends React.Component {
             <div className="row content describes">
                 <div className="col-xs-12 col-md-8 col-sm-6">
                     <p><b>SOBRE O PROJETO</b></p>
-                    <p>O Panetone e o Mini Panetone da Starbucks, recheados com delicioso chocolate de qualidade, foram um sucesso de vendas em 2019.</p>
-                    <p>E essas embalagens incríveis com tema natalino foram criadas e desenvolvidas pela Duee Brasil.</p>
-                    <p>Além disso, desenvolvemos a arte dos Marshmallows e do Gingerbread, também com temas inspirados nas festas de fim de ano.</p>
+                    <p>O Natal já invadiu a Starbucks e a Duee Brasil tem o orgulho de fazer parte dessa campanha incrível.
+Somos responsáveis por todo o material de PDV da Campanha de Natal da Starbucks Brasil!</p>
                 </div>
                 <div className="col-xs-12 col-md-4 col-sm-6">
                     <p><b>DETALHES DO PROJETO</b></p>

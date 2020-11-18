@@ -26,7 +26,7 @@ export default class Made30anos extends React.Component {
                         <img src="https://portfolio.duee.com.br/wp-content/uploads/2020/11/1.png" alt="" />
                 </div>
                 <div className="col-xs-12">
-                    <video controls autoPlay={true} muted={true} loop type="col-xs-12 video/mp4" src="https://portfolio.duee.com.br/wp-content/uploads/2020/01/video_site_starbucks.mp4" />
+                    <video controls autoPlay={true} muted={true} loop type="col-xs-12 video/mp4" src="https://portfolio.duee.com.br/wp-content/uploads/2020/11/MADE-IN-BRAZIL-CORTE-08-09.11.2020-422HQ1-convert-video-online.com_.mp4" />
                 </div>               
             </div>
 

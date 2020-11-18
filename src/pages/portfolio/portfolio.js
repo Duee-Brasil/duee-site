@@ -100,79 +100,76 @@ import StarbucksTapume from "./pages/starbucks-tapume"
 
 export default class Portfolio extends Component {
   constructor(props) {
-    super(props)
-    this.state = {
-      show: false,
-      link: "",
-    }
+      super(props)
+      this.state = {
+          show: false,
+          link: ''
+      }
 
-    this.showModal = this.showModal.bind(this)
-    this.loadPage = this.loadPage.bind(this)
+      this.showModal = this.showModal.bind(this)
+      this.loadPage = this.loadPage.bind(this)
+
   }
 
-  showModal = link => {
-    this.setState({ link })
+  showModal = (link) => {
 
-    document.querySelector(".loading").style.visibility = "visible"
+      this.setState({ link })
 
-    if (document.querySelector(".ib-content-full")) {
-      if (document.querySelector(".ib-content-full").clientWidth === 0) {
-        document.querySelector(".ib-content-full").style.visibility = "visible"
-        document.querySelector(".ib-content-full").style.width = "100vw"
-        document.querySelector(".ib-content-full").style.height = "100vh"
-        document.querySelector(".ib-content-full").style.top = "0"
-        document.querySelector(".ib-content-full").style.left = "0"
+      document.querySelector(".loading").style.visibility = 'visible'
+
+      if (document.querySelector(".ib-content-full")) {
+          if (document.querySelector(".ib-content-full").clientWidth === 0) {
+              document.querySelector(".ib-content-full").style.visibility = 'visible'
+              document.querySelector(".ib-content-full").style.width = '100vw'
+              document.querySelector(".ib-content-full").style.height = '100vh'
+              document.querySelector(".ib-content-full").style.top = '0'
+              document.querySelector(".ib-content-full").style.left = '0'
+          }
+          if (document.querySelector(".ib-content-full").clientWidth > 0) {
+              document.querySelector(".ib-content-full").style.visibility = 'hidden'
+              document.querySelector(".ib-content-full").style.width = '0'
+              document.querySelector(".ib-content-full").style.height = '0'
+              document.querySelector(".ib-content-full").style.top = '50%'
+              document.querySelector(".ib-content-full").style.left = '50%'
+              document.querySelector(".loading").style.visibility = 'hidden'
+          }
       }
-      if (document.querySelector(".ib-content-full").clientWidth > 0) {
-        document.querySelector(".ib-content-full").style.visibility = "hidden"
-        document.querySelector(".ib-content-full").style.width = "0"
-        document.querySelector(".ib-content-full").style.height = "0"
-        document.querySelector(".ib-content-full").style.top = "50%"
-        document.querySelector(".ib-content-full").style.left = "50%"
-        document.querySelector(".loading").style.visibility = "hidden"
-      }
-    }
+
   }
 
   loadPage = () => {
-    document.querySelector(".loading").style.visibility = "hidden"
+      document.querySelector(".loading").style.visibility = 'hidden'
   }
 
   render() {
-    return (
-      <Layout>
-        <SEO title="Portfólio" />
-        {/* <!-- First --> */}
-        <div className="row ib-main-wrapper" id="portfolio">
-          <div className="ib-content-full">
-            <div className="closebar" onClick={() => this.showModal()}>
-              <i className="fas fa-times" />
-            </div>
-            <div className="backButton" onClick={() => this.showModal()}>
-              Voltar
-            </div>
+      return (
+          <Layout>
+              <SEO title="Portfólio" />
+              {/* <!-- First --> */}
+              <div className="row ib-main-wrapper" id="portfolio">
 
-            {typeof this.state.link === "string" ? (
-              <iframe
-                src={this.state.link}
-                onLoad={() => this.loadPage()}
-                id="htmlcontent"
-              />
-            ) : (
-              this.state.link
-            )}
+                  <div className="ib-content-full">
+                      <div className="closebar" onClick={() => this.showModal()}><i className="fas fa-times" /></div>
+                      <div className="backButton" onClick={() => this.showModal()}>Voltar</div>
 
-            {typeof this.state.link === "string" ? (
-              <iframe
-                src={this.state.link}
-                onLoad={() => this.loadPage()}
-                id="htmlcontent"
-              />
-            ) : (
-              this.state.link
-            )}
+                      {typeof this.state.link === "string" ?
+                          <iframe src={this.state.link} onLoad={() => this.loadPage()} id="htmlcontent" />
+                          : this.state.link}
 
-            <div className="content row col-xs-12 ib-main">
+                      <div className="loading">
+                          <div className="loading-text">
+                              <span className="loading-text-words">L</span>
+                              <span className="loading-text-words">O</span>
+                              <span className="loading-text-words">A</span>
+                              <span className="loading-text-words">D</span>
+                              <span className="loading-text-words">I</span>
+                              <span className="loading-text-words">N</span>
+                              <span className="loading-text-words">G</span>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div className="content row col-xs-12 ib-main">
               <Case
                 img="https://portfolio.duee.com.br/wp-content/uploads/2020/11/capa.png"
                 title="Starbucks Natal 2020"
@@ -638,7 +635,6 @@ export default class Portfolio extends Component {
               />
             </div>
           </div>
-        </div>
       </Layout>
     )
   }
