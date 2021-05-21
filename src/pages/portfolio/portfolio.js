@@ -97,6 +97,10 @@ import Natal2020 from "./pages/sbks-natal2020"
 import Made30anos from "./pages/made-30"
 import Kalassi from "./pages/kalassi"
 import StarbucksTapume from "./pages/starbucks-tapume"
+import CasalGarciaSorteio from "./pages/casalGarciaSorteio"
+import MailleMaes from "./pages/maille-mae"
+import KalassiFirtsBite from "./pages/kalassi-firts-bite"
+import Azzurra from "./pages/azzurra"
 
 export default class Portfolio extends Component {
   constructor(props) {
@@ -170,6 +174,26 @@ export default class Portfolio extends Component {
                   </div>
 
                   <div className="content row col-xs-12 ib-main">
+                  <Case
+                img="https://portfolio.duee.com.br/wp-content/uploads/2021/05/tumb.png"
+                title="Azzurra Gin"
+                open={() => this.showModal(<Azzurra />)}
+              />
+                  <Case
+                img="https://portfolio.duee.com.br/wp-content/uploads/2021/05/kalassi.png"
+                title="First Bite Kalassi"
+                open={() => this.showModal(<KalassiFirtsBite />)}
+              />
+                  <Case
+                img="https://portfolio.duee.com.br/wp-content/uploads/2021/05/maille.png"
+                title="Dia das Mães com Maille"
+                open={() => this.showModal(<MailleMaes />)}
+              />
+                  <Case
+                img="https://portfolio.duee.com.br/wp-content/uploads/2021/03/cover.png"
+                title="Concurso Cultural Casal Garcia"
+                open={() => this.showModal(<CasalGarciaSorteio />)}
+              />
               <Case
                 img="https://portfolio.duee.com.br/wp-content/uploads/2020/11/capa.png"
                 title="Starbucks Natal 2020"
