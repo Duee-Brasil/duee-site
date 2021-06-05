@@ -31,10 +31,8 @@ export default () => {
         <div className="row content describes">
             <div className="col-xs-12 col-md-8 col-sm-6">
                 <p><b>SOBRE O PROJETO</b></p>
-                <p>A ação First Bite teve como propósito mostrar as reações das pessoas ao provarem os rice crackers Kalassi, focando na experimentação da principal característica da marca, sabores e experiências surpreendentes.
-Para aumentar o engajamento das redes sociais e reconhecimento de marca, utilizamos o trabalho dos influenciadores digitais Manu e Matheus, que formam o We Love, juntamente com o Estevam Pelo Mundo, para atingir o público-alvo de Kalassi. Ambos perfis possuem espírito aventureiro e viajante, abordando dicas de hotéis, restaurantes e passeios.
-A Duee Brasil foi responsável pela busca e briefing dos influenciadores que entregam o melhor conteúdo de acordo com o perfil do cliente. 
-</p>
+                <p>A ação First Bite teve como propósito mostrar as reações das pessoas ao provarem os rice crackers Kalassi, focando na experimentação da principal característica da marca, sabores e experiências surpreendentes. Para aumentar o engajamento das redes sociais e reconhecimento de marca, utilizamos o trabalho dos influenciadores digitais Manu e Matheus, que formam o We Love, juntamente com o Estevam Pelo Mundo, para atingir o público-alvo de Kalassi. Ambos perfis possuem espírito aventureiro e explorador, abordando dicas de hotéis, restaurantes e passeios. 
+A Duee Brasil foi responsável pelo planejamento das ações, seleção dos influenciadores e execução das ativações.</p>
             </div>
             <div className="col-xs-12 col-md-4 col-sm-6">
                 <p><b>DETALHES DO PROJETO</b></p>

@@ -37,10 +37,10 @@ import './default.scss'
             <div className="row content describes" style={{ color: "#000" }}>
                 <div className="col-xs-12 col-md-8 col-sm-6">
                     <p><b>SOBRE O PROJETO</b></p>
-                    <p>Idealizado em 2018, o gin foi inspirado na Ilha de Montecristo, localizada no arquipélago da
-Toscana, Itália.
+                    <p>Idealizado em 2018, o gin foi inspirado na Ilha de Montecristo, localizada no arquipélago da Toscana, Itália.
 O local paradisíaco rodeado por águas cristalinas se encaixou perfeitamente com a proposta do gin.
 Azzurra se resume em uma experiência única da descoberta do paraíso, na qual basta apenas um gole para nunca mais esquecer das suas nuances e botânicos sublimes.
+A Duee Brasil foi responsável pela estratégia de comunicação, lançamento e planejamento da marca nas redes sociais.
 </p>
                 </div>
                 <div className="col-xs-12 col-md-4 col-sm-6">
