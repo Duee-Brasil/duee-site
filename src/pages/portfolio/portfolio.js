@@ -102,6 +102,9 @@ import MailleMaes from "./pages/maille-mae"
 import KalassiFirtsBite from "./pages/kalassi-firts-bite"
 import Azzurra from "./pages/azzurra"
 import KalassiVeggie from "./pages/kalassi-veggie"
+import Banica from "./pages/casalGarciaBanica"
+import MaillePai from "./pages/maille-pais"
+import JBL from "./pages/casalGarciaJBL"
 
 export default class Portfolio extends Component {
   constructor(props) {
@@ -175,6 +178,21 @@ export default class Portfolio extends Component {
                   </div>
 
                   <div className="content row col-xs-12 ib-main">
+                  <Case
+                    img="https://portfolio.duee.com.br/wp-content/uploads/2021/08/tumb-2.png"
+                    title="Concurso Cultural Dia da Alegria/Casal Garcia"
+                    open={() => this.showModal(<JBL />)}
+                  />
+                  <Case
+                    img="https://portfolio.duee.com.br/wp-content/uploads/2021/08/tumb-1.png"
+                    title="Maille Dia dos Pais"
+                    open={() => this.showModal(<MaillePai />)}
+                  />
+                  <Case
+                    img="https://portfolio.duee.com.br/wp-content/uploads/2021/08/tumb.png"
+                    title="Banila Co/Casal Garcia (Co-Branding)"
+                    open={() => this.showModal(<Banica />)}
+                  />
                   <Case
                     img="https://portfolio.duee.com.br/wp-content/uploads/2021/06/kalassi-veggie.png"
                     title="Kalassi Veggie"

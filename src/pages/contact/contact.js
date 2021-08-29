@@ -36,8 +36,8 @@ const Contato = () => (
                     <div className="col-md-3 col-xs-12 col-sm-6 mail middle-xs center-xs">
                         <i className="fas fa-mail-bulk hatch"></i>
                         <h4>Novos negócios</h4>
-                        <p>Monalisa</p>
-                        <p><a href="mailto:monalisa@dueebrasil.com.br">monalisa@dueebrasil.com.br</a></p>
+                        <p>Henrique</p>
+                        <p><a href="mailto:henrique.castro@dueebrasil.com.br">henrique.castro@dueebrasil.com.br</a></p>
                     </div>
                     <div className="col-md-3 col-xs-12 col-sm-6 social middle-xs center-xs">
                         <h4><a href="https://www.facebook.com/agenciadueebrasil" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></h4>
