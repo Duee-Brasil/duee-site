@@ -4,7 +4,7 @@ import React, { Component } from "react"
 import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import './faxe2.scss'
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import Masonry from "../../components/Masonry"
 import Logofaxe from '../../images/home/FAXE-LOGO.svg'
 import HeaderBG from '../../images/faxe/header.jpg'
 
@@ -105,7 +105,6 @@ export default class Faxe extends Component {
                             <iframe src="https://player.vimeo.com/video/296450706" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen title="making of" />
                         </div>
                         <div className="row col-xs-12">
-                            <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4, 1700: 5 }}>
                                 <Masonry>
                                     <img src={Img2} alt="conteudo faxe" className="material" />
                                     <img src={Img40} alt="conteudo faxe" className="material" />
@@ -200,7 +199,6 @@ export default class Faxe extends Component {
                                     <img src={Img37} alt="conteudo faxe" className="material" />
 
                                 </Masonry>
-                            </ResponsiveMasonry>
                         </div>
                     </div>
                 </div>

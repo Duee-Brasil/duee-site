@@ -4,7 +4,7 @@ import React, { Component } from "react"
 import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import './made2.scss'
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import Masonry from "../../components/Masonry"
 
 import LogoMade from '../../images/made/Banner1.png'
 
@@ -90,7 +90,6 @@ export default class Made extends Component {
                         <iframe src="https://player.vimeo.com/video/340465615" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="makingof"></iframe>
                     </div>
                     <div className="row col-xs-12">
-                        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4, 1700: 5 }}>
                             <Masonry>
                             <video controls autoPlay={true} muted={true} loop type="col-xs-12 video/mp4" playsInline className="material" src="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-1.mp4" />
                                 <video autoPlay={true} muted={true} loop controls={true} className="material" playsInline>
@@ -182,7 +181,6 @@ export default class Made extends Component {
                                 <img src={Img24} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img28} alt="conteudo madeinbrazil" className="material" />
                             </Masonry>
-                        </ResponsiveMasonry>
                     </div>
                 </div>
             </Layout >

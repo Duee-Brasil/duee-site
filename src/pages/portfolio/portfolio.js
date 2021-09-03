@@ -105,6 +105,7 @@ import KalassiVeggie from "./pages/kalassi-veggie"
 import Banica from "./pages/casalGarciaBanica"
 import MaillePai from "./pages/maille-pais"
 import JBL from "./pages/casalGarciaJBL"
+import StarbucksWinter from "./pages/sbks-winter"
 
 export default class Portfolio extends Component {
   constructor(props) {
@@ -192,6 +193,11 @@ export default class Portfolio extends Component {
                     img="https://portfolio.duee.com.br/wp-content/uploads/2021/08/tumb.png"
                     title="Banila Co/Casal Garcia (Co-Branding)"
                     open={() => this.showModal(<Banica />)}
+                  />
+                  <Case
+                    img="https://portfolio.duee.com.br/wp-content/uploads/2021/09/cover.png"
+                    title="Starbucks Winter"
+                    open={() => this.showModal(<StarbucksWinter />)}
                   />
                   <Case
                     img="https://portfolio.duee.com.br/wp-content/uploads/2021/06/kalassi-veggie.png"
