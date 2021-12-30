@@ -19,9 +19,9 @@ export default class Urso extends React.Component {
             </div>
             <div className="row conteudo content">
                 <div className="col-xs-12">
-                <iframe title="vimeo-player" src="https://player.vimeo.com/video/208827987" frameborder="0" allowfullscreen id='vimeo'></iframe>
-                <iframe src="https://www.youtube.com/embed/LkVp7koxDEU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id='vimeo'></iframe>
-                <iframe src="https://www.youtube.com/embed/WEVfALGI85A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id='vimeo'></iframe>
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/208827987" frameBorder="0" allowFullScreen id='vimeo'></iframe>
+                <iframe src="https://www.youtube.com/embed/LkVp7koxDEU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen id='vimeo'></iframe>
+                <iframe src="https://www.youtube.com/embed/WEVfALGI85A" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen id='vimeo'></iframe>
                 </div>
             </div>
 

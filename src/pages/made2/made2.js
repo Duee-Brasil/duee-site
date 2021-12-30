@@ -70,7 +70,7 @@ export default class Made extends Component {
                 <div className="middle-xs center-xs" id="madepage2">
                     <header>
                         <img src={LogoMade} alt="Logo Made in Brazil" />
-                        <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:e4andqtcxjiik8wlcyns8sbue&size=detail&theme=dark" width="240" height="56" frameborder="0" allowtransparency="true" title="follow"></iframe>
+                        <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:e4andqtcxjiik8wlcyns8sbue&size=detail&theme=dark" width="240" height="56" frameBorder="0" allowtransparency="true" title="follow"></iframe>
                     </header>
                     <div className="row col-xs-12 col-sm-8 col-md-6 col-lg-5 description">
                         <p>A Megastore Made In Brazil entende de música!</p>
@@ -80,14 +80,14 @@ export default class Made extends Component {
                         <p>Confira alguns dos trabalhos da nossa parceria com a Made.</p>
                     </div>
                     <div className="row col-xs-12 center-xs playlistas">
-                        <iframe src="https://open.spotify.com/embed/playlist/68LglzhL6afHlY0D877XXw" frameborder="0" allowtransparency="true" allow="encrypted-media" title="playlist1"></iframe>
-                        <iframe src="https://open.spotify.com/embed/playlist/6euNX0DQ8V0iyJxMuqQZn5" frameborder="0" allowtransparency="true" allow="encrypted-media" title="playlist2"></iframe>
-                        <iframe src="https://open.spotify.com/embed/playlist/3AXlUoMZPdQBHcBQG8J9ut" frameborder="0" allowtransparency="true" allow="encrypted-media" title="playlist3"></iframe>
-                        <iframe src="https://open.spotify.com/embed/playlist/4OjqDsSaQRQQyqozzD7Csw" frameborder="0" allowtransparency="true" allow="encrypted-media" title="playlist4"></iframe>
-                        <iframe src="https://open.spotify.com/embed/playlist/3AD3DKHsILTPXpbkDGtVmp" frameborder="0" allowtransparency="true" allow="encrypted-media" title="playlist5"></iframe>
+                        <iframe src="https://open.spotify.com/embed/playlist/68LglzhL6afHlY0D877XXw" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="playlist1"></iframe>
+                        <iframe src="https://open.spotify.com/embed/playlist/6euNX0DQ8V0iyJxMuqQZn5" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="playlist2"></iframe>
+                        <iframe src="https://open.spotify.com/embed/playlist/3AXlUoMZPdQBHcBQG8J9ut" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="playlist3"></iframe>
+                        <iframe src="https://open.spotify.com/embed/playlist/4OjqDsSaQRQQyqozzD7Csw" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="playlist4"></iframe>
+                        <iframe src="https://open.spotify.com/embed/playlist/3AD3DKHsILTPXpbkDGtVmp" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="playlist5"></iframe>
                     </div>
                     <div className="row col-xs-12 makingof">
-                        <iframe src="https://player.vimeo.com/video/340465615" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="makingof"></iframe>
+                        <iframe src="https://player.vimeo.com/video/340465615" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen title="makingof"></iframe>
                     </div>
                     <div className="row col-xs-12">
                             <Masonry>

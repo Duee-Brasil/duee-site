@@ -39,7 +39,7 @@ $layers : 7;
       &.makingof {
         padding: 0;
         width : 100vw;
-        height: (80vw*9/16);
+        height: calc(80vw * 9 / 16);
         max-height: 90vh;
         justify-content:  center;
         padding-top: 30px;

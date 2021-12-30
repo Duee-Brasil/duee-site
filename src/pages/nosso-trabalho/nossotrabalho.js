@@ -15,13 +15,13 @@ const NossoTrabalho = () => (
     // <Layout>
     //     <SEO title="Somos leões" />
     <div className="trabalho">
-        <div class="wrapper">
-            <div class="content">
+        <div className="wrapper">
+            <div className="content">
                 {/* <!-- card --> */}
-                <div class="card">
-                    <img class="icon" src={Live} alt="LIVE MKT" />
-                    <p class="title">LIVE MKT</p>
-                    <ul class="text">
+                <div className="card">
+                    <img className="icon" src={Live} alt="LIVE MKT" />
+                    <p className="title">LIVE MKT</p>
+                    <ul className="text">
                         <li>Ativações de marca</li>
                         <li>Eventos</li>
                         <li>Feiras e estandes</li>
@@ -34,10 +34,10 @@ const NossoTrabalho = () => (
                 {/* <!-- end card --> */}
 
                 {/* <!-- card --> */}
-                <div class="card">
-                    <img class="icon" src={Digital} alt="DIGITAL" />
-                    <p class="title">DIGITAL</p>
-                    <ul class="text">
+                <div className="card">
+                    <img className="icon" src={Digital} alt="DIGITAL" />
+                    <p className="title">DIGITAL</p>
+                    <ul className="text">
                         <li>Ativações online</li>
                         <li>SEO & SEM</li>
                         <li>Criação e conteúdos digitais</li>
@@ -50,10 +50,10 @@ const NossoTrabalho = () => (
                 {/* <!-- end card --> */}
 
                 {/* <!-- card --> */}
-                <div class="card">
-                    <img class="icon" src={Eventos} alt="PROMOÇÕES e TRADE" />
-                    <p class="title">PROMOÇÕES e TRADE</p>
-                    <ul class="text">
+                <div className="card">
+                    <img className="icon" src={Eventos} alt="PROMOÇÕES e TRADE" />
+                    <p className="title">PROMOÇÕES e TRADE</p>
+                    <ul className="text">
                         <li>Ativações</li>
                         <li>Degustação</li>
                         <li>Ações PDV</li>
@@ -66,10 +66,10 @@ const NossoTrabalho = () => (
                 {/* <!-- end card --> */}
 
                 {/* <!-- card --> */}
-                <div class="card">
-                    <img class="icon" src={Brand} alt="BRANDING" />
-                    <p class="title">BRANDING</p>
-                    <ul class="text">
+                <div className="card">
+                    <img className="icon" src={Brand} alt="BRANDING" />
+                    <p className="title">BRANDING</p>
+                    <ul className="text">
                         <li>Planejamento Estratégico</li>
                         <li>Posicionamento de marca</li>
                         <li>Identidade visual</li>
@@ -82,10 +82,10 @@ const NossoTrabalho = () => (
                 {/* <!-- end card --> */}
 
                 {/* <!-- card --> */}
-                <div class="card">
-                    <img class="icon" src={Dev} alt="DESENVOLVIMENTO" />
-                    <p class="title">DESENVOLVIMENTO</p>
-                    <ul class="text">
+                <div className="card">
+                    <img className="icon" src={Dev} alt="DESENVOLVIMENTO" />
+                    <p className="title">DESENVOLVIMENTO</p>
+                    <ul className="text">
                         <li>Desenvolvimento Sites e Hotsites</li>
                         <li>Criação Aplicativos</li>
                         <li>Desenvolvimento Mobile</li>

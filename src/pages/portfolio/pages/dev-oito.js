@@ -36,7 +36,7 @@ export default class DevOito extends React.Component {
                     <img src="https://portfolio.duee.com.br/wp-content/uploads/2020/01/Oito_post_4-2.png" alt="" />
                 </div>
                 <div className="col-xs-12">
-                <iframe id="vimeo" src="https://www.youtube.com/embed/XTUJJF9g1i4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="vimeo" src="https://www.youtube.com/embed/XTUJJF9g1i4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </div>
 

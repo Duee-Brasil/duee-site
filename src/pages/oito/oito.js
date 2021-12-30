@@ -76,7 +76,7 @@ const Starbucks = () => (
                                 </div>
                                 <div className="cta-two__single">
                                     <div className="cta-two__icon">
-                                        <i class="far fa-sticky-note"></i>
+                                        <i className="far fa-sticky-note"></i>
                                     </div>
                                     <div className="cta-two__content">
                                         <h3 className="cta-two__title">Briefing</h3>
@@ -85,7 +85,7 @@ const Starbucks = () => (
                                 </div>
                                 <div className="cta-two__single">
                                     <div className="cta-two__icon">
-                                        <i class="far fa-calendar-alt"></i>
+                                        <i className="far fa-calendar-alt"></i>
                                     </div>
                                     <div className="cta-two__content">
                                         <h3 className="cta-two__title">Planejamento</h3>
@@ -94,7 +94,7 @@ const Starbucks = () => (
                                 </div>
                                 <div className="cta-two__single">
                                     <div className="cta-two__icon">
-                                        <i class="fas fa-hashtag"></i>
+                                        <i className="fas fa-hashtag"></i>
                                     </div>
                                     <div className="cta-two__content">
                                         <h3 className="cta-two__title">Desenvolvimento</h3>
@@ -105,7 +105,7 @@ Então foram realizadas as melhorias UI e UX.</p>
                                 </div>
                                 <div className="cta-two__single">
                                     <div className="cta-two__icon">
-                                        <i class="fas fa-universal-access"></i>
+                                        <i className="fas fa-universal-access"></i>
                                     </div>
                                     <div className="cta-two__content">
                                         <h3 className="cta-two__title">Melhorias</h3>
@@ -136,7 +136,7 @@ O layout foi refeito, foi realizada uma atualização de regras de negócio do s
                                 <span className="service-one__dot-2" />
                                 <span className="service-one__dot-3" />
                                 <div className="service-one__icon">
-                                    <i class="fab fa-react" />
+                                    <i className="fab fa-react" />
                                 </div>
                                 <h3 className="service-one__title">React - Gatsby - GraphQL - JS</h3>
                                 <p className="service-one__text">Desenvolvimento do site e aplicação dos melhores frameworks do mercado, que foram desenvolvidos pelo Facebook e inovam o mercado de desenvolvimento.
@@ -149,7 +149,7 @@ O layout foi refeito, foi realizada uma atualização de regras de negócio do s
                                 <span className="service-one__dot-2" />
                                 <span className="service-one__dot-3" />
                                 <div className="service-one__icon">
-                                    <i class="fab fa-wordpress-simple" />
+                                    <i className="fab fa-wordpress-simple" />
                                 </div>
                                 <h3 className="service-one__title">Wordpress</h3>
                                 <p className="service-one__text">Ferramenta de fácil manutenção, indicada para sites estáticos e blogs.

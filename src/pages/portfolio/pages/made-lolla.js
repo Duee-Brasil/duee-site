@@ -18,7 +18,7 @@ export default class MadeLolla extends React.Component {
             </div>
             <div className="row conteudo content">
                 <div className="col-xs-12">
-                    <iframe src="https://player.vimeo.com/video/340465615" width="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscree={"true"} id="vimeo" />
+                    <iframe src="https://player.vimeo.com/video/340465615" width="100%" frameBorder="0" allow="autoplay; fullscreen" allowfullscree={"true"} id="vimeo" />
                 </div>
                 <div className="col-xs-12 col-md-4 col-sm-6">
                     <img src="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Lollapalooza-89-1.jpg" alt="" />
@@ -35,16 +35,16 @@ export default class MadeLolla extends React.Component {
                     <img src="https://portfolio.duee.com.br/wp-content/uploads/2019/06/Lollapalooza-18-2.jpg" alt="" />
                 </div>
                 <div className="col-xs-12 col-md-4 col-sm-6">
-                    <iframe src="https://open.spotify.com/embed?uri=spotify%3Aplaylist%3A68LglzhL6afHlY0D877XXw" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed?uri=spotify%3Aplaylist%3A68LglzhL6afHlY0D877XXw" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
                 <div className="col-xs-12 col-md-4 col-sm-6">
-                    <iframe src="https://open.spotify.com/embed?uri=spotify%3Aplaylist%3A6euNX0DQ8V0iyJxMuqQZn5" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed?uri=spotify%3Aplaylist%3A6euNX0DQ8V0iyJxMuqQZn5" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
                 <div className="col-xs-12 col-md-4 col-sm-6">
-                    <iframe src="https://open.spotify.com/embed?uri=spotify%3Aplaylist%3A3AXlUoMZPdQBHcBQG8J9ut" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed?uri=spotify%3Aplaylist%3A3AXlUoMZPdQBHcBQG8J9ut" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
                 <div className="col-xs-12">
-                    <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:e4andqtcxjiik8wlcyns8sbue&size=detail&theme=dark" width="300" height="56" scrolling="no" frameborder="0" style={{border:'none', overflow:'hidden'}} allowtransparency="true"></iframe>
+                    <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:e4andqtcxjiik8wlcyns8sbue&size=detail&theme=dark" width="300" height="56" scrolling="no" frameBorder="0" style={{border:'none', overflow:'hidden'}} allowtransparency="true"></iframe>
                 </div>
             </div>
 

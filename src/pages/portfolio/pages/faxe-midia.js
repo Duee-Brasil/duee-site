@@ -36,7 +36,7 @@ export default class FaxeMidia extends React.Component {
                     <img src="https://portfolio.duee.com.br/wp-content/uploads/2018/09/3_FB_1080x1080_V1.png" alt="" />
                     <video controls autoPlay={true} muted={true} loop type="video/mp4" src="https://portfolio.duee.com.br/wp-content/uploads/2018/09/2_POST-CASALGARCIA-SWEET-800x800_V1.mp4" />
                     <img src="https://portfolio.duee.com.br/wp-content/uploads/2018/09/POST-CASALGARCIA-800x800.png" alt="" />
-                    <a href="https://www.facebook.com/casalgarciabr/"><i class="fab fa-facebook-square" style={{ color: "#4c6ef5" }}/></a>
+                    <a href="https://www.facebook.com/casalgarciabr/"><i className="fab fa-facebook-square" style={{ color: "#4c6ef5" }}/></a>
                 </div>
             </div>
 

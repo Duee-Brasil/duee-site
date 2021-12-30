@@ -19,7 +19,7 @@ export default class Anatomy extends React.Component {
             </div>
             <div className="row conteudo content">
                 <div className="col-xs-12">
-                <iframe title="vimeo-player" src="https://player.vimeo.com/video/226356033" frameborder="0" allowfullscreen id='vimeo'></iframe>
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/226356033" frameBorder="0" allowFullScreen id='vimeo'></iframe>
                 </div>
             </div>
 

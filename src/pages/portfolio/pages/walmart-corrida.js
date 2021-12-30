@@ -19,7 +19,7 @@ export default class Corrida extends React.Component {
             </div>
             <div className="row conteudo content">
                 <div className="col-xs-12">
-                <iframe title="vimeo-player" src="https://player.vimeo.com/video/76434799" id="vimeo" frameborder="0" allowfullscreen></iframe>
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/76434799" id="vimeo" frameBorder="0" allowFullScreen></iframe>
                 </div>
             </div>
 

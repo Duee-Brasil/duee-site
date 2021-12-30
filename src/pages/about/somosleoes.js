@@ -4,7 +4,7 @@ import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 
 import Layout from "../../components/layout/layout"
-import News from "../../components/news/news"
+import News from "../../components/news"
 import SEO from "../../components/seo"
 import './somosleoes.scss'
 import JovenPan from '../../images/noticias/logo_jovempan.jpg'
@@ -100,7 +100,7 @@ export default class SomosLeoes extends React.Component {
                     </div>
                 </div>
                 <div className="row video" id="videoapresentacao">
-                    <iframe src="https://player.vimeo.com/video/355173390" title="Duee Brasil" className="video col-xs-12" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    <iframe src="https://player.vimeo.com/video/355173390" title="Duee Brasil" className="video col-xs-12" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                 </div>
 
 

@@ -19,7 +19,7 @@ export default class Petz extends React.Component {
             </div>
             <div className="row conteudo content">
                 <div className="col-xs-12">
-                <iframe src="https://www.youtube.com/embed/p6frgKZKTgk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id='vimeo'></iframe>
+                <iframe src="https://www.youtube.com/embed/p6frgKZKTgk" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen id='vimeo'></iframe>
                 </div>
             </div>
 

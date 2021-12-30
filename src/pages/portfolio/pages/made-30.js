@@ -1,7 +1,7 @@
 import React from 'react'
 import './default.scss'
 import Swiper from 'react-id-swiper'
-import 'swiper/swiper.scss'
+// import 'swiper/swiper.scss'
 
 export default class Made30anos extends React.Component {
 
