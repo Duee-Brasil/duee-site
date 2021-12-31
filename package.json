@@ -19,9 +19,7 @@
     "gatsby-plugin-react-helmet": "^5.4.0",
     "gatsby-plugin-routes": "^1.0.1",
     "gatsby-plugin-sass": "^5.4.0",
-    "gatsby-plugin-sharp": "^4.4.0",
     "gatsby-source-filesystem": "^4.4.0",
-    "gatsby-transformer-sharp": "^4.4.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-collapse": "^5.1.1",
@@ -35,17 +33,16 @@
     "react-page-scroller": "^2.2.1",
     "react-swipeable-views": "^0.13.9",
     "react-swipeable-views-utils": "^0.14.0",
-    "sass-loader": "^12.4.0",
-    "sharp": "^0.25.1",
     "styled-components": "^5.3.3",
-    "swiper": "^7.4.1",
-    "typescript": "^4.5.4"
+    "swiper": "^7.4.1"
   },
   "devDependencies": {
     "eslint": "^8.5.0",
     "eslint-plugin-react": "^7.20.6",
     "prettier": "^2.5.1",
-    "sass": "^1.45.1"
+    "sass": "^1.45.1",
+    "sass-loader": "^12.4.0",
+    "typescript": "^4.5.4"
   },
   "keywords": [
     "gatsby",
@@ -66,8 +63,10 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "type-check": "tsc --noEmit",
+    "lint": "eslint . --ignore-path .gitignore --ext .ts,.tsx,.js"
   },
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"

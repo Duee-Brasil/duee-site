@@ -1,4 +1,7 @@
-#mouseContainer{
+import React from "react"
+import styled from "styled-components"
+
+const MouseContainer = styled.div`
   display: none;
   position: absolute;
   bottom: 0;
@@ -6,9 +9,9 @@
   height: 20vh;
   z-index: 110;
   //mix-blend-mode: difference;
-}
+`
 
-.scroll-downs {
+const ScrollDowns = styled.div`
   position: absolute;
   top: 0;
   right: 0;
@@ -18,8 +21,9 @@
 
   width :34px;
   height: 55px;
-}
-.mousey {
+`
+
+const Mousey = styled.div`
   width: 3px;
   padding: 20px 22px;
   height: 35px;
@@ -27,8 +31,8 @@
   border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
-}
-.scroller {
+`
+const Scroller = styled.div`
   width: 5px;
   height: 10px;
   border-radius: 25%;
@@ -37,7 +41,7 @@
   animation-duration: 2.2s;
   animation-timing-function: cubic-bezier(.15,.41,.69,.94);
   animation-iteration-count: infinite;
-}
+
 @keyframes scroll {
   0% { opacity: 0; }
   10% { transform: translateY(0); opacity: 1; }
@@ -48,5 +52,17 @@
   #mouseContainer {
     display: block;
   }
-
 }
+`
+
+const MouseIcon = () => (
+  <MouseContainer>
+  <ScrollDowns>
+    <Mousey>
+      <Scroller />
+    </Mousey>
+  </ScrollDowns>
+  </MouseContainer>
+)
+
+export default MouseIcon
