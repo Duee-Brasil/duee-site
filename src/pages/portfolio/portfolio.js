@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 
 import Layout from "../../components/layout/layout"
-import SEO from "../../components/seo"
 import "./portfolio.scss"
 import Case from "../../components/cases/cases"
 
@@ -106,6 +105,7 @@ import Banica from "./pages/casalGarciaBanica"
 import MaillePai from "./pages/maille-pais"
 import JBL from "./pages/casalGarciaJBL"
 import StarbucksWinter from "./pages/sbks-winter"
+import Yelloween from './pages/yelloween';
 
 export default class Portfolio extends Component {
   constructor(props) {
@@ -152,8 +152,7 @@ export default class Portfolio extends Component {
 
   render() {
       return (
-          <Layout>
-              <SEO title="Portfólio" />
+          <Layout title="Portfólio">
               {/* <!-- First --> */}
               <div className="row ib-main-wrapper" id="portfolio">
 
@@ -179,6 +178,11 @@ export default class Portfolio extends Component {
                   </div>
 
                   <div className="content row col-xs-12 ib-main">
+                  <Case
+                    img="https://portfolio.duee.com.br/wp-content/uploads/2022/01/tumb.png"
+                    title="Yelloween da Veuve Clicquot"
+                    open={() => this.showModal(<Yelloween />)}
+                  />
                   <Case
                     img="https://portfolio.duee.com.br/wp-content/uploads/2021/08/tumb-2.png"
                     title="Concurso Cultural Dia da Alegria/Casal Garcia"

@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-const  config = {
+const config = {
   apiKey: "AIzaSyDAw2n2qtVLOuQOqLi3Lb8WDe36J46SANM",
   authDomain: "duee-site.firebaseapp.com",
   databaseURL: "https://duee-site.firebaseio.com",
@@ -13,3 +13,4 @@ const  config = {
 // Initialize Firebase
 export const firebaseImpl = firebase.initializeApp(config);
 export const db = firebase.firestore();
+export const storage = firebase.storage();

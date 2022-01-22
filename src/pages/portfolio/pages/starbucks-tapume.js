@@ -1,7 +1,7 @@
 import React from 'react'
 import './default.scss'
 
-export default () => {
+const StarbucksTapume = () => {
 
     if (typeof document !== `undefined`) document.querySelector(".loading").style.visibility = 'hidden'
 
@@ -46,3 +46,5 @@ export default () => {
         </div>
     </article>
 }
+
+export default StarbucksTapume

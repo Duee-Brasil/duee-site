@@ -3,7 +3,6 @@ import React from "react"
 import Helmet from 'react-helmet'
 
 import Layout from "../../components/layout/layout"
-import SEO from "../../components/seo"
 import './style.scss'
 import './oito.scss'
 
@@ -14,8 +13,7 @@ import cta from '../../images/oito/cta-1-1.png'
 import etap from '../../images/oito/cta-moc-1-1.png'
 
 const Starbucks = () => (
-    <Layout>
-        <SEO title="Oito" />
+    <Layout title="Oito">
         <Helmet>
             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css" rel="stylesheet" />

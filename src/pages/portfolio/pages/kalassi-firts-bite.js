@@ -1,7 +1,7 @@
 import React from 'react'
 import './default.scss'
 
-export default () => {
+const Kalassi = () => {
 
     if (typeof document !== `undefined`) document.querySelector(".loading").style.visibility = 'hidden'
 
@@ -42,3 +42,5 @@ A Duee Brasil foi responsável pelo planejamento das ações, seleção dos infl
         </div>
     </article>
 }
+
+export default Kalassi

@@ -1,7 +1,7 @@
 import React from 'react'
 import './default.scss'
 
-export default () => {
+const KalassiVeggie = () => {
 
     if (typeof document !== `undefined`) document.querySelector(".loading").style.visibility = 'hidden'
 
@@ -60,3 +60,5 @@ A Duee Brasil foi responsável pela campanha de lançamento da nova linha de Kal
         </div>
     </article>
 }
+
+export default KalassiVeggie

@@ -1,7 +1,7 @@
 import React from 'react'
 import './default.scss'
 
-export default () => {
+const StarbucksWinter = () => {
 
     if (typeof document !== `undefined`) document.querySelector(".loading").style.visibility = 'hidden'
 
@@ -47,3 +47,5 @@ A Duee Brasil foi responsável por todo o desdobramento da campanha off-line da 
         </div>
     </article>
 }
+
+export default StarbucksWinter

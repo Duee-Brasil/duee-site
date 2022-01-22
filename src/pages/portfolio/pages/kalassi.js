@@ -1,7 +1,7 @@
 import React from 'react'
 import './default.scss'
 
-export default () => {
+const Kalassi = () => {
 
     if (typeof document !== `undefined`) document.querySelector(".loading").style.visibility = 'hidden'
 
@@ -29,7 +29,8 @@ export default () => {
             <div className="col-xs-12 col-md-8 col-sm-6">
                 <p><b>SOBRE O PROJETO</b></p>
                 <p>A Kalassi é uma marca da Aurora Importadora que tem uma linha de snacks e molhos importados.
-O carro chefe da marca é o rice cracker, que foi pioneiro no Brasil, mas hoje ela conta com sabores variados e surpreendentes, todos gluten free.
+O carro chefe da marca é o rice cracker, que foi pioneiro no Brasil, mas hoje ela conta com sabores import Kalassi from './kalassi-firts-bite';
+variados e surpreendentes, todos gluten free.
 A DUEE Brasil é responsável por toda a comunicação online da marca no Brasil.
 </p>
             </div>
@@ -41,3 +42,5 @@ A DUEE Brasil é responsável por toda a comunicação online da marca no Brasil
         </div>
     </article>
 }
+
+export default Kalassi

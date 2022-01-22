@@ -2,31 +2,31 @@ const path = require('path');
 module.exports = [
   {
     path: '/',
-    component: path.resolve(`src/pages/home/home.js`)
+    component: path.resolve(`src/pages/home/index.tsx`)
   },
   {
     path: '/leoes',
-    component: path.resolve(`src/pages/about/somosleoes.js`)
+    component: path.resolve(`src/pages/about/index.tsx`)
   },
   {
     path: '/404/',
-    component: path.resolve(`src/pages/404.js`)
+    component: path.resolve(`src/pages/404.tsx`)
   },
   {
     path: '/contato',
-    component: path.resolve(`src/pages/contact/contact.js`)
+    component: path.resolve(`src/pages/contact/index.tsx`)
   },
   {
     path: '/starbucks',
-    component: path.resolve(`src/pages/starbucks2/starbucks2.js`)
+    component: path.resolve(`src/pages/starbucks/index.tsx`)
   },
   {
     path: '/faxe',
-    component: path.resolve(`src/pages/faxe2/faxe2.js`)
+    component: path.resolve(`src/pages/faxe/index.tsx`)
   },
   {
     path: '/madeinbrazil',
-    component: path.resolve(`src/pages/made2/made2.js`)
+    component: path.resolve(`src/pages/made/index.tsx`)
   },
   {
     path: '/oito',

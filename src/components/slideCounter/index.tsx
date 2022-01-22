@@ -43,7 +43,7 @@ const ProgressBarStatus = styled.div`
   transition: width .2s ease;
   background-color: white;
   height: 100%;
-  width: ${props => props.progress};
+  width: ${(props: { progress: any; }) => props.progress};
 `;
 
 const Icon = styled.div`
@@ -60,9 +60,9 @@ margin: 5px 0;
 `;
 
 export default ({page}) => {
-  const [widthBar, setWidthBar] = useState(0)
+  const [widthBar, setWidthBar] = useState<number | string>(0)
 
-  const updateSlideCounter = (pages) => {
+  const updateSlideCounter = (pages: number) => {
     console.log(pages)
     switch (pages) {
       case 0:
