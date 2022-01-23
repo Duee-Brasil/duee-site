@@ -68,20 +68,17 @@ const Main = styled.div`
 const Title = styled.header`
     width : 100%;
     margin: 0;
+    margin-bottom: 30px;
 
     img {
         width : 100%;
-        margin: auto;
     }
 
-    iframe {
-        margin: 20px auto;
-    }
 `
 
 const Playlists = styled.div`
-        width: 100vw;
-        height: 70vh;
+        width: 100%;
+        height: 70%;
         overflow-x:  auto;
         display:  inline-flex;
         flex-direction:  row;
@@ -97,22 +94,20 @@ const Playlists = styled.div`
 `
 
 const Description = styled.div`
-    margin: 30px auto 15px auto;
+    margin: 30px auto;
     text-align: left;
-    
-    p {
-        margin-top: 0;
-    }
+    max-width: 800px;
+    font-size: 1.3rem;
+    justify-content: center;
+
 `
 
-const Makingof = styled.div`
-    width: 100vw;
-
-    iframe {
-        height: 85vh;
-        width: 100vw;
-        margin: 20px auto;
-    }
+const Makingof = styled.iframe`
+    width : 100%;
+    height: calc(100% * 9 / 16);
+    max-height: 80vh;
+    justify-content:  center;
+    margin: 40px;
 `
 
 const MaterialImg = styled.img`
@@ -130,29 +125,26 @@ const MaterialVideo = styled.video`
 const Made = () => {
     return (
         <Layout title="Made In Brazil">
-            <Main className="middle-xs center-xs">
+            <Main>
                 <Title>
                     <img src={LogoMade} alt="Logo Made in Brazil" />
                     <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:e4andqtcxjiik8wlcyns8sbue&size=detail&theme=dark" width="240" height="56" frameBorder="0" allowTransparency={true} title="follow"></iframe>
                 </Title>
-                <Description className="row col-xs-12 col-sm-8 col-md-6 col-lg-5">
+                <Description>
                     <p>A Megastore Made In Brazil entende de música!</p>
                     <p>Há 29 anos oferece o que há de melhor e mais moderno no Brasil e no Mundo em instrumentos musicais e acessórios.</p>
                     <p>A DUEE BRASIL entrou no ritmo da Made através da comunicação cheia de personalidade que desenvolvemos para a marca.</p>
                     <p>Estruturamos a comunicação das lojas, conteúdo digital em diversos canais (Instagram, Facebook, Blog, Youtube e E-Commerce), fazemos lançamento e divulgação de eventos e damos suporte às mídias sociais.</p>
                     <p>Confira alguns dos trabalhos da nossa parceria com a Made.</p>
                 </Description>
-                <Playlists className="row col-xs-12 center-xs">
+                <Playlists>
                     <iframe src="https://open.spotify.com/embed/playlist/68LglzhL6afHlY0D877XXw" frameBorder="0" allowTransparency={true} allow="encrypted-media" title="playlist1"></iframe>
                     <iframe src="https://open.spotify.com/embed/playlist/6euNX0DQ8V0iyJxMuqQZn5" frameBorder="0" allowTransparency={true} allow="encrypted-media" title="playlist2"></iframe>
                     <iframe src="https://open.spotify.com/embed/playlist/3AXlUoMZPdQBHcBQG8J9ut" frameBorder="0" allowTransparency={true} allow="encrypted-media" title="playlist3"></iframe>
                     <iframe src="https://open.spotify.com/embed/playlist/4OjqDsSaQRQQyqozzD7Csw" frameBorder="0" allowTransparency={true} allow="encrypted-media" title="playlist4"></iframe>
                     <iframe src="https://open.spotify.com/embed/playlist/3AD3DKHsILTPXpbkDGtVmp" frameBorder="0" allowTransparency={true} allow="encrypted-media" title="playlist5"></iframe>
                 </Playlists>
-                <Makingof className="row col-xs-12">
-                    <iframe src="https://player.vimeo.com/video/340465615" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen title="makingof"></iframe>
-                </Makingof>
-                <div className="row col-xs-12">
+                    <Makingof src="https://player.vimeo.com/video/340465615" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen title="makingof" />
                     <Masonry>
                         <MaterialVideo controls autoPlay={true} muted={true} loop playsInline src="https://portfolio.duee.com.br/wp-content/uploads/2020/06/post-made-1.mp4" />
                         <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
@@ -244,7 +236,6 @@ const Made = () => {
                         <MaterialImg src={Img24} alt="conteudo madeinbrazil" />
                         <MaterialImg src={Img28} alt="conteudo madeinbrazil" />
                     </Masonry>
-                </div>
             </Main>
         </Layout >
     )

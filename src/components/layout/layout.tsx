@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React, { FC, Fragment } from "react"
 import { Helmet } from "react-helmet"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
@@ -27,10 +27,20 @@ const Wppbutton = styled.a`
   }
 `
 
+const Content = styled.main`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+`
+
 const Layout: FC<{
-description?: string,
-lang?: string,
-title: string,
+  description?: string,
+  lang?: string,
+  title: string,
 }> = ({ children, description = '', lang = 'en', title }) => {
   const { site } = useStaticQuery(
     graphql`
@@ -49,53 +59,52 @@ title: string,
   const metaDescription = description || site.siteMetadata.description
 
   return (
-    <>
-      <GlobalStyled />
+    <Fragment>
       <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-        {
-          name: `Cache-control`,
-          content: "public, max-age=0, must-revalidate",
-        },
-      ]}
-    >
+        htmlAttributes={{
+          lang,
+        }}
+        title={title}
+        titleTemplate={`%s | ${site.siteMetadata.title}`}
+        meta={[
+          {
+            name: `description`,
+            content: metaDescription,
+          },
+          {
+            property: `og:title`,
+            content: title,
+          },
+          {
+            property: `og:description`,
+            content: metaDescription,
+          },
+          {
+            property: `og:type`,
+            content: `website`,
+          },
+          {
+            name: `twitter:card`,
+            content: `summary`,
+          },
+          {
+            name: `twitter:creator`,
+            content: site.siteMetadata.author,
+          },
+          {
+            name: `twitter:title`,
+            content: title,
+          },
+          {
+            name: `twitter:description`,
+            content: metaDescription,
+          },
+          // {
+          //   name: `Cache-control`,
+          //   content: "public, max-age=0, must-revalidate",
+          // },
+        ]}
+      >
         <script src="https://kit.fontawesome.com/67a84c91e8.js"></script>
         <link
           rel="stylesheet"
@@ -103,13 +112,10 @@ title: string,
           type="text/css"
         ></link>
       </Helmet>
-      
+      <GlobalStyled />
 
-      <Navbar />
+      <Content>{children}</Content>
 
-      <div>
-        <main>{children}</main>
-      </div>
       <Wppbutton
         href="https://api.whatsapp.com/send?phone=5511951322976"
         target="_blank"
@@ -117,8 +123,10 @@ title: string,
         <img src={Wpp} />
       </Wppbutton>
 
+      <Navbar />
+
       <script src="https://kit.fontawesome.com/67a84c91e8.js"></script>
-    </>
+    </Fragment>
   )
 }
 

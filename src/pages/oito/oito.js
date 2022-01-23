@@ -3,8 +3,8 @@ import React from "react"
 import Helmet from 'react-helmet'
 
 import Layout from "../../components/layout/layout"
-import './style.scss'
-import './oito.scss'
+// import './style.css'
+import './oito.css'
 
 import globo from '../../images/oito/globe-1-1.png'
 import rocket from '../../images/oito/rocket-1-1.png'
@@ -19,7 +19,7 @@ const Starbucks = () => (
             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css" rel="stylesheet" />
         </Helmet>
         {/* <!-- First --> */}
-        <div classNameName="row" id="oitoapp">
+        <div id="oitoapp">
             <section className="banner-one" id="home">
 
                 <img src={globo} className="banner-one__globe" alt="globo" />

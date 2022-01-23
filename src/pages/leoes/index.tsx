@@ -65,26 +65,37 @@ import inovini from '@images/portfolio/clients/inovini.png'
 import kalassi from '@images/portfolio/clients/kalassi.png'
 import maille from '@images/portfolio/clients/maille.png'
 
+import GifBackground from "@images/home/TOPO_SEM_LETRA.gif"
+
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
+const Content = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+`
+
 const VideoHeader = styled.div`
-    background-image      : url('@images/home/TOPO_SEM_LETRA.gif');
+    background-image      : url(${GifBackground});
     background-position   : center right;
     background-size       : cover;
     min-height            : fit-content;
     // max-height         : 100vh;
-    height                : 100vh;
+    height                : 100%;
     margin                : 0;
     padding               : 0;
+    width: 100%;
 
     img {
-        max-width   : 100%;
+        width   : 100%;
         max-height  : 100vh;
         margin-right: 0;
-        display     : none;
+        position: relative;
+        /* display     : none; */
     }
 
-    div {
+    /* div {
         background-image          : url('@images/SOMOSLEOES.png');
         background-position       : center right;
         background-size           : cover;
@@ -93,9 +104,9 @@ const VideoHeader = styled.div`
         height                    : 100%;
         margin                    : 0;
         padding                   : 0;
-    }
+    } */
 
-    @media screen and (max-width: 980px) {
+    /* @media screen and (max-width: 980px) {
         background-image   : url('@images/home/TOPO_SEM_LETRA.gif');
         background-position: center right;
         background-size    : cover;
@@ -104,15 +115,16 @@ const VideoHeader = styled.div`
         height             : fit-content;
         margin             : 0;
         padding            : 0;
+        width: 100%;
 
         img {
-            max-width   : 100%;
+            width   : 100%;
             max-height  : 100vh;
             margin-right: 0;
             display     : block;
         }
 
-        div {
+        /* div {
             background-image             : url('@images/SOMOSLEOES.png');
             background-position          : center right;
             background-size              : cover;
@@ -120,11 +132,11 @@ const VideoHeader = styled.div`
             margin                       : 0;
             padding                      : 0;
             display                      : none;
-        }
-    }
+        } */
+    /* } */
 `
 
-const Video = styled.div`
+const Video = styled.iframe`
     width : 100%;
     margin: auto;
     height: 100vh;
@@ -158,7 +170,7 @@ const GenteFaz = styled.div`
         height  : fit-content;
     }
 
-    div {
+    /* div {
         max-width           : 1320px;
         margin              : auto;
 
@@ -166,7 +178,7 @@ const GenteFaz = styled.div`
             width        : 100%;
             margin-bottom: 4%;
         }
-    }
+    } */
 
     @-webkit-keyframes live {
         0% {
@@ -513,17 +525,16 @@ const SomosLeoes = () => {
     return (
         <Layout title="Somos leões">
 
-            <VideoHeader id="header" className="row middle-md top-xs end-xs">
-                <img src={Hashtag} alt="#somosleoes" />
-                <div className="col-xs-12" />
-            </VideoHeader>
-            <Video className="row" id="videoapresentacao">
-                <iframe src="https://player.vimeo.com/video/355173390" title="Duee Brasil" className="col-xs-12" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
-            </Video>
+            <Content>
 
-            <GenteFaz className="row">
-                <div className="row col-xs-12">
-                    <Resumo className="col-md-5 col-xs-12 box center-xs">
+                <VideoHeader>
+                    <img src={Hashtag} alt="#somosleoes" width={"100%"} />
+                </VideoHeader>
+
+                <Video src="https://player.vimeo.com/video/355173390" title="Duee Brasil" className="col-xs-12" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></Video>
+
+                <GenteFaz>
+                    <Resumo>
                         <LIVE>LIVE MKT</LIVE>
                         <PROMO>PROMOÇÕES</PROMO>
                         <BRAND>BRANDING</BRAND>
@@ -531,7 +542,7 @@ const SomosLeoes = () => {
                         <DEV>DESENVOLVIMENTO</DEV>
                         <h1 className="glitchhover" value="A GENTE FAZ">A GENTE FAZ</h1>
                     </Resumo>
-                    <Manifesto className="col-md-7 col-xs-12">
+                    <Manifesto>
                         <p>A Duee é uma agência full service, que preza pela comunicação integrada, porque sabe que o mundo não se divide em on e off.</p>
                         <p>Não criamos apenas conteúdos e campanhas, nós geramos ideias e conexões.</p>
                         <p>Nós somos uma agência que acredita que o trabalho está em constante movimento e, por isso, estamos sempre atentos às novidades, ao público, às revoluções e novas ideias.</p>
@@ -541,79 +552,77 @@ const SomosLeoes = () => {
                         <p>Digital? A gente faz.</p>
                         <p>Branding? A gente faz.</p>
                     </Manifesto>
-                </div>
-            </GenteFaz>
+                </GenteFaz>
 
-            <Versinho className="row end-xs middle-xs">
-                <VersinhoText className="slideDown col-xs-12 col-md-5">
-                    <h2>SOMOS LEÕES</h2>
-                    <h3>Rugimos bem alto para que todos possam nos ouvir.</h3>
-                    <h3>Defendemos nossas ideias, não temos medo de nos aventurar.</h3>
-                    <h3>Somos ágeis, valentes, estrategistas e inquietos.</h3>
-                    <h3>Estamos sempre nos desafiando e caçando oportunidades de fazer diferente.</h3>
-                    <h3>Somos leões.</h3>
-                </VersinhoText>
-                <div className="col-xs-12 col-md-7 slideLeft">
-                    <VersinhoLion src={Leaocolor} alt="Roar" />
-                </div>
-            </Versinho>
+                <Versinho>
+                    <VersinhoText className="slideDown col-xs-12 col-md-5">
+                        <h2>SOMOS LEÕES</h2>
+                        <h3>Rugimos bem alto para que todos possam nos ouvir.</h3>
+                        <h3>Defendemos nossas ideias, não temos medo de nos aventurar.</h3>
+                        <h3>Somos ágeis, valentes, estrategistas e inquietos.</h3>
+                        <h3>Estamos sempre nos desafiando e caçando oportunidades de fazer diferente.</h3>
+                        <h3>Somos leões.</h3>
+                    </VersinhoText>
+                    <div className="col-xs-12 col-md-7 slideLeft">
+                        <VersinhoLion src={Leaocolor} alt="Roar" />
+                    </div>
+                </Versinho>
 
-            <Trabalho />
+                <Trabalho />
 
-            <Clients className="row col-xs-12 clients">
-                <h2 className="col-xs-12" style={{ textAlign: "center" }}>Clientes</h2>
-                <News img={clt1} />
-                <News img={clt2} />
-                <News img={clt3} />
-                <News img={clt4} />
-                <News img={clt5} />
-                <News img={clt6} />
-                <News img={clt7} />
-                <News img={clt8} />
-                <News img={clt9} />
-                <News img={clt10} />
-                <News img={clt11} />
-                <News img={clt12} />
-                <News img={clt13} />
-                <News img={clt14} />
-                <News img={clt15} />
-                <News img={clt16} />
-                <News img={inovini} />
-                <News img={clt17} />
-                <News img={kalassi} />
-                <News img={clt18} />
-                <News img={clt19} />
-                <News img={maille} />
-                <News img={clt20} />
-                <News img={clt21} />
-                <News img={clt22} />
-                <News img={clt23} />
-                <News img={clt24} />
-                <News img={clt25} />
-                <News img={clt26} />
-                <News img={clt27} />
-                <News img={clt28} />
-                <News img={clt29} />
-                <News img={clt30} />
-                <News img={clt31} />
-                <News img={clt32} />
-                <News img={clt33} />
-                <News img={clt34} />
-                <News img={clt35} />
-                <News img={clt36} />
+                <Clients>
+                    <h2 className="col-xs-12" style={{ textAlign: "center" }}>Clientes</h2>
+                    <News img={clt1} />
+                    <News img={clt2} />
+                    <News img={clt3} />
+                    <News img={clt4} />
+                    <News img={clt5} />
+                    <News img={clt6} />
+                    <News img={clt7} />
+                    <News img={clt8} />
+                    <News img={clt9} />
+                    <News img={clt10} />
+                    <News img={clt11} />
+                    <News img={clt12} />
+                    <News img={clt13} />
+                    <News img={clt14} />
+                    <News img={clt15} />
+                    <News img={clt16} />
+                    <News img={inovini} />
+                    <News img={clt17} />
+                    <News img={kalassi} />
+                    <News img={clt18} />
+                    <News img={clt19} />
+                    <News img={maille} />
+                    <News img={clt20} />
+                    <News img={clt21} />
+                    <News img={clt22} />
+                    <News img={clt23} />
+                    <News img={clt24} />
+                    <News img={clt25} />
+                    <News img={clt26} />
+                    <News img={clt27} />
+                    <News img={clt28} />
+                    <News img={clt29} />
+                    <News img={clt30} />
+                    <News img={clt31} />
+                    <News img={clt32} />
+                    <News img={clt33} />
+                    <News img={clt34} />
+                    <News img={clt35} />
+                    <News img={clt36} />
 
-            </Clients>
+                </Clients>
 
-            <NewsCollapse className="row" >
-                <div className="col-xs-12 center-xs">
-                    <button type='button' onClick={() => setOpenNews(!openNews)}>Ver Mais</button>
-                </div>
+                <NewsCollapse>
+                    <div>
+                        <button type='button' onClick={() => setOpenNews(!openNews)}>Ver Mais</button>
+                    </div>
 
-                <Vermais className="col-xs-12 center-xs">
-                    <div className="row">
+                    <Vermais>
                         <Collapse isOpened={openNews}>
 
-                            <Depoimentos className="col-xs-12">
+                            <Depoimentos>
                                 <div className="row">
                                     <div className="col-xs-12">
                                         <h4>Depoimentos</h4>
@@ -640,10 +649,10 @@ const SomosLeoes = () => {
                                 </div>
                             </Depoimentos>
 
-                            <Midia className="col-xs-12">
+                            <Midia>
                                 <h4>Duee na midia</h4>
 
-                                <div className="row around-xs">
+                                <div>
                                     <News img={JovenPan} title="CODORNÍU CONVIDA EXPERTS PARA CRIAR BEBIDAS AUTORAIS COM CAVA" link="http://jovempan.uol.com.br/opiniao-jovem-pan/consultores/cesar-adames/codorniu-convida-experts-para-criar-bebidas-autorais-com-cava.html" />
                                     <News img={Propmark} title="MASCOTE DA CERVEJA BELGA VEDETT INVADE CIDADE DE SÃO PAULO" link="http://propmark.com.br/anunciantes/mascote-da-cerveja-belga-vedett-invade-cidade-de-sao-paulo" />
                                     <News img={Propmark} title="DUEE BRASIL ASSUME CONTA DA CODORNÍU, DA INTERFOOD IMPORTAÇÃO" link="http://propmark.com.br/agencias/duee-brasil-assume-conta-da-codorniu-da-interfood-importacao" />
@@ -662,10 +671,9 @@ const SomosLeoes = () => {
                                 </div>
                             </Midia>
                         </Collapse>
-                    </div>
-                </Vermais>
-            </NewsCollapse>
-
+                    </Vermais>
+                </NewsCollapse>
+            </Content>
         </Layout>
     )
 }

@@ -1,41 +1,40 @@
-import React, {useState, useEffect} from "react"
+import React, { useState, useEffect, FC } from "react"
 import styled from 'styled-components'
 
 const ProgressBar = styled.div`
   width: 100%;
   position: fixed;
   bottom: 10px;
-  padding: 15px;
+  padding: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 110;
 
   @media screen and (min-width: 768px) {
-      max-width: 450px;
-      padding: 30px;
-      bottom: 20px;
-      right: 30px;
+    max-width: 450px;
+    padding: 30px;
+    bottom: 20px;
+    right: 70px;
   }
 `;
 
 const ProgressBarContainer = styled.div`
-    &:first-child{
-      flex: 0 0 80%;
-      max-width: 80%;
-      display: flex;
-      align-items: center;
-    }
-    &:last-child{
-      flex: 0 0 20%;
-      max-width: 20%;
-    }
+  &:first-child{
+    flex: 0 0 80%;
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+  }
+  &:last-child{
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
 `;
 
 const ProgressBarComponent = styled.div`
-width: 100%;
-height: 3px;
-background-color: #525252;
+  width: 100%;
+  height: 3px;
+  background-color: #525252;
 `;
 
 const ProgressBarStatus = styled.div`
@@ -47,19 +46,19 @@ const ProgressBarStatus = styled.div`
 `;
 
 const Icon = styled.div`
-text-align: center;
+  text-align: center;
 `
 
 const IconDraw = styled.i`
-transform: rotateZ(90deg);
-font-size: xx-large;
+  transform: rotateZ(90deg);
+  font-size: xx-large;
 `
 
 const IconSub = styled.p`
-margin: 5px 0;
+  margin: 5px 0;
 `;
 
-export default ({page}) => {
+const SliderCounter:FC<{page: number}> = ({ page }) => {
   const [widthBar, setWidthBar] = useState<number | string>(0)
 
   const updateSlideCounter = (pages: number) => {
@@ -93,15 +92,17 @@ export default ({page}) => {
 
   useEffect(() => updateSlideCounter(page), [page, updateSlideCounter])
 
-    return <ProgressBar>
-      <ProgressBarContainer>
-        <ProgressBarComponent>
-          <ProgressBarStatus progress={widthBar}/>
-        </ProgressBarComponent>
-      </ProgressBarContainer>
-      <Icon>
-        <IconDraw className="fas fa-exchange-alt" />
-        <IconSub>scroll</IconSub>
-      </Icon>
-    </ProgressBar>
-  }
+  return <ProgressBar>
+    <ProgressBarContainer>
+      <ProgressBarComponent>
+        <ProgressBarStatus progress={widthBar} />
+      </ProgressBarComponent>
+    </ProgressBarContainer>
+    <Icon>
+      <IconDraw className="fas fa-exchange-alt" />
+      <IconSub>scroll</IconSub>
+    </Icon>
+  </ProgressBar>
+}
+
+export default SliderCounter

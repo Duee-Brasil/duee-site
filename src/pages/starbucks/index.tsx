@@ -5,6 +5,7 @@ import Layout from "@components/layout/layout"
 import Masonry from "@components/Masonry"
 
 import Sereia from '@images/starbucks/starbucks-coffee-logo-vector.svg'
+import LogoStbx from '@images/starbucks/Starbucks-logo.svg'
 
 const Rappi1 = 'https://portfolio.duee.com.br/wp-content/uploads/2021/09/Banner-App-Starbucks-Rappi-V2.png'
 const Rappi2 = 'https://portfolio.duee.com.br/wp-content/uploads/2021/09/Banner-App-Starbucks-Rappi_V2.png'
@@ -64,6 +65,9 @@ const Content = styled.div`
     margin          : 0;
     padding         : 0;
     width           : 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 `
 
 const HeaderStbx = styled.div`
@@ -83,7 +87,7 @@ const Paralax = styled.div`
     width                : 100%;
     height               : 100%;
     background-attachment: fixed;
-    background-image     : url('@images/starbucks/Starbucks-logo.svg');
+    background-image     : url(${LogoStbx});
     background-position  : center center;
     background-size      : contain;
     background-repeat    : no-repeat;
@@ -101,12 +105,11 @@ const Paralax = styled.div`
 `
 
 const Description = styled.div`
-    margin: 30px auto 0 auto;
+    margin: 30px auto;
     text-align: left;
-    
-    p {
-    margin-top: 0;
-    }
+    width: 100%;
+    max-width: 800px;
+    font-size: 1.2rem;
 `
 
 const MaterialImg = styled.img`
@@ -123,21 +126,18 @@ const MaterialVideo = styled.video`
 
 const Starbucks = () => (
     <Layout title="Starbucks">
-        <Content className="row">
-            <HeaderStbx className="col-xs-12 row center-xs">
-                <div className="col-xs-12">
-                    <Paralax>
-                        <img src={Sereia} alt="starbuckslogo" width={"100%"} />
-                    </Paralax>
-                </div>
+        <Content>
+            <HeaderStbx>
+                <Paralax>
+                    <img src={Sereia} alt="starbuckslogo" width={"100%"} />
+                </Paralax>
             </HeaderStbx>
-            <Description className="row col-xs-12 col-sm-8 col-md-6 col-lg-5">
+            <Description>
                 <p>A Starbucks é a maior franquia de cafeteria do mundo, conhecida pela excelência desde a colheita do café até a sua apresentação.</p>
                 <p>A sua comunicação deve ser uma extensão dessa excelência e, por isso, a Starbucks Brasil escolheu a DUEE para desenvolver parte dela.</p>
                 <p>Desenvolvemos a comunicação de PDV, fazemos material de endomarketing, cuidamos de campanhas de lançamentos de produtos, embalagens, conteúdos internos e damos suporte full service.</p>
                 <p>Aqui estão alguns dos melhores trabalhos em parceria com a Starbucks.</p>
             </Description>
-            <div className="row col-xs-12" style={{ zIndex: 100 }}>
                 <Masonry>
                     <MaterialImg src={New6} alt="post instagram" />
                     <MaterialImg src={Rappi1} alt="anuncio Rappi" />
@@ -191,7 +191,6 @@ const Starbucks = () => (
                     <MaterialImg src={Rappi3} alt="anuncio Rappi" />
                     <MaterialImg src={New1} alt="post instagram" />
                 </Masonry>
-            </div>
         </Content>
     </Layout >
 )

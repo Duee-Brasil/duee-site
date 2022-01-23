@@ -42,26 +42,26 @@ const Scroller = styled.div`
   animation-timing-function: cubic-bezier(.15,.41,.69,.94);
   animation-iteration-count: infinite;
 
-@keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
-}
-
-@media screen and (min-width: 768px) {
-  #mouseContainer {
-    display: block;
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
   }
-}
+
+  @media screen and (min-width: 768px) {
+    #mouseContainer {
+      display: block;
+    }
+  }
 `
 
 const MouseIcon = () => (
   <MouseContainer>
-  <ScrollDowns>
-    <Mousey>
-      <Scroller />
-    </Mousey>
-  </ScrollDowns>
+    <ScrollDowns>
+      <Mousey>
+        <Scroller />
+      </Mousey>
+    </ScrollDowns>
   </MouseContainer>
 )
 

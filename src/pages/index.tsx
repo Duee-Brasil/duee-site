@@ -1,4 +1,4 @@
-import React, { useState, ReactElement } from "react"
+import React, { useState } from "react"
 import ReactPageScroller from "react-page-scroller"
 import styled from "styled-components"
 import { Link } from "gatsby"
@@ -37,6 +37,7 @@ const LogoContainer = styled.div`
 
   img {
     width: 100%;
+    max-width: 300px;
   }
 `
 
@@ -73,8 +74,6 @@ const HomePage = () => {
 
   return (
     <Layout title="Home">
-      <MouseIcon />
-      <SlideCounter page={currentPage} />
 
       <ReactPageScroller pageOnChange={pageOnChange}>
         <PageContent id="home">
@@ -133,7 +132,6 @@ const HomePage = () => {
               <img
                 className="starbucks"
                 src={StarbucksLogo}
-                style={{ maxWidth: "300px" }}
                 alt="Starbucks Logo"
               />
             </LogoContainer>
@@ -204,6 +202,9 @@ const HomePage = () => {
           </Link>
         </PageContent>
       </ReactPageScroller>
+
+      <SlideCounter page={currentPage} />
+      <MouseIcon />
     </Layout>
   )
 }

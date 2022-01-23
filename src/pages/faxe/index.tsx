@@ -82,19 +82,22 @@ const Main = styled.div`
     margin: 0;
     height: 100vh;
     width : 100vw;
+    display: flex;
+    flex-direction: column;
 `
 
 const Title = styled.header`
     width      : 100%;
     margin     : 0;
-    position:  relative;
     max-height: 95vh;
+    display: block;
+    position: relative;
+`
 
-    img {
-        width: 100%;
-        max-height: 95vh;
-        filter: opacity(0.8);
-    }
+const Background = styled.img`
+    width: 100%;
+    max-height: 95vh;
+    filter: opacity(0.8);
 `
 
 const Logo = styled.img`
@@ -103,35 +106,28 @@ const Logo = styled.img`
     margin  : auto;
     top     : 20%;
     left    : 35%;
-    filter: none;
 `
 
 const Content = styled.div`
-    width      : 100vw;
-    padding-top: 30px !important;
+    width: 100%;
+    padding: 30px;
     margin: 0;
-
-    div {
-        margin: auto;
-    }
+    justify-content: center;
 `
 
 const Description = styled.div`
     margin: auto;
     text-align: left;
+    max-width: 800px;
+    font-size: 1.2rem;
 `
 
-const Makingof = styled.div`
-        padding: 0;
-        width : 100vw;
-        height: calc(80vw * 9 / 16);
-        max-height: 90vh;
-        justify-content:  center;
-        padding-top: 30px;
-
-        iframe {
-            width: 80vw;
-        }
+const Makingof = styled.iframe`
+    width : 100%;
+    height: calc(80% * 9 / 16);
+    max-height: 80vh;
+    justify-content:  center;
+    margin: 40px;
 `
 
 const MaterialImg = styled.img`
@@ -150,119 +146,115 @@ const Faxe = () => {
 
     return (
         <Layout title="Faxe">
-            <Main className='middle-xs center-xs' >
+            <Main >
 
                 <Title>
-                    <img src={HeaderBG} alt="background" />
+                    <Background src={HeaderBG} alt="background" />
                     <Logo src={Logofaxe} alt="faxe" />
                 </Title>
 
-                <Content className='row'>
-                    <Description className="row col-xs-12 col-sm-8 col-md-6 col-lg-5">
+                <Content>
+                    <Description>
                         <p>A cerveja dinamarquesa Faxe Beer é inspirada no universo Viking, conquistando os mais exigentes paladares de guerreiros do happy hour ao redor do mundo.</p>
                         <p>Aqui no Brasil, foi a DUEE que conquistou a batalha pela comunicação da marca e tem feito um trabalho divino.</p>
                         <p>Criamos os conteúdos semanais para as redes sociais, Instagram e Facebook, damos suporte em eventos, lançamentos, promoções e relacionamento com clientes e influenciadores.</p>
                         <p>Confira alguns trabalhos da nossa parceria com a Faxe.</p>
                     </Description>
 
-                    <Makingof className="row col-xs-12">
-                        <iframe src="https://player.vimeo.com/video/296450706" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen title="making of" />
-                    </Makingof>
-                    <div className="row col-xs-12">
-                        <Masonry>
-                            <MaterialImg src={Img2} alt="conteudo faxe" />
-                            <MaterialImg src={Img40} alt="conteudo faxe" />
-                            <MaterialImg src={Img4} alt="conteudo faxe" />
-                            <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
-                                <source src={Post1W} type="video/webm" />
-                                <source src={Post1} type="video/mp4" />
-                            </MaterialVideo>
-                            <MaterialImg src={Img19} alt="conteudo faxe" />
-                            <MaterialImg src={Img14} alt="conteudo faxe" />
-                            <MaterialImg src={Img29} alt="conteudo faxe" />
-                            <MaterialImg src={Img10} alt="conteudo faxe" />
-                            <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline >
-                                <source src={Story3W} type="video/webm" />
-                                <source src={Story3} type="video/mp4" />
-                            </MaterialVideo>
-                            <MaterialImg src={Img1} alt="conteudo faxe" />
-                            <MaterialImg src={Img39} alt="conteudo faxe" />
-                            <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
-                                <source src={Post2W} type="video/webm" />
-                                <source src={Post2} type="video/mp4" />
-                            </MaterialVideo>
-                            <MaterialImg src={Img17} alt="conteudo faxe" />
-                            <MaterialImg src={Img18} alt="conteudo faxe" />
-                            <MaterialImg src={Img20} alt="conteudo faxe" />
-                            <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
-                                <source src={Post3W} type="video/webm" />
-                                <source src={Post3} type="video/mp4" />
-                            </MaterialVideo>
-                            <MaterialImg src={Img28} alt="conteudo faxe" />
-                            <MaterialImg src={Img8} alt="conteudo faxe" />
-                            <MaterialImg src={Img3} alt="conteudo faxe" />
-                            <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
-                                <source src={Story1W} type="video/webm" />
-                                <source src={Story1} type="video/mp4" />
-                            </MaterialVideo>
-                            <MaterialImg src={Img25} alt="conteudo faxe" />
-                            <MaterialImg src={Img26} alt="conteudo faxe" />
-                            <MaterialImg src={Img22} alt="conteudo faxe" />
-                            <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
-                                <source src={Post4W} type="video/webm" />
-                                <source src={Post4} type="video/mp4" />
-                            </MaterialVideo>
-                            <MaterialImg src={Img31} alt="conteudo faxe" />
-                            <MaterialImg src={Img32} alt="conteudo faxe" />
-                            <MaterialImg src={Img41} alt="conteudo faxe" />
-                            <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
-                                <source src={Story4W} type="video/webm" />
-                                <source src={Story4} type="video/mp4" />
-                            </MaterialVideo>
-                            <MaterialImg src={Img23} alt="conteudo faxe" />
-                            <MaterialImg src={Img33} alt="conteudo faxe" />
-                            <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
-                                <source src={Post5W} type="video/webm" />
-                                <source src={Post5} type="video/mp4" />
-                            </MaterialVideo>
-                            <MaterialImg src={Img12} alt="conteudo faxe" />
-                            <MaterialImg src={Img27} alt="conteudo faxe" />
-                            <MaterialImg src={Img42} alt="conteudo faxe" />
-                            <MaterialImg src={Img13} alt="conteudo faxe" />
-                            <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
-                                <source src={Post9W} type="video/webm" />
-                                <source src={Post9} type="video/mp4" />
-                            </MaterialVideo>
-                            <MaterialImg src={Img30} alt="conteudo faxe" />
-                            <MaterialImg src={Img6} alt="conteudo faxe" />
-                            <MaterialImg src={Img38} alt="conteudo faxe" />
-                            <MaterialImg src={Img9} alt="conteudo faxe" />
-                            <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
-                                <source src={Post6W} type="video/webm" />
-                                <source src={Post6} type="video/mp4" />
-                            </MaterialVideo>
-                            <MaterialImg src={Img34} alt="conteudo faxe" />
-                            <MaterialImg src={Img7} alt="conteudo faxe" />
-                            <MaterialImg src={Img35} alt="conteudo faxe" />
-                            <MaterialImg src={Img5} alt="conteudo faxe" />
-                            <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
-                                <source src={Post7W} type="video/webm" />
-                                <source src={Post7} type="video/mp4" />
-                            </MaterialVideo>
-                            <MaterialImg src={Img15} alt="conteudo faxe" />
-                            <MaterialImg src={Img36} alt="conteudo faxe" />
-                            <MaterialImg src={Img24} alt="conteudo faxe" />
-                            <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
-                                <source src={Post8W} type="video/webm" />
-                                <source src={Post8} type="video/mp4" />
-                            </MaterialVideo>
-                            <MaterialImg src={Img11} alt="conteudo faxe" />
-                            <MaterialImg src={Img21} alt="conteudo faxe" />
-                            <MaterialImg src={Story2} alt="conteudo faxe" />
-                            <MaterialImg src={Img16} alt="conteudo faxe" />
-                            <MaterialImg src={Img37} alt="conteudo faxe" />
-                        </Masonry>
-                    </div>
+                    <Makingof src="https://player.vimeo.com/video/296450706" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen title="making of" />
+                    <Masonry>
+                        <MaterialImg src={Img2} alt="conteudo faxe" />
+                        <MaterialImg src={Img40} alt="conteudo faxe" />
+                        <MaterialImg src={Img4} alt="conteudo faxe" />
+                        <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
+                            <source src={Post1W} type="video/webm" />
+                            <source src={Post1} type="video/mp4" />
+                        </MaterialVideo>
+                        <MaterialImg src={Img19} alt="conteudo faxe" />
+                        <MaterialImg src={Img14} alt="conteudo faxe" />
+                        <MaterialImg src={Img29} alt="conteudo faxe" />
+                        <MaterialImg src={Img10} alt="conteudo faxe" />
+                        <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline >
+                            <source src={Story3W} type="video/webm" />
+                            <source src={Story3} type="video/mp4" />
+                        </MaterialVideo>
+                        <MaterialImg src={Img1} alt="conteudo faxe" />
+                        <MaterialImg src={Img39} alt="conteudo faxe" />
+                        <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
+                            <source src={Post2W} type="video/webm" />
+                            <source src={Post2} type="video/mp4" />
+                        </MaterialVideo>
+                        <MaterialImg src={Img17} alt="conteudo faxe" />
+                        <MaterialImg src={Img18} alt="conteudo faxe" />
+                        <MaterialImg src={Img20} alt="conteudo faxe" />
+                        <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
+                            <source src={Post3W} type="video/webm" />
+                            <source src={Post3} type="video/mp4" />
+                        </MaterialVideo>
+                        <MaterialImg src={Img28} alt="conteudo faxe" />
+                        <MaterialImg src={Img8} alt="conteudo faxe" />
+                        <MaterialImg src={Img3} alt="conteudo faxe" />
+                        <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
+                            <source src={Story1W} type="video/webm" />
+                            <source src={Story1} type="video/mp4" />
+                        </MaterialVideo>
+                        <MaterialImg src={Img25} alt="conteudo faxe" />
+                        <MaterialImg src={Img26} alt="conteudo faxe" />
+                        <MaterialImg src={Img22} alt="conteudo faxe" />
+                        <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
+                            <source src={Post4W} type="video/webm" />
+                            <source src={Post4} type="video/mp4" />
+                        </MaterialVideo>
+                        <MaterialImg src={Img31} alt="conteudo faxe" />
+                        <MaterialImg src={Img32} alt="conteudo faxe" />
+                        <MaterialImg src={Img41} alt="conteudo faxe" />
+                        <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
+                            <source src={Story4W} type="video/webm" />
+                            <source src={Story4} type="video/mp4" />
+                        </MaterialVideo>
+                        <MaterialImg src={Img23} alt="conteudo faxe" />
+                        <MaterialImg src={Img33} alt="conteudo faxe" />
+                        <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
+                            <source src={Post5W} type="video/webm" />
+                            <source src={Post5} type="video/mp4" />
+                        </MaterialVideo>
+                        <MaterialImg src={Img12} alt="conteudo faxe" />
+                        <MaterialImg src={Img27} alt="conteudo faxe" />
+                        <MaterialImg src={Img42} alt="conteudo faxe" />
+                        <MaterialImg src={Img13} alt="conteudo faxe" />
+                        <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
+                            <source src={Post9W} type="video/webm" />
+                            <source src={Post9} type="video/mp4" />
+                        </MaterialVideo>
+                        <MaterialImg src={Img30} alt="conteudo faxe" />
+                        <MaterialImg src={Img6} alt="conteudo faxe" />
+                        <MaterialImg src={Img38} alt="conteudo faxe" />
+                        <MaterialImg src={Img9} alt="conteudo faxe" />
+                        <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
+                            <source src={Post6W} type="video/webm" />
+                            <source src={Post6} type="video/mp4" />
+                        </MaterialVideo>
+                        <MaterialImg src={Img34} alt="conteudo faxe" />
+                        <MaterialImg src={Img7} alt="conteudo faxe" />
+                        <MaterialImg src={Img35} alt="conteudo faxe" />
+                        <MaterialImg src={Img5} alt="conteudo faxe" />
+                        <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
+                            <source src={Post7W} type="video/webm" />
+                            <source src={Post7} type="video/mp4" />
+                        </MaterialVideo>
+                        <MaterialImg src={Img15} alt="conteudo faxe" />
+                        <MaterialImg src={Img36} alt="conteudo faxe" />
+                        <MaterialImg src={Img24} alt="conteudo faxe" />
+                        <MaterialVideo autoPlay={true} muted={true} loop controls={true} playsInline>
+                            <source src={Post8W} type="video/webm" />
+                            <source src={Post8} type="video/mp4" />
+                        </MaterialVideo>
+                        <MaterialImg src={Img11} alt="conteudo faxe" />
+                        <MaterialImg src={Img21} alt="conteudo faxe" />
+                        <MaterialImg src={Story2} alt="conteudo faxe" />
+                        <MaterialImg src={Img16} alt="conteudo faxe" />
+                        <MaterialImg src={Img37} alt="conteudo faxe" />
+                    </Masonry>
                 </Content>
             </Main>
         </Layout >

@@ -5,9 +5,9 @@ article.cases {
     overflow-x       : hidden;
     width            : 100%;
     height           : calc(100% - 1% - 1.5em);
-    // padding-bottom: 40px;
+    /* // padding-bottom: 40px; */
 
-    .title {
+    /* .title {
         margin : 0;
         padding: 0;
 
@@ -67,6 +67,6 @@ article.cases {
         flex-basis     : 100%;
         margin         : auto;
         justify-content: center;
-    }
+    } */
 
 }

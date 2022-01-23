@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -36,7 +37,6 @@ module.exports = {
         icon: `src/images/Logo_Claro-leao.png`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass',
     {
       resolve: `gatsby-plugin-routes`,
       options: {
@@ -88,6 +88,6 @@ module.exports = {
       options: {
         configFile: `${__dirname}/tsconfig.json`,
       },
-    }
+    },
   ]
 }

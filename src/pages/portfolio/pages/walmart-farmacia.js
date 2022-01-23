@@ -1,5 +1,5 @@
 import React from 'react'
-import './default.scss'
+import './default.css'
 
 export default class Farmacia extends React.Component {
 

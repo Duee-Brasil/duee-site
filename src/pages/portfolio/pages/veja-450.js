@@ -1,5 +1,5 @@
 import React from 'react'
-import './default.scss'
+import './default.css'
 
 export default class Veja450 extends React.Component {
 

@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 
 import Layout from "../../components/layout/layout"
-import "./portfolio.scss"
+// import "./portfolio.css"
 import Case from "../../components/cases/cases"
 
 import Panetone from "./pages/sbks-panetone"

@@ -6,7 +6,7 @@
     padding-bottom: 515px;
     z-index: 11;
 
-    img {
+    > img {
         width: auto !important;
     }
 

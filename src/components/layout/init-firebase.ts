@@ -1,4 +1,5 @@
-import firebase from 'firebase';
+import { initializeApp } from 'firebase/app'
+import { getPerformance } from "firebase/performance";
 
 const config = {
   apiKey: "AIzaSyDAw2n2qtVLOuQOqLi3Lb8WDe36J46SANM",
@@ -11,6 +12,5 @@ const config = {
 };
 
 // Initialize Firebase
-export const firebaseImpl = firebase.initializeApp(config);
-export const db = firebase.firestore();
-export const storage = firebase.storage();
+export const app = initializeApp(config)
+export const perf = getPerformance(app);
