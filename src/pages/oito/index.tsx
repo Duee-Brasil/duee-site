@@ -83,6 +83,8 @@ const Tecnologys = styled.section`
         color: white;
         font-size: 4rem;
         width: 100%;
+        max-width: 1200px;
+        margin: auto;
     }
 `
 
@@ -93,6 +95,8 @@ const TecnologyContent = styled.div`
     flex-wrap: wrap;
     width: 100%;
     align-items: stretch;
+    max-width: 1200px;
+    margin: auto;
 `
 
 const TecnologyCard = styled.div`
@@ -148,18 +152,21 @@ const TecnologyCard = styled.div`
 `
 
 const Steps = styled.section`
-    padding-top: 330px;
-    padding-bottom: 120px;
     clip-path: polygon(0 0, 100% 31%, 100% 100%, 0% 100%);
     width: 100%;
+    margin: auto;
     display: flex;
-    padding: 1rem 5rem;
+    padding: 5rem;
+    padding-top: 330px;
+    padding-bottom: 120px;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-end;
+    background-color: white;
 
     img {
-
+        margin: 5rem 0;
         margin-right: -5rem;
         max-width: 55vw;
     }
@@ -167,6 +174,8 @@ const Steps = styled.section`
 
 const StepsContainer = styled.div`
     width: 50%;
+    min-width: 300px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -215,9 +224,9 @@ const Oito = () => (
                     <img src={etap} alt="moc" />
                 </StepsContainer>
                 <StepsContainer>
-                    <div className="block-title text-left">
+                    {/* <div className="block-title text-left"> */}
                         <h2 className="block-title__title black-text-color">Etapas do <br /> projeto</h2>
-                    </div>
+                    {/* </div> */}
                     <div className="cta-two__single">
                         <div className="cta-two__icon">
                             <i className="far fa-sticky-note"></i>
