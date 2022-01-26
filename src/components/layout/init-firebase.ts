@@ -1,5 +1,4 @@
-import { initializeApp } from 'firebase/app'
-import { getPerformance } from "firebase/performance";
+import Firebase from 'firebase'
 
 const config = {
   apiKey: "AIzaSyDAw2n2qtVLOuQOqLi3Lb8WDe36J46SANM",
@@ -12,5 +11,4 @@ const config = {
 };
 
 // Initialize Firebase
-export const app = initializeApp(config)
-export const perf = getPerformance(app);
+export const app = Firebase.initializeApp(config)

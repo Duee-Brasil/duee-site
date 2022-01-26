@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 import SwipeableViews from 'react-swipeable-views'
 import { autoPlay } from 'react-swipeable-views-utils'
@@ -69,117 +69,8 @@ import GifBackground from "@images/home/TOPO_SEM_LETRA.gif"
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-const Content = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-`
-
-const VideoHeader = styled.div`
-    background-image      : url(${GifBackground});
-    background-position   : center right;
-    background-size       : cover;
-    min-height            : fit-content;
-    // max-height         : 100vh;
-    height                : 100%;
-    margin                : 0;
-    padding               : 0;
-    width: 100%;
-
-    img {
-        width   : 100%;
-        max-height  : 100vh;
-        margin-right: 0;
-        position: relative;
-        /* display     : none; */
-    }
-
-    /* div {
-        background-image          : url('@images/SOMOSLEOES.png');
-        background-position       : center right;
-        background-size           : cover;
-        //     min-height         : 25%;
-        // max-height             : 100vh;
-        height                    : 100%;
-        margin                    : 0;
-        padding                   : 0;
-    } */
-
-    /* @media screen and (max-width: 980px) {
-        background-image   : url('@images/home/TOPO_SEM_LETRA.gif');
-        background-position: center right;
-        background-size    : cover;
-        min-height         : fit-content;
-        max-height         : 100vh;
-        height             : fit-content;
-        margin             : 0;
-        padding            : 0;
-        width: 100%;
-
-        img {
-            width   : 100%;
-            max-height  : 100vh;
-            margin-right: 0;
-            display     : block;
-        }
-
-        /* div {
-            background-image             : url('@images/SOMOSLEOES.png');
-            background-position          : center right;
-            background-size              : cover;
-            min-height                   : 25%;
-            margin                       : 0;
-            padding                      : 0;
-            display                      : none;
-        } */
-    /* } */
-`
-
-const Video = styled.iframe`
-    width : 100%;
-    margin: auto;
-    height: 100vh;
-
-    iframe {
-        width : 100%;
-        margin: auto;
-        height: 100vh;
-    }
-
-    @media screen and (max-width: 980px) {
-        width     : 100%;
-        margin    : 0 auto;
-        max-height: fit-content;
-
-        iframe {
-            max-height: fit-content;
-        }
-    }
-`
-
-const GenteFaz = styled.div`
-    background-color      : white;
-    color                 : ${colors.escuroDrk};
-    padding               : 1% 5% 1% 3%;
-    min-height            : 100%;
-    height                : 100%;
-    display               : flex;
-
-    @media screen and (max-width: 980px) {
-        height  : fit-content;
-    }
-
-    /* div {
-        max-width           : 1320px;
-        margin              : auto;
-
-        @media screen and (max-width: 980px) {
-            width        : 100%;
-            margin-bottom: 4%;
-        }
-    } */
-
+const Animations = css`
+    
     @-webkit-keyframes live {
         0% {
             visibility: visible;
@@ -301,61 +192,132 @@ const GenteFaz = styled.div`
     }
 `
 
-const Manifesto = styled.div`
-    padding       : 3% 5%;
-    border        : 8px solid ${colors.claroDrk};
-    z-index       : 0;
+const Content = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+`
 
-    @media screen and (max-width: 980px) {
-        width: 100%;
+const VideoHeader = styled.div`
+    background-image      : url(${GifBackground});
+    background-position   : center right;
+    background-size       : cover;
+    min-height            : fit-content;
+    // max-height         : 100vh;
+    height                : 100%;
+    margin                : 0;
+    padding               : 0;
+    width: 100%;
+
+    img {
+        width   : 100%;
+        max-height  : 100vh;
+        margin-right: 0;
+        position: relative;
+        /* display     : none; */
     }
+
+    /* div {
+        background-image          : url('@images/SOMOSLEOES.png');
+        background-position       : center right;
+        background-size           : cover;
+        //     min-height         : 25%;
+        // max-height             : 100vh;
+        height                    : 100%;
+        margin                    : 0;
+        padding                   : 0;
+    } */
+
+    /* @media screen and (max-width: 980px) {
+        background-image   : url('@images/home/TOPO_SEM_LETRA.gif');
+        background-position: center right;
+        background-size    : cover;
+        min-height         : fit-content;
+        max-height         : 100vh;
+        height             : fit-content;
+        margin             : 0;
+        padding            : 0;
+        width: 100%;
+
+        img {
+            width   : 100%;
+            max-height  : 100vh;
+            margin-right: 0;
+            display     : block;
+        }
+
+        /* div {
+            background-image             : url('@images/SOMOSLEOES.png');
+            background-position          : center right;
+            background-size              : cover;
+            min-height                   : 25%;
+            margin                       : 0;
+            padding                      : 0;
+            display                      : none;
+        } */
+    /* } */
+`
+
+const Video = styled.iframe`
+    width : 80vw;
+`
+
+const GenteFaz = styled.div`
+    background-color      : white;
+    color                 : ${colors.escuroDrk};
+    padding               : 7rem 5rem;
+    display               : flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+`
+
+const Manifesto = styled.div`
+    padding       : 3rem 5rem;
+    border        : 8px solid ${colors.claroDrk};
+    width: 100%;
+    max-width: 900px;
+    font-size: 1.3rem;
 `
 
 const Resumo = styled.div`
-    position           : relative;
+    /* position           : relative; */
     text-align         : right;
     align-self         : center;
-    z-index            : 1;
-    right              : -50px;
     background-color   : white;
-    height             : 100%;
-    justify-items      : flex-end;
-    width              : 100%;
+    justify-content      : flex-end;
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+    padding: 1rem 0;
+    margin-right: -2rem;
+
+    ${Animations}
 
     h2 {
-        position         : relative;
         font-size        : 4em;
         color            : ${colors.blue};
-        line-height      : 0.4em;
+        line-height      : 1em;
         font-family      : 'Anton', sans-serif;
         letter-spacing   : 5px;
         visibility       : hidden;
+        margin: 0;
     }
 
     h1 {
+        margin: 0;
         text-align         : right;
-        position           : absolute;
-        font-size          : 10em;
+        font-size          : 8em;
         color              : ${colors.pink};
         font-weight        : bold;
         font-family        : 'Anton', sans-serif;
-        line-height        : 0.9em;
+        line-height        : 1em;
         font-kerning       : 1.5em;
-        z-index            : 2;
         letter-spacing     : 15px;
         visibility         : hidden;
         -webkit-animation  : faz 5s step-end infinite;
         animation          : faz 5s step-end infinite;
-        right              : -50px;
-        width              : 100%;
-    }
-
-    @media screen and (max-width: 980px) {
-        text-align: center;
-        margin    : auto;
-        right     : 0;
-        width     : 100%;
-        font-size : 0.5em;
     }
 `
 
@@ -386,43 +348,44 @@ const DEV = styled.h2`
 
 const Versinho = styled.div`
     background-color              : black;
-    height                        : 100vh;
-
-    @media screen and (max-width: 980px) {
-        background-color: black;
-        height          : fit-content;
-    }
+    height                        : 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 
 const VersinhoText = styled.div`
-        font-size    : 1em;
+        font-size    : 1.1em;
         margin       : 0;
         padding-left : 3%;
         padding-right: 1%;
-
-        @media screen and (max-width: 980px) {
-            font-size    : 1.1em;
-            margin       : 0;
-            padding-left : 3%;
-            padding-right: 1%;
-            text-align   : center;
-        }
+        text-align   : center;
 `
 
-const VersinhoLion = styled.img`
+const VersinhoLion = styled.div`
+    
+    margin-top: 15vh;
+    margin-right: -50rem;
+
+    img {
         height  : 115vh;
         overflow: hidden;
-
-        @media screen and (max-width: 980px) {
-            width      : 100%;
-            height     : 100%;
-        }
+    }
 `
 
 const Clients = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content : center;
     background-color: white;
     color           : black;
+    padding: 3rem;
+
+    h2 {
+        text-align: center;
+        width: 100%;
+    }
 
     img {
         width : 100%;
@@ -432,63 +395,50 @@ const Clients = styled.div`
 
 const NewsCollapse = styled.div`
     width           : 100%;
-    padding         : 2% 0%;
-    margin          : auto;
-    justify-self    : center;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`
 
-    div {
-        width: 100%;
-    
-        button {
+const VermaisButton = styled.div`
+    width  : 100%;
+    display:flex;
+    justify-content: center;
+    padding: 2rem;
+
+    button {
             background-color: transparent;
             border          : 2px solid black;
             color           : black;
-            padding         : 1% 3%;
-            font-size       : 1em;
+            padding         : 1rem 3rem;
+            font-size       : 1.2rem;
             cursor          : pointer;
         }
-    }
+
 `
 
 const Vermais = styled.div`
-    width  : 100%;
-    margin : 0;
-    padding: 0;
-
-    @media screen and (max-width: 980px) {
-        margin: 0;
-    }
+    width  : 100vw;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
 `
 
 const Depoimentos = styled.div`
-    background-color: white;
     color           : ${colors.escuroDrk};
-    margin          : 0;
-    margin-top      : 3%;
     width           : 100%;
-    padding         : 5% 5% 0 5%;
+    width: 100%;
+    max-width: 900px;
+    padding         : 3rem 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
 
-    div {
-        padding: 1% 20%;
-    }
-
-    @media screen and (max-width: 980px) {
-        width  : 100%;
-        padding: 0;
-        margin: 0;
-
-        h4 {
-            padding: 0;
-            width  : 100%;
-            margin: 0;
-        }
-
-        .row {
-            padding: 0;
-            width  : 100%;
-            margin: 0;
-        }
+    h4 {
+        text-align: center;
     }
 `
 
@@ -511,16 +461,22 @@ const Depo = styled.div`
 `
 
 const Midia = styled.div`
-    background-color: white;
     color           : ${colors.escuroDrk};
     width           : 100%;
-    padding         : 5%;
-    margin          : 0;
+    padding         : 3rem 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    h4 {
+        width: 100%;
+        text-align: center;
+    }
 `
 
 const SomosLeoes = () => {
     const [openNews, setOpenNews] = useState(false)
-    const [index, setIndex] = useState(0)
+    const [pageIndex, setPageIndex] = useState(0)
 
     return (
         <Layout title="Somos leões">
@@ -531,17 +487,9 @@ const SomosLeoes = () => {
                     <img src={Hashtag} alt="#somosleoes" width={"100%"} />
                 </VideoHeader>
 
-                <Video src="https://player.vimeo.com/video/355173390" title="Duee Brasil" className="col-xs-12" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></Video>
+                <Video src="https://player.vimeo.com/video/355173390" title="Duee Brasil" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></Video>
 
                 <GenteFaz>
-                    <Resumo>
-                        <LIVE>LIVE MKT</LIVE>
-                        <PROMO>PROMOÇÕES</PROMO>
-                        <BRAND>BRANDING</BRAND>
-                        <DIGITAL>DIGITAL</DIGITAL>
-                        <DEV>DESENVOLVIMENTO</DEV>
-                        <h1 className="glitchhover" value="A GENTE FAZ">A GENTE FAZ</h1>
-                    </Resumo>
                     <Manifesto>
                         <p>A Duee é uma agência full service, que preza pela comunicação integrada, porque sabe que o mundo não se divide em on e off.</p>
                         <p>Não criamos apenas conteúdos e campanhas, nós geramos ideias e conexões.</p>
@@ -552,6 +500,14 @@ const SomosLeoes = () => {
                         <p>Digital? A gente faz.</p>
                         <p>Branding? A gente faz.</p>
                     </Manifesto>
+                    <Resumo>
+                        <LIVE>LIVE MKT</LIVE>
+                        <PROMO>PROMOÇÕES</PROMO>
+                        <BRAND>BRANDING</BRAND>
+                        <DIGITAL>DIGITAL</DIGITAL>
+                        <DEV>DESENVOLVIMENTO</DEV>
+                        <h1 className="glitchhover" value="A GENTE FAZ">A GENTE FAZ</h1>
+                    </Resumo>
                 </GenteFaz>
 
                 <Versinho>
@@ -563,15 +519,15 @@ const SomosLeoes = () => {
                         <h3>Estamos sempre nos desafiando e caçando oportunidades de fazer diferente.</h3>
                         <h3>Somos leões.</h3>
                     </VersinhoText>
-                    <div className="col-xs-12 col-md-7 slideLeft">
-                        <VersinhoLion src={Leaocolor} alt="Roar" />
-                    </div>
+                    <VersinhoLion>
+                        <img src={Leaocolor} alt="Roar" />
+                    </VersinhoLion>
                 </Versinho>
 
                 <Trabalho />
 
                 <Clients>
-                    <h2 className="col-xs-12" style={{ textAlign: "center" }}>Clientes</h2>
+                    <h2>Clientes</h2>
                     <News img={clt1} />
                     <News img={clt2} />
                     <News img={clt3} />
@@ -615,60 +571,50 @@ const SomosLeoes = () => {
                 </Clients>
 
                 <NewsCollapse>
-                    <div>
-                        <button type='button' onClick={() => setOpenNews(!openNews)}>Ver Mais</button>
-                    </div>
+                    <VermaisButton>
+                        <button type='button' onClick={() => setOpenNews(!openNews)}>{openNews ? "Fechar" : "Ver mais"}</button>
+                    </VermaisButton>
 
                     <Vermais>
                         <Collapse isOpened={openNews}>
 
                             <Depoimentos>
-                                <div className="row">
-                                    <div className="col-xs-12">
-                                        <h4>Depoimentos</h4>
-                                    </div>
+                                <h4>Depoimentos</h4>
 
-                                    <div className="col-xs-12 around-xs">
-                                        <div className="row">
-                                            <AutoPlaySwipeableViews index={index} onChangeIndex={(e) => setIndex(e)}>
-                                                <Depo><h5>“Os maiores diferenciais da Duee são principalmente a confiança, transparência e qualidade. A Duee é uma agência que preza pelo respeito com o cliente.”</h5>
-                                                    <p><strong>Sandra Collier</strong></p>
-                                                    <p>Gerente de Marketing, Walmart Brasil</p></Depo>
-                                                <Depo><h5>“É uma agência com flexibilidade, aberta a mudanças e eles sempre entregam com bastante agilidade.“</h5>
-                                                    <p><strong>Maricy Gattai</strong></p>
-                                                    <p>Gerente de Marketing, Bauducco</p></Depo>
-                                                <Depo><h5>“O que é muito legal da Duee, é que ela sempre traz uma proposta 360o. Isso, pra gente, facilita muito.”</h5>
-                                                    <p><strong>Fernando Colino</strong></p>
-                                                    <p>Gerente de Compras, Pernod-Ricard Brasil</p></Depo>
-                                                <Depo><h5>“A qualidade gráfica e criativa do projeto foi muito interessante. Temos sempre os retornos muito rápidos com uma flexibilidade e agilidade para resolver qualquer contratempo.”</h5>
-                                                    <p><strong>Vanessa Campanholo</strong></p>
-                                                    <p>Gerente de Marketing, AES Eletropaulo</p></Depo>
-                                            </AutoPlaySwipeableViews>
-                                        </div>
-                                    </div>
-                                </div>
+                                <AutoPlaySwipeableViews index={pageIndex} onChangeIndex={(e) => setPageIndex(e)}>
+                                    <Depo><h5>“Os maiores diferenciais da Duee são principalmente a confiança, transparência e qualidade. A Duee é uma agência que preza pelo respeito com o cliente.”</h5>
+                                        <p><strong>Sandra Collier</strong></p>
+                                        <p>Gerente de Marketing, Walmart Brasil</p></Depo>
+                                    <Depo><h5>“É uma agência com flexibilidade, aberta a mudanças e eles sempre entregam com bastante agilidade.“</h5>
+                                        <p><strong>Maricy Gattai</strong></p>
+                                        <p>Gerente de Marketing, Bauducco</p></Depo>
+                                    <Depo><h5>“O que é muito legal da Duee, é que ela sempre traz uma proposta 360o. Isso, pra gente, facilita muito.”</h5>
+                                        <p><strong>Fernando Colino</strong></p>
+                                        <p>Gerente de Compras, Pernod-Ricard Brasil</p></Depo>
+                                    <Depo><h5>“A qualidade gráfica e criativa do projeto foi muito interessante. Temos sempre os retornos muito rápidos com uma flexibilidade e agilidade para resolver qualquer contratempo.”</h5>
+                                        <p><strong>Vanessa Campanholo</strong></p>
+                                        <p>Gerente de Marketing, AES Eletropaulo</p></Depo>
+                                </AutoPlaySwipeableViews>
                             </Depoimentos>
 
                             <Midia>
                                 <h4>Duee na midia</h4>
 
-                                <div>
-                                    <News img={JovenPan} title="CODORNÍU CONVIDA EXPERTS PARA CRIAR BEBIDAS AUTORAIS COM CAVA" link="http://jovempan.uol.com.br/opiniao-jovem-pan/consultores/cesar-adames/codorniu-convida-experts-para-criar-bebidas-autorais-com-cava.html" />
-                                    <News img={Propmark} title="MASCOTE DA CERVEJA BELGA VEDETT INVADE CIDADE DE SÃO PAULO" link="http://propmark.com.br/anunciantes/mascote-da-cerveja-belga-vedett-invade-cidade-de-sao-paulo" />
-                                    <News img={Propmark} title="DUEE BRASIL ASSUME CONTA DA CODORNÍU, DA INTERFOOD IMPORTAÇÃO" link="http://propmark.com.br/agencias/duee-brasil-assume-conta-da-codorniu-da-interfood-importacao" />
-                                    <News img={Blog} title="MARKET LOOK COM HENRIQUE CASTRO" link="http://blogdofernandocoelho.blogspot.com.br/2015/03/voce-ja-ouviu-falar-em-comunicacao-all.html" />
-                                    <News img={Propmark} title="ENTRE ASPAS: ENGAJAMENTO ORGÂNICO" link="http://propmark.com.br/digital/entre-aspas-engajamento-organico" />
-                                    <News img={Adonline} title="DUEE BRASIL ASSUME COMO UMA DAS AGÊNCIAS DE LG" link="http://www.adonline.com.br/rapidinhas/57746-duee-brasil-assume-como-uma-das-agencias-de-lg.html" />
-                                    <News img={meiomsg} title="DANÇA DAS CONTAS" link="http://www.meioemensagem.com.br/home/comunicacao/2015/10/23/dan-a-das-contas-duracell-e-unesco.html" />
-                                    <News img={Propmark} title="ESPANHOLA CODORNÍU LANÇA WEBSÉRIE NO BRASIL" link="https://dueebrasil.com.br/Site_2016?page_id=907" />
-                                    <News img={Grandes} title="COINTREAU RENOVA POSICIONAMENTO" link="http://grandesnomesdapropaganda.com.br/tag/duee-brasil/" />
-                                    <News img={Promoview} title="DUEE BRASIL CONQUISTA DUAS NOVAS CONTAS" link="http://www.promoview.com.br/agencia/contas/duee-brasil-conquista-duas-novas-contas.html" />
-                                    <News img={Mundomkt} title="COMO SE COMPORTAR NA REDE SOCIAL QUANDO O CONSUMIDOR PRECISA DE VOCÊ" link="https://www.mundodomarketing.com.br/artigos/henrique-castro/34101/como-se-comportar-na-rede-social-quando-o-consumidor-precisa-de-voce.html" />
-                                    <News img={meiomsg} title="DANÇA DAS CONTAS: CATHO, SALVAT E BRILIA" link="http://www.meioemensagem.com.br/home/comunicacao/2015/11/13/dan-a-das-contas-catho-editora-salvat-e-brilia.html" />
-                                    <News img={Mkgpro} title="AGÊNCIA DUEE BRASIL ASSUME NOVOS CLIENTES" link="http://www.propagandasc.com.br/agencia_duee_brasil_assume_novos_clientes.html" />
-                                    <News img={Clientesa} title="AMOSTRA DE UMA FIDELIZAÇÃO" link="http://www.clientesa.com.br/marketingderelacionamento/58535/amostra-de-uma-fidelizacao/Ler.aspx" />
-                                    <News img={Proxxima} title="O UBER ALÉM DO UBER E A REVOLUÇÃO DA INDÚSTRIA AUTOMOBILÍSTICA" link="http://www.proxxima.com.br/busca-proxxima?search=duee+brasil&ordenar=data&periodode=&periodoate=&categoria=&dias=" />
-                                </div>
+                                <News img={JovenPan} title="CODORNÍU CONVIDA EXPERTS PARA CRIAR BEBIDAS AUTORAIS COM CAVA" link="http://jovempan.uol.com.br/opiniao-jovem-pan/consultores/cesar-adames/codorniu-convida-experts-para-criar-bebidas-autorais-com-cava.html" />
+                                <News img={Propmark} title="MASCOTE DA CERVEJA BELGA VEDETT INVADE CIDADE DE SÃO PAULO" link="http://propmark.com.br/anunciantes/mascote-da-cerveja-belga-vedett-invade-cidade-de-sao-paulo" />
+                                <News img={Propmark} title="DUEE BRASIL ASSUME CONTA DA CODORNÍU, DA INTERFOOD IMPORTAÇÃO" link="http://propmark.com.br/agencias/duee-brasil-assume-conta-da-codorniu-da-interfood-importacao" />
+                                <News img={Blog} title="MARKET LOOK COM HENRIQUE CASTRO" link="http://blogdofernandocoelho.blogspot.com.br/2015/03/voce-ja-ouviu-falar-em-comunicacao-all.html" />
+                                <News img={Propmark} title="ENTRE ASPAS: ENGAJAMENTO ORGÂNICO" link="http://propmark.com.br/digital/entre-aspas-engajamento-organico" />
+                                <News img={Adonline} title="DUEE BRASIL ASSUME COMO UMA DAS AGÊNCIAS DE LG" link="http://www.adonline.com.br/rapidinhas/57746-duee-brasil-assume-como-uma-das-agencias-de-lg.html" />
+                                <News img={meiomsg} title="DANÇA DAS CONTAS" link="http://www.meioemensagem.com.br/home/comunicacao/2015/10/23/dan-a-das-contas-duracell-e-unesco.html" />
+                                <News img={Propmark} title="ESPANHOLA CODORNÍU LANÇA WEBSÉRIE NO BRASIL" link="https://dueebrasil.com.br/Site_2016?page_id=907" />
+                                <News img={Grandes} title="COINTREAU RENOVA POSICIONAMENTO" link="http://grandesnomesdapropaganda.com.br/tag/duee-brasil/" />
+                                <News img={Promoview} title="DUEE BRASIL CONQUISTA DUAS NOVAS CONTAS" link="http://www.promoview.com.br/agencia/contas/duee-brasil-conquista-duas-novas-contas.html" />
+                                <News img={Mundomkt} title="COMO SE COMPORTAR NA REDE SOCIAL QUANDO O CONSUMIDOR PRECISA DE VOCÊ" link="https://www.mundodomarketing.com.br/artigos/henrique-castro/34101/como-se-comportar-na-rede-social-quando-o-consumidor-precisa-de-voce.html" />
+                                <News img={meiomsg} title="DANÇA DAS CONTAS: CATHO, SALVAT E BRILIA" link="http://www.meioemensagem.com.br/home/comunicacao/2015/11/13/dan-a-das-contas-catho-editora-salvat-e-brilia.html" />
+                                <News img={Mkgpro} title="AGÊNCIA DUEE BRASIL ASSUME NOVOS CLIENTES" link="http://www.propagandasc.com.br/agencia_duee_brasil_assume_novos_clientes.html" />
+                                <News img={Clientesa} title="AMOSTRA DE UMA FIDELIZAÇÃO" link="http://www.clientesa.com.br/marketingderelacionamento/58535/amostra-de-uma-fidelizacao/Ler.aspx" />
+                                <News img={Proxxima} title="O UBER ALÉM DO UBER E A REVOLUÇÃO DA INDÚSTRIA AUTOMOBILÍSTICA" link="http://www.proxxima.com.br/busca-proxxima?search=duee+brasil&ordenar=data&periodode=&periodoate=&categoria=&dias=" />
                             </Midia>
                         </Collapse>
                     </Vermais>

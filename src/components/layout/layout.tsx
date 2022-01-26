@@ -106,11 +106,6 @@ const Layout: FC<{
         ]}
       >
         <script src="https://kit.fontawesome.com/67a84c91e8.js"></script>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
-          type="text/css"
-        ></link>
       </Helmet>
       <GlobalStyled />
 
