@@ -61,13 +61,6 @@ const Button = styled.a`
     }
 `
 
-const Container = styled.div`
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    justify-content: center;
-`
-
 const Tecnologys = styled.section`
     margin-bottom: -30px;
     background: transparent url(${TecnologyBg}) bottom left no-repeat;
@@ -157,8 +150,8 @@ const Steps = styled.section`
     margin: auto;
     display: flex;
     padding: 5rem;
-    padding-top: 330px;
-    padding-bottom: 120px;
+    padding-top: 280px;
+    padding-bottom: 90px;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: center;
@@ -180,6 +173,81 @@ const StepsContainer = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
 
+    h2 {
+        font-size: 4rem;
+        width: 100%;
+    }
+`
+
+const StepItem = styled.div`
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+`
+
+const StepIcon = styled.i`
+    color: #a461e5;
+    font-size: 64px;
+`
+
+const StepContent = styled.div`
+    padding-left: 35px;
+
+    h3 {
+        margin: 0;
+        color: #252758;
+        font-size: 1.2rem;
+        letter-spacing: -0.02em;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 0;
+    }
+`
+
+const What = styled.div`
+    margin-bottom: -230px;
+    padding-bottom: 200px;
+    margin-top: -150px;
+    background-image: linear-gradient(90deg, #f2f3f9 0%, #fcfdfe 100%);
+    padding: 4rem;
+    padding-top: 200px;
+    clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 0% 100%);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin: 0;
+        padding: 0;
+        margin-left: -5rem;
+        width: 50%;
+        min-width: 300px;
+        max-width: 600px;
+        height: 100%;
+    }
+`
+
+const WhatContent = styled.div`
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 1rem;
+
+    h2 {
+        font-size: 4rem;
+        width: 100%;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
 `
 
 const Oito = () => (
@@ -198,75 +266,55 @@ const Oito = () => (
                 </div>
             </section>
 
-            {/* o que é oito */}
-
-            <section className="cta-three" id="about">
-                <Container>
-                    <div className="col-xs-6 col-sm-6 col-md-4 col-lg-6 col-xl-6">
-                        <img src={cta} alt="vector" className="cta-three__image" />
-                    </div>
-                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                        <div className="cta-three__content">
-                            <div className="block-title text-left">
-                                <h2 className="block-title__title black-text-color">O que é a OITO?</h2>
-                            </div>
-                            <p className="cta-three__text">A Oito é uma plataforma para que profissionais autônomos e clientes se encontrem e se conectem.</p>
-                            <p className="cta-three__text">Através do site, o usuário se cadastra gratuitamente e pode, então, adicionar habilidades dentro de diferentes categorias e anunciar seus serviços dentro de cada uma delas.</p>
-                            <p className="cta-three__text">O usuário pode, ainda, solicitar serviços a diferentes profissionais.</p>
-                            <p className="cta-three__text"><b>A Duee Brasil é responsável pelo desenvolvimento da plataforma, branding, comunicação e campanhas de mídia.</b></p>
-                        </div>
-                    </div>
-                </Container>
-            </section>
+            <What>
+                <img src={cta} alt="vector" />
+                <WhatContent>
+                    <h2>O que é a OITO?</h2>
+                    <p>A Oito é uma plataforma para que profissionais autônomos e clientes se encontrem e se conectem.</p>
+                    <p>Através do site, o usuário se cadastra gratuitamente e pode, então, adicionar habilidades dentro de diferentes categorias e anunciar seus serviços dentro de cada uma delas.</p>
+                    <p>O usuário pode, ainda, solicitar serviços a diferentes profissionais.</p>
+                    <p><b>A Duee Brasil é responsável pelo desenvolvimento da plataforma, branding, comunicação e campanhas de mídia.</b></p>
+                </WhatContent>
+            </What>
 
             <Steps>
                 <StepsContainer>
                     <img src={etap} alt="moc" />
                 </StepsContainer>
                 <StepsContainer>
-                    {/* <div className="block-title text-left"> */}
-                        <h2 className="block-title__title black-text-color">Etapas do <br /> projeto</h2>
-                    {/* </div> */}
-                    <div className="cta-two__single">
-                        <div className="cta-two__icon">
-                            <i className="far fa-sticky-note"></i>
-                        </div>
-                        <div className="cta-two__content">
-                            <h3 className="cta-two__title">Briefing</h3>
-                            <p className="cta-two__text">A primeira etapa da construção foi o briefing, que especificou o que deveria ser feito e quais os objetivos a serem atendidos com o desenvolvimento do site da Oito.</p>
-                        </div>
-                    </div>
-                    <div className="cta-two__single">
-                        <div className="cta-two__icon">
-                            <i className="far fa-calendar-alt"></i>
-                        </div>
-                        <div className="cta-two__content">
-                            <h3 className="cta-two__title">Planejamento</h3>
-                            <p className="cta-two__text">Após a interpretação do briefing, a etapa passa a ser o planejamento do que será feito, levando em consideração tudo o que é necessário para que o site seja funcional e eficaz.</p>
-                        </div>
-                    </div>
-                    <div className="cta-two__single">
-                        <div className="cta-two__icon">
-                            <i className="fas fa-hashtag"></i>
-                        </div>
-                        <div className="cta-two__content">
-                            <h3 className="cta-two__title">Desenvolvimento</h3>
-                            <p className="cta-two__text">A próxima etapa foi o desenvolvimento do site em si.
+                    <h2>Etapas do <br /> projeto</h2>
+                    <StepItem>
+                        <StepIcon className="far fa-sticky-note" />
+                        <StepContent>
+                            <h3>Briefing</h3>
+                            <p>A primeira etapa da construção foi o briefing, que especificou o que deveria ser feito e quais os objetivos a serem atendidos com o desenvolvimento do site da Oito.</p>
+                        </StepContent>
+                    </StepItem>
+                    <StepItem>
+                        <StepIcon className="far fa-calendar-alt" />
+                        <StepContent>
+                            <h3>Planejamento</h3>
+                            <p>Após a interpretação do briefing, a etapa passa a ser o planejamento do que será feito, levando em consideração tudo o que é necessário para que o site seja funcional e eficaz.</p>
+                        </StepContent>
+                    </StepItem>
+                    <StepItem>
+                        <StepIcon className="fas fa-hashtag" />
+                        <StepContent>
+                            <h3>Desenvolvimento</h3>
+                            <p>A próxima etapa foi o desenvolvimento do site em si.
                                 Foi feito MVP para teste de usuário, foram realizadas as integrações e, então, o site realmente começou a funcionar.
                                 Então foram realizadas as melhorias UI e UX.</p>
-                        </div>
-                    </div>
-                    <div className="cta-two__single">
-                        <div className="cta-two__icon">
-                            <i className="fas fa-universal-access"></i>
-                        </div>
-                        <div className="cta-two__content">
-                            <h3 className="cta-two__title">Melhorias</h3>
-                            <p className="cta-two__text">Após o desenvolvimento, foram feitos estudos no site em geral para identificar pontos que precisavam de melhorias.
+                        </StepContent>
+                    </StepItem>
+                    <StepItem>
+                        <StepIcon className="fas fa-universal-access" />
+                        <StepContent>
+                            <h3>Melhorias</h3>
+                            <p>Após o desenvolvimento, foram feitos estudos no site em geral para identificar pontos que precisavam de melhorias.
                                 Tudo isso com um detalhamento do site e alguns apontamentos feitos por usuários nos feedbacks.
                                 O layout foi refeito, foi realizada uma atualização de regras de negócio do sistema, tudo isso baseado em UX.</p>
-                        </div>
-                    </div>
+                        </StepContent>
+                    </StepItem>
                 </StepsContainer>
             </Steps>
 

@@ -37,14 +37,6 @@ module.exports = {
         icon: `src/images/Logo_Claro-leao.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-routes`,
-      options: {
-        path: `${__dirname}/src/routes.js`,
-      },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     // {
     //   resolve: `gatsby-plugin-google-analytics`,

@@ -90,7 +90,7 @@ const CaseImage = styled.div<{image: string}>`
     background-image: ${({image}) => `url(${image})`};
 `
 
-const CaseCard: FC<{
+export const CaseCard: FC<{
     img: string,
     title: string,
     open: () => void
@@ -106,5 +106,3 @@ const CaseCard: FC<{
         </Content>
     )
 }
-
-export default CaseCard

@@ -3989,7 +3989,7 @@ core-js@3.6.5:
   resolved "https://registry.npmjs.org/core-js/-/core-js-3.6.5.tgz"
   integrity sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==
 
-core-js@^2.4.0, core-js@^2.5.0, core-js@^2.6.5:
+core-js@^2.4.0, core-js@^2.5.0:
   version "2.6.12"
   resolved "https://registry.npmjs.org/core-js/-/core-js-2.6.12.tgz"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
@@ -6232,14 +6232,6 @@ gatsby-plugin-react-helmet@^3.10.0:
   integrity sha512-TktmUysb7wDwYOKowNcpXxLJfQiwQ7cSQ8ALH3pJrW63wBaCoBXvAHg3OhgHVR74CrqN2Tb89tr3GXa4JhO4Qw==
   dependencies:
     "@babel/runtime" "^7.12.5"
-
-gatsby-plugin-routes@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/gatsby-plugin-routes/-/gatsby-plugin-routes-1.0.1.tgz"
-  integrity sha512-lW62sa+ougxQe/t9Vda+Me6lCwv7xlmMlmERa14UCmEIxUEuj1FTAG9JhHYkrs5qATXvHBAaDGe6R8TPWGJ3eA==
-  dependencies:
-    chokidar "^3.5.1"
-    core-js "^2.6.5"
 
 gatsby-plugin-styled-components@^5.5.0:
   version "5.6.0"
