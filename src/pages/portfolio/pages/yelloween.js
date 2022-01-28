@@ -1,5 +1,5 @@
 import React from 'react'
-import './default.css'
+//
 
     export default class Yelloween extends React.Component {
 

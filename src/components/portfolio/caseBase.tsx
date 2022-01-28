@@ -72,7 +72,7 @@ const Details = styled.div`
 export const CaseBase: FC<{
     backgroundColor?: string,
     color?: string,
-    header: string,
+    header: string | ReactElement,
     client: string,
     year: string,
     description: ReactElement,
@@ -80,7 +80,12 @@ export const CaseBase: FC<{
 }> = ({ children, backgroundColor, header, client, year, description, name, color }) => {
 
     return <Container backgroundColor={backgroundColor} color={color}>
-        <ImgHeader src={header} alt={name} />
+
+        {typeof header === 'string' ?
+            <ImgHeader src={header} alt={name} /> :
+            header
+        }
+
 
         <Content>
             {children}

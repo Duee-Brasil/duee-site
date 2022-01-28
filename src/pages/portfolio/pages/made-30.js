@@ -1,5 +1,5 @@
 import React from 'react'
-import './default.css'
+//
 import Swiper from 'react-id-swiper'
 // import 'swiper/swiper.scss'
 

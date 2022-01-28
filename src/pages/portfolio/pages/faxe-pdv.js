@@ -1,5 +1,5 @@
 import React from 'react'
-import './default.css'
+//
 
 export default class FaxePdv extends React.Component {
 

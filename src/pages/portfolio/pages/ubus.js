@@ -1,5 +1,5 @@
 import React from 'react'
-import './default.css'
+//
 
 export default class Ubus extends React.Component {
 

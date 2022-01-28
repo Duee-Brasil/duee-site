@@ -1,5 +1,5 @@
 import React from 'react'
-import './default.css'
+//
 
 export default class FaxeMidia extends React.Component {
 

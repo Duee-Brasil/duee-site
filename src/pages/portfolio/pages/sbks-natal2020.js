@@ -1,5 +1,5 @@
 import React from 'react'
-import './default.css'
+//
 
 export default class Natal2020 extends React.Component {
 
