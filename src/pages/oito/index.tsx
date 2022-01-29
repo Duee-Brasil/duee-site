@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-import Css from "./style"
 import Layout from "@components/layout/layout"
 
 import globo from '@images/oito/globe-1-1.png'
@@ -10,6 +9,7 @@ import imghead from '@images/oito/banner-1-1-moc.png'
 import cta from '@images/oito/cta-1-1.png'
 import etap from '@images/oito/cta-moc-1-1.png'
 import TecnologyBg from "@images/oito/testi-bg-1-1.png"
+import { Helmet } from "react-helmet"
 
 const Content = styled.div`
     width: 100vw;
@@ -18,8 +18,6 @@ const Content = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    ${Css}
 `
 
 const Footer = styled.footer`
@@ -252,6 +250,11 @@ const WhatContent = styled.div`
 
 const Oito = () => (
     <Layout title="Oito">
+
+        <Helmet>
+            <link rel="stylesheet" href="./style2.css" />
+        </Helmet>
+
         <Content>
             <section className="banner-one" id="home">
                 <img src={globo} className="banner-one__globe" alt="globo" />

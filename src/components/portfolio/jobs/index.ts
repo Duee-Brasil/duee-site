@@ -9,6 +9,7 @@ import { Cbeebies } from "./bbc-cbeebies"
 import { BBChd } from "./bbc-hd"
 import { Mark } from "./bbc-mark"
 import { BBCNet } from "./bbc-net"
+import { Belvedere } from "./belvedere"
 import { BMLanc } from "./bm-lanc"
 import { BML2020 } from "./bm-lanc2020"
 import { BombardierM } from "./bombardier-midia"
@@ -29,6 +30,9 @@ import { CointreauM } from "./cointreau-midia"
 import { Consul } from "./consul"
 import { Crownshow } from "./crownshow"
 import { Exto } from "./exto"
+import { Dinner } from "./faxe-dinner"
+import { Makingof } from "./faxe-makingof"
+import { FaxePdv } from "./faxe-pdv"
 import { FCA } from "./fca"
 import { FitMidia } from "./fit-midia"
 import { FoxCcxp } from "./fox-ccxp"
@@ -38,6 +42,9 @@ import { Playskool } from "./hasbro-playskool"
 import { Hersheys } from "./hersheys"
 import { Inovini } from "./inovini"
 import { Intel } from "./intel"
+import { Kalassi } from "./kalassi"
+import { KalassiFirtsBite } from "./kalassi-firstbite"
+import { KalassiVeggie } from "./kalassi-veggie"
 import { Huggies } from "./kc-huggies"
 import { Intimus } from "./kc-intimus"
 import { IntimusS } from "./kc-intimus-sampling"
@@ -79,6 +86,7 @@ import { Urso } from "./vedett-urso"
 import { VaiVedett } from "./vedett-vai"
 import { Veja450 } from "./veja-450"
 import { VejaPDV } from "./veja-pdv"
+import { Yelloween } from "./veuve-yelloween"
 import { VH1Midia } from "./vh1-midia"
 import { Estagiario } from "./via-estagiario"
 import { Plataforma } from "./via-plataforma"
@@ -94,6 +102,12 @@ import { WalmartM } from "./walmart-site"
 import { Verao } from "./walmart-verao"
 
 export const JobsList = [
+  {
+    thumbnail:
+      "https://portfolio.duee.com.br/wp-content/uploads/2022/01/tumb-1.png",
+    title: "Drinks secretos Vodka Belvedere",
+    job: Belvedere,
+  },
   {
     thumbnail:
       "https://portfolio.duee.com.br/wp-content/uploads/2022/01/tumb.png",
@@ -301,7 +315,7 @@ export const JobsList = [
     thumbnail:
       "https://portfolio.duee.com.br/wp-content/uploads/2016/02/Final_FAXE_MO.png",
     title: "Faxe - making of happy hour viking",
-    job: HappyHour,
+    job: Makingof,
   },
   {
     thumbnail:

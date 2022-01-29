@@ -1,8 +1,4 @@
-import { css } from 'styled-components';
 
-import Banner11 from "@images/oito/banner-1-1.png";
-
-const StyleCss = css`
 .banner-one {
 	 background: transparent url(${Banner11}) top right no-repeat;
 	 background-size: cover;
@@ -101,8 +97,3 @@ const StyleCss = css`
 		 transform: translateY(20px);
 	}
 }
-
-
-`
-
-export default StyleCss

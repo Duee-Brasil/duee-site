@@ -72,13 +72,19 @@ const HomePage = () => {
 
   const pageOnChange = (number: number) => setCurrentPage(number)
 
+  let windowWidth = 1000
+
+  if (typeof window !== 'undefined') {
+    windowWidth = window.screen.width
+  }
+
   return (
     <Layout title="Home">
 
       <ReactPageScroller pageOnChange={pageOnChange}>
         <PageContent id="home">
           <Link to="/leoes">
-            {window.screen.width > 768 ? (
+            {windowWidth > 768 ? (
               <VideoDuee
                 autoPlay
                 muted

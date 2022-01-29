@@ -5,34 +5,38 @@ import Layout from "@components/layout/layout"
 import { CaseCard as Case } from "@components/portfolio"
 import { JobsList } from "@components/portfolio"
 
-const Content = styled.div`
-  display:flex;
+const Content = styled.div<{blockScroll: boolean}>`
+  display: ${({blockScroll}) => blockScroll ? "none" : "flex"};
   flex-direction: row;
   flex-wrap: wrap;
   width: 100vw;
   padding: 1rem;
   margin: 0;
-  margin-top: 70px;
+  padding-top: 70px;
   align-items: flex-start;
   justify-content: center;
+
+  overflow: ${({blockScroll}) => blockScroll ? "hidden" : "auto"};
 `
 
 const ModalContent = styled.div`
   border-top      : 1px solid #333;
   transition      : all ease 1s;
   background-color: black;
-  position: fixed;
-  top: 70px;
-  width: 97%;
-  height: calc(94% - 70px);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: calc(100% - 3rem);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-self: flex-start;
   align-items: center;
   padding: 0;
   margin: auto;
   transition: all 1s ease-in-out;
+  z-index: 100;
 `
 
 const ModalTopBar = styled.div`
@@ -44,7 +48,7 @@ const ModalTopBar = styled.div`
 
 const BackButton = styled.div`
   position: fixed;
-  bottom: 1%;
+  bottom: 0;
   right: 120px;
   padding: 0.5rem 2rem;
   color: white;
@@ -58,50 +62,6 @@ const JobContent = styled.div`
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-`
-
-const LoadingContainer = styled.div`
-  width      : 100%;
-  height     : 100px;
-  line-height: 100px;
-  position: absolute;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
-  span {
-    margin : 0 5px;
-    color  : #fff;
-
-    @keyframes blur-text {
-      0% {
-          filter: blur(0px);
-      }
-
-      100% {
-          filter: blur(4px);
-      }
-    }
-
-    &:nth-child(#1) {
-        animation   : blur-text 1.5s (calc(0 / 5)s) infinite linear alternate;
-    }
-
-    &:nth-child(#2) {
-        animation   : blur-text 1.5s (calc(1 / 5)s) infinite linear alternate;
-    }
-
-    &:nth-child(#3) {
-        animation   : blur-text 1.5s (calc(2 / 5)s) infinite linear alternate;
-    }
-
-    /* @for $i from 0 through 6 {
-        &:nth-child(#{$i + 1}) {
-            // filter   : blur(0px);
-            animation   : blur-text 1.5s (calc($i / 5)s) infinite linear alternate;
-        }
-    } */
-  }
 `
 
 const Portfolio = () => {
@@ -122,16 +82,6 @@ const Portfolio = () => {
         <i className="fas fa-times" />
       </ModalTopBar>
 
-      {/* <LoadingContainer>
-        <span>L</span>
-        <span>O</span>
-        <span>A</span>
-        <span>D</span>
-        <span>I</span>
-        <span>N</span>
-        <span>G</span>
-      </LoadingContainer> */}
-
       <JobContent>
         {typeof job === "string" ?
           <iframe src={job} id="htmlcontent" />
@@ -144,7 +94,7 @@ const Portfolio = () => {
   }
 
   return <Layout title="Portfólio">
-    <Content>
+    <Content blockScroll={!!caseSelected}>
       {JobsList.map((job) => <Case
         img={job.thumbnail}
         title={job.title}

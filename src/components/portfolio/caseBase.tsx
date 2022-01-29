@@ -31,6 +31,7 @@ const Content = styled.div`
     margin: auto;
     justify-content: center;
     max-width: 1200px;
+    align-items: flex-start;
 
     ${Flexboxgrid}
 
@@ -45,7 +46,6 @@ const Content = styled.div`
         flex-wrap: wrap;
     }
 
-    
 `
 
 const Footer = styled.div`
@@ -72,35 +72,35 @@ const Details = styled.div`
 export const CaseBase: FC<{
     backgroundColor?: string,
     color?: string,
-    header: string | ReactElement,
-    client: string,
-    year: string,
-    description: ReactElement,
+    header?: string | ReactElement,
+    client?: string,
+    year?: string,
+    description?: ReactElement,
     name: string
 }> = ({ children, backgroundColor, header, client, year, description, name, color }) => {
 
     return <Container backgroundColor={backgroundColor} color={color}>
 
-        {typeof header === 'string' ?
+        {header ? typeof header === 'string' ?
             <ImgHeader src={header} alt={name} /> :
             header
-        }
+            : null}
 
 
         <Content>
-            {children}
+            {typeof children === 'string' ? <iframe src={children} style={{width: '90vw', height: "90vh"}}></iframe> : children}
         </Content>
 
         <Footer>
-            <Description>
+            {description ? <Description>
                 <p><b>SOBRE O PROJETO</b></p>
                 {description}
-            </Description>
-            <Details>
+            </Description> : null}
+            {client && year ? <Details>
                 <p><b>DETALHES DO PROJETO</b></p>
                 <p><b>CLIENTE</b> {client}</p>
                 <p><b>DATA</b> {year}</p>
-            </Details>
+            </Details> : null}
         </Footer>
     </Container>
 }

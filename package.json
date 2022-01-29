@@ -2,7 +2,7 @@
   "name": "duee_brasil",
   "private": true,
   "description": "Branding, Live MKT, Promoções, Digital e Desenvolvimento. A Gente Faz.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "letgodoy.com",
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.2",
@@ -74,12 +74,5 @@
     "type-check": "tsc --noEmit",
     "lint": "eslint . --ignore-path .gitignore --ext .ts,.tsx,.js"
   },
-  "sideEffects": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  "sideEffects": false
 }

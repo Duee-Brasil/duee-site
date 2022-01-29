@@ -7,7 +7,7 @@ import GlobalStyled from "./globalStyle"
 import Navbar from "@components/navbar/navbar"
 import Wpp from "@images/whatsapp.svg"
 
-import "./init-firebase"
+// import "./init-firebase"
 
 const Wppbutton = styled.a`
   position: fixed;
