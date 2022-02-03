@@ -259,8 +259,17 @@ const VideoHeader = styled.div`
     /* } */
 `
 
-const Video = styled.iframe`
-    width : 80vw;
+const Video = styled.div`
+    
+    padding               : 3rem;
+    display               : flex;
+    align-items: center;
+    justify-content: center;
+
+    iframe {
+        width : 80vw;
+        height: 80vh;
+    }
 `
 
 const GenteFaz = styled.div`
@@ -487,7 +496,10 @@ const SomosLeoes = () => {
                     <img src={Hashtag} alt="#somosleoes" width={"100%"} />
                 </VideoHeader>
 
-                <Video src="https://player.vimeo.com/video/355173390" title="Duee Brasil" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></Video>
+                <Video>
+                    <iframe src="https://player.vimeo.com/video/355173390" title="Duee Brasil" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                </Video>
+                
 
                 <GenteFaz>
                     <Manifesto>

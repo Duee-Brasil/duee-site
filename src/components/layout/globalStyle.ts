@@ -4,8 +4,8 @@ import { createGlobalStyle } from "styled-components"
 const GlobalStyle = createGlobalStyle`
 *, *::before, *::after {
 	box-sizing: border-box;
-	@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Raleway&display=swap');
-    @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+//	@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Raleway&display=swap');
+//    @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 }
 
 html {
