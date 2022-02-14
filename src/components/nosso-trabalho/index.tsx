@@ -11,12 +11,13 @@ const Content = styled.div`
   width: 100%;
   display: flex;
   transition: all 0.3s ease;
-  max-width: 1280px;
+  max-width: 1500px;
   padding: 4rem;
   margin: 0 auto;
   justify-content: center;
   align-items: flex-start;
-  
+  min-height: 800px;
+  flex-wrap: wrap;
 
   /* @media screen and (max-width: 767px) {
     height: 700px;
@@ -62,9 +63,7 @@ const Text = styled.ul`
 `
 
 const Card = styled.div`
-    width: 100%;
-    max-width: 350px;
-    min-width: 220px;
+    width: 220px;
     height: 230px;
     background: linear-gradient(225deg, #000000, #202020);
     margin: 5rem 1rem;

@@ -14,6 +14,11 @@ const Container = styled.article<{ backgroundColor?: string, color?: string }>`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
+    h2 {
+        margin: 4rem auto;
+        text-align: center;
+    }
 `
 
 const ImgHeader = styled.img`
@@ -44,6 +49,11 @@ const Content = styled.div`
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    iframe {
+        width: 80vw;
+        height: 80vh;
     }
 
 `
@@ -88,7 +98,7 @@ export const CaseBase: FC<{
 
 
         <Content>
-            {typeof children === 'string' ? <iframe src={children} style={{width: '90vw', height: "90vh"}}></iframe> : children}
+            {typeof children === 'string' ? <iframe src={children} /> : children}
         </Content>
 
         <Footer>
