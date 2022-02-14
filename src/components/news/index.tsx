@@ -57,7 +57,9 @@ const NewsContent = styled.div`
     text-align: center;
     color: ${colors.escuroDrk};
     display:  block;
-
+    max-width:  300px;
+    min-width:  200px;
+    
         img {
             width: 100%;
             filter: grayscale(100%);
@@ -102,15 +104,15 @@ const NewsContent = styled.div`
 
 const News: FC<{
     img: string,
-    title?: string,
+    title?: string
     link?: string
 }> = ({ img, title, link }) => (
-    link ? <NewsLink href={link} className="col-sm-3 col-xs-4 col-md-2" target="_blank" rel="noopener noreferrer">
+    link ? <NewsLink href={link} target="_blank" rel="noopener noreferrer">
         <img src={img} alt={title} />
         {title ? <h5>{title}</h5> : null}
     </NewsLink>
         :
-        <NewsContent className="col-sm-3 col-xs-4 col-md-2">
+        <NewsContent>
             <img src={img} alt={title} />
             {title ? <h5>{title}</h5> : null}
         </NewsContent>

@@ -47,7 +47,7 @@ const VideoPortf = styled.video`
   min-width   : 100%;
   min-height  : 100%;
   width       : 100vw;
-  height      : auto;
+  height      : 100vh;
   object-fit  : cover;
 `
 
@@ -63,7 +63,7 @@ const VideoDuee = styled.video`
   min-width   : 100%;
   min-height  : 100%;
   width       : 100vw;
-  height      : auto;
+  height      : 100vh;
   object-fit  : cover;
 `
 

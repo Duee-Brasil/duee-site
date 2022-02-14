@@ -211,11 +211,9 @@ const VideoHeader = styled.div`
     width: 100%;
 
     img {
-        width   : 100%;
-        max-height  : 100vh;
-        margin-right: 0;
-        position: relative;
-        /* display     : none; */
+        min-width   : 100vw;
+        width       : 100%;
+        max-height  : 97vh;
     }
 
     /* div {
@@ -382,6 +380,12 @@ const VersinhoLion = styled.div`
     }
 `
 
+const Servico = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
 const Clients = styled.div`
     display: flex;
     flex-direction: row;
@@ -493,7 +497,7 @@ const SomosLeoes = () => {
             <Content>
 
                 <VideoHeader>
-                    <img src={Hashtag} alt="#somosleoes" width={"100%"} />
+                    <img src={Hashtag} alt="#somosleoes" />
                 </VideoHeader>
 
                 <Video>
@@ -535,8 +539,11 @@ const SomosLeoes = () => {
                         <img src={Leaocolor} alt="Roar" />
                     </VersinhoLion>
                 </Versinho>
-
-                <Trabalho />
+                
+<Servico>
+    <Trabalho />
+</Servico>
+                
 
                 <Clients>
                     <h2>Clientes</h2>
