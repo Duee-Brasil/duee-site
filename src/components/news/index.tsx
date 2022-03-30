@@ -8,6 +8,8 @@ const NewsLink = styled.a`
     text-align: center;
     color: ${colors.escuroDrk};
     display:  block;
+    max-width:  300px;
+    min-width:  200px;
 
         img {
             width: 100%;
@@ -15,40 +17,40 @@ const NewsLink = styled.a`
             -webkit-filter: grayscale(100%);
         }
 
-&:hover {
-    img {
-        -webkit-animation: coloring 1s;
+    &:hover {
+        img {
+            -webkit-animation: coloring 1s;
             /* Chrome, Safari, Opera */
             animation     : coloring 1s;
             filter        : grayscale(0%);
             -webkit-filter: grayscale(0%);
-    }
-}
-
-@-webkit-keyframes coloring {
-    from {
-        filter        : grayscale(100%);
-        -webkit-filter: grayscale(100%);
+        }
     }
 
-    to {
-        filter        : grayscale(0%);
-        -webkit-filter: grayscale(0%);
-    }
-}
+    @-webkit-keyframes coloring {
+        from {
+            filter        : grayscale(100%);
+            -webkit-filter: grayscale(100%);
+        }
 
-/* Standard syntax */
-@keyframes coloring {
-    from {
-        filter        : grayscale(100%);
-        -webkit-filter: grayscale(100%);
+        to {
+            filter        : grayscale(0%);
+            -webkit-filter: grayscale(0%);
+        }
     }
 
-    to {
-        filter        : grayscale(0%);
-        -webkit-filter: grayscale(0%);
+    /* Standard syntax */
+    @keyframes coloring {
+        from {
+            filter        : grayscale(100%);
+            -webkit-filter: grayscale(100%);
+        }
+
+        to {
+            filter        : grayscale(0%);
+            -webkit-filter: grayscale(0%);
+        }
     }
-}
 `;
 
 const NewsContent = styled.div`
@@ -66,27 +68,27 @@ const NewsContent = styled.div`
             -webkit-filter: grayscale(100%);
         }
 
-&:hover {
-    img {
-        -webkit-animation: coloring 1s;
-            /* Chrome, Safari, Opera */
-            animation     : coloring 1s;
+    &:hover {
+        img {
+            -webkit-animation: coloring 1s;
+                /* Chrome, Safari, Opera */
+                animation     : coloring 1s;
+                filter        : grayscale(0%);
+                -webkit-filter: grayscale(0%);
+        }
+    }
+
+    @-webkit-keyframes coloring {
+        from {
+            filter        : grayscale(100%);
+            -webkit-filter: grayscale(100%);
+        }
+
+        to {
             filter        : grayscale(0%);
             -webkit-filter: grayscale(0%);
+        }
     }
-}
-
-@-webkit-keyframes coloring {
-    from {
-        filter        : grayscale(100%);
-        -webkit-filter: grayscale(100%);
-    }
-
-    to {
-        filter        : grayscale(0%);
-        -webkit-filter: grayscale(0%);
-    }
-}
 
 /* Standard syntax */
 @keyframes coloring {

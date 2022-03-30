@@ -10,8 +10,8 @@ const Topbar = styled.div`
   top: 0;
   left: 0;
   width: 100vw;
-  height: 82px;
-  padding: 10px 30px 10px 30px;
+  height: 80px;
+  padding: 15px 40px;
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
@@ -22,9 +22,14 @@ const Logo = styled.div`
   width: 50%;
   justify-content: flex-start;
   display: flex;
+  align-items: center;
 
   a {
     background-color: transparent;
+  }
+
+  img { 
+    height: 30px;
   }
 
   @media screen and (min-width: 768px) {
@@ -130,7 +135,7 @@ const Navbar: FC = () => {
     <Topbar>
       <Logo>
         <Link to={"/"}>
-          <img src={DueeLogo} alt="Duee Brasil" height={"50px"} />
+          <img src={DueeLogo} alt="Duee Brasil" />
         </Link>
       </Logo>
       <MenuButton>

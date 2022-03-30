@@ -258,38 +258,55 @@ const VideoHeader = styled.div`
 `
 
 const Video = styled.div`
-    
-    padding               : 3rem;
+    padding               : 1rem;
     display               : flex;
     align-items: center;
     justify-content: center;
 
     iframe {
-        width : 80vw;
-        height: 80vh;
+        width : 90vw;
+        height: calc(90vw * 9 / 16);
+    }
+
+    @media screen and (min-width: 768px) {
+        padding               : 2rem;
+
+        iframe {
+            width : 80vw;
+            height: calc(80vw * 9 / 16);
+        }
     }
 `
 
 const GenteFaz = styled.div`
     background-color      : white;
     color                 : ${colors.escuroDrk};
-    padding               : 7rem 5rem;
+    padding               : 3rem 2rem;
     display               : flex;
     align-items: center;
     flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
     justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        padding               : 7rem 5rem;
+    }
 `
 
 const Manifesto = styled.div`
-    padding       : 3rem 5rem;
+    padding       : 2rem 3rem;
     border        : 8px solid ${colors.claroDrk};
     width: 100%;
     max-width: 900px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+
+    @media screen and (min-width: 768px) {
+        padding               : 3rem 5rem;
+        font-size: 1.3rem;
+    }
 `
 
 const Resumo = styled.div`
-    /* position           : relative; */
     text-align         : right;
     align-self         : center;
     background-color   : white;
@@ -298,12 +315,11 @@ const Resumo = styled.div`
     max-width: 600px;
     margin: 0;
     padding: 1rem 0;
-    margin-right: -2rem;
 
     ${Animations}
 
     h2 {
-        font-size        : 4em;
+        font-size        : 2rem;
         color            : ${colors.blue};
         line-height      : 1em;
         font-family      : 'Anton', sans-serif;
@@ -315,16 +331,29 @@ const Resumo = styled.div`
     h1 {
         margin: 0;
         text-align         : right;
-        font-size          : 8em;
+        font-size          : 4rem;
         color              : ${colors.pink};
         font-weight        : bold;
         font-family        : 'Anton', sans-serif;
         line-height        : 1em;
         font-kerning       : 1.5em;
-        letter-spacing     : 15px;
+        letter-spacing     : 10px;
         visibility         : hidden;
         -webkit-animation  : faz 5s step-end infinite;
         animation          : faz 5s step-end infinite;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: -2rem;
+
+        h2 {
+            font-size        : 4rem;
+        }
+
+        h1 {
+            font-size          : 8rem;
+            letter-spacing     : 15px;
+        }
     }
 `
 
@@ -354,29 +383,51 @@ const DEV = styled.h2`
 `
 
 const Versinho = styled.div`
-    background-color              : black;
-    height                        : 90vh;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    padding: 1rem;
+
+    @media screen and (min-width: 768px) {
+        height: 90vh;
+    }
 `
 
 const VersinhoText = styled.div`
-        font-size    : 1.1em;
-        margin       : 0;
-        padding-left : 3%;
-        padding-right: 1%;
-        text-align   : center;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 2rem;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 3rem;
+        padding-right: 0;
+        width: 55%;
+    }
 `
 
 const VersinhoLion = styled.div`
-    
-    margin-top: 15vh;
     margin-right: -50rem;
+    margin-top: -8rem;
+    margin-bottom: -20rem;
 
     img {
-        height  : 115vh;
+        width: auto;
+        height  : 90vh;
         overflow: hidden;
+    }
+
+    
+    @media screen and (min-width: 768px) {
+        width: 45%;
+        margin-top: -4rem;
+        margin-right: 0;
+
+        img {
+            height  : 115vh;
+        }
     }
 `
 
@@ -503,7 +554,7 @@ const SomosLeoes = () => {
                 <Video>
                     <iframe src="https://player.vimeo.com/video/355173390" title="Duee Brasil" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                 </Video>
-                
+
 
                 <GenteFaz>
                     <Manifesto>
@@ -527,7 +578,10 @@ const SomosLeoes = () => {
                 </GenteFaz>
 
                 <Versinho>
-                    <VersinhoText className="slideDown col-xs-12 col-md-5">
+                    <VersinhoLion>
+                        <img src={Leaocolor} alt="Roar" />
+                    </VersinhoLion>
+                    <VersinhoText>
                         <h2>SOMOS LEÕES</h2>
                         <h3>Rugimos bem alto para que todos possam nos ouvir.</h3>
                         <h3>Defendemos nossas ideias, não temos medo de nos aventurar.</h3>
@@ -535,15 +589,12 @@ const SomosLeoes = () => {
                         <h3>Estamos sempre nos desafiando e caçando oportunidades de fazer diferente.</h3>
                         <h3>Somos leões.</h3>
                     </VersinhoText>
-                    <VersinhoLion>
-                        <img src={Leaocolor} alt="Roar" />
-                    </VersinhoLion>
                 </Versinho>
-                
-<Servico>
-    <Trabalho />
-</Servico>
-                
+
+                <Servico>
+                    <Trabalho />
+                </Servico>
+
 
                 <Clients>
                     <h2>Clientes</h2>

@@ -5,7 +5,8 @@ import Layout from "@components/layout/layout"
 
 import globo from '@images/oito/globe-1-1.png'
 import rocket from '@images/oito/rocket-1-1.png'
-import imghead from '@images/oito/banner-1-1-moc.png'
+import Imghead from '@images/oito/banner-1-1-moc.png'
+import Imgheadfundo from '@images/oito/banner-1-1.png'
 import cta from '@images/oito/cta-1-1.png'
 import etap from '@images/oito/cta-moc-1-1.png'
 import TecnologyBg from "@images/oito/testi-bg-1-1.png"
@@ -248,26 +249,132 @@ const WhatContent = styled.div`
     }
 `
 
+const Hero = styled.section`
+    background: transparent url(${Imgheadfundo}) top right no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 274px;
+    padding-bottom: 515px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    z-index: 11;
+
+    img {
+        width: auto;
+    }
+`
+
+const Globe = styled.img`
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    animation-fill-mode: both;
+    animation-name: globeRotate;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+    @keyframes globeRotate {
+    8% {
+        transform: perspective(200px) rotateX(0deg);
+    }
+    100% {
+        transform: perspective(200px) rotateX(360deg);
+	}
+}
+`
+
+const Rocket = styled.img`
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+    animation-fill-mode: both;
+    animation-name: rocketMove;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+    @keyframes rocketMove {
+    8% {
+        transform: perspective(600px) translateY(0) translateX(0) rotate(0);
+        opacity: 1;
+	}
+    100% {
+        transform: perspective(600px) translateY(-400px) translateX(-300px) rotate(0);
+        opacity: 0;
+	}
+}
+`
+
+const ImgMoc = styled.img`
+    position: absolute;
+    top: 140px;
+    right: 0;
+    max-width: 60vw;
+    animation-fill-mode: both;
+    animation-name: shapeRotate;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: center center;
+
+    @keyframes shapeRotate {
+    0%, 100% {
+        transform: translateY(0px);
+	}
+    20%, 80% {
+        transform: translateY(10px);
+	}
+    60% {
+        transform: translateY(20px);
+	}
+}
+`
+
+const HeroContent = styled.div`
+    padding: 20px;
+    padding-left: 2rem;
+`
+
+const TagLine = styled.p`
+    margin: 0;
+    display: inline-block;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, .1);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    overflow: hidden;
+    color: #fff;
+    line-height: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+`
+
+const HeroTitle = styled.h3`
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 70px;
+    line-height: 80px;
+    letter-spacing: -0.04em;
+`
+
 const Oito = () => (
     <Layout title="Oito">
 
-        <Helmet>
-            <link rel="stylesheet" href="./style2.css" />
-        </Helmet>
-
         <Content>
-            <section className="banner-one" id="home">
-                <img src={globo} className="banner-one__globe" alt="globo" />
-                <img src={rocket} className="banner-one__rocket" alt="rocket" />
-                <img src={imghead} className="banner-one__moc" alt="app" />
-                <div style={{ display: 'flex', width: "100%", paddingLeft: "2rem" }}>
-                    <div className="banner-one__content">
-                        <p className="banner-one__tag-line">Desenvolvimento de Web App</p>
-                        <h3 className="banner-one__title">Oito App</h3>
+            <Hero id="home">
+                <Globe src={globo} alt="globo" />
+                <Rocket src={rocket} alt="rocket" />
+                <ImgMoc src={Imghead} alt="app" />
+                    <HeroContent>
+                        <TagLine>Desenvolvimento de Web App</TagLine>
+                        <HeroTitle>Oito App</HeroTitle>
                         <Button href="#about">Saiba mais</Button>
-                    </div>
-                </div>
-            </section>
+                    </HeroContent>
+            </Hero>
 
             <What>
                 <img src={cta} alt="vector" />

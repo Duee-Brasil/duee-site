@@ -62,6 +62,7 @@ const Footer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 3rem auto;
     font-size: 1.1rem;

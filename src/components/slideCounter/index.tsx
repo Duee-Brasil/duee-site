@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const ProgressBar = styled.div`
   width: 100%;
   position: fixed;
-  bottom: 10px;
+  bottom: 60px;
   padding: 25px;
   display: flex;
   justify-content: center;
