@@ -1,5 +1,6 @@
 import { AbrilMobile } from "./abril-mobile"
 import { AESEletropaulo } from "./aeseletropaulo"
+import { Angostura } from "./angostura"
 import { Azzurra } from "./azzurra"
 import { BauduccoM } from "./bauducco-midia"
 import { Roll } from "./bauducco-roll"
@@ -56,6 +57,7 @@ import { MadeM } from "./made-midia"
 import { Maille } from "./maille"
 import { MailleMaes } from "./maille-mae"
 import { MaillePai } from "./maille-pais"
+import { Marodine } from "./marodine"
 import { Mondelez } from "./mondelez"
 import { Clight } from "./mondelez-clight"
 import { Nickledoen } from "./nickelodeon"
@@ -76,6 +78,7 @@ import { Roadshow } from "./stbx-roadshow"
 import { StarbucksTapume } from "./stbx-tapume"
 import { StarbucksWinter } from "./stbx-winter"
 import { Suite } from "./suite49"
+import { TGIFridays } from "./tgi"
 import { TNT } from "./tnt"
 import { Trapiche } from "./trapiche"
 import { Trova } from "./trova"
@@ -102,6 +105,24 @@ import { WalmartM } from "./walmart-site"
 import { Verao } from "./walmart-verao"
 
 export const JobsList = [
+  {
+    thumbnail:
+      "https://portfolio.duee.com.br/wp-content/uploads/2022/03/port-tgi_tumb.png",
+    title: "TGI Fridays",
+    job: TGIFridays,
+  },
+  {
+    thumbnail:
+      "https://portfolio.duee.com.br/wp-content/uploads/2022/03/01_tumb.jpeg",
+    title: "Angostura",
+    job: Angostura,
+  },
+  {
+    thumbnail:
+      "https://portfolio.duee.com.br/wp-content/uploads/2022/03/01-tumb.png",
+    title: "Marodyne LiV",
+    job: Marodine,
+  },
   {
     thumbnail:
       "https://portfolio.duee.com.br/wp-content/uploads/2022/01/tumb-1.png",
