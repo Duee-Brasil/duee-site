@@ -103,6 +103,10 @@ const Layout: FC<{
           //   name: `Cache-control`,
           //   content: "public, max-age=0, must-revalidate",
           // },
+          {
+            name: "facebook-domain-verification",
+            content: "in976elwnpkst1rkegkf4itp8ua53z"
+          }
         ]}
       >
         <script src="https://kit.fontawesome.com/67a84c91e8.js"></script>
