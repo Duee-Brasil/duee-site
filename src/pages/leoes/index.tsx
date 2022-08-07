@@ -294,10 +294,10 @@ const GenteFaz = styled.div`
 `
 
 const Manifesto = styled.div`
-    padding       : 2rem 3rem;
+    padding       : 2rem 2.5rem;
     border        : 8px solid ${colors.claroDrk};
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     font-size: 1.1rem;
 
     @media screen and (min-width: 768px) {
@@ -558,14 +558,18 @@ const SomosLeoes = () => {
 
                 <GenteFaz>
                     <Manifesto>
-                        <p>A Duee é uma agência full service, que preza pela comunicação integrada, porque sabe que o mundo não se divide em on e off.</p>
+                        <p>Com 14 anos de mercado a DUEE Brasil é uma agência full service, que surgiu com objetivo de atender marcas globais que querem ser relevantes no mercado nacional.</p>
+                        <p>Trabalhamos a  comunicação de forma integrada, planejando e executando ações em diferentes canais (Online e Offline).</p>
+                        <p>Não realizamos apenas conteúdos e campanhas, nós geramos ideias e conexões. Somos uma agência que acredita no trabalho que está em constante movimento, buscando o que há de melhor no mercado da comunicação: tendências, inovações e transformação.</p>
+                        <p>É por meio de nossa paixão, criatividade e de estratégias que ajudamos marcas globais a terem retornos eficientes e se tornarem relevantes no mercado local.</p>
+                        {/* <p>A Duee é uma agência full service, que preza pela comunicação integrada, porque sabe que o mundo não se divide em on e off.</p>
                         <p>Não criamos apenas conteúdos e campanhas, nós geramos ideias e conexões.</p>
                         <p>Nós somos uma agência que acredita que o trabalho está em constante movimento e, por isso, estamos sempre atentos às novidades, ao público, às revoluções e novas ideias.</p>
                         <p>É por meio de nossa paixão, criatividade e de estratégias que ajudamos marcas a terem retornos eficientes, se tornarem relevantes e atingirem grandes resultados.</p>
                         <p>O conceito "A Gente Faz" traduz a nossa experiência de 11 anos, o nosso espírito de equipe e de proatividade. É o reflexo do nosso posicionamento como agência 360 graus. A gente faz criativo. A gente faz diferente. A gente faz inteligente.</p>
                         <p>Eventos? A gente faz.</p>
                         <p>Digital? A gente faz.</p>
-                        <p>Branding? A gente faz.</p>
+                        <p>Branding? A gente faz.</p> */}
                     </Manifesto>
                     <Resumo>
                         <LIVE>LIVE MKT</LIVE>

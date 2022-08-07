@@ -9,7 +9,7 @@ export const Chandon = () => {
         client='MOET Chandon'
         year='2018'
         description={<p>Para reforçar nossa campanha de ativação de marca, trazer um conceito mais jovem e integrar Chandon no ambiente digital, criamos um aplicativo de realidade aumentada, uma experiência inovadora disponível na Play Store e App Store.</p>}
-        header="https://portfolio.duee.com.br/wp-content/uploads/2020/06/banner_img_site_giglio.png"
+        header="https://portfolio.duee.com.br/wp-content/uploads/2019/03/HEADER_1-1.png"
     >
         <div className="col-xs-12">
             <video controls autoPlay={true} muted={true} loop src="https://portfolio.duee.com.br/wp-content/uploads/2019/03/Chandon-Realidade-Aumentada.mp4" />
