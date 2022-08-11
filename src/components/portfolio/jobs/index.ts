@@ -61,6 +61,7 @@ import { Marodine } from "./marodine"
 import { Mondelez } from "./mondelez"
 import { Clight } from "./mondelez-clight"
 import { Nickledoen } from "./nickelodeon"
+import { Nomad } from "./Nomad"
 import { Norpal } from "./norpal"
 import { DevOito } from "./oito"
 import { Petz } from "./petz"
@@ -105,6 +106,12 @@ import { WalmartM } from "./walmart-site"
 import { Verao } from "./walmart-verao"
 
 export const JobsList = [
+  {
+    thumbnail:
+      "https://portfolio.duee.com.br/wp-content/uploads/2022/08/tumb.png",
+    title: "Nomad",
+    job: Nomad,
+  },
   {
     thumbnail:
       "https://portfolio.duee.com.br/wp-content/uploads/2022/03/port-tgi_tumb.png",
