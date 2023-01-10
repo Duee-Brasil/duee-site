@@ -78,6 +78,7 @@ import { Panetone } from "./stbx-panetone"
 import { Roadshow } from "./stbx-roadshow"
 import { StarbucksTapume } from "./stbx-tapume"
 import { StarbucksWinter } from "./stbx-winter"
+import { StarbucksCookies } from "./stbx-cookies"
 import { Suite } from "./suite49"
 import { TGIFridays } from "./tgi"
 import { TNT } from "./tnt"
@@ -104,8 +105,49 @@ import { Posto } from "./walmart-posto"
 import { SentirBem } from "./walmart-sentirbem"
 import { WalmartM } from "./walmart-site"
 import { Verao } from "./walmart-verao"
+import { Polarbox } from "./casal-polarbox"
+import { StarbucksNuts } from "./stbx-nuts"
+import { TGIFrijitas } from "./tgi-frijitas"
+import { StarbucksPanetone22 } from "./stbx-panetone22"
+import { StarbucksNatal22 } from "./stbx-natal22"
 
 export const JobsList = [
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fsbux-natal22%2Fcapa_Prancheta%201.png?alt=media&token=198ab52a-34a5-448a-8f9a-c81198f8bde9",
+    title: "Natal Starbucks 2022",
+    job: StarbucksNatal22,
+  },
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fsbux-panetone22%2Fcapa.png?alt=media&token=3e567f83-a7ab-4bcc-bf65-6c72895201d4",
+    title: "Panettones Starbucks 2022",
+    job: StarbucksPanetone22,
+  },
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2FTGI-frijitas%2Fcapa_Prancheta%201.png?alt=media&token=26fee46e-e0aa-4c11-8130-181d0fb58678",
+    title: "TGI Fridays Frijitas",
+    job: TGIFrijitas,
+  },
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fsbux-nuts%2Fcapa_Prancheta%201.png?alt=media&token=adc61ef8-82ab-4fe6-944c-04396dbe7398",
+    title: "Starbucks Drageados",
+    job: StarbucksNuts,
+  },
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2FCG-polarbox%2Ftumb.png?alt=media&token=82249575-1751-428b-8d74-cd8d64493fab",
+    title: "Casal Garcia e Polarbox",
+    job: Polarbox,
+  },
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fsbux-caixa_cookies%2Fcapa_Prancheta%201.png?alt=media&token=446c8afb-ce98-4b1b-92a5-f9549c0cb7d1",
+    title: "Starbucks Caixa de Cookies",
+    job: StarbucksCookies,
+  },
   {
     thumbnail:
       "https://portfolio.duee.com.br/wp-content/uploads/2022/08/tumb.png",
