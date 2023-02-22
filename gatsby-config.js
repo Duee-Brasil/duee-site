@@ -7,13 +7,16 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
+        path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,9 +24,6 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },
     },
-    // `gatsby-plugin-image`,
-    // `gatsby-transformer-sharp`,
-    // `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -37,16 +37,6 @@ module.exports = {
         icon: `src/images/Logo_Claro-leao.png`, // This path is relative to the root of the site.
       },
     },
-    // `gatsby-plugin-offline`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     // The property ID; the tracking code won't be generated without it
-    //     trackingId: "UA-157627202-1",
-    //     // Defines where to place the tracking script - `true` in the head and `false` in the body
-    //     head: true,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -66,14 +56,6 @@ module.exports = {
         includeInDevelopment: false,
         defaultDataLayer: { platform: "gatsby" },
       }
-    },
-    {
-      resolve: `gatsby-plugin-typescript`,
-      options: {
-        isTSX: true, // defaults to false
-        jsxPragma: `jsx`, // defaults to "React"
-        allExtensions: true, // defaults to false
-      },
     },
     {
       resolve: `gatsby-plugin-tsconfig-paths`,

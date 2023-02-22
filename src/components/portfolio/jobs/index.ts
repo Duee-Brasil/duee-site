@@ -110,8 +110,15 @@ import { StarbucksNuts } from "./stbx-nuts"
 import { TGIFrijitas } from "./tgi-frijitas"
 import { StarbucksPanetone22 } from "./stbx-panetone22"
 import { StarbucksNatal22 } from "./stbx-natal22"
+import { Wildside } from "./wildside"
 
 export const JobsList = [
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fwildside%2Fcapa.png?alt=media&token=129536ee-6f47-448e-a9ba-2e2b41e90033",
+    title: "Wild Side",
+    job: Wildside,
+  },
   {
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fsbux-natal22%2Fcapa_Prancheta%201.png?alt=media&token=198ab52a-34a5-448a-8f9a-c81198f8bde9",
