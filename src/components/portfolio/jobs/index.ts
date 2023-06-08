@@ -111,8 +111,50 @@ import { TGIFrijitas } from "./tgi-frijitas"
 import { StarbucksPanetone22 } from "./stbx-panetone22"
 import { StarbucksNatal22 } from "./stbx-natal22"
 import { Wildside } from "./wildside"
+import { TGIDouble } from "./tgi-double"
+import { StarbucksFall } from "./stbx-fall"
+import { StarbucksEstilo } from "./stbx-estilo"
+import { StarbucksPassaport } from "./stbx-passaport"
+import { StarbucksOmnichannel } from "./stbx-Omnichannel"
+import { StarbucksSummer } from "./stbx-summer"
 
 export const JobsList = [
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fstbx-summer%2F1-Capa.png?alt=media&token=7aa10336-645d-4737-8d5a-6227f0158c98&_gl=1*zuf6mk*_ga*MTc0NTgyMDIzOS4xNjc2NjY2OTcw*_ga_CW55HF8NVT*MTY4NjI1OTg3Mi4xLjEuMTY4NjI2NDI5Ni4wLjAuMA..",
+    title: "Campanha Summer",
+    job: StarbucksSummer,
+  },
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fstbx-omnichannel%2F1-Capa.jpg?alt=media&token=8b0fa5b3-33d3-4f67-94b4-3ff5c267d382&_gl=1*1mrll8w*_ga*MTc0NTgyMDIzOS4xNjc2NjY2OTcw*_ga_CW55HF8NVT*MTY4NjI1OTg3Mi4xLjEuMTY4NjI2Mzg5Mi4wLjAuMA..",
+    title: "OMNICHANNEL",
+    job: StarbucksOmnichannel,
+  },
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fstbx-passaport%2F1-capa.jpg?alt=media&token=bca055f1-b326-4552-a036-0c6f941a5425&_gl=1*1jvauu1*_ga*MTc0NTgyMDIzOS4xNjc2NjY2OTcw*_ga_CW55HF8NVT*MTY4NjI1OTg3Mi4xLjEuMTY4NjI2MzI2Ni4wLjAuMA..",
+    title: "PASSAPORTE DO CAFÉ",
+    job: StarbucksPassaport,
+  },
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fstbx-estilo%2F1-Capa.jpg?alt=media&token=26984602-b613-41e9-bc28-5cfc763ce371&_gl=1*yxse62*_ga*MTc0NTgyMDIzOS4xNjc2NjY2OTcw*_ga_CW55HF8NVT*MTY4NjI1OTg3Mi4xLjEuMTY4NjI2MjkwOC4wLjAuMA..",
+    title: "Estilo Starbucks",
+    job: StarbucksEstilo,
+  },
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fstbx-fall%2F1-capa.jpg?alt=media&token=7f20244b-5b8c-45cc-b90d-78a1a157865f&_gl=1*971ljy*_ga*MTc0NTgyMDIzOS4xNjc2NjY2OTcw*_ga_CW55HF8NVT*MTY4NjI1OTg3Mi4xLjEuMTY4NjI2MjI1OC4wLjAuMA..",
+    title: "Campanha Fall",
+    job: StarbucksFall,
+  },
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Ftgi-double%2F1-Capa.png?alt=media&token=1f0d0f96-d759-4d38-9473-e8dd051ce107&_gl=1*1rbtzrw*_ga*MTc0NTgyMDIzOS4xNjc2NjY2OTcw*_ga_CW55HF8NVT*MTY4NjI1OTg3Mi4xLjEuMTY4NjI2MDQ4MS4wLjAuMA..",
+    title: "Make It a double",
+    job: TGIDouble,
+  },
   {
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fwildside%2Fcapa.png?alt=media&token=129536ee-6f47-448e-a9ba-2e2b41e90033",
