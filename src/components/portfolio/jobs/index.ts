@@ -127,6 +127,12 @@ export const JobsList = [
   },
   {
     thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Ftgi-double%2F1-Capa.png?alt=media&token=1f0d0f96-d759-4d38-9473-e8dd051ce107&_gl=1*1rbtzrw*_ga*MTc0NTgyMDIzOS4xNjc2NjY2OTcw*_ga_CW55HF8NVT*MTY4NjI1OTg3Mi4xLjEuMTY4NjI2MDQ4MS4wLjAuMA..",
+    title: "Make It a double",
+    job: TGIDouble,
+  },
+  {
+    thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fstbx-omnichannel%2F1-Capa.jpg?alt=media&token=8b0fa5b3-33d3-4f67-94b4-3ff5c267d382&_gl=1*1mrll8w*_ga*MTc0NTgyMDIzOS4xNjc2NjY2OTcw*_ga_CW55HF8NVT*MTY4NjI1OTg3Mi4xLjEuMTY4NjI2Mzg5Mi4wLjAuMA..",
     title: "OMNICHANNEL",
     job: StarbucksOmnichannel,
@@ -145,21 +151,15 @@ export const JobsList = [
   },
   {
     thumbnail:
-      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fstbx-fall%2F1-capa.jpg?alt=media&token=7f20244b-5b8c-45cc-b90d-78a1a157865f&_gl=1*971ljy*_ga*MTc0NTgyMDIzOS4xNjc2NjY2OTcw*_ga_CW55HF8NVT*MTY4NjI1OTg3Mi4xLjEuMTY4NjI2MjI1OC4wLjAuMA..",
-    title: "Campanha Fall",
-    job: StarbucksFall,
-  },
-  {
-    thumbnail:
-      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Ftgi-double%2F1-Capa.png?alt=media&token=1f0d0f96-d759-4d38-9473-e8dd051ce107&_gl=1*1rbtzrw*_ga*MTc0NTgyMDIzOS4xNjc2NjY2OTcw*_ga_CW55HF8NVT*MTY4NjI1OTg3Mi4xLjEuMTY4NjI2MDQ4MS4wLjAuMA..",
-    title: "Make It a double",
-    job: TGIDouble,
-  },
-  {
-    thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fwildside%2Fcapa.png?alt=media&token=129536ee-6f47-448e-a9ba-2e2b41e90033",
     title: "Wild Side",
     job: Wildside,
+  },
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fstbx-fall%2F1-capa.jpg?alt=media&token=7f20244b-5b8c-45cc-b90d-78a1a157865f&_gl=1*971ljy*_ga*MTc0NTgyMDIzOS4xNjc2NjY2OTcw*_ga_CW55HF8NVT*MTY4NjI1OTg3Mi4xLjEuMTY4NjI2MjI1OC4wLjAuMA..",
+    title: "Campanha Fall",
+    job: StarbucksFall,
   },
   {
     thumbnail:
