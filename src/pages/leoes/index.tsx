@@ -263,7 +263,7 @@ const Video = styled.div`
     align-items: center;
     justify-content: center;
 
-    iframe {
+    video {
         width : 90vw;
         height: calc(90vw * 9 / 16);
     }
@@ -271,7 +271,7 @@ const Video = styled.div`
     @media screen and (min-width: 768px) {
         padding               : 2rem;
 
-        iframe {
+        video {
             width : 80vw;
             height: calc(80vw * 9 / 16);
         }
@@ -552,7 +552,7 @@ const SomosLeoes = () => {
                 </VideoHeader>
 
                 <Video>
-                    <iframe src="https://player.vimeo.com/video/355173390" title="Duee Brasil" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                    <video controls autoPlay={true} muted={true} loop src="https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/DUEE_FINAL_23.mp4?alt=media&token=baebc8e4-b575-4b8d-92cc-286658cdd056" />
                 </Video>
 
 
