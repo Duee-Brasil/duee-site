@@ -118,11 +118,18 @@ import { StarbucksPassaport } from "./stbx-passaport"
 import { StarbucksOmnichannel } from "./stbx-Omnichannel"
 import { StarbucksSummer } from "./stbx-summer"
 import { SweetRose } from "./casal-sweetrose"
+import { AngosturaIG } from "./angostura-ig"
 
 export const JobsList = [
   {
     thumbnail:
-      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2FCG-sweet-rose%2Fcapa%20(2).png?alt=media&token=d9557c41-0628-4bf8-b00d-c50c634e3215",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fangostura-ig%2Fcapa.png?alt=media&token=74d4ec54-0002-4432-84d7-413440a17ce3",
+    title: "Angostura - Instagram",
+    job: AngosturaIG,
+  },
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2FCG-sweet-rose%2Fcapa.png?alt=media&token=d8ce3703-37d0-4b40-a2aa-f736dd8d573c",
     title: "Lançamento Casal Garcia Sweet Rosé",
     job: SweetRose,
   },

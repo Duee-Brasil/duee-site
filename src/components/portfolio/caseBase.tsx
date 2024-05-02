@@ -35,7 +35,7 @@ const Content = styled.div`
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1400px;
     align-items: flex-start;
 
     ${Flexboxgrid}
