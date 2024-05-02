@@ -119,8 +119,15 @@ import { StarbucksOmnichannel } from "./stbx-Omnichannel"
 import { StarbucksSummer } from "./stbx-summer"
 import { SweetRose } from "./casal-sweetrose"
 import { AngosturaIG } from "./angostura-ig"
+import { StarbucksHalloween } from "./stbx-halloween"
 
 export const JobsList = [
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fstbx-halloween%2Fcapa.png?alt=media&token=cc300bee-bee4-422d-b481-83ea90f06f00",
+    title: "Halloween Starbucks 2023",
+    job: StarbucksHalloween,
+  },
   {
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fangostura-ig%2Fcapa.png?alt=media&token=74d4ec54-0002-4432-84d7-413440a17ce3",
