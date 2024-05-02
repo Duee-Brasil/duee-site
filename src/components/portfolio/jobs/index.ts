@@ -117,8 +117,15 @@ import { StarbucksEstilo } from "./stbx-estilo"
 import { StarbucksPassaport } from "./stbx-passaport"
 import { StarbucksOmnichannel } from "./stbx-Omnichannel"
 import { StarbucksSummer } from "./stbx-summer"
+import { SweetRose } from "./casal-sweetrose"
 
 export const JobsList = [
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2FCG-sweet-rose%2Fcapa%20(2).png?alt=media&token=d9557c41-0628-4bf8-b00d-c50c634e3215",
+    title: "Lançamento Casal Garcia Sweet Rosé",
+    job: SweetRose,
+  },
   {
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fstbx-summer%2F1-Capa.png?alt=media&token=7aa10336-645d-4737-8d5a-6227f0158c98&_gl=1*zuf6mk*_ga*MTc0NTgyMDIzOS4xNjc2NjY2OTcw*_ga_CW55HF8NVT*MTY4NjI1OTg3Mi4xLjEuMTY4NjI2NDI5Ni4wLjAuMA..",
