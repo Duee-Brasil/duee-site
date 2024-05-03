@@ -121,8 +121,15 @@ import { SweetRose } from "./casal-sweetrose"
 import { AngosturaIG } from "./angostura-ig"
 import { StarbucksHalloween } from "./stbx-halloween"
 import { StarbucksPride } from "./stbx-pride"
+import { StarbucksWinter23 } from "./stbx-winter23"
 
 export const JobsList = [
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fstbx-winter23%2Fcapa.png?alt=media&token=f0b2547b-b9bc-471f-b42d-83230eeffa3f",
+    title: "Winter Starbucks 2023",
+    job: StarbucksWinter23,
+  },
   {
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fstbx-pride%2Fcapa_Prancheta%201.png?alt=media&token=a59b7cc0-d8fd-4a12-8436-a83359e7fde5",
