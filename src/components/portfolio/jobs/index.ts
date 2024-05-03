@@ -124,8 +124,15 @@ import { StarbucksPride } from "./stbx-pride"
 import { StarbucksWinter23 } from "./stbx-winter23"
 import { StarbucksNatal23 } from "./stbx-natal23"
 import { StarbucksSpring23 } from "./stbx-spring23"
+import { ParceiroItau } from "./itau-parceiro"
 
 export const JobsList = [
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fitau%2Fcapa.png?alt=media&token=9f774040-b8f3-4114-a27c-f00a9bc8841a",
+    title: "Parceiro Itaú",
+    job: ParceiroItau,
+  },
   {
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fstbx-spring23%2Fcapa.png?alt=media&token=18b8f8ab-aa9f-47d3-be3a-72567fb95268",
