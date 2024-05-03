@@ -123,8 +123,15 @@ import { StarbucksHalloween } from "./stbx-halloween"
 import { StarbucksPride } from "./stbx-pride"
 import { StarbucksWinter23 } from "./stbx-winter23"
 import { StarbucksNatal23 } from "./stbx-natal23"
+import { StarbucksSpring23 } from "./stbx-spring23"
 
 export const JobsList = [
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fstbx-spring23%2Fcapa.png?alt=media&token=18b8f8ab-aa9f-47d3-be3a-72567fb95268",
+    title: "Spring Starbucks 2023",
+    job: StarbucksSpring23,
+  },
   {
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fstbx-natal23%2Fcapa.png?alt=media&token=c6514583-0949-403a-93d6-6f3b9f2525dc",
