@@ -125,8 +125,15 @@ import { StarbucksWinter23 } from "./stbx-winter23"
 import { StarbucksNatal23 } from "./stbx-natal23"
 import { StarbucksSpring23 } from "./stbx-spring23"
 import { ParceiroItau } from "./itau-parceiro"
+import { CopaHealth } from "./copa-health"
 
 export const JobsList = [
+  {
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fcopa-health%2Fcapa.png?alt=media&token=4a934357-0757-4edd-ae73-a4c0b0562cae",
+    title: "Copa Health Care",
+    job: CopaHealth,
+  },
   {
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fitau%2Fcapa.png?alt=media&token=9f774040-b8f3-4114-a27c-f00a9bc8841a",
