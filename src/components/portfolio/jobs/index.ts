@@ -579,325 +579,325 @@ export const JobsList = [
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/11/Petz_Img_Cover.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fpetz.jpg?alt=media&token=413fa4ce-0bbe-4300-ab97-a0314f8cdf19",
     title: "Petz - tv petz",
     job: Petz,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/11/img_3921.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Ffca.jpg?alt=media&token=9d158bb7-1c8f-4055-8b5f-47106d41a0de",
     title: "FCA - digital day",
     job: FCA,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/11/KV_TNT_V2.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Ftnt.jpg?alt=media&token=e4dc3c07-4e34-49e8-9fc9-78463b53a75f",
     title: "TNT no SPFW - sua cara sua luta",
     job: TNT,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/07/cover_living.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fhnk-living.jpg?alt=media&token=2d1c2aef-9fad-4229-a1a4-a075f2562bd5",
     title: "Living HNK - social midia",
     job: LivingHNK,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/07/cover_pg_adv-copy.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fpg-advogados.jpg?alt=media&token=f3bdf4e6-f66c-460e-9487-20c79becb48f",
     title: "PG advogados - social midia",
     job: PGadv,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/06/IMG_1495.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fcodorniu-webseries.jpg?alt=media&token=1589618e-810d-453f-b028-172d2c4757de",
     title: "codorníu - web serie somos codorníu",
     job: Serie,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/06/03-1.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fhersheys.jpg?alt=media&token=ebad1aab-48ab-4909-b4ff-87314eacac50",
     title: "hershey`s - ação de sampling",
     job: Hersheys,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/06/01.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fcbeebies.jpg?alt=media&token=e4b02ffb-d1c8-4316-946a-d5efb9b33ae2",
     title: "BBc - espaços cbeebies/livraria cultura",
     job: Cbeebies,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/06/IMG_2097.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fabril-mobile.jpg?alt=media&token=220d729c-24fe-4880-8b38-937e35765256",
     title: "Abril - lançamento do mobile view abril",
     job: AbrilMobile,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/bauducco1_avatar.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Froll-bauducco.jpg?alt=media&token=fab1ccb8-d428-4040-bd06-bb880bd93007",
     title: "Bauducco - teatro infantil e oficina roll",
     job: Roll,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-26-at-19.31.11.png",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fveja-450.png?alt=media&token=6382facf-5e51-430c-b0e7-715c4980f4a1",
     title: "Revista veja - rio 450 anos",
     job: Veja450,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/Consul1.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fconsul.jpg?alt=media&token=ee1a8915-abf7-450f-8a58-0f2cfa4c5bf8",
     title: "Consul - Showroom",
     job: Consul,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/cover_bombardier.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fbombardier.jpg?alt=media&token=eddecf35-a465-42d1-b20e-0c07af559117",
     title: "Bombardier - social midia",
     job: BombardierM,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/cointreau_avatar.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fcointreau.jpg?alt=media&token=e87d9a12-df56-4769-9c95-ffcfa3e0acd7",
     title: "Cointreau - social midia",
     job: CointreauM,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/codorniu_avatar.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fcodorniu-socialmedia.jpg?alt=media&token=c626eae8-73df-4ac6-938d-0bfc24c46604",
     title: "Codorníu - social midia",
     job: CodorniuM,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/vedett01-1.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fvedett-socialmedia.jpg?alt=media&token=e6dab73e-a0b8-4bf8-aa68-a477fa7e2461",
     title: "Vedett - social midia",
     job: VedettM,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-19-at-16.19.23.png",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fgrupo-fit.png?alt=media&token=934f9732-2365-4bdc-bef0-e3225a147db7",
     title: "Grupo fit - social midia",
     job: FitMidia,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/fox1-1.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Ffox-ccxp.jpg?alt=media&token=d495df31-fd2d-42fa-8cf7-fa55ba2c918e",
     title: "fox - ccxp 2014",
     job: FoxCcxp,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/norpal1-1.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fnorpal.jpg?alt=media&token=9277533e-82db-43eb-900f-79667d6fd009",
     title: "Norpal - site",
     job: Norpal,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/intel5.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fintel.png?alt=media&token=6a4d5235-faf6-4acb-a410-c904c611643f",
     title: "Intel racing - campanha de incentivo",
     job: Intel,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-19-at-15.24.40.png",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fclight.png?alt=media&token=ccc90e91-a43c-4819-b67c-33ece79372ae",
     title: "Clight - movimento 3x1",
     job: Clight,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/DSC06251.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fjimmy-walmart.jpg?alt=media&token=41cdb35a-7dca-42d8-ae5b-14cedc12c17c",
     title: "Ativações Walmart - Jimmy click, garfo e faca",
     job: Jimmy,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2014-03-25-at-19.39.52.png",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fcrownshow.png?alt=media&token=10c5a8a9-832b-4b32-a3cc-403b23d4f46e",
     title: "Crowshow - site",
     job: Crownshow,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/mark-gatiss-bbc.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fbbc-mark-gatiss.jpg?alt=media&token=3e8dbfea-abb1-46d4-8ef5-4cad00c7b240",
     title: "bbc - evento wild brazil/mark gatiss",
     job: Mark,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/CorridaWalmart2.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fcorrida-walmart.jpg?alt=media&token=e0243c1c-d64c-4957-ab7f-2b871242f01e",
     title: "Corrida Walmart 2013",
     job: Corrida,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/bauducco01-2.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fbauducco-sao-joao.jpg?alt=media&token=6430e220-32ee-4311-8c3d-8e14465a9bc7",
     title: "bauducco - ativação são joão",
     job: SaoJoao,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/Habro-Playskool-Banner-Poppin-Park-1.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fplaysckool.jpg?alt=media&token=d028dc5e-fab7-4cf4-842f-09a07b008680",
     title: "Hasbro - Hotsite playskool",
     job: Playskool,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/siteFinalV2.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fpetshop.jpg?alt=media&token=8cd4f7c2-ea04-4c79-8751-11dddffe779a",
     title: "hasbro - hotsite littlelest pet shop",
     job: PetShop,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/CASCOLA.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fcascola.jpg?alt=media&token=e8bcfc4d-a9cc-4a55-afef-720ef7f05a05",
     title: "Cascola digital",
     job: Cascola,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/bauducco01-1.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fbauducco-socialmedia.jpg?alt=media&token=55fc708d-0c1b-4faa-be92-9435dce1a94c",
     title: "bauducco - social midia",
     job: BauduccoM,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/PILAO.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fpilao-walmart.jpg?alt=media&token=790b27ff-f2de-430c-abb9-61297656e35d",
     title: "café pilão - ação de checkout walmart",
     job: Pilao,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/calminex01.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fcalminex.jpg?alt=media&token=a2709bd3-f110-4c98-b981-6b03f1d1c0ce",
     title: "estande calminex",
     job: Calminex,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/HALLS.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fmondolez-halls.jpg?alt=media&token=2a2ce425-6c8e-449c-95a2-86d5c90b10ba",
     title: "mondelez - ações de sampling",
     job: Mondelez,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/NET-BBC.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fbbcnet.jpg?alt=media&token=bbeddd7d-98d3-47f9-93cb-a342c44760f5",
     title: "bbc hd - convenção net",
     job: BBCNet,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/sentirbem.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fsentir-bem.jpg?alt=media&token=032f49e5-7b5f-4c8a-b8d0-32b3fb4de726",
     title: "Sentir bem - ações de sampling",
     job: SentirBem,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/work_gde.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Ffarmacia-walmart2.jpg?alt=media&token=db3439cd-30fa-4a71-bc5d-95f1908e6f4e",
     title: "farmacias walmart - ações de sampling",
     job: Farmacia,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/kimberly-job241.png",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fintumus-flashmob.png?alt=media&token=5ffdf560-8878-4517-a3e9-c83e3d8090fa",
     title: "Flashmob intimus",
     job: Intimus,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/huggies_gde-1.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fhuggies.jpg?alt=media&token=f6fc8033-476c-44f0-bcdb-b6b463a92d28",
     title: "huggies turma da monica",
     job: Huggies,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/sauza01.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fsauza.jpg?alt=media&token=a1bda562-d25c-44bb-b586-646ef04c1ccb",
     title: "sauza tequila - social midia",
     job: SauzaM,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/bauducco02.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fbauducco.jpg?alt=media&token=c67daf8c-16b6-4fdb-bc45-5077fe0f4111",
     title: "Bauducco - ações de sampling",
     job: BauduccoS,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/aes01.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Faes-eletropaulo.jpg?alt=media&token=49e1a9f8-115d-4584-a5d6-f862d19fc73d",
     title: "AES eletropaulo - smart house",
     job: AESEletropaulo,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/Layout_Hotsite_Conceito_02.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fexto.jpg?alt=media&token=645f25c2-0ea5-4664-b65e-32dd85b7ffc0",
     title: "exto",
     job: Exto,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-18-at-16.57.22.png",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fintimus.png?alt=media&token=c8b2fab3-c9d1-4fe4-a528-dcd77aa37791alt=media&token=ee61d04b-f12e-4fef-be78-d830d6602524",
     title: "intimus evolution sampling",
     job: IntimusS,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/serasa.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fserasa.jpg?alt=media&token=ee61d04b-f12e-4fef-be78-d830d6602524",
     title: "serasa experian",
     job: Serasa,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/skpf-1.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fschwarzkopf.jpg?alt=media&token=8166c9bc-c014-4ef9-9deb-eb7af80a3162",
     title: "schwarzkopf - social midia",
     job: Schwarzkopf,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/bbc01.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fbbc-hd.jpg?alt=media&token=18d7ea8c-8c79-4d6a-83a6-a191843c907c",
     title: "bbc hd - social midia",
     job: BBChd,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-18-at-16.28.51.png",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fnickelodeon.png?alt=media&token=b46e200f-fe97-485f-849c-2dfb596268f2",
     title: "Nickelodeon - social midia",
     job: Nickledoen,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/veja01.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fveja.jpg?alt=media&token=9b9b24d2-b314-4705-84e3-083e623c8125",
     title: "Veja - ação em pdv",
     job: VejaPDV,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/VH1-FACEBOOK.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fvh1.jpg?alt=media&token=d37e80ae-5f5c-4022-bf5c-e258c21eb6fc",
     title: "vh1 - social midia",
     job: VH1Midia,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/wm02.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fwalmart-degustacao.jpg?alt=media&token=13855e5f-cd13-4081-9d6f-288fb4db733e",
     title: "walmart - ações de degustação e sampling",
     job: Degustacao,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-18-at-16.14.55.png",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fwalmart-site.png?alt=media&token=e8d4df95-7ea9-4fcf-8679-4e25c4cac88b",
     title: "Walmart.com - divulgação do site",
     job: WalmartM,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-18-at-16.03.03.png",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Ffarmacia-walmart.png?alt=media&token=23b0ce3a-38b6-4230-9824-e21dc42bcfb0",
     title: "farmacia walmart - ações de verão",
     job: Verao,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/Screen-Shot-2016-02-18-at-15.30.17.png",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fwalmart-posto.png?alt=media&token=df75cd47-7d31-4469-9640-938892eaee39",
     title: "walmart - inaugiração dos postos walmart em todo brasil",
     job: Posto,
   },
   {
     thumbnail:
-      "https://portfolio.duee.com.br/wp-content/uploads/2016/02/dest-festa.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fwalmart-festa.jpg?alt=media&token=9d0e6d32-7f56-4d56-8fae-6c5b6dad46d1",
     title: "Walmart - festa de fim de ano",
     job: Confraternizacao,
   },
