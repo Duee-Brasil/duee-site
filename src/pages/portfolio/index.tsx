@@ -1,4 +1,4 @@
-import React, { FC, ReactElement, useState } from "react"
+import React, { FC, ReactElement, Suspense, useState } from "react"
 import styled from "styled-components"
 
 import Layout from "@components/layout/layout"
@@ -64,6 +64,12 @@ const JobContent = styled.div`
   overflow-y: auto;
 `
 
+const JobLoading = styled.div`
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+`
+
 const Portfolio = () => {
 
   const [caseSelected, setCaseSelected] = useState<ReactElement | string | null>(null)
@@ -83,9 +89,11 @@ const Portfolio = () => {
       </ModalTopBar>
 
       <JobContent>
-        {typeof job === "string" ?
-          <iframe src={job} id="htmlcontent" />
-          : job}
+        {typeof job === "string" ? (
+          <iframe src={job} id="htmlcontent" title="case externo" />
+        ) : (
+          <Suspense fallback={<JobLoading>Carregando…</JobLoading>}>{job}</Suspense>
+        )}
       </JobContent>
 
       <BackButton onClick={() => closeModal()}>Voltar</BackButton>
@@ -95,11 +103,26 @@ const Portfolio = () => {
 
   return <Layout title="Portfólio">
     <Content blockScroll={!!caseSelected}>
-      {JobsList.map((job) => <Case
-        img={job.thumbnail}
-        title={job.title}
-        open={() => setCaseSelected(job.job)}
-      />)}
+      {JobsList.map((item) => {
+        const open = () => {
+          if (typeof item.job === "string") {
+            setCaseSelected(item.job)
+            return
+          }
+          const JobComp = item.job
+          setCaseSelected(
+            <JobComp />,
+          )
+        }
+        return (
+          <Case
+            key={item.title}
+            img={item.thumbnail}
+            title={item.title}
+            open={open}
+          />
+        )
+      })}
     </Content>
 
     <CaseModal job={caseSelected} />
