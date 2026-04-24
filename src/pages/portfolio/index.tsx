@@ -1,4 +1,5 @@
-import React, { FC, ReactElement, Suspense, useState } from "react"
+import React, { FC, ReactElement, useState } from "react"
+import type { ComponentType } from "react"
 import styled from "styled-components"
 
 import Layout from "@components/layout/layout"
@@ -36,7 +37,7 @@ const ModalContent = styled.div`
   padding: 0;
   margin: auto;
   transition: all 1s ease-in-out;
-  z-index: 100;
+  z-index: 500;
 `
 
 const ModalTopBar = styled.div`
@@ -92,7 +93,7 @@ const Portfolio = () => {
         {typeof job === "string" ? (
           <iframe src={job} id="htmlcontent" title="case externo" />
         ) : (
-          <Suspense fallback={<JobLoading>Carregando…</JobLoading>}>{job}</Suspense>
+          job
         )}
       </JobContent>
 
@@ -103,23 +104,32 @@ const Portfolio = () => {
 
   return <Layout title="Portfólio">
     <Content blockScroll={!!caseSelected}>
-      {JobsList.map((item) => {
-        const open = () => {
-          if (typeof item.job === "string") {
-            setCaseSelected(item.job)
+      {JobsList.map((item, index) => {
+        const open = async () => {
+          const loader = item.job
+          if (typeof loader === "string") {
+            setCaseSelected(loader)
             return
           }
-          const JobComp = item.job
-          setCaseSelected(
-            <JobComp />,
-          )
+          setCaseSelected(<JobLoading>Carregando…</JobLoading>)
+          try {
+            const mod = await loader()
+            const Comp = mod.default as ComponentType<Record<string, never>>
+            setCaseSelected(<Comp />)
+          } catch {
+            setCaseSelected(
+              <JobLoading>Não foi possível carregar este case.</JobLoading>,
+            )
+          }
         }
         return (
           <Case
-            key={item.title}
+            key={`${index}-${item.title}`}
             img={item.thumbnail}
             title={item.title}
-            open={open}
+            open={() => {
+              void open()
+            }}
           />
         )
       })}

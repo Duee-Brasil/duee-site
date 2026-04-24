@@ -22,7 +22,7 @@ export const FaxeMidia = () => {
     >
       <div className="col-xs-12 col-md-4 col-sm-6">
         <img
-          src="https://portfolio.duee.com.br/wp-content/uploads/2018/09/Casalgarcia-800x800.png"
+          src="https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fcasal%2FCasalgarcia-800x800.png?alt=media&token=54c1527c-110a-403e-921d-92c57fa056f3"
           alt=""
         />
         <video
@@ -30,7 +30,7 @@ export const FaxeMidia = () => {
           autoPlay={true}
           muted={true}
           loop
-          src="https://portfolio.duee.com.br/wp-content/uploads/2018/09/2_FB_POST-CASALGARCIA-800x800_V1.mp4"
+          src="https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fcasal%2F2_FB_POST-CASALGARCIA-800x800_V1.mp4?alt=media&token=e9bbbea1-a808-489c-b4b7-ba583a8d67a2"
         />
         <img
           src="https://portfolio.duee.com.br/wp-content/uploads/2018/09/Casalgarcia-800x800-2.png"
@@ -86,10 +86,10 @@ export const FaxeMidia = () => {
           autoPlay={true}
           muted={true}
           loop
-          src="https://portfolio.duee.com.br/wp-content/uploads/2018/09/2_POST-CASALGARCIA-SWEET-800x800_V1.mp4"
+          src="https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fcasal%2F2_POST-CASALGARCIA-SWEET-800x800_V1.mp4?alt=media&token=3f1aae95-2eff-4dda-bb37-2b71edd6ad30"
         />
         <img
-          src="https://portfolio.duee.com.br/wp-content/uploads/2018/09/POST-CASALGARCIA-800x800.png"
+          src="https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fcasal%2FPOST-CASALGARCIA-800x800.png?alt=media&token=93b32f90-1569-4d23-9937-99346008e486"
           alt=""
         />
         <a href="https://www.facebook.com/casalgarciabr/">
