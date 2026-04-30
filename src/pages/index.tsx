@@ -1,22 +1,21 @@
-import React, { useState } from "react"
-import ReactPageScroller from "react-page-scroller"
-import styled from "styled-components"
-import { Link } from "gatsby"
+import React, { useState } from 'react'
+import ReactPageScroller from 'react-page-scroller'
+import styled from 'styled-components'
+import { Link } from 'gatsby'
 
-import Layout from "@components/layout/layout"
-import MouseIcon from "@components/mouseIcon/mouseIcon"
-import SlideCounter from "@components/slideCounter"
+import Layout from '@components/layout/layout'
+import MouseIcon from '@components/mouseIcon/mouseIcon'
+import SlideCounter from '@components/slideCounter'
 
-import StarbucksLogo from "@images/home/starbucks_logo.svg"
-import FaxeLogo from "@images/home/FAXE-LOGO.svg"
-import LollaLogo from "@images/home/MadeNoLolla.svg"
-import LogoVideoMobileWEB from "@images/home/MOBILE_LETRAS.webm"
-import StarbucksWEB from "@images/home/HOME_STARBUCKS.webm"
-import FaxeBgWEB from "@images/home/HOME_FAXE.webm"
-import LollaBgWEB from "@images/home/HOME_MADE.webm"
-import LogoVideoPcWEB from "@images/home/LETRAS_FINALIZADOS.webm"
-import Oito from "@images/home/Oito_videoportifolio.mp4"
-import OitoLogo from "@images/home/LOGO_Branco.svg"
+import StarbucksLogo from '@images/home/starbucks_logo.svg'
+import FaxeLogo from '@images/home/FAXE-LOGO.svg'
+import LollaLogo from '@images/home/MadeNoLolla.svg'
+import LogoVideoMobileWEB from '@images/home/MOBILE_LETRAS.webm'
+import StarbucksWEB from '@images/home/HOME_STARBUCKS.webm'
+import FaxeBgWEB from '@images/home/HOME_FAXE.webm'
+import LollaBgWEB from '@images/home/HOME_MADE.webm'
+import LogoVideoPcWEB from '@images/home/LETRAS_FINALIZADOS.webm'
+import ItauHome from '@images/itau/itau-home.png'
 
 const PageContent = styled.div`
   a {
@@ -42,29 +41,29 @@ const LogoContainer = styled.div`
 `
 
 const VideoPortf = styled.video`
-  top         : 50%;
-  left        : 50%;
-  min-width   : 100%;
-  min-height  : 100%;
-  width       : 100vw;
-  height      : 100vh;
-  object-fit  : cover;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 `
 
 const BgOpacity = styled.div`
-  position        : absolute;
-  width           : 100vw;
-  height          : 100%;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
   background-color: black;
-  opacity         : 0.7;
+  opacity: 0.7;
 `
 
 const VideoDuee = styled.video`
-  min-width   : 100%;
-  min-height  : 100%;
-  width       : 100vw;
-  height      : 100vh;
-  object-fit  : cover;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 `
 
 const HomePage = () => {
@@ -80,7 +79,6 @@ const HomePage = () => {
 
   return (
     <Layout title="Home">
-
       <ReactPageScroller pageOnChange={pageOnChange}>
         <PageContent id="home">
           <Link to="/leoes">
@@ -191,20 +189,21 @@ const HomePage = () => {
         </PageContent>
 
         <PageContent id="portifolio4">
-          <Link to="/oito">
-            <VideoPortf
-              src={Oito}
-              autoPlay={true}
-              muted={true}
-              loop
-              preload="metadata"
-              playsInline
-              onError={(e) => console.log(e)}
+          <Link to="/itau">
+            <img
+              src={ItauHome}
+              alt="Itaú"
+              style={{
+                margin: '0 auto',
+                top: '50%',
+                left: '50%',
+                minWidth: '100%',
+                minHeight: '100%',
+                width: '100vw',
+                height: '100dvh',
+                objectFit: 'cover',
+              }}
             />
-            <BgOpacity />
-            <LogoContainer>
-              <img src={OitoLogo} alt="Oito Logo" />
-            </LogoContainer>
           </Link>
         </PageContent>
       </ReactPageScroller>
