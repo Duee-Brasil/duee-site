@@ -7,7 +7,7 @@ import { CaseCard as Case } from "@components/portfolio"
 import { JobsList } from "@components/portfolio"
 
 const Content = styled.div<{blockScroll: boolean}>`
-  display: ${({blockScroll}) => blockScroll ? "none" : "flex"};
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100vw;
@@ -18,6 +18,9 @@ const Content = styled.div<{blockScroll: boolean}>`
   justify-content: center;
 
   overflow: ${({blockScroll}) => blockScroll ? "hidden" : "auto"};
+  opacity: ${({blockScroll}) => blockScroll ? 0 : 1};
+  visibility: ${({blockScroll}) => blockScroll ? "hidden" : "visible"};
+  pointer-events: ${({blockScroll}) => blockScroll ? "none" : "auto"};
 `
 
 const ModalContent = styled.div`
