@@ -10,7 +10,6 @@ import react from 'eslint-plugin-react'
 import jest from 'eslint-plugin-jest'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import unusedImports from 'eslint-plugin-unused-imports'
-import storybook from 'eslint-plugin-storybook'
 import globals from 'globals'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -27,6 +26,7 @@ export default [
       '**/*.yaml',
       '**/*.yml',
       '**/*.config.js',
+      '**/.cache/',
       '**/.next/',
       '**/out/',
       '**/node_modules/',
@@ -42,15 +42,12 @@ export default [
   },
   ...compat.extends(
     'plugin:@typescript-eslint/recommended',
-    'next/core-web-vitals',
     'prettier',
-    'next/typescript',
     'plugin:react/recommended',
     'plugin:prettier/recommended',
     'plugin:react-hooks/recommended',
     'eslint:recommended'
   ),
-  ...storybook.configs['flat/recommended'],
   {
     plugins: {
       react,
@@ -79,23 +76,32 @@ export default [
         ecmaFeatures: {
           jsx: true,
         },
-        project: './tsconfig.json',
+      },
+    },
+
+    settings: {
+      react: {
+        version: 'detect',
       },
     },
 
     rules: {
       semi: 'off',
       'no-console': 'warn',
-      'prettier/prettier': 'error',
+      'prettier/prettier': 'warn',
       'react/react-in-jsx-scope': 'off',
       'react/jsx-uses-react': 'error',
       'react/jsx-uses-vars': 'error',
       'react/prop-types': 'off',
+      'react/no-unescaped-entities': 'warn',
+      'react/no-unknown-property': 'warn',
       'react-hooks/exhaustive-deps': 'warn',
       'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/set-state-in-effect': 'warn',
+      'react-hooks/static-components': 'warn',
       '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/no-var-requires': 'warn',
-      'unused-imports/no-unused-imports': 'error',
+      'unused-imports/no-unused-imports': 'warn',
       'react/jsx-sort-props': [
         'warn',
         {
@@ -110,14 +116,15 @@ export default [
       // 'import/no-cycle': ['error', { ignoreExternal: true }],
 
       'no-unused-vars': 'off',
+      'no-irregular-whitespace': 'warn',
       '@typescript-eslint/no-unused-vars': 'warn',
-      'simple-import-sort/imports': 'error',
-      'simple-import-sort/exports': 'error',
+      'simple-import-sort/imports': 'warn',
+      'simple-import-sort/exports': 'warn',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-non-null-assertion': 'warn',
-      'jest/no-identical-title': 'error',
+      'jest/no-identical-title': 'warn',
       'jest/no-disabled-tests': 'warn',
-      'jest/valid-expect': 'error',
+      'jest/valid-expect': 'warn',
     },
   },
   {

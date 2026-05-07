@@ -1,14 +1,13 @@
-import React from "react"
-import { CaseBase } from "../caseBase"
+import React from 'react'
+
+import { CaseBase } from '../caseBase'
 
 export const Intel = () => {
   return (
     <CaseBase
       backgroundColor="white"
-      color="black"
-      name="Intel"
       client="Intel"
-      year="2014"
+      color="black"
       description={
         <p>
           Planejamos uma campanha de incentivo para a equipe interna de
@@ -17,25 +16,27 @@ export const Intel = () => {
         </p>
       }
       header={
-        <h2 style={{ color: "black" }}>INTEL RACING – CAMPANHA DE INCENTIVO</h2>
+        <h2 style={{ color: 'black' }}>INTEL RACING – CAMPANHA DE INCENTIVO</h2>
       }
+      name="Intel"
+      year="2014"
     >
       <div className="col-xs-12">
         <img
+          alt=""
           src="https://portfolio.duee.com.br/wp-content/uploads/2016/02/intel2.jpg"
-          alt=""
         />
         <img
+          alt=""
           src="https://portfolio.duee.com.br/wp-content/uploads/2016/02/intel3.jpg"
-          alt=""
         />
         <img
+          alt=""
           src="https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fintel.png?alt=media&token=6a4d5235-faf6-4acb-a410-c904c611643f"
-          alt=""
         />
         <img
-          src="https://portfolio.duee.com.br/wp-content/uploads/2016/02/intel4.jpg"
           alt=""
+          src="https://portfolio.duee.com.br/wp-content/uploads/2016/02/intel4.jpg"
         />
       </div>
     </CaseBase>

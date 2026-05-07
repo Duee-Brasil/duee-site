@@ -1,8 +1,8 @@
-import React, { FC, useState } from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
-import { colors } from "@style/_colors"
-import DueeLogo from "@images/duee.svg"
+import DueeLogo from '@images/duee.svg'
+import { colors } from '@style/_colors'
+import { Link } from 'gatsby'
+import React, { FC, useState } from 'react'
+import styled from 'styled-components'
 
 const Topbar = styled.div`
   box-sizing: border-box;
@@ -28,7 +28,7 @@ const Logo = styled.div`
     background-color: transparent;
   }
 
-  img { 
+  img {
     height: 30px;
   }
 
@@ -46,15 +46,14 @@ const MenuButton = styled.div`
   z-index: 180;
 
   i {
-    transition: .2s;
+    transition: 0.2s;
     color: ${colors.claroDrk};
     font-size: xx-large;
     mix-blend-mode: difference;
-    
 
-    &:hover{
+    &:hover {
       cursor: pointer;
-      opacity: .6;
+      opacity: 0.6;
     }
   }
 `
@@ -102,47 +101,48 @@ const MenuLinks = styled.div`
   }
 `
 
-
 const Navbar: FC = () => {
   const [dropdownActive, setDropdownActive] = useState(false)
 
-  return <nav id="navbar">
-    {dropdownActive ?
-      <Dropdown>
-        <MenuLinks>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/leoes">Somos Leões</Link>
-            </li>
-            <li>
-              <Link to="/portfolio">Portfólio</Link>
-            </li>
-            <li>
-              <a href="https://dueetando.com.br" target="_blank" rel="noopener noreferrer">Dueetando</a>
-            </li>
-            <li>
-              <Link to="/contato">Contato</Link>
-            </li>
-            <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://dueedrive.duee.com.br">Área do cliente</a>
-            </li>
-          </ul>
-        </MenuLinks>
-      </Dropdown> : null}
-    <Topbar>
-      <Logo>
-        <Link to={"/"}>
-          <img src={DueeLogo} alt="Duee Brasil" />
-        </Link>
-      </Logo>
-      <MenuButton>
-        <i className={dropdownActive ? "fas fa-times" : "fas fa-bars"} role="button" onClick={() => setDropdownActive(!dropdownActive)} onKeyDown={() => setDropdownActive(!dropdownActive)} />
-      </MenuButton>
-    </Topbar>
-  </nav>
+  return (
+    <nav id="navbar">
+      {dropdownActive ? (
+        <Dropdown>
+          <MenuLinks>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/leoes">Somos Leões</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Portfólio</Link>
+              </li>
+              <li>
+                <Link to="/contato">Contato</Link>
+              </li>
+            </ul>
+          </MenuLinks>
+        </Dropdown>
+      ) : null}
+      <Topbar>
+        <Logo>
+          <Link to={'/'}>
+            <img alt="Duee Brasil" src={DueeLogo} />
+          </Link>
+        </Logo>
+        <MenuButton>
+          <i
+            className={dropdownActive ? 'fas fa-times' : 'fas fa-bars'}
+            role="button"
+            onClick={() => setDropdownActive(!dropdownActive)}
+            onKeyDown={() => setDropdownActive(!dropdownActive)}
+          />
+        </MenuButton>
+      </Topbar>
+    </nav>
+  )
 }
 
 export default Navbar

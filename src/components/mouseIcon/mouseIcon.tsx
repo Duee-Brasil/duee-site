@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const MouseContainer = styled.div`
   display: none;
@@ -19,7 +19,7 @@ const ScrollDowns = styled.div`
   left: 0;
   margin: auto;
 
-  width :34px;
+  width: 34px;
   height: 55px;
 `
 
@@ -39,13 +39,21 @@ const Scroller = styled.div`
   background-color: #fff;
   animation-name: scroll;
   animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
 
   @keyframes scroll {
-    0% { opacity: 0; }
-    10% { transform: translateY(0); opacity: 1; }
-    100% { transform: translateY(15px); opacity: 0;}
+    0% {
+      opacity: 0;
+    }
+    10% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(15px);
+      opacity: 0;
+    }
   }
 
   @media screen and (min-width: 768px) {

@@ -1,14 +1,13 @@
-import React from "react"
-import { CaseBase } from "../caseBase"
+import React from 'react'
+
+import { CaseBase } from '../caseBase'
 
 export const FoxCcxp = () => {
   return (
     <CaseBase
       backgroundColor="white"
-      color="black"
-      name="FoxCcxp"
       client="Fox Film do Brasil"
-      year="2014"
+      color="black"
       description={
         <p>
           Desenvolvemos ambientes incríveis para a Fox, durante a Comic Con
@@ -16,24 +15,26 @@ export const FoxCcxp = () => {
           ativações de filmes e muito mais.
         </p>
       }
-      header={<h2 style={{ color: "black" }}>FOX – CCXP 2014</h2>}
+      header={<h2 style={{ color: 'black' }}>FOX – CCXP 2014</h2>}
+      name="FoxCcxp"
+      year="2014"
     >
       <div className="col-xs-12">
         <img
+          alt=""
           src="https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Ffox-ccxp.jpg?alt=media&token=d495df31-fd2d-42fa-8cf7-fa55ba2c918e"
-          alt=""
         />
         <img
+          alt=""
           src="https://portfolio.duee.com.br/wp-content/uploads/2016/02/fox2.jpg"
-          alt=""
         />
         <img
+          alt=""
           src="https://portfolio.duee.com.br/wp-content/uploads/2016/02/fox3.jpg"
-          alt=""
         />
         <img
-          src="https://portfolio.duee.com.br/wp-content/uploads/2016/02/fox4.jpg"
           alt=""
+          src="https://portfolio.duee.com.br/wp-content/uploads/2016/02/fox4.jpg"
         />
       </div>
     </CaseBase>

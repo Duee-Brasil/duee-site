@@ -5,11 +5,7 @@
   "version": "1.0.0",
   "author": "letgodoy.com",
   "dependencies": {
-    "basicscroll": "^3.0.4",
-    "browser-monads": "^1.0.0",
-    "firebase": "^12.12.1",
     "gatsby": "^5.16.1",
-    "gatsby-plugin-google-analytics": "^5.16.0",
     "gatsby-plugin-google-gtag": "^5.16.0",
     "gatsby-plugin-google-tagmanager": "^5.16.0",
     "gatsby-plugin-image": "^3.16.0",
@@ -20,27 +16,33 @@
     "gatsby-plugin-tsconfig-paths": "^1.0.6",
     "gatsby-source-filesystem": "^5.16.0",
     "gatsby-transformer-sharp": "^5.16.0",
-    "react": "^18.2.0",
-    "react-collapse": "^5.1.1",
-    "react-dom": "^18.2.0",
-    "react-hamburger-menu": "^1.2.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "react-id-swiper": "^4.0.0",
-    "react-masonry-component": "^6.3.0",
-    "react-masonry-css": "^1.0.16",
-    "react-motion": "^0.5.2",
     "react-page-scroller": "^3.0.1",
-    "react-swipeable-views": "^0.14.1",
-    "react-swipeable-views-utils": "^0.14.1",
     "styled-components": "^6.4.1",
-    "swiper": "^12.1.4",
-    "typescript": "^6.0.3"
+    "swiper": "^12.1.4"
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.36",
+    "@eslint/eslintrc": "^3.3.5",
+    "@eslint/js": "^9.39.4",
+    "@types/react-helmet": "^6.1.11",
+    "@typescript-eslint/eslint-plugin": "^8.59.2",
+    "@typescript-eslint/parser": "^8.59.2",
     "babel-plugin-styled-components": "^2.1.4",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jest": "^29.15.2",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-simple-import-sort": "^13.0.0",
+    "eslint-plugin-storybook": "^10.3.6",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "globals": "^17.6.0",
     "prettier": "^3.8.3",
-    "tsconfig-paths": "^4.2.0"
+    "typescript": "^6.0.3"
   },
   "keywords": [
     "gatsby",
@@ -62,7 +64,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "type-check": "tsc --noEmit",
-    "lint": "eslint . --ignore-path .gitignore --ext .ts,.tsx,.js"
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
   },
   "sideEffects": false
 }

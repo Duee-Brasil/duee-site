@@ -1,123 +1,125 @@
-import React, { FC } from "react"
-import styled from "styled-components"
-import { colors } from "../../style/_colors.js"
+import React, { FC } from 'react'
+import styled from 'styled-components'
+
+import { colors } from '../../style/_colors.js'
 
 const NewsLink = styled.a`
-    text-decoration:  none;
-    padding: 2%;
-    text-align: center;
-    color: ${colors.escuroDrk};
-    display:  block;
-    max-width:  300px;
-    min-width:  200px;
+  text-decoration: none;
+  padding: 2%;
+  text-align: center;
+  color: ${colors.escuroDrk};
+  display: block;
+  max-width: 300px;
+  min-width: 200px;
 
-        img {
-            width: 100%;
-            filter: grayscale(100%);
-            -webkit-filter: grayscale(100%);
-        }
+  img {
+    width: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
 
-    &:hover {
-        img {
-            -webkit-animation: coloring 1s;
-            /* Chrome, Safari, Opera */
-            animation     : coloring 1s;
-            filter        : grayscale(0%);
-            -webkit-filter: grayscale(0%);
-        }
+  &:hover {
+    img {
+      -webkit-animation: coloring 1s;
+      /* Chrome, Safari, Opera */
+      animation: coloring 1s;
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
     }
+  }
 
-    @-webkit-keyframes coloring {
-        from {
-            filter        : grayscale(100%);
-            -webkit-filter: grayscale(100%);
-        }
-
-        to {
-            filter        : grayscale(0%);
-            -webkit-filter: grayscale(0%);
-        }
-    }
-
-    /* Standard syntax */
-    @keyframes coloring {
-        from {
-            filter        : grayscale(100%);
-            -webkit-filter: grayscale(100%);
-        }
-
-        to {
-            filter        : grayscale(0%);
-            -webkit-filter: grayscale(0%);
-        }
-    }
-`;
-
-const NewsContent = styled.div`
-    text-decoration:  none;
-    padding: 2%;
-    text-align: center;
-    color: ${colors.escuroDrk};
-    display:  block;
-    max-width:  300px;
-    min-width:  200px;
-    
-        img {
-            width: 100%;
-            filter: grayscale(100%);
-            -webkit-filter: grayscale(100%);
-        }
-
-    &:hover {
-        img {
-            -webkit-animation: coloring 1s;
-                /* Chrome, Safari, Opera */
-                animation     : coloring 1s;
-                filter        : grayscale(0%);
-                -webkit-filter: grayscale(0%);
-        }
-    }
-
-    @-webkit-keyframes coloring {
-        from {
-            filter        : grayscale(100%);
-            -webkit-filter: grayscale(100%);
-        }
-
-        to {
-            filter        : grayscale(0%);
-            -webkit-filter: grayscale(0%);
-        }
-    }
-
-/* Standard syntax */
-@keyframes coloring {
+  @-webkit-keyframes coloring {
     from {
-        filter        : grayscale(100%);
-        -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
     }
 
     to {
-        filter        : grayscale(0%);
-        -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
     }
-}
-`;
+  }
+
+  /* Standard syntax */
+  @keyframes coloring {
+    from {
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+
+    to {
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+    }
+  }
+`
+
+const NewsContent = styled.div`
+  text-decoration: none;
+  padding: 2%;
+  text-align: center;
+  color: ${colors.escuroDrk};
+  display: block;
+  max-width: 300px;
+  min-width: 200px;
+
+  img {
+    width: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+
+  &:hover {
+    img {
+      -webkit-animation: coloring 1s;
+      /* Chrome, Safari, Opera */
+      animation: coloring 1s;
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+    }
+  }
+
+  @-webkit-keyframes coloring {
+    from {
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+
+    to {
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+    }
+  }
+
+  /* Standard syntax */
+  @keyframes coloring {
+    from {
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+
+    to {
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+    }
+  }
+`
 
 const News: FC<{
-    img: string,
-    title?: string
-    link?: string
-}> = ({ img, title, link }) => (
-    link ? <NewsLink href={link} target="_blank" rel="noopener noreferrer">
-        <img src={img} alt={title} />
-        {title ? <h5>{title}</h5> : null}
+  img: string
+  title?: string
+  link?: string
+}> = ({ img, title, link }) =>
+  link ? (
+    <NewsLink href={link} rel="noopener noreferrer" target="_blank">
+      <img alt={title} src={img} />
+      {title ? <h5>{title}</h5> : null}
     </NewsLink>
-        :
-        <NewsContent>
-            <img src={img} alt={title} />
-            {title ? <h5>{title}</h5> : null}
-        </NewsContent>
-)
+  ) : (
+    <NewsContent>
+      <img alt={title} src={img} />
+      {title ? <h5>{title}</h5> : null}
+    </NewsContent>
+  )
 
 export default News

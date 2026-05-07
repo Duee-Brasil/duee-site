@@ -1,12 +1,11 @@
-import React, { FC, Fragment } from "react"
-import { Helmet } from "react-helmet"
-import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
+import Navbar from '@components/navbar/navbar'
+import Wpp from '@images/whatsapp.svg'
+import { graphql, useStaticQuery } from 'gatsby'
+import React, { FC, Fragment, PropsWithChildren } from 'react'
+import { Helmet } from 'react-helmet'
+import styled from 'styled-components'
 
-import GlobalStyled from "./globalStyle"
-import Navbar from "@components/navbar/navbar"
-import Wpp from "@images/whatsapp.svg"
-
+import GlobalStyled from './globalStyle'
 
 const Wppbutton = styled.a`
   position: fixed;
@@ -36,24 +35,22 @@ const Content = styled.main`
   overflow-x: hidden;
 `
 
-const Layout: FC<{
-  description?: string,
-  lang?: string,
-  title: string,
-}> = ({ children, description = '', lang = 'en', title }) => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
+const Layout: FC<PropsWithChildren<{
+  description?: string
+  lang?: string
+  title: string
+}>> = ({ children, description = '', lang = 'en', title }) => {
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          author
         }
       }
-    `
-  )
+    }
+  `)
 
   const metaDescription = description || site.siteMetadata.description
 
@@ -63,8 +60,6 @@ const Layout: FC<{
         htmlAttributes={{
           lang,
         }}
-        title={title}
-        titleTemplate={`%s | ${site.siteMetadata.title}`}
         meta={[
           {
             name: `description`,
@@ -103,23 +98,46 @@ const Layout: FC<{
           //   content: "public, max-age=0, must-revalidate",
           // },
           {
-            name: "facebook-domain-verification",
-            content: "in976elwnpkst1rkegkf4itp8ua53z"
-          }
+            name: 'facebook-domain-verification',
+            content: 'in976elwnpkst1rkegkf4itp8ua53z',
+          },
         ]}
+        title={title}
+        titleTemplate={`%s | ${site.siteMetadata.title}`}
       >
         <script src="https://kit.fontawesome.com/67a84c91e8.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true' />
-        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link
+          crossOrigin='anonymous'
+          href="https://fonts.gstatic.com"
+          rel="preconnect"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap"
+          rel="stylesheet"
+        ></link>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true' />
-        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></link>
-      
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true' />
-        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Julius+Sans+One&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link
+          crossOrigin="anonymous"
+          href="https://fonts.gstatic.com"
+          rel="preconnect"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"
+        ></link>
+
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link
+          crossOrigin="anonymous"
+          href="https://fonts.gstatic.com"
+          rel="preconnect"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Anton&family=Julius+Sans+One&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"
+        />
       </Helmet>
       <GlobalStyled />
 

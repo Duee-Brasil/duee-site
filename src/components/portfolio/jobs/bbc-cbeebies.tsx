@@ -1,14 +1,13 @@
-import React from "react"
-import { CaseBase } from "../caseBase"
+import React from 'react'
+
+import { CaseBase } from '../caseBase'
 
 export const Cbeebies = () => {
   return (
     <CaseBase
       backgroundColor="white"
-      color="black"
-      name="Cbeebies"
       client="BBC"
-      year="2016"
+      color="black"
       description={
         <p>
           Em uma parceria com a Livraria Cultura, fizemos a divulgação do app
@@ -18,27 +17,29 @@ export const Cbeebies = () => {
         </p>
       }
       header={
-        <h2 style={{ color: "black" }}>
+        <h2 style={{ color: 'black' }}>
           BBC – ESPAÇOS CBEEBIES/LIVRARIA CULTURA
         </h2>
       }
+      name="Cbeebies"
+      year="2016"
     >
       <div className="col-xs-12">
         <img
+          alt=""
           src="https://portfolio.duee.com.br/wp-content/uploads/2016/06/03.jpg"
-          alt=""
         />
         <img
+          alt=""
           src="https://portfolio.duee.com.br/wp-content/uploads/2016/06/02.jpg"
-          alt=""
         />
         <img
+          alt=""
           src="https://portfolio.duee.com.br/wp-content/uploads/2016/06/04.jpg"
-          alt=""
         />
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fcbeebies.jpg?alt=media&token=e4b02ffb-d1c8-4316-946a-d5efb9b33ae2"
           alt=""
+          src="https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fcbeebies.jpg?alt=media&token=e4b02ffb-d1c8-4316-946a-d5efb9b33ae2"
         />
       </div>
     </CaseBase>

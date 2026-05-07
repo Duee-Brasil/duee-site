@@ -1,21 +1,19 @@
-import React, { useState } from 'react'
-import ReactPageScroller from 'react-page-scroller'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
-
 import Layout from '@components/layout/layout'
 import MouseIcon from '@components/mouseIcon/mouseIcon'
 import SlideCounter from '@components/slideCounter'
-
-import StarbucksLogo from '@images/home/starbucks_logo.svg'
 import FaxeLogo from '@images/home/FAXE-LOGO.svg'
-import LollaLogo from '@images/home/MadeNoLolla.svg'
-import LogoVideoMobileWEB from '@images/home/MOBILE_LETRAS.webm'
-import StarbucksWEB from '@images/home/HOME_STARBUCKS.webm'
 import FaxeBgWEB from '@images/home/HOME_FAXE.webm'
 import LollaBgWEB from '@images/home/HOME_MADE.webm'
+import StarbucksWEB from '@images/home/HOME_STARBUCKS.webm'
 import LogoVideoPcWEB from '@images/home/LETRAS_FINALIZADOS.webm'
+import LollaLogo from '@images/home/MadeNoLolla.svg'
+import LogoVideoMobileWEB from '@images/home/MOBILE_LETRAS.webm'
+import StarbucksLogo from '@images/home/starbucks_logo.svg'
 import ItauHome from '@images/itau/itau-home.png'
+import { Link } from 'gatsby'
+import React, { useState } from 'react'
+import ReactPageScroller from 'react-page-scroller'
+import styled from 'styled-components'
 
 const PageContent = styled.div`
   a {
@@ -85,8 +83,8 @@ const HomePage = () => {
             {windowWidth > 768 ? (
               <VideoDuee
                 autoPlay
-                muted
                 loop
+                muted
                 playsInline
                 onError={(e) => console.log(e)}
               >
@@ -98,11 +96,11 @@ const HomePage = () => {
               </VideoDuee>
             ) : (
               <VideoDuee
+                loop
+                playsInline
                 autoPlay={true}
                 muted={true}
-                loop
                 preload="metadata"
-                playsInline
                 onError={(e) => console.log(e)}
               >
                 <source src={LogoVideoMobileWEB} type="video/webm" />
@@ -118,11 +116,11 @@ const HomePage = () => {
         <PageContent id="portifolio1">
           <Link to="/starbucks">
             <VideoPortf
+              loop
+              playsInline
               autoPlay={true}
               muted={true}
-              loop
               preload="metadata"
-              playsInline
               onError={(e) => console.log(e)}
             >
               <source src={StarbucksWEB} type="video/webm" />
@@ -134,9 +132,9 @@ const HomePage = () => {
             <BgOpacity />
             <LogoContainer>
               <img
+                alt="Starbucks Logo"
                 className="starbucks"
                 src={StarbucksLogo}
-                alt="Starbucks Logo"
               />
             </LogoContainer>
           </Link>
@@ -145,11 +143,11 @@ const HomePage = () => {
         <PageContent id="portifolio2">
           <Link to="/faxe">
             <VideoPortf
+              loop
+              playsInline
               autoPlay={true}
               muted={true}
-              loop
               preload="metadata"
-              playsInline
               onError={(e) => console.log(e)}
             >
               <source src={FaxeBgWEB} type="video/webm" />
@@ -160,7 +158,7 @@ const HomePage = () => {
             </VideoPortf>
             <BgOpacity />
             <LogoContainer>
-              <img src={FaxeLogo} alt="Faxe Logo" />
+              <img alt="Faxe Logo" src={FaxeLogo} />
             </LogoContainer>
           </Link>
         </PageContent>
@@ -168,11 +166,11 @@ const HomePage = () => {
         <PageContent id="portifolio3">
           <Link to="/madeinbrazil">
             <VideoPortf
+              loop
+              playsInline
               autoPlay={true}
               muted={true}
-              loop
               preload="metadata"
-              playsInline
               onError={(e) => console.log(e)}
             >
               <source src={LollaBgWEB} type="video/webm" />
@@ -183,7 +181,7 @@ const HomePage = () => {
             </VideoPortf>
             <BgOpacity />
             <LogoContainer>
-              <img src={LollaLogo} alt="Lolla Logo" />
+              <img alt="Lolla Logo" src={LollaLogo} />
             </LogoContainer>
           </Link>
         </PageContent>
@@ -191,8 +189,8 @@ const HomePage = () => {
         <PageContent id="portifolio4">
           <Link to="/itau">
             <img
-              src={ItauHome}
               alt="Itaú"
+              src={ItauHome}
               style={{
                 margin: '0 auto',
                 top: '50%',

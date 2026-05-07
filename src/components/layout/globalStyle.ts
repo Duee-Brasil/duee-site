@@ -1,5 +1,5 @@
-import { colors } from "@style/_colors"
-import { createGlobalStyle } from "styled-components"
+import { colors } from '@style/_colors'
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
 *, *::before, *::after {

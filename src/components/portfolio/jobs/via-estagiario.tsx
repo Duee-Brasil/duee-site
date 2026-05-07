@@ -1,14 +1,13 @@
-import React from "react"
-import { CaseBase } from "../caseBase"
+import React from 'react'
+
+import { CaseBase } from '../caseBase'
 
 export const Estagiario = () => {
   return (
     <CaseBase
       backgroundColor="white"
-      color="black"
-      name="Estagiario"
       client="Instituto Via de Acesso"
-      year="2017"
+      color="black"
       description={
         <p>
           O Instituto Via de Acesso valoriza o papel do estagiário dentro do
@@ -20,27 +19,29 @@ export const Estagiario = () => {
         </p>
       }
       header={
-        <h2 style={{ color: "black" }}>
+        <h2 style={{ color: 'black' }}>
           RESPEITA O ESTAGIÁRIO – INSTITUTO VIA DE ACESSO
         </h2>
       }
+      name="Estagiario"
+      year="2017"
     >
       <div className="col-xs-12">
         <img
+          alt=""
           src="https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fvia-estagiario.png?alt=media&token=2ec30ae1-b387-40c8-8835-b3526b6a8e96"
-          alt=""
         />
         <img
+          alt=""
           src="https://portfolio.duee.com.br/wp-content/uploads/2017/07/posts_estagio.jpg"
-          alt=""
         />
         <img
+          alt=""
           src="https://portfolio.duee.com.br/wp-content/uploads/2017/07/Pg_Dupla-copy.png"
-          alt=""
         />
         <img
-          src="https://portfolio.duee.com.br/wp-content/uploads/2017/07/Relogio_Rua.jpg"
           alt=""
+          src="https://portfolio.duee.com.br/wp-content/uploads/2017/07/Relogio_Rua.jpg"
         />
       </div>
     </CaseBase>

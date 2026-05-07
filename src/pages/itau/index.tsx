@@ -1,14 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
-
 import Layout from '@components/layout/layout'
-
-import logoItau from '@images/itau/logoItau.png'
+import inssBottom from '@images/itau/inssBottom.png'
+import inssTop from '@images/itau/inssTop.png'
 import intro from '@images/itau/intro.png'
+import logoItau from '@images/itau/logoItau.png'
 import merchTop from '@images/itau/marchTop.png'
 import merchBottom from '@images/itau/merchBottom.png'
-import inssTop from '@images/itau/inssTop.png'
-import inssBottom from '@images/itau/inssBottom.png'
+import React from 'react'
+import styled from 'styled-components'
 
 /**
  * Divide um valor CSS (número + unidade) por 2, preservando a unidade informada.
@@ -214,34 +212,35 @@ const ItauPage = () => {
           <Content>
             <Hero>
               <Square
+                noResponsive
+                bottom="18rem"
+                left="-26rem"
                 lineColor={colors.orange}
                 rotation="-35deg"
                 size="100rem"
-                bottom="18rem"
-                left="-26rem"
-                noResponsive
               />
               <Square
+                noResponsive
+                bottom="16rem"
+                left="-22rem"
                 lineColor={colors.text}
                 rotation="-26deg"
                 size="100rem"
-                bottom="16rem"
-                left="-22rem"
                 style={{
                   background: colors.gradientOrange,
                   borderWidth: '1px',
                 }}
-                noResponsive
               />
               <Square
+                noResponsive
+                bottom="15rem"
+                left="-20rem"
                 lineColor={colors.white}
                 rotation="-21deg"
                 size="100rem"
-                bottom="15rem"
-                left="-20rem"
-                noResponsive
               />
               <Figure
+                alt="Logo Itau"
                 src={logoItau}
                 style={{
                   width: '15rem',
@@ -250,7 +249,6 @@ const ItauPage = () => {
                   padding: 0,
                   margin: '0 0 0 3rem',
                 }}
-                alt="Logo Itau"
               />
             </Hero>
           </Content>
@@ -280,12 +278,12 @@ const ItauPage = () => {
             <Heading orange>Parceiro Itaú</Heading>
             <Square
               lineColor={colors.line}
+              right="0"
               rotation="32deg"
               size="50rem"
-              right="0"
               top="5rem"
             />
-            <Figure src={intro} alt="Projeto Parceiro Itau" />
+            <Figure alt="Projeto Parceiro Itau" src={intro} />
             <Text>
               O projeto Parceiro Itaú marcou o início dessa jornada, expandindo
               a comunicação do banco para lojas parceiras e ampliando sua
@@ -301,13 +299,14 @@ const ItauPage = () => {
         <Section bgColor={colors.gradienteBackground}>
           <Content>
             <Square
+              left="3rem"
               lineColor={colors.white}
               rotation="-32deg"
               size="50rem"
-              left="3rem"
             />
             <Heading>Projeto Merchandising 360°</Heading>
             <Figure
+              alt="Projeto merchandising 360"
               src={merchTop}
               style={{
                 right: 0,
@@ -317,7 +316,6 @@ const ItauPage = () => {
                 marginRight: 0,
                 marginLeft: 'auto',
               }}
-              alt="Projeto merchandising 360"
             />
             <Text>
               O Projeto Merchandising 360° é um dos principais pilares dessa
@@ -341,14 +339,15 @@ const ItauPage = () => {
               </BulletList>
             </TwoCol>
             <Square
+              bottom="-15rem"
               lineColor={colors.white}
+              right="-8rem"
               rotation="52deg"
               size="50rem"
-              right="-8rem"
-              bottom="-15rem"
             />
             <TwoCol columns="2fr 1fr">
               <Figure
+                alt="Aplicacao em loja parceira"
                 src={merchBottom}
                 style={{
                   left: 0,
@@ -357,7 +356,6 @@ const ItauPage = () => {
                   marginLeft: 0,
                   marginRight: 'auto',
                 }}
-                alt="Aplicacao em loja parceira"
               />
               <Text
                 style={{
@@ -376,9 +374,9 @@ const ItauPage = () => {
           <Content>
             <Square
               lineColor={colors.orange}
+              right="10rem"
               rotation="-52deg"
               size="55rem"
-              right="10rem"
               top="15rem"
             />
             <Heading orange>Projeto INSS</Heading>
@@ -388,6 +386,7 @@ const ItauPage = () => {
                 INSS nas agências Itaú, conduzindo o projeto de ponta a ponta.
               </Text>
               <Figure
+                alt="Projeto INSS em loja"
                 src={inssTop}
                 style={{
                   right: 0,
@@ -396,7 +395,6 @@ const ItauPage = () => {
                   marginRight: 0,
                   marginLeft: 'auto',
                 }}
-                alt="Projeto INSS em loja"
               />
             </TwoCol>
             <Text style={{ marginTop: '5rem' }}>
@@ -413,6 +411,7 @@ const ItauPage = () => {
             </Text>
             <TwoCol columns="2fr 1fr">
               <Figure
+                alt="Material para operador financeiro geral"
                 src={inssBottom}
                 style={{
                   left: 0,
@@ -421,7 +420,6 @@ const ItauPage = () => {
                   marginLeft: 0,
                   marginRight: 'auto',
                 }}
-                alt="Material para operador financeiro geral"
               />
               <Text style={{ textAlign: 'right' }}>
                 O resultado foi um atendimento mais organizado, acessível e

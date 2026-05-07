@@ -1,14 +1,13 @@
-import React from "react"
-import { CaseBase } from "../caseBase"
+import React from 'react'
+
+import { CaseBase } from '../caseBase'
 
 export const Calminex = () => {
   return (
     <CaseBase
       backgroundColor="white"
-      color="black"
-      name="Calminex"
       client="Hypermarcas"
-      year="2013"
+      color="black"
       description={
         <p>
           Nada melhor do que receber massagens depois de uma dura e desafiadora
@@ -17,20 +16,22 @@ export const Calminex = () => {
           Corrida e Caminhada Walmart.
         </p>
       }
-      header={<h2 style={{ color: "black" }}>ESTANDE CALMINEX</h2>}
+      header={<h2 style={{ color: 'black' }}>ESTANDE CALMINEX</h2>}
+      name="Calminex"
+      year="2013"
     >
       <div className="col-xs-12">
         <img
+          alt=""
           src="https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fcalminex.jpg?alt=media&token=a2709bd3-f110-4c98-b981-6b03f1d1c0ce"
-          alt=""
         />
         <img
+          alt=""
           src="https://portfolio.duee.com.br/wp-content/uploads/2016/02/calminex02.jpg"
-          alt=""
         />
         <img
-          src="https://portfolio.duee.com.br/wp-content/uploads/2016/02/calminex03.jpg"
           alt=""
+          src="https://portfolio.duee.com.br/wp-content/uploads/2016/02/calminex03.jpg"
         />
       </div>
     </CaseBase>

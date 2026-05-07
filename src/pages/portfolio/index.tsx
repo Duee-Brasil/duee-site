@@ -1,12 +1,11 @@
-import React, { FC, ReactElement, useState } from "react"
-import type { ComponentType } from "react"
-import styled from "styled-components"
+import Layout from '@components/layout/layout'
+import { CaseCard as Case } from '@components/portfolio'
+import { JobsList } from '@components/portfolio'
+import type { ComponentType } from 'react'
+import React, { FC, ReactElement, useState } from 'react'
+import styled from 'styled-components'
 
-import Layout from "@components/layout/layout"
-import { CaseCard as Case } from "@components/portfolio"
-import { JobsList } from "@components/portfolio"
-
-const Content = styled.div<{blockScroll: boolean}>`
+const Content = styled.div<{ blockScroll: boolean }>`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -17,15 +16,15 @@ const Content = styled.div<{blockScroll: boolean}>`
   align-items: flex-start;
   justify-content: center;
 
-  overflow: ${({blockScroll}) => blockScroll ? "hidden" : "auto"};
-  opacity: ${({blockScroll}) => blockScroll ? 0 : 1};
-  visibility: ${({blockScroll}) => blockScroll ? "hidden" : "visible"};
-  pointer-events: ${({blockScroll}) => blockScroll ? "none" : "auto"};
+  overflow: ${({ blockScroll }) => (blockScroll ? 'hidden' : 'auto')};
+  opacity: ${({ blockScroll }) => (blockScroll ? 0 : 1)};
+  visibility: ${({ blockScroll }) => (blockScroll ? 'hidden' : 'visible')};
+  pointer-events: ${({ blockScroll }) => (blockScroll ? 'none' : 'auto')};
 `
 
 const ModalContent = styled.div`
-  border-top      : 1px solid #333;
-  transition      : all ease 1s;
+  border-top: 1px solid #333;
+  transition: all ease 1s;
   background-color: black;
   position: absolute;
   width: 100%;
@@ -45,8 +44,8 @@ const ModalContent = styled.div`
 
 const ModalTopBar = styled.div`
   text-align: right;
-  width     : 100%;
-  padding  : 0.5rem 3rem;
+  width: 100%;
+  padding: 0.5rem 3rem;
   font-size: 1.5em;
 `
 
@@ -75,72 +74,73 @@ const JobLoading = styled.div`
 `
 
 const Portfolio = () => {
-
-  const [caseSelected, setCaseSelected] = useState<ReactElement | string | null>(null)
+  const [caseSelected, setCaseSelected] = useState<
+    ReactElement | string | null
+  >(null)
 
   const closeModal = () => setCaseSelected(null)
 
   const CaseModal: FC<{ job: ReactElement | string | null }> = ({ job }) => {
-
     if (!job) {
       return null
     }
 
-    return <ModalContent>
+    return (
+      <ModalContent>
+        <ModalTopBar onClick={() => closeModal()}>
+          <i className="fas fa-times" />
+        </ModalTopBar>
 
-      <ModalTopBar onClick={() => closeModal()}>
-        <i className="fas fa-times" />
-      </ModalTopBar>
+        <JobContent>
+          {typeof job === 'string' ? (
+            <iframe id="htmlcontent" src={job} title="case externo" />
+          ) : (
+            job
+          )}
+        </JobContent>
 
-      <JobContent>
-        {typeof job === "string" ? (
-          <iframe src={job} id="htmlcontent" title="case externo" />
-        ) : (
-          job
-        )}
-      </JobContent>
-
-      <BackButton onClick={() => closeModal()}>Voltar</BackButton>
-
-    </ModalContent>
+        <BackButton onClick={() => closeModal()}>Voltar</BackButton>
+      </ModalContent>
+    )
   }
 
-  return <Layout title="Portfólio">
-    <Content blockScroll={!!caseSelected}>
-      {JobsList.map((item, index) => {
-        const open = async () => {
-          const loader = item.job
-          if (typeof loader === "string") {
-            setCaseSelected(loader)
-            return
+  return (
+    <Layout title="Portfólio">
+      <Content blockScroll={!!caseSelected}>
+        {JobsList.map((item, index) => {
+          const open = async () => {
+            const loader = item.job
+            if (typeof loader === 'string') {
+              setCaseSelected(loader)
+              return
+            }
+            setCaseSelected(<JobLoading>Carregando…</JobLoading>)
+            try {
+              const mod = await loader()
+              const Comp = mod.default as ComponentType<Record<string, never>>
+              setCaseSelected(<Comp />)
+            } catch {
+              setCaseSelected(
+                <JobLoading>Não foi possível carregar este case.</JobLoading>
+              )
+            }
           }
-          setCaseSelected(<JobLoading>Carregando…</JobLoading>)
-          try {
-            const mod = await loader()
-            const Comp = mod.default as ComponentType<Record<string, never>>
-            setCaseSelected(<Comp />)
-          } catch {
-            setCaseSelected(
-              <JobLoading>Não foi possível carregar este case.</JobLoading>,
-            )
-          }
-        }
-        return (
-          <Case
-            key={`${index}-${item.title}`}
-            img={item.thumbnail}
-            title={item.title}
-            open={() => {
-              void open()
-            }}
-          />
-        )
-      })}
-    </Content>
+          return (
+            <Case
+              key={`${index}-${item.title}`}
+              img={item.thumbnail}
+              open={() => {
+                void open()
+              }}
+              title={item.title}
+            />
+          )
+        })}
+      </Content>
 
-    <CaseModal job={caseSelected} />
-  </Layout>
-
+      <CaseModal job={caseSelected} />
+    </Layout>
+  )
 }
 
 export default Portfolio

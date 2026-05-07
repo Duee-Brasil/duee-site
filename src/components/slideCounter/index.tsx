@@ -1,4 +1,4 @@
-import React, { useState, useEffect, FC } from "react"
+import React, { FC, useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 const ProgressBar = styled.div`
@@ -16,34 +16,34 @@ const ProgressBar = styled.div`
     bottom: 20px;
     right: 70px;
   }
-`;
+`
 
 const ProgressBarContainer = styled.div`
-  &:first-child{
+  &:first-child {
     flex: 0 0 80%;
     max-width: 80%;
     display: flex;
     align-items: center;
   }
-  &:last-child{
+  &:last-child {
     flex: 0 0 20%;
     max-width: 20%;
   }
-`;
+`
 
 const ProgressBarComponent = styled.div`
   width: 100%;
   height: 3px;
   background-color: #525252;
-`;
+`
 
-const ProgressBarStatus = styled.div`
+const ProgressBarStatus = styled.div<{ progress: string | number }>`
   //width: 33.33%;
-  transition: width .2s ease;
+  transition: width 0.2s ease;
   background-color: white;
   height: 100%;
-  width: ${(props: { progress: any; }) => props.progress};
-`;
+  width: ${({ progress }) => progress};
+`
 
 const Icon = styled.div`
   text-align: center;
@@ -56,9 +56,9 @@ const IconDraw = styled.i`
 
 const IconSub = styled.p`
   margin: 5px 0;
-`;
+`
 
-const SliderCounter:FC<{page: number}> = ({ page }) => {
+const SliderCounter: FC<{ page: number }> = ({ page }) => {
   const [widthBar, setWidthBar] = useState<number | string>(0)
 
   const updateSlideCounter = (pages: number) => {
@@ -67,23 +67,23 @@ const SliderCounter:FC<{page: number}> = ({ page }) => {
       case 0:
         // this.state.widthBar = 0;
         if (widthBar !== 0) setWidthBar(0)
-        break;
+        break
       case 1:
         // widthBar = "33.33%";
-        if (widthBar !== "25%") setWidthBar("25%")
-        break;
+        if (widthBar !== '25%') setWidthBar('25%')
+        break
       case 2:
         // widthBar = "66.66%";
-        if (widthBar !== "50%") setWidthBar("50%")
-        break;
+        if (widthBar !== '50%') setWidthBar('50%')
+        break
       case 3:
         // widthBar = "100%";
-        if (widthBar !== "75%") setWidthBar("75%")
-        break;
+        if (widthBar !== '75%') setWidthBar('75%')
+        break
       case 4:
         // widthBar = "100%";
-        if (widthBar !== "100%") setWidthBar("100%")
-        break;
+        if (widthBar !== '100%') setWidthBar('100%')
+        break
       default:
         // widthBar = 0;
         if (widthBar !== 0) setWidthBar(0)
@@ -92,17 +92,19 @@ const SliderCounter:FC<{page: number}> = ({ page }) => {
 
   useEffect(() => updateSlideCounter(page), [page, updateSlideCounter])
 
-  return <ProgressBar>
-    <ProgressBarContainer>
-      <ProgressBarComponent>
-        <ProgressBarStatus progress={widthBar} />
-      </ProgressBarComponent>
-    </ProgressBarContainer>
-    <Icon>
-      <IconDraw className="fas fa-exchange-alt" />
-      <IconSub>scroll</IconSub>
-    </Icon>
-  </ProgressBar>
+  return (
+    <ProgressBar>
+      <ProgressBarContainer>
+        <ProgressBarComponent>
+          <ProgressBarStatus progress={widthBar} />
+        </ProgressBarComponent>
+      </ProgressBarContainer>
+      <Icon>
+        <IconDraw className="fas fa-exchange-alt" />
+        <IconSub>scroll</IconSub>
+      </Icon>
+    </ProgressBar>
+  )
 }
 
 export default SliderCounter

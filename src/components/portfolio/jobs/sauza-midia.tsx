@@ -1,14 +1,13 @@
-import React from "react"
-import { CaseBase } from "../caseBase"
+import React from 'react'
+
+import { CaseBase } from '../caseBase'
 
 export const SauzaM = () => {
   return (
     <CaseBase
       backgroundColor="white"
-      color="black"
-      name="SauzaM"
       client="Interfood"
-      year="2012/2013/2014/2015"
+      color="black"
       description={
         <p>
           Realizamos todo o planejamento estratégico e posicionamento de marca
@@ -16,20 +15,22 @@ export const SauzaM = () => {
           criação de conteúdo direcionado corretamente para o público da marca.
         </p>
       }
-      header={<h2 style={{ color: "black" }}>SAUZA TEQUILA – SOCIAL MEDIA</h2>}
+      header={<h2 style={{ color: 'black' }}>SAUZA TEQUILA – SOCIAL MEDIA</h2>}
+      name="SauzaM"
+      year="2012/2013/2014/2015"
     >
       <div className="col-xs-12">
         <img
+          alt=""
           src="https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fold_thumbs%2Fsauza.jpg?alt=media&token=a1bda562-d25c-44bb-b586-646ef04c1ccb"
-          alt=""
         />
         <img
+          alt=""
           src="https://portfolio.duee.com.br/wp-content/uploads/2016/02/sauza02.jpg"
-          alt=""
         />
         <img
-          src="https://portfolio.duee.com.br/wp-content/uploads/2016/02/sauza03.jpg"
           alt=""
+          src="https://portfolio.duee.com.br/wp-content/uploads/2016/02/sauza03.jpg"
         />
       </div>
     </CaseBase>
