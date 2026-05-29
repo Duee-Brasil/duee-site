@@ -10,8 +10,7 @@ const Container = styled.article<{ backgroundColor?: string; color?: string }>`
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  background-color: ${({ backgroundColor }) =>
-    backgroundColor || 'transparent'};
+  background: ${({ backgroundColor }) => backgroundColor || 'transparent'};
   color: ${({ color }) => color || 'white'};
   display: flex;
   flex-direction: column;
@@ -82,15 +81,17 @@ const Details = styled.div`
   padding: 2rem;
 `
 
-export const CaseBase: FC<PropsWithChildren<{
-  backgroundColor?: string
-  color?: string
-  header?: string | ReactElement
-  client?: string
-  year?: string
-  description?: ReactElement
-  name: string
-}>> = ({
+export const CaseBase: FC<
+  PropsWithChildren<{
+    backgroundColor?: string
+    color?: string
+    header?: string | ReactElement
+    client?: string
+    year?: string
+    description?: ReactElement
+    name: string
+  }>
+> = ({
   children,
   backgroundColor,
   header,

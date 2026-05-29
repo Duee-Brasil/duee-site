@@ -1,6 +1,15 @@
 export const JobsList = [
   {
     thumbnail:
+      'https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fitau-merchandising-360%2FCAPA%20PORTFLIO%20360.png?alt=media&token=75fa4286-d52c-429e-9022-e70f0599c350',
+    title: 'Itaú Merchandising 360',
+    job: () =>
+      import('./itau-merchandising-360').then((m) => ({
+        default: m.ItauMerchandising360,
+      })),
+  },
+  {
+    thumbnail:
       'https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fcopa-health%2Fcapa.png?alt=media&token=4a934357-0757-4edd-ae73-a4c0b0562cae',
     title: 'Copa Health Care',
     job: () => import('./copa-health').then((m) => ({ default: m.CopaHealth })),
