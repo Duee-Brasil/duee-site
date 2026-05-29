@@ -1,6 +1,15 @@
 export const JobsList = [
   {
     thumbnail:
+      'https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fitau-inss%2FCAPA%20PORTFLIO%20INSS.png?alt=media&token=f80dd860-0938-4734-a4c3-08de3a6761b2',
+    title: 'Itaú Projeto INSS',
+    job: () =>
+      import('./itau-inss').then((m) => ({
+        default: m.ItauInss,
+      })),
+  },
+  {
+    thumbnail:
       'https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2Fjobs%2Fitau-merchandising-360%2FCAPA%20PORTFLIO%20360.png?alt=media&token=75fa4286-d52c-429e-9022-e70f0599c350',
     title: 'Itaú Merchandising 360',
     job: () =>

@@ -1,8 +1,4 @@
-import inssTop from '@images/itau/inssTop.png'
-import intro from '@images/itau/intro.png'
 import logoItau from '@images/itau/logoItau.png'
-import merchTop from '@images/itau/marchTop.png'
-import merchBottom from '@images/itau/merchBottom.png'
 import React from 'react'
 import styled from 'styled-components'
 
