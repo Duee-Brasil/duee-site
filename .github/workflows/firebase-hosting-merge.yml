@@ -33,9 +33,9 @@ jobs:
           fi
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
 
       # Não usar actions/configure-pages nem PREFIX_PATHS aqui: isso é para GitHub
@@ -43,7 +43,7 @@ jobs:
       # com prefixo, links e /static/* quebram.
 
       - name: Restore cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: |
             public
